@@ -4,14 +4,16 @@
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
             x:Class="PawPalsApp.Views.PaginaMenu"
-             xmlns:local="clr-namespace:PawPalsApp.Views"
-            BarBackgroundColor="LightGray" UnselectedTabColor="#3F3F3F" SelectedTabColor="Coral">
+            xmlns:local="clr-namespace:PawPalsApp.Views"
+            xmlns:resource="clr-namespace:PawPalsApp.Resx"
+            BarBackgroundColor="LightGray" UnselectedTabColor="#3F3F3F"
+            SelectedTabColor="Coral" NavigationPage.HasNavigationBar="False">
     <!--Pages can be added as references or inline-->
     <TabbedPage.Children>
-        <local:Guide IconImageSource="informacion.png"/>
-        <local:CuteOMeter IconImageSource="medidor.png"/>
-        <local:Care IconImageSource="medidor.png"/>
-        <local:Account IconImageSource="usuario.png"/>
-        <local:Settings IconImageSource="ajustes.png"/>
+        <local:Guide Title="{x:Static resource:AppResources.Guide}" IconImageSource="informacion.png"/>
+        <local:CuteOMeter Title="CuteOMeter" IconImageSource="medidor.png"/>
+        <local:Care Title="Care" IconImageSource="paw.png"/>
+        <local:Account Title="Account" IconImageSource="usuario.png"/>
+        <local:Settings Title="Settings" IconImageSource="ajustes.png"/>
     </TabbedPage.Children>
 </TabbedPage>

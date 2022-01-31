@@ -61,6 +61,51 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Account.
+        /// </summary>
+        internal static string Account {
+            get {
+                return ResourceManager.GetString("Account", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Care.
+        /// </summary>
+        internal static string Care {
+            get {
+                return ResourceManager.GetString("Care", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a CuteOMeter.
+        /// </summary>
+        internal static string CuteOMeter {
+            get {
+                return ResourceManager.GetString("CuteOMeter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Guide.
+        /// </summary>
+        internal static string Guide {
+            get {
+                return ResourceManager.GetString("Guide", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Settings.
+        /// </summary>
+        internal static string Settings {
+            get {
+                return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Welcome.
         /// </summary>
         internal static string Welcome {

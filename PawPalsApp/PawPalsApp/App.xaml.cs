@@ -1,4 +1,8 @@
-﻿using System;
+﻿using PawPalsApp.Resx;
+using PawPalsApp.Views;
+using System;
+using System.Globalization;
+using System.Threading;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +14,9 @@ namespace PawPalsApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.InstalledUICulture;
+            AppResources.Culture = CultureInfo.InstalledUICulture;
+            MainPage = new NavigationPage(new PaginaMenu());
         }
 
         protected override void OnStart()
