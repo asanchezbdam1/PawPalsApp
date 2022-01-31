@@ -8,7 +8,13 @@
             xmlns:resource="clr-namespace:PawPalsApp.Resx"
             BarBackgroundColor="LightGray" UnselectedTabColor="#3F3F3F"
             SelectedTabColor="Coral" NavigationPage.HasNavigationBar="False">
-    <!--Pages can be added as references or inline-->
+
+    <!-- Para los recursos de idiomas, añadir: -->
+    <!-- xmlns:resource="clr-namespace:PawPalsApp.Resx"-->
+    <!-- A la raíz de la página. El texto a traducir debe ponerse como: -->
+    <!-- Text="{x:Static resource:AppResources.Clave}" -->
+    <!-- Antes debe estar añadido en los recursos (Resx/AppResources.idioma.resx) -->
+    
     <TabbedPage.Children>
         <local:Guide Title="{x:Static resource:AppResources.Guide}" IconImageSource="informacion.png"/>
         <local:CuteOMeter Title="{x:Static resource:AppResources.CuteOMeter}" IconImageSource="medidor.png"/>
