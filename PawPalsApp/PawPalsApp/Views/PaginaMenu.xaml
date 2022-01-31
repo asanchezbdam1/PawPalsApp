@@ -11,9 +11,9 @@
     <!--Pages can be added as references or inline-->
     <TabbedPage.Children>
         <local:Guide Title="{x:Static resource:AppResources.Guide}" IconImageSource="informacion.png"/>
-        <local:CuteOMeter Title="CuteOMeter" IconImageSource="medidor.png"/>
-        <local:Care Title="Care" IconImageSource="paw.png"/>
-        <local:Account Title="Account" IconImageSource="usuario.png"/>
-        <local:Settings Title="Settings" IconImageSource="ajustes.png"/>
+        <local:CuteOMeter Title="{x:Static resource:AppResources.CuteOMeter}" IconImageSource="medidor.png"/>
+        <local:Care Title="{x:Static resource:AppResources.Care}" IconImageSource="paw.png"/>
+        <local:Account Title="{x:Static resource:AppResources.Account}" IconImageSource="usuario.png"/>
+        <local:Settings Title="{x:Static resource:AppResources.Settings}" IconImageSource="ajustes.png"/>
     </TabbedPage.Children>
 </TabbedPage>
