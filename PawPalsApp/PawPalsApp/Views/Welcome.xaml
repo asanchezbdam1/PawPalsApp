@@ -1,12 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PawPalsApp.Views.Welcome">
+             xmlns:resource="clr-namespace:PawPalsApp.Resx"
+             x:Class="PawPalsApp.Views.Welcome"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+        <StackLayout Padding="40">
+            <StackLayout VerticalOptions="FillAndExpand" Padding="10">
+                <Label Text="Paw Pals" Margin="0, 50, 0, 100"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" FontSize="50" />
+                <Label Text="{x:Static resource:AppResources.NewToPawPals}"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="StartAndExpand"
+                   FontSize="Subtitle"></Label>
+                <Button x:Name="btnRegister" Text="{x:Static resource:AppResources.Register}"
+                            Clicked="btnRegister_Clicked" ></Button>
+                <Label Text="{x:Static resource:AppResources.HaveAnAccount}"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="StartAndExpand"
+                   FontSize="Subtitle"></Label>
+                <Button x:Name="btnLogin" Text="{x:Static resource:AppResources.Login}"
+                        Clicked="btnLogin_Clicked"></Button>
+                <Button Margin="0, 100, 0, 0" x:Name="btnEnter" Text="{x:Static resource:AppResources.Enter}"
+                        Clicked="btnEnter_Clicked"></Button>
+                <Label Text="{x:Static resource:AppResources.EnteringWithoutPass}"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="StartAndExpand"
+                   FontSize="Body"></Label>
+                <StackLayout Orientation="Horizontal"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand">
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

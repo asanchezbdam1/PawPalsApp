@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:resource="clr-namespace:PawPalsApp.Resx"
-             x:Class="PawPalsApp.Views.Register">
+             x:Class="PawPalsApp.Views.Register"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout Padding="40">
             <StackLayout VerticalOptions="FillAndExpand" Padding="10">
@@ -47,7 +48,7 @@
                 <StackLayout Orientation="Horizontal"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand">
-                    <Button x:Name="btnLogin" Text="{x:Static resource:AppResources.Login}"></Button>
+                    <Button x:Name="btnLogin" Text="{x:Static resource:AppResources.Login}" Clicked="btnLogin_Clicked"></Button>
                     <Button x:Name="btnRegister" Text="{x:Static resource:AppResources.Register}"></Button>
                 </StackLayout>
 

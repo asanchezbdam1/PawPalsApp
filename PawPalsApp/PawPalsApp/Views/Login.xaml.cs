@@ -16,5 +16,11 @@ namespace PawPalsApp.Views
         {
             InitializeComponent();
         }
+
+        private void btnRegister_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
+            Navigation.PushAsync(new Register());
+        }
     }
 }

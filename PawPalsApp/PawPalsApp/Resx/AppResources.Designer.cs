@@ -106,6 +106,24 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Enter.
+        /// </summary>
+        internal static string Enter {
+            get {
+                return ResourceManager.GetString("Enter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a * Entering without an account won&apos;t enable you to use the online features..
+        /// </summary>
+        internal static string EnteringWithoutPass {
+            get {
+                return ResourceManager.GetString("EnteringWithoutPass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Guide.
         /// </summary>
         internal static string Guide {
@@ -115,11 +133,29 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Already registered?.
+        /// </summary>
+        internal static string HaveAnAccount {
+            get {
+                return ResourceManager.GetString("HaveAnAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Login.
         /// </summary>
         internal static string Login {
             get {
                 return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a New to PawPals?.
+        /// </summary>
+        internal static string NewToPawPals {
+            get {
+                return ResourceManager.GetString("NewToPawPals", resourceCulture);
             }
         }
         

@@ -132,11 +132,23 @@
   <data name="Email" xml:space="preserve">
     <value>Correo electrónico</value>
   </data>
+  <data name="Enter" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="EnteringWithoutPass" xml:space="preserve">
+    <value>* Entrar sin cuenta no te permitirá emplear las funciones en línea.</value>
+  </data>
   <data name="Guide" xml:space="preserve">
     <value>Guía</value>
   </data>
+  <data name="HaveAnAccount" xml:space="preserve">
+    <value>¿Ya registrado? Inicia sesión aquí:</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Iniciar sesión</value>
+  </data>
+  <data name="NewToPawPals" xml:space="preserve">
+    <value>¿Nuevo en PawPals?</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Contraseña</value>
