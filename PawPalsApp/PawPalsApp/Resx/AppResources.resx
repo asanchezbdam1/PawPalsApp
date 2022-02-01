@@ -135,8 +135,23 @@
   <data name="Guide" xml:space="preserve">
     <value>Guide</value>
   </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="NomCity" xml:space="preserve">
+    <value>Write your city</value>
+  </data>
+  <data name="NomCountry" xml:space="preserve">
+    <value>Write your country</value>
+  </data>
   <data name="Personal name" xml:space="preserve">
     <value>Personal name</value>
+  </data>
+  <data name="SettingAccount" xml:space="preserve">
+    <value>Privacy, information, management</value>
+  </data>
+  <data name="SettingHelp" xml:space="preserve">
+    <value>Support, privacy policy </value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>

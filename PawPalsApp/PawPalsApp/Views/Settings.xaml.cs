@@ -15,6 +15,29 @@ namespace PawPalsApp.Views
         public Settings()
         {
             InitializeComponent();
+            frCuentaClic();
+            frAyudaClic();
+        }
+
+        private void frCuentaClic()
+        {
+            frCuenta.GestureRecognizers.Add(new TapGestureRecognizer()
+            {
+                Command = new Command(() =>
+                {
+                    Navigation.PushAsync(new Account());
+                })
+            });
+        }
+        private void frAyudaClic()
+        {
+            frCuenta.GestureRecognizers.Add(new TapGestureRecognizer()
+            {
+                Command = new Command(() =>
+                {
+                    Navigation.PushAsync(new Guide());
+                })
+            });
         }
     }
 }
