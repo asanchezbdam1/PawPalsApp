@@ -79,6 +79,24 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a City.
+        /// </summary>
+        internal static string City {
+            get {
+                return ResourceManager.GetString("City", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Country.
+        /// </summary>
+        internal static string Country {
+            get {
+                return ResourceManager.GetString("Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a CuteOMeter.
         /// </summary>
         internal static string CuteOMeter {
@@ -93,6 +111,15 @@ namespace PawPalsApp.Resx {
         internal static string Guide {
             get {
                 return ResourceManager.GetString("Guide", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Personal name.
+        /// </summary>
+        internal static string Personal_name {
+            get {
+                return ResourceManager.GetString("Personal name", resourceCulture);
             }
         }
         

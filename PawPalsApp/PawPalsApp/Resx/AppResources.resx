@@ -123,11 +123,20 @@
   <data name="Care" xml:space="preserve">
     <value>Care</value>
   </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
   <data name="CuteOMeter" xml:space="preserve">
     <value>CuteOMeter</value>
   </data>
   <data name="Guide" xml:space="preserve">
     <value>Guide</value>
+  </data>
+  <data name="Personal name" xml:space="preserve">
+    <value>Personal name</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
