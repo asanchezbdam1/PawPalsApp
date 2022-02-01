@@ -29,7 +29,7 @@ namespace PawPalsApp.Views
 
         private void btnLogin_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Register());
+            Navigation.PushAsync(new Login());
         }
     }
 }
