@@ -5,7 +5,13 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PawPalsApp.Android", "PawPalsApp\PawPalsApp.Android\PawPalsApp.Android.csproj", "{98C8FBE9-14FF-46F4-BC02-84B459390971}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PawPalsApp", "PawPalsApp\PawPalsApp\PawPalsApp.csproj", "{4C480E56-84B8-43E5-BA74-2E368EF8EE2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PawPalsApp", "PawPalsApp\PawPalsApp\PawPalsApp.csproj", "{4C480E56-84B8-43E5-BA74-2E368EF8EE2D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PawPalsServer", "..\PawPalsServer\PawPalsServer\PawPalsServer.csproj", "{AB8B5C7F-D6CF-4FE8-A956-0739D2020A9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerActions", "..\PawPalsServer\ServerActions\ServerActions.csproj", "{5013FBB2-C889-4DF7-AD3C-7C07967F56C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerVerificators", "..\PawPalsServer\ServerVerificators\ServerVerificators.csproj", "{55E3AF77-C679-445E-B8AE-72DB0DC3FF49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +31,18 @@ Global
 		{4C480E56-84B8-43E5-BA74-2E368EF8EE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C480E56-84B8-43E5-BA74-2E368EF8EE2D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C480E56-84B8-43E5-BA74-2E368EF8EE2D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AB8B5C7F-D6CF-4FE8-A956-0739D2020A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB8B5C7F-D6CF-4FE8-A956-0739D2020A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB8B5C7F-D6CF-4FE8-A956-0739D2020A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB8B5C7F-D6CF-4FE8-A956-0739D2020A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5013FBB2-C889-4DF7-AD3C-7C07967F56C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5013FBB2-C889-4DF7-AD3C-7C07967F56C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5013FBB2-C889-4DF7-AD3C-7C07967F56C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5013FBB2-C889-4DF7-AD3C-7C07967F56C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55E3AF77-C679-445E-B8AE-72DB0DC3FF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E3AF77-C679-445E-B8AE-72DB0DC3FF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E3AF77-C679-445E-B8AE-72DB0DC3FF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55E3AF77-C679-445E-B8AE-72DB0DC3FF49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
