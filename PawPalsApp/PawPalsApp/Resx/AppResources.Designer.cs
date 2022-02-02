@@ -70,6 +70,15 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Account Settings.
+        /// </summary>
+        internal static string AccSettings {
+            get {
+                return ResourceManager.GetString("AccSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Care.
         /// </summary>
         internal static string Care {
@@ -147,6 +156,15 @@ namespace PawPalsApp.Resx {
         internal static string Personal_name {
             get {
                 return ResourceManager.GetString("Personal name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Privacy.
+        /// </summary>
+        internal static string Privacy {
+            get {
+                return ResourceManager.GetString("Privacy", resourceCulture);
             }
         }
         

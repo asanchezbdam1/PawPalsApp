@@ -25,7 +25,7 @@ namespace PawPalsApp.Views
             {
                 Command = new Command(() =>
                 {
-                    Navigation.PushAsync(new Account());
+                    Navigation.PushAsync(new SettingsAccount());
                 })
             });
         }

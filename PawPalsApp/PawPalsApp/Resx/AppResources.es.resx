@@ -120,6 +120,9 @@
   <data name="Account" xml:space="preserve">
     <value>Cuenta</value>
   </data>
+  <data name="AccSettings" xml:space="preserve">
+    <value>Ajustes de cuenta</value>
+  </data>
   <data name="Care" xml:space="preserve">
     <value>Cuidados</value>
   </data>
@@ -146,6 +149,9 @@
   </data>
   <data name="Personal name" xml:space="preserve">
     <value>Nombre completo</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Privacidad</value>
   </data>
   <data name="SettingAccount" xml:space="preserve">
     <value>Privacidad, información, gestión</value>
