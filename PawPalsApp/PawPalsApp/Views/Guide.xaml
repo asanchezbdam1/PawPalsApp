@@ -9,33 +9,29 @@
                 <Image HorizontalOptions="CenterAndExpand" HeightRequest="80" WidthRequest="80" Source="CatIcon.png"></Image>
                 <Image HorizontalOptions="CenterAndExpand" HeightRequest="80" WidthRequest="80" Source="RodentIcon.png"></Image>
             </StackLayout>
-            <Picker x:Name="Piqueador" Title="Selecciona un Apartado" >
+            <Picker x:Name="Piqueador" Title="Selecciona un Apartado" SelectedIndexChanged="Piqueador_SelectedIndexChanged" >
                 <Picker.Items>
                     <x:String>Dieta</x:String>
                     <x:String>Ejercicio</x:String>
+                    <x:String>Hijiene</x:String>
                 </Picker.Items>
             </Picker>
             <StackLayout Orientation="Vertical" Padding="40,0,40,0">
                 <ScrollView >
                     <StackLayout>
-                        <Label Padding="10" HorizontalOptions="CenterAndExpand" FontSize="30" TextColor="Black">Todo Sobre La Dieta</Label>
-                        <Label>
-                           Los perros necesitan una dieta adecuada y nos enorgullecemos de tener las mejores para aconsejar a los dueños.
+                        <Label x:Name="Titulo" Padding="10" HorizontalOptions="CenterAndExpand" FontSize="30" TextColor="Black"></Label>
+                        <Label x:Name="Parrafo">
                         </Label>
-                        <Label Padding="10" HorizontalOptions="Start" FontSize="25" TextColor="Black">¿Qué es la dieta BARF para perros?</Label>
-                        <Label>
-                            La dieta B.A.R.F consiste en alimentar a los perros con alimentos crudos biológicamente adecuados para ellos. BARF es el acrónimo de Biologically Appropriate Raw Food, que puede traducirse al castellano como Alimentación Cruda Biológicamente Adecuada, esto es, ACBA.
+                        <Label x:Name="Titulo2" Padding="10" HorizontalOptions="Start" FontSize="25" TextColor="Black"></Label>
+                        <Label x:Name="Parrafo2">
                         </Label>
-                        <Label Padding="10" HorizontalOptions="Start" FontSize="25" TextColor="Black">¿De que se compone?</Label>
-                        <Label>
-                            La dieta BARF se compone básicamente de: 60% de huesos con carne y músculo, 25% de carne magra (puede ser pescado), 15% de fruta y verduras crudas, huevos y vísceras, no contiene conservantes y no contiene cereales
+                        <Label x:Name="Titulo3" Padding="10" HorizontalOptions="Start" FontSize="25" TextColor="Black"></Label>
+                        <Label x:Name="Parrafo3">
                         </Label>
-                        <Label Padding="10" HorizontalOptions="Start" FontSize="25" TextColor="Black">¿Es mejor que una dieta comercial?</Label>
-                        <Label>
-                            Muchos veterinarios se posicionan en contra de la dieta BARF, no porque se trate de una mala dieta, sino por los peligros que conlleva.
+                        <Label x:Name="Titulo4" Padding="10" HorizontalOptions="Start" FontSize="25" TextColor="Black">¿Es mejor que una dieta comercial?</Label>
+                        <Label x:Name="Parrafo4">
                         </Label>
-                        <Label>
-                            Sus defensores alegan que se trata de una alimentación mucho más saludable que la que proporciona un pienso comercial. Esto puede ser cierto si la comparamos con piensos de baja gama, pero no con los de alta, que cuidan mucho sus ingredientes, además de cocinarlos lentamente y a baja temperatura para mantener los nutrientes.
+                        <Label x:Name="Parrafo5">
                         </Label>
                     </StackLayout>
                 </ScrollView>
