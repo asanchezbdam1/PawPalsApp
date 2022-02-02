@@ -31,7 +31,7 @@ namespace PawPalsApp.Views
         }
         private void frAyudaClic()
         {
-            frCuenta.GestureRecognizers.Add(new TapGestureRecognizer()
+            frAyuda.GestureRecognizers.Add(new TapGestureRecognizer()
             {
                 Command = new Command(() =>
                 {

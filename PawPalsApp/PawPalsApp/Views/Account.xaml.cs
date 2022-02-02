@@ -16,5 +16,10 @@ namespace PawPalsApp.Views
         {
             InitializeComponent();
         }
+
+        private void ibtnEditar_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
