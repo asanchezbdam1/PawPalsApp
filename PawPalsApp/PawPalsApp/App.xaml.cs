@@ -6,13 +6,14 @@ using System.Globalization;
 using System.Threading;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using CrossClasses;
 
 namespace PawPalsApp
 {
     public partial class App : Application
     {
         public ConnectionHelper Helper;
-        public Usuario User;
+        public User User;
         public App()
         {
             InitializeComponent();
