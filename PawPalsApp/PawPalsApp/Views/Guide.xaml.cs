@@ -15,6 +15,7 @@ namespace PawPalsApp.Views
         public Guide()
         {
             InitializeComponent();
+            Piqueador.SelectedIndex = 0;
         }
     }
 }

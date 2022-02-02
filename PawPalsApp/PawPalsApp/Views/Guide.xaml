@@ -3,10 +3,43 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PawPalsApp.Views.Guide">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" HeightRequest="120" BackgroundColor="Orange">
+                <Image HorizontalOptions="CenterAndExpand" HeightRequest="80" WidthRequest="80" Source="DogIcon.png"></Image>
+                <Image HorizontalOptions="CenterAndExpand" HeightRequest="80" WidthRequest="80" Source="CatIcon.png"></Image>
+                <Image HorizontalOptions="CenterAndExpand" HeightRequest="80" WidthRequest="80" Source="RodentIcon.png"></Image>
+            </StackLayout>
+            <Picker x:Name="Piqueador" Title="Selecciona un Apartado" >
+                <Picker.Items>
+                    <x:String>Dieta</x:String>
+                    <x:String>Ejercicio</x:String>
+                </Picker.Items>
+            </Picker>
+            <StackLayout Orientation="Vertical" Padding="40,0,40,0">
+                <ScrollView >
+                    <StackLayout>
+                        <Label Padding="10" HorizontalOptions="CenterAndExpand" FontSize="30" TextColor="Black">Todo Sobre La Dieta</Label>
+                        <Label>
+                           Los perros necesitan una dieta adecuada y nos enorgullecemos de tener las mejores para aconsejar a los dueños.
+                        </Label>
+                        <Label Padding="10" HorizontalOptions="Start" FontSize="25" TextColor="Black">¿Qué es la dieta BARF para perros?</Label>
+                        <Label>
+                            La dieta B.A.R.F consiste en alimentar a los perros con alimentos crudos biológicamente adecuados para ellos. BARF es el acrónimo de Biologically Appropriate Raw Food, que puede traducirse al castellano como Alimentación Cruda Biológicamente Adecuada, esto es, ACBA.
+                        </Label>
+                        <Label Padding="10" HorizontalOptions="Start" FontSize="25" TextColor="Black">¿De que se compone?</Label>
+                        <Label>
+                            La dieta BARF se compone básicamente de: 60% de huesos con carne y músculo, 25% de carne magra (puede ser pescado), 15% de fruta y verduras crudas, huevos y vísceras, no contiene conservantes y no contiene cereales
+                        </Label>
+                        <Label Padding="10" HorizontalOptions="Start" FontSize="25" TextColor="Black">¿Es mejor que una dieta comercial?</Label>
+                        <Label>
+                            Muchos veterinarios se posicionan en contra de la dieta BARF, no porque se trate de una mala dieta, sino por los peligros que conlleva.
+                        </Label>
+                        <Label>
+                            Sus defensores alegan que se trata de una alimentación mucho más saludable que la que proporciona un pienso comercial. Esto puede ser cierto si la comparamos con piensos de baja gama, pero no con los de alta, que cuidan mucho sus ingredientes, además de cocinarlos lentamente y a baja temperatura para mantener los nutrientes.
+                        </Label>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
