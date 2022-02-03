@@ -7,13 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PawPalsApp.Android", "PawPa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PawPalsApp", "PawPalsApp\PawPalsApp\PawPalsApp.csproj", "{4C480E56-84B8-43E5-BA74-2E368EF8EE2D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PawPalsServer", "PawPalsApp\PawPalsServer\PawPalsServer.csproj", "{0EA0DAA1-03E6-408A-B737-5D8EF3E06EBD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerActions", "PawPalsApp\ServerActions\ServerActions.csproj", "{5013FBB2-C889-4DF7-AD3C-7C07967F56C1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerVerificators", "PawPalsApp\ServerVerificators\ServerVerificators.csproj", "{55E3AF77-C679-445E-B8AE-72DB0DC3FF49}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossClasses", "CrossClasses\CrossClasses.csproj", "{761EC577-C4EF-4A9B-8BAA-F9F2270E43B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PawPalsServer", "..\PawPalsServer\PawPalsServer\PawPalsServer.csproj", "{B5BAB4AA-41E6-4894-A9FC-BD5BC8EF2E7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerActions", "..\PawPalsServer\ServerActions\ServerActions.csproj", "{5013FBB2-C889-4DF7-AD3C-7C07967F56C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerVerificators", "..\PawPalsServer\ServerVerificators\ServerVerificators.csproj", "{55E3AF77-C679-445E-B8AE-72DB0DC3FF49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +33,14 @@ Global
 		{4C480E56-84B8-43E5-BA74-2E368EF8EE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C480E56-84B8-43E5-BA74-2E368EF8EE2D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C480E56-84B8-43E5-BA74-2E368EF8EE2D}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{0EA0DAA1-03E6-408A-B737-5D8EF3E06EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EA0DAA1-03E6-408A-B737-5D8EF3E06EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EA0DAA1-03E6-408A-B737-5D8EF3E06EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0EA0DAA1-03E6-408A-B737-5D8EF3E06EBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{761EC577-C4EF-4A9B-8BAA-F9F2270E43B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{761EC577-C4EF-4A9B-8BAA-F9F2270E43B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{761EC577-C4EF-4A9B-8BAA-F9F2270E43B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{761EC577-C4EF-4A9B-8BAA-F9F2270E43B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5BAB4AA-41E6-4894-A9FC-BD5BC8EF2E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5BAB4AA-41E6-4894-A9FC-BD5BC8EF2E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5BAB4AA-41E6-4894-A9FC-BD5BC8EF2E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5BAB4AA-41E6-4894-A9FC-BD5BC8EF2E7A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5013FBB2-C889-4DF7-AD3C-7C07967F56C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5013FBB2-C889-4DF7-AD3C-7C07967F56C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5013FBB2-C889-4DF7-AD3C-7C07967F56C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,10 +49,6 @@ Global
 		{55E3AF77-C679-445E-B8AE-72DB0DC3FF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55E3AF77-C679-445E-B8AE-72DB0DC3FF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55E3AF77-C679-445E-B8AE-72DB0DC3FF49}.Release|Any CPU.Build.0 = Release|Any CPU
-		{761EC577-C4EF-4A9B-8BAA-F9F2270E43B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{761EC577-C4EF-4A9B-8BAA-F9F2270E43B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{761EC577-C4EF-4A9B-8BAA-F9F2270E43B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{761EC577-C4EF-4A9B-8BAA-F9F2270E43B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
