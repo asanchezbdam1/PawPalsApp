@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ServerActions
 {
-    public class ServerActions
+    public class Class1
     {
     }
 }

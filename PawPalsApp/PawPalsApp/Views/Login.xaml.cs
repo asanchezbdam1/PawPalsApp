@@ -27,7 +27,7 @@ namespace PawPalsApp.Views
 
         private void btnLogin_Clicked(object sender, EventArgs e)
         {
-            User user = new LoginUser()
+            User user = new User()
             {
                 Login = txtUser.Text,
                 Pwd = txtPwd.Text
