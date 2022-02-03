@@ -28,4 +28,12 @@ namespace CrossClasses
             City = String.Empty;
         }
     }
+    [Serializable]
+    public class RegisterUser : User { }
+    [Serializable]
+    public class LoginUser : User { }
+    [Serializable]
+    public class UpdateUser : User { }
+    [Serializable]
+    public class DeleteUser : User { }
 }
