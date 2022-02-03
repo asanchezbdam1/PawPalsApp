@@ -97,6 +97,15 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Contact us.
+        /// </summary>
+        internal static string Contact {
+            get {
+                return ResourceManager.GetString("Contact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Country.
         /// </summary>
         internal static string Country {
@@ -169,6 +178,15 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Privacy policy.
+        /// </summary>
+        internal static string PrivaPol {
+            get {
+                return ResourceManager.GetString("PrivaPol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Privacy, information, management.
         /// </summary>
         internal static string SettingAccount {
@@ -192,6 +210,15 @@ namespace PawPalsApp.Resx {
         internal static string Settings {
             get {
                 return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a User Manual.
+        /// </summary>
+        internal static string UserManual {
+            get {
+                return ResourceManager.GetString("UserManual", resourceCulture);
             }
         }
         

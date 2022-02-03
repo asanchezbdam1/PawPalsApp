@@ -129,6 +129,9 @@
   <data name="City" xml:space="preserve">
     <value>Ciudad</value>
   </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contáctanos</value>
+  </data>
   <data name="Country" xml:space="preserve">
     <value>País</value>
   </data>
@@ -153,6 +156,9 @@
   <data name="Privacy" xml:space="preserve">
     <value>Privacidad</value>
   </data>
+  <data name="PrivaPol" xml:space="preserve">
+    <value>Política de privacidad</value>
+  </data>
   <data name="SettingAccount" xml:space="preserve">
     <value>Privacidad, información, gestión</value>
   </data>
@@ -161,6 +167,9 @@
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Ajustes</value>
+  </data>
+  <data name="UserManual" xml:space="preserve">
+    <value>Manual de usuario</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenido</value>

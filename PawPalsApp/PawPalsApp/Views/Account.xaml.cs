@@ -17,6 +17,8 @@ namespace PawPalsApp.Views
             InitializeComponent();
         }
 
+        /** Método que modifica las propiedades 'IsVisible' y 'IsReadOnly' de diferentes componentes para hacer que aparezcan y desaparezcan.
+         * En este caso se podrá escribir en los campos de ciudad y pais y se cambiará el icono de editar por el de guardar **/
         private void ibtnEditar_Clicked(object sender, EventArgs e)
         {
             ibtnEditar.IsVisible = false;
@@ -26,6 +28,7 @@ namespace PawPalsApp.Views
 
         }
 
+        /**  **/
         private void ibtnGuardar_Clicked(object sender, EventArgs e)
         {
             ibtnGuardar.IsVisible = false;

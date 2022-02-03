@@ -19,6 +19,8 @@ namespace PawPalsApp.Views
             frAyudaClic();
         }
 
+        /** Método que al pulsar sobre el frame en cuestión te 
+         * llevará a una página nueva **/
         private void frCuentaClic()
         {
             frCuenta.GestureRecognizers.Add(new TapGestureRecognizer()
@@ -29,13 +31,16 @@ namespace PawPalsApp.Views
                 })
             });
         }
+
+        /** Método que al pulsar sobre el frame en cuestión te 
+         * llevará a una página nueva **/
         private void frAyudaClic()
         {
             frAyuda.GestureRecognizers.Add(new TapGestureRecognizer()
             {
                 Command = new Command(() =>
                 {
-                    Navigation.PushAsync(new Guide());
+                    Navigation.PushAsync(new SettingsInfo());
                 })
             });
         }
