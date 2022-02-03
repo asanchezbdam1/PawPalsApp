@@ -29,8 +29,10 @@
                 <StackLayout Orientation="Horizontal"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand">
-                    <Button x:Name="btnRegister" Text="{x:Static resource:AppResources.Register}" Clicked="btnRegister_Clicked" ></Button>
-                    <Button x:Name="btnLogin" Text="{x:Static resource:AppResources.Login}"></Button>
+                    <Button x:Name="btnRegister" Text="{x:Static resource:AppResources.Register}"
+                            Clicked="btnRegister_Clicked" ></Button>
+                    <Button x:Name="btnLogin" Text="{x:Static resource:AppResources.Login}"
+                            Clicked="btnLogin_Clicked" ></Button>
                 </StackLayout>
 
             </StackLayout>

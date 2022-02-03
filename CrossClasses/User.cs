@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CrossClasses
 {
+    [Serializable]
     public class User
     {
         public string Login { get; set; }

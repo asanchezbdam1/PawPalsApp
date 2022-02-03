@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DeleteUser.cs" />
     <Compile Include="LoginUser.cs" />
+    <Compile Include="ObjectSerializer.cs" />
     <Compile Include="RegisterUser.cs" />
     <Compile Include="UpdateUser.cs" />
     <Compile Include="User.cs" />
