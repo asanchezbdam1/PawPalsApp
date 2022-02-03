@@ -52,7 +52,7 @@ namespace ServerActions
             throw new NotImplementedException();
         }
 
-        internal static object GetReportPostResult(ReportPost obj)
+        internal static object GetReportPostResult(PostReport obj)
         {
             throw new NotImplementedException();
         }

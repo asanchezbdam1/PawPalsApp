@@ -42,6 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ObjectSerializer.cs" />
+    <Compile Include="Post.cs" />
+    <Compile Include="PostList.cs" />
+    <Compile Include="PostReaction.cs" />
+    <Compile Include="PostReport.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
