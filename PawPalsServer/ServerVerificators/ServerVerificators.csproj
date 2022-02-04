@@ -45,5 +45,11 @@
     <Compile Include="ActionVerificator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CrossClasses\CrossClasses.csproj">
+      <Project>{761ec577-c4ef-4a9b-8baa-f9f2270e43b7}</Project>
+      <Name>CrossClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
