@@ -1,4 +1,5 @@
 ﻿using System;
+﻿using CrossClasses;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
@@ -40,7 +41,21 @@ namespace PawPalsServer
             state.clientSocket = ((Socket)ar.AsyncState).EndAccept(ar);
             Console.WriteLine("Aceptado");
             state.clientSocket.BeginReceive(state.buffer, 0, BufferObject.BUFFER_SIZE, SocketFlags.None,
-                new AsyncCallback((ar) => { }), state);
+                new AsyncCallback(ReceiveCallback), state);
+        }
+
+        private static void ReceiveCallback(IAsyncResult ar)
+        {
+            BufferObject state = (BufferObject)ar.AsyncState;
+            int bytes = state.clientSocket.EndReceive(ar);
+            User user = ObjectSerializer.DeserializeObject(state.buffer) as User;
+            if (user != null)
+            {
+                Console.WriteLine(user.Login);
+            }
+            state.clientSocket.Send(state.buffer);
+            state.clientSocket.BeginReceive(state.buffer, 0, BufferObject.BUFFER_SIZE, SocketFlags.None,
+                new AsyncCallback(ReceiveCallback), state);
         }
 
         private static IPAddress GetIPAddress()
