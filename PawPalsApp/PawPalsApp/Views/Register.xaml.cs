@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CrossClasses;
+using PawPalsApp.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +23,23 @@ namespace PawPalsApp.Views
         {
             Navigation.PopAsync();
             Navigation.PushAsync(new Login());
+        }
+
+        private void btnRegister_Clicked(object sender, EventArgs e)
+        {
+            User user = new RegisterUser()
+            {
+                Login = txtUser.Text,
+                Email = txtEmail.Text,
+                Pwd = txtPwd.Text
+            };
+            object obj = ConnectionHelper.SendUser(user);
+            if (obj is User)
+            {
+                user = obj as User;
+                DisplayAlert("Registrado", user.Login, "Atrás");
+            }
+
         }
     }
 }

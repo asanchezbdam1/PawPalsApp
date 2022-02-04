@@ -13,8 +13,8 @@ namespace PawPalsServer
         public static ManualResetEvent control = new ManualResetEvent(false);
         static void Main(string[] args)
         {
-            //IPAddress ip = IPAddress.Parse("192.168.1.19");
-            IPAddress ip = IPAddress.Parse("192.168.43.33");
+            IPAddress ip = IPAddress.Parse("192.168.1.19");
+            //IPAddress ip = IPAddress.Parse("192.168.43.33");
             socket = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             IPEndPoint ipend = new IPEndPoint(ip, 12012);
             try
@@ -39,7 +39,6 @@ namespace PawPalsServer
             control.Set();
             BufferObject state = new BufferObject();
             state.clientSocket = ((Socket)ar.AsyncState).EndAccept(ar);
-            Console.WriteLine("Aceptado");
             state.clientSocket.BeginReceive(state.buffer, 0, BufferObject.BUFFER_SIZE, SocketFlags.None,
                 new AsyncCallback(ReceiveCallback), state);
         }
@@ -47,15 +46,19 @@ namespace PawPalsServer
         private static void ReceiveCallback(IAsyncResult ar)
         {
             BufferObject state = (BufferObject)ar.AsyncState;
-            int bytes = state.clientSocket.EndReceive(ar);
-            User user = ObjectSerializer.DeserializeObject(state.buffer) as User;
-            if (user != null)
+            try
             {
-                Console.WriteLine(user.Login);
-            }
-            state.clientSocket.Send(state.buffer);
-            state.clientSocket.BeginReceive(state.buffer, 0, BufferObject.BUFFER_SIZE, SocketFlags.None,
-                new AsyncCallback(ReceiveCallback), state);
+                int bytes = state.clientSocket.EndReceive(ar);
+                object obj = ObjectSerializer.DeserializeObject(state.buffer);
+                obj = ServerActions.ServerActions.GetResponse(obj);
+                state.buffer = ObjectSerializer.NormalizeArray(ObjectSerializer.SerializeObject(obj), BufferObject.BUFFER_SIZE);
+                state.clientSocket.Send(state.buffer);
+            } catch { }
+            try
+            {
+                state.clientSocket.BeginReceive(state.buffer, 0, BufferObject.BUFFER_SIZE, SocketFlags.None,
+                    new AsyncCallback(ReceiveCallback), state);
+            } catch { }
         }
 
         private static IPAddress GetIPAddress()

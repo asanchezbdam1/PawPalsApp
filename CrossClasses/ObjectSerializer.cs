@@ -32,5 +32,15 @@ namespace CrossClasses
                 return bf.Deserialize(ms);
             }
         }
+
+        public static byte[] NormalizeArray(byte[] arr, int len)
+        {
+            byte[] res = new byte[len];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                res[i] = arr[i];
+            }
+            return res;
+        }
     }
 }

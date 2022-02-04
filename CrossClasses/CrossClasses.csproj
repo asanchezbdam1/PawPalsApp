@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ObjectSerializer.cs" />
+    <Compile Include="OperationError.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="PostList.cs" />
     <Compile Include="PostReaction.cs" />
