@@ -15,6 +15,14 @@ namespace ServerVerificators
             {
                 return VerifyUserAction((User)action);
             }
+            if (action is Post)
+            {
+
+            }
+            if (action is PostList)
+            {
+
+            }
             return ActionOptions.ERROR;
         }
 

@@ -33,7 +33,7 @@ namespace PawPalsApp.Classes
             return null;
         }
 
-        public static User Login(User loginfo)
+        public static object Login(User loginfo)
         {
             Socket client = StartConnection();
             byte[] serialized = ObjectSerializer.SerializeObject(loginfo);
@@ -44,10 +44,10 @@ namespace PawPalsApp.Classes
             }
             client.Send(packet);
             client.Receive(packet);
-            User user = ObjectSerializer.DeserializeObject(packet) as User;
+            object result = ObjectSerializer.DeserializeObject(packet);
             client.Shutdown(SocketShutdown.Both);
             client.Close();
-            return user;
+            return result;
         }
     }
 }
