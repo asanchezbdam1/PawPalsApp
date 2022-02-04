@@ -6,5 +6,8 @@ using System.Threading.Tasks;
 
 namespace CrossClasses
 {
-    public class UpdateUser : User { }
+    [Serializable]
+    public class PostReport
+    {
+    }
 }

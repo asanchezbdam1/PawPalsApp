@@ -6,5 +6,8 @@ using System.Threading.Tasks;
 
 namespace CrossClasses
 {
-    public class LoginUser : User { }
+    [Serializable]
+    public class PostList
+    {
+    }
 }

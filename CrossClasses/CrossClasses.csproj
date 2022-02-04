@@ -15,7 +15,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
+    <DebugType>portable</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
@@ -41,11 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DeleteUser.cs" />
-    <Compile Include="LoginUser.cs" />
     <Compile Include="ObjectSerializer.cs" />
-    <Compile Include="RegisterUser.cs" />
-    <Compile Include="UpdateUser.cs" />
+    <Compile Include="Post.cs" />
+    <Compile Include="PostList.cs" />
+    <Compile Include="PostReaction.cs" />
+    <Compile Include="PostReport.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

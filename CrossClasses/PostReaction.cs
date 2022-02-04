@@ -6,5 +6,10 @@ using System.Threading.Tasks;
 
 namespace CrossClasses
 {
-    public class RegisterUser : User { }
+    [Serializable]
+    public class PostReaction
+    {
+    }
+    [Serializable]
+    public class RemovePostReaction : PostReaction { }
 }

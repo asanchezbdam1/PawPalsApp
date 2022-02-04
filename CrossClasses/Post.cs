@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServerActions
+namespace CrossClasses
 {
-    public class Class1
+    [Serializable]
+    public class Post
     {
     }
 }
