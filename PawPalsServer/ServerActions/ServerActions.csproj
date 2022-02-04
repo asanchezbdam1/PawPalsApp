@@ -46,10 +46,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CrossClasses\CrossClasses.csproj">
-      <Project>{761EC577-C4EF-4A9B-8BAA-F9F2270E43B7}</Project>
-      <Name>CrossClasses</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ServerVerificators\ServerVerificators.csproj">
       <Project>{55E3AF77-C679-445E-B8AE-72DB0DC3FF49}</Project>
       <Name>ServerVerificators</Name>

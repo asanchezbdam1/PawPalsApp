@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\CrossClasses\CrossClasses.csproj" />
     <ProjectReference Include="..\ServerActions\ServerActions.csproj" />
     <ProjectReference Include="..\ServerVerificators\ServerVerificators.csproj" />
   </ItemGroup>
