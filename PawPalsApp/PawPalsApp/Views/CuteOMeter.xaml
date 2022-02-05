@@ -27,9 +27,15 @@
                                    Source="{Binding Image}"></Image>
                             
                             <ImageButton Grid.Row="2" Grid.Column="0" Source=""></ImageButton>
-                            <Slider Grid.Row="2" Grid.Column="1" IsEnabled="False"></Slider>
+                            <Slider Grid.Row="2" Grid.Column="1" IsEnabled="False" Value="{Binding Ratio}">
+                                <Slider.Background>
+                                    <LinearGradientBrush>
+										<GradientStop Color="#FF0000"/>
+										<GradientStop Color="#00FF64"/>
+                                    </LinearGradientBrush>
+                                </Slider.Background>
+                            </Slider>
                             <ImageButton Grid.Row="2" Grid.Column="2" Source=""></ImageButton>
-                            
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
