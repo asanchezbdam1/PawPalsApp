@@ -3,10 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PawPalsApp.Views.CuteOMeter">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <RefreshView>
+            <ListView RowHeight="500">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100"></RowDefinition>
+                                <RowDefinition Height="300"></RowDefinition>
+                                <RowDefinition Height="100"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            
+                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                                   Text="{Binding Login}"></Label>
+                            <Image Grid.Row="0" Grid.Column="2" Source="report.png"></Image>
+                            
+                            <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
+                                   Source="{Binding Image}"></Image>
+                            
+                            <ImageButton Grid.Row="2" Grid.Column="0" Source=""></ImageButton>
+                            <Slider Grid.Row="2" Grid.Column="1" IsEnabled="False"></Slider>
+                            <ImageButton Grid.Row="2" Grid.Column="2" Source=""></ImageButton>
+                            
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </RefreshView>
     </ContentPage.Content>
 </ContentPage>

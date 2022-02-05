@@ -56,7 +56,6 @@ namespace PawPalsApp.Views
         private bool FieldsCorrect()
         {
             if (!FieldVerifier.VerifyTextField(txtUser.Text)) return false;
-            if (!FieldVerifier.VerifyTextField(txtEmail.Text)) return false;
             try
             {
                 System.Net.Mail.MailAddress mail = new System.Net.Mail.MailAddress(txtEmail.Text);

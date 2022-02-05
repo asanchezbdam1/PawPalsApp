@@ -1,9 +1,9 @@
-﻿using Android.Graphics;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media.Imaging;
 
 namespace CrossClasses
 {
@@ -14,7 +14,7 @@ namespace CrossClasses
         public string Username { get; set; }
         public int Likes { get; set; }
         public int Dislikes { get; set; }
-        public Bitmap Image { get; set; }
+        public BitmapImage Image { get; set; }
 
         public Post()
         {
