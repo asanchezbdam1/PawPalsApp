@@ -4,7 +4,7 @@
              x:Class="PawPalsApp.Views.CuteOMeter">
     <ContentPage.Content>
         <RefreshView>
-            <ListView RowHeight="500">
+            <ListView RowHeight="500" x:Name="lvPosts">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
@@ -24,8 +24,9 @@
                             <Image Grid.Row="0" Grid.Column="2" Source="report.png"></Image>
                             
                             <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
-                                   Source="{Binding Image}"></Image>
-                            
+                                   Source="{Binding Img}"></Image>
+                            <!-- , Converter={StaticResource ImageConverter}, Mode=Default -->
+
                             <ImageButton Grid.Row="2" Grid.Column="0" Source=""></ImageButton>
                             <Slider Grid.Row="2" Grid.Column="1" IsEnabled="False" Value="{Binding Ratio}">
                                 <Slider.Background>
