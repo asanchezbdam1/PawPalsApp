@@ -138,6 +138,12 @@
   <data name="CuteOMeter" xml:space="preserve">
     <value>Monómetro</value>
   </data>
+  <data name="DelAcc" xml:space="preserve">
+    <value>Eliminar Cuenta</value>
+  </data>
+  <data name="DeleteMessage" xml:space="preserve">
+    <value>Estás seguro de que quieres eliminar tu cuenta?</value>
+  </data>
   <data name="Guide" xml:space="preserve">
     <value>Guía</value>
   </data>
@@ -152,9 +158,6 @@
   </data>
   <data name="Personal name" xml:space="preserve">
     <value>Nombre completo</value>
-  </data>
-  <data name="Privacy" xml:space="preserve">
-    <value>Privacidad</value>
   </data>
   <data name="PrivaPol" xml:space="preserve">
     <value>Política de privacidad</value>

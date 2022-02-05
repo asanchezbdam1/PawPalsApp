@@ -138,6 +138,12 @@
   <data name="CuteOMeter" xml:space="preserve">
     <value>CuteOMeter</value>
   </data>
+  <data name="DelAcc" xml:space="preserve">
+    <value>Delete Account</value>
+  </data>
+  <data name="DeleteMessage" xml:space="preserve">
+    <value>Are you sure do you want to delete your account?</value>
+  </data>
   <data name="Guide" xml:space="preserve">
     <value>Guide</value>
   </data>
@@ -152,9 +158,6 @@
   </data>
   <data name="Personal name" xml:space="preserve">
     <value>Personal name</value>
-  </data>
-  <data name="Privacy" xml:space="preserve">
-    <value>Privacy</value>
   </data>
   <data name="PrivaPol" xml:space="preserve">
     <value>Privacy policy</value>

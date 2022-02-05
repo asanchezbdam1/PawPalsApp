@@ -124,6 +124,24 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Delete Account.
+        /// </summary>
+        internal static string DelAcc {
+            get {
+                return ResourceManager.GetString("DelAcc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Are you sure do you want to delete your account?.
+        /// </summary>
+        internal static string DeleteMessage {
+            get {
+                return ResourceManager.GetString("DeleteMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Guide.
         /// </summary>
         internal static string Guide {
@@ -165,15 +183,6 @@ namespace PawPalsApp.Resx {
         internal static string Personal_name {
             get {
                 return ResourceManager.GetString("Personal name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Privacy.
-        /// </summary>
-        internal static string Privacy {
-            get {
-                return ResourceManager.GetString("Privacy", resourceCulture);
             }
         }
         

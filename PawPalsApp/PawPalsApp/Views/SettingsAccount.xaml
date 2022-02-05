@@ -5,14 +5,11 @@
              x:Class="PawPalsApp.Views.SettingsAccount" Title="{x:Static resource:AppResources.AccSettings}">
     <ContentPage.Content>
         <StackLayout>
-            <Frame Margin="50,25,50,25">
+            <Frame x:Name="frDelete" Margin="50,25,50,25" BorderColor="Red">
                 <StackLayout HorizontalOptions="Center">
-                    <Image Source="drawable/padlock.png" WidthRequest="35" HeightRequest="35"></Image>
-                    <Label Text="{x:Static resource:AppResources.Privacy}" FontSize="21"></Label>
-                    <BoxView BackgroundColor="Black" HeightRequest="1"></BoxView>
-                    <StackLayout>
-                        <Label Text="Publica" FontSize="21"></Label>
-                    </StackLayout>
+                    <Image Source="drawable/deleteuser.png" WidthRequest="35" HeightRequest="35"></Image>
+                    <Label Text="{x:Static resource:AppResources.DelAcc}" FontSize="24"></Label>
+                    <BoxView BackgroundColor="Red" HeightRequest="1"></BoxView>
                 </StackLayout>
             </Frame>
         </StackLayout>

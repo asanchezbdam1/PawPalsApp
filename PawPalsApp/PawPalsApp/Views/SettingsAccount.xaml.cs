@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +15,21 @@ namespace PawPalsApp.Views
         public SettingsAccount()
         {
             InitializeComponent();
+            frDeleteclic();
+        }
+        private void frDeleteclic()
+        {
+            frDelete.GestureRecognizers.Add(new TapGestureRecognizer()
+            {
+                Command = new Command(async () =>
+                {
+                    string action = await DisplayActionSheet("Estás seguro de que quieres eliminar tu cuenta?", "Cancel", "Delete");
+                    if (action.Equals("Delete"))
+                    {
+                        await Launcher.OpenAsync(new System.Uri("https://youtu.be/tATp1zHDo9g"));
+                    }
+                })
+            });
         }
     }
 }
