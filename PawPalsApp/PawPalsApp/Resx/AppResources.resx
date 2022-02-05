@@ -123,6 +123,9 @@
   <data name="Account" xml:space="preserve">
     <value>Account</value>
   </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
   <data name="Care" xml:space="preserve">
     <value>Care</value>
   </data>
@@ -138,14 +141,30 @@
   <data name="EnteringWithoutPass" xml:space="preserve">
     <value>* Entering without an account won't enable you to use the online features.</value>
   </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Something went wrong</value>
+  </data>
   <data name="Guide" xml:space="preserve">
     <value>Guide</value>
   </data>
   <data name="HaveAnAccount" xml:space="preserve">
     <value>Already registered?</value>
   </data>
+  <data name="IncorrectLoginData" xml:space="preserve">
+    <value>The format of at least one of the fields is incorrect.</value>
+  </data>
+  <data name="IncorrectRegisterData" xml:space="preserve">
+    <value>One of more fields is incorrect, please check:
+Passwords match and are between 8 and 20 characters without whitespaces and contain a number or letter.
+Username is between 3 and 20 characters with no whitespaces.
+Email has the proper format.
+You have accepted the terms and conditions.</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Login</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Error when logging in. Incorrect password or user not registered.</value>
   </data>
   <data name="NewToPawPals" xml:space="preserve">
     <value>New to PawPals?</value>
@@ -156,11 +175,20 @@
   <data name="Register" xml:space="preserve">
     <value>Register</value>
   </data>
+  <data name="RegisterError" xml:space="preserve">
+    <value>Error during registration. Already registered? Try logging in!</value>
+  </data>
   <data name="RepeatPassword" xml:space="preserve">
     <value>Confirm the password</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Operation succeeded</value>
+  </data>
+  <data name="SuccessRegister" xml:space="preserve">
+    <value>Registration has been succesful. Please login to continue.</value>
   </data>
   <data name="Username" xml:space="preserve">
     <value>Username</value>

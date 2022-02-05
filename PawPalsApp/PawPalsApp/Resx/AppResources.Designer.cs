@@ -79,6 +79,15 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Back.
+        /// </summary>
+        internal static string Back {
+            get {
+                return ResourceManager.GetString("Back", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Care.
         /// </summary>
         internal static string Care {
@@ -124,6 +133,15 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Something went wrong.
+        /// </summary>
+        internal static string ErrorTitle {
+            get {
+                return ResourceManager.GetString("ErrorTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Guide.
         /// </summary>
         internal static string Guide {
@@ -142,11 +160,42 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a The format of at least one of the fields is incorrect..
+        /// </summary>
+        internal static string IncorrectLoginData {
+            get {
+                return ResourceManager.GetString("IncorrectLoginData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a One of more fields is incorrect, please check:
+        ///Passwords match and are between 8 and 20 characters without whitespaces and contain a number or letter.
+        ///Username is between 3 and 20 characters with no whitespaces.
+        ///Email has the proper format.
+        ///You have accepted the terms and conditions..
+        /// </summary>
+        internal static string IncorrectRegisterData {
+            get {
+                return ResourceManager.GetString("IncorrectRegisterData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Login.
         /// </summary>
         internal static string Login {
             get {
                 return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Error when logging in. Incorrect password or user not registered..
+        /// </summary>
+        internal static string LoginError {
+            get {
+                return ResourceManager.GetString("LoginError", resourceCulture);
             }
         }
         
@@ -178,6 +227,15 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Error during registration. Already registered? Try logging in!.
+        /// </summary>
+        internal static string RegisterError {
+            get {
+                return ResourceManager.GetString("RegisterError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Confirm the password.
         /// </summary>
         internal static string RepeatPassword {
@@ -192,6 +250,24 @@ namespace PawPalsApp.Resx {
         internal static string Settings {
             get {
                 return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Operation succeeded.
+        /// </summary>
+        internal static string Success {
+            get {
+                return ResourceManager.GetString("Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Registration has been succesful. Please login to continue..
+        /// </summary>
+        internal static string SuccessRegister {
+            get {
+                return ResourceManager.GetString("SuccessRegister", resourceCulture);
             }
         }
         

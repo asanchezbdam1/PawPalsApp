@@ -53,14 +53,54 @@ namespace ServerActions
         public static object GetRegisterResult(RegisterUser user)
         {
             User result = null;
-            if (!CheckIfRegistered(user))
+            try
+            {
+                if (!CheckIfRegistered(user))
+                {
+                    var cn = new SqlConnection(CNSTRING);
+                    cn.Open();
+                    var cmd = new SqlCommand($"INSERT INTO Users (Username, Email, Pwd, Country, City, FullName) " +
+                        $"VALUES ('{user.Login}', '{user.Email}', '{GetHash(user.Pwd)}', '', '', '')");
+                    cmd.Connection = cn;
+                    var res = (int)cmd.ExecuteNonQuery();
+                    if (res != 1)
+                    {
+                        return null;
+                    }
+                    cmd.CommandText = $"SELECT * FROM Users WHERE " +
+                        $"Username LIKE '{user.Login}' OR Email LIKE '{user.Email}'";
+                    var dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        result = new User()
+                        {
+                            Id = dr.GetInt32(0),
+                            Login = dr.GetString(1),
+                            Email = dr.GetString(2),
+                            Country = dr.GetString(4),
+                            City = dr.GetString(5),
+                            Name = dr.GetString(6)
+                        };
+                    };
+                    cn.Close();
+                    return result;
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            return new User();
+        }
+
+        public static object GetUpdateUserResult(UpdateUser user)
+        {
+            User result = null;
+            try 
             {
                 var cn = new SqlConnection(CNSTRING);
                 cn.Open();
                 var cmd = new SqlCommand($"INSERT INTO Users (Username, Email, Pwd, Country, City, FullName) " +
                     $"VALUES ('{user.Login}', '{user.Email}', '{GetHash(user.Pwd)}', '', '', '')");
                 cmd.Connection = cn;
-                var res = (int) cmd.ExecuteNonQuery();
+                var res = (int)cmd.ExecuteNonQuery();
                 if (res != 1)
                 {
                     return null;
@@ -83,12 +123,8 @@ namespace ServerActions
                 cn.Close();
                 return result;
             }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
             return new User();
-        }
-
-        public static object GetUpdateUserResult(UpdateUser obj)
-        {
-            throw new NotImplementedException();
         }
 
         public static object GetDeleteUserResult(DeleteUser obj)

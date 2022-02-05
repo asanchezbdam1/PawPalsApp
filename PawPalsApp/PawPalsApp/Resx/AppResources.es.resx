@@ -123,6 +123,9 @@
   <data name="Account" xml:space="preserve">
     <value>Cuenta</value>
   </data>
+  <data name="Back" xml:space="preserve">
+    <value>Atrás</value>
+  </data>
   <data name="Care" xml:space="preserve">
     <value>Cuidados</value>
   </data>
@@ -138,14 +141,30 @@
   <data name="EnteringWithoutPass" xml:space="preserve">
     <value>* Entrar sin cuenta no te permitirá emplear las funciones en línea.</value>
   </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Algo ha ido mal</value>
+  </data>
   <data name="Guide" xml:space="preserve">
     <value>Guía</value>
   </data>
   <data name="HaveAnAccount" xml:space="preserve">
     <value>¿Ya registrado? Inicia sesión aquí:</value>
   </data>
+  <data name="IncorrectLoginData" xml:space="preserve">
+    <value>El formato de al menos uno de los campos es incorrecto.</value>
+  </data>
+  <data name="IncorrectRegisterData" xml:space="preserve">
+    <value>Uno o más campos es incorrecto, por favor compruebe:
+Las contraseñas coinciden y son de entre 8 y 20 caracteres sin espacios y contienen un número.
+El nombre de usuario tiene entre 3 y 20 caracteres sin espacios.
+El correo tiene el formato correcto.
+Has aceptado los términos y condiciones.</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Iniciar sesión</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Error iniciando sesión. Contraseña incorrecta o usuario no registrado</value>
   </data>
   <data name="NewToPawPals" xml:space="preserve">
     <value>¿Nuevo en PawPals?</value>
@@ -156,11 +175,20 @@
   <data name="Register" xml:space="preserve">
     <value>Registrarse</value>
   </data>
+  <data name="RegisterError" xml:space="preserve">
+    <value>Error durante el registro. ¿Estás registrado? ¡Inicia sesión!</value>
+  </data>
   <data name="RepeatPassword" xml:space="preserve">
     <value>Confirmar contraseña</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Ajustes</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Operación correcta</value>
+  </data>
+  <data name="SuccessRegister" xml:space="preserve">
+    <value>Se ha registrado correctamente. Por favor proceda a iniciar sesión.</value>
   </data>
   <data name="Username" xml:space="preserve">
     <value>Nombre de usuario</value>
