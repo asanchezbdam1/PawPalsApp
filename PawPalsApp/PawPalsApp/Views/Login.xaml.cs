@@ -27,7 +27,7 @@ namespace PawPalsApp.Views
 
         private void btnLogin_Clicked(object sender, EventArgs e)
         {
-            User user = new User()
+            User user = new LoginUser()
             {
                 Login = txtUser.Text,
                 Pwd = txtPwd.Text
@@ -36,6 +36,7 @@ namespace PawPalsApp.Views
             if (res is User)
             {
                 ((App)Application.Current).User = res as User;
+                DisplayAlert("Sesión iniciada", ((User)res).Login, "Back");
             }
 
         }

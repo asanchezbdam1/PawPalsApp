@@ -16,14 +16,18 @@ namespace ServerActions
         public static object GetLoginResult(LoginUser user)
         {
             User result = null;
-            if (VerifyLogin(user))
+            try
             {
-                using (var cn = new SqlConnection(CNSTRING))
+                if (VerifyLogin(user))
                 {
-                    var cmd = new SqlCommand($"SELECT * FROM Users WHERE" +
-                        $"Username LIKE '{user.Name}' OR Email LIKE '{user.Email}'");
+                    var cn = new SqlConnection(CNSTRING);
+                    cn.Open();
+                    var cmd = new SqlCommand($"SELECT * FROM Users WHERE " +
+                            $"Username LIKE '{user.Login}'");
+                    //$"Username LIKE '{user.Name}' OR Email LIKE '{user.Email}'");
+                    cmd.Connection = cn;
                     var dr = cmd.ExecuteReader();
-                    while (dr.Read()) 
+                    while (dr.Read())
                     {
                         result = new User()
                         {
@@ -35,11 +39,13 @@ namespace ServerActions
                             Name = dr.GetString(6)
                         };
                     };
+                    cn.Close();
                 }
             }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
             if (result == null)
             {
-                return null;
+                return new User();
             }
             return result;
         }
@@ -51,7 +57,7 @@ namespace ServerActions
             {
                 var cn = new SqlConnection(CNSTRING);
                 cn.Open();
-                var cmd = new SqlCommand($"INSERT INTO Users (Username, Email, Pwd, Country, City, FullName)" +
+                var cmd = new SqlCommand($"INSERT INTO Users (Username, Email, Pwd, Country, City, FullName) " +
                     $"VALUES ('{user.Login}', '{user.Email}', '{GetHash(user.Pwd)}', '', '', '')");
                 cmd.Connection = cn;
                 var res = (int) cmd.ExecuteNonQuery();
@@ -77,7 +83,7 @@ namespace ServerActions
                 cn.Close();
                 return result;
             }
-            return null;
+            return new User();
         }
 
         public static object GetUpdateUserResult(UpdateUser obj)
@@ -132,16 +138,40 @@ namespace ServerActions
 
         private static bool VerifyLogin(User user)
         {
-            using (var cn = new SqlConnection(CNSTRING))
+            try
             {
-                
-            }
-            return true;
+                var cn = new SqlConnection(CNSTRING);
+                cn.Open();
+                var cmd = new SqlCommand($"SELECT Pwd FROM Users WHERE " +
+                            $"Username LIKE '{user.Login}' OR Email LIKE '{user.Email}'");
+                cmd.Connection = cn;
+                var res = (string)cmd.ExecuteScalar();
+                if (res.Equals(GetHash(user.Pwd)))
+                {
+                    return true;
+                }
+                cn.Close();
+            } catch (Exception ex) { Console.WriteLine(ex.Message); }
+            return false;
         }
 
         private static bool CheckIfRegistered(RegisterUser user)
         {
-            return false;
+            try
+            {
+                var cn = new SqlConnection(CNSTRING);
+                cn.Open();
+                var cmd = new SqlCommand($"SELECT COUNT(*) FROM Users WHERE " +
+                        $"Username LIKE '{user.Login}' OR Email LIKE '{user.Email}'");
+                cmd.Connection = cn;
+                var res = (int)cmd.ExecuteScalar();
+                if (res == 0)
+                {
+                    return false;
+                }
+                cn.Close();
+            } catch (Exception ex) { Console.WriteLine(ex.Message); }
+            return true;
         }
 
         private static string GetHash(string str)
@@ -158,7 +188,7 @@ namespace ServerActions
                     }
                     return sb.ToString();
                 }
-            } catch { }
+            } catch (Exception ex) { Console.WriteLine(ex.Message); }
             return null;
         }
     }
