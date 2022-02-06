@@ -144,6 +144,9 @@
   <data name="DeleteMessage" xml:space="preserve">
     <value>Estás seguro de que quieres eliminar tu cuenta?</value>
   </data>
+  <data name="DelQuestion" xml:space="preserve">
+    <value>Estás seguro de que quieres eliminar tu cuenta?</value>
+  </data>
   <data name="Guide" xml:space="preserve">
     <value>Guía</value>
   </data>

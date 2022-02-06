@@ -142,6 +142,15 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Are you sure do you want to delete your account?.
+        /// </summary>
+        internal static string DelQuestion {
+            get {
+                return ResourceManager.GetString("DelQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Guide.
         /// </summary>
         internal static string Guide {

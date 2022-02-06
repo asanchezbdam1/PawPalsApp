@@ -17,6 +17,7 @@ namespace PawPalsApp.Views
             InitializeComponent();
             frPrivaclic();
             frManualClic();
+            frEmailClic();
         }
 
         /** Método que lleva al usuario a el documento de 
@@ -27,7 +28,7 @@ namespace PawPalsApp.Views
             {
                 Command = new Command(() =>
                 {
-                    Launcher.OpenAsync(new System.Uri("https://youtu.be/dQw4w9WgXcQ"));
+                    Launcher.OpenAsync(new System.Uri("https://drive.google.com/file/d/1oG94XWAUJ6Qt-iFo87EmyWYCLpStjiUa/view?usp=sharing"));
                 })
             });
         }

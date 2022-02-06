@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using PawPalsApp.Resx;
 
 namespace PawPalsApp.Views
 {
@@ -23,7 +24,7 @@ namespace PawPalsApp.Views
             {
                 Command = new Command(async () =>
                 {
-                    string action = await DisplayActionSheet("Estás seguro de que quieres eliminar tu cuenta?", "Cancel", "Delete");
+                    string action = await DisplayActionSheet(AppResources.DelQuestion, "Cancel", "Delete");
                     if (action.Equals("Delete"))
                     {
                         await Launcher.OpenAsync(new System.Uri("https://youtu.be/tATp1zHDo9g"));
