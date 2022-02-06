@@ -150,6 +150,9 @@
   <data name="HaveAnAccount" xml:space="preserve">
     <value>¿Ya registrado? Inicia sesión aquí:</value>
   </data>
+  <data name="ImageSizeError" xml:space="preserve">
+    <value>Error al seleccionar la imagen. La imagen es demasiado grande.</value>
+  </data>
   <data name="IncorrectLoginData" xml:space="preserve">
     <value>El formato de al menos uno de los campos es incorrecto.</value>
   </data>

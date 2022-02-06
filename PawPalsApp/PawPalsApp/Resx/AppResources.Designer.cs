@@ -160,6 +160,15 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Error selecting image. The photo selected is too big..
+        /// </summary>
+        internal static string ImageSizeError {
+            get {
+                return ResourceManager.GetString("ImageSizeError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a The format of at least one of the fields is incorrect..
         /// </summary>
         internal static string IncorrectLoginData {

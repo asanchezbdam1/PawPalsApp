@@ -1,5 +1,6 @@
 ﻿using CrossClasses;
 using PawPalsApp.Classes;
+using PawPalsApp.Resx;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
@@ -22,33 +23,36 @@ namespace PawPalsApp.Views
         public CuteOMeter()
         {
             InitializeComponent();
-            using (var webClient = new WebClient())
+            Task.Run(async () =>
             {
-                var img = webClient.DownloadData("http://www.google.com/images/logos/ps_logo2.png");
-                Post post = new Post
+                using (var webClient = new WebClient())
                 {
-                    Username = "Prueba",
-                    Likes = 10,
-                    Dislikes = 3
-                };
-                post.Img = img;
-                Posts.Add(post);
-                Posts.Add(new Post
-                {
-                    Username = "Prueba2",
-                    Likes = 10,
-                    Dislikes = 3,
-                    Img = img
-                });
-                Posts.Add(new Post
-                {
-                    Username = "Prueba3",
-                    Likes = 10,
-                    Dislikes = 3,
-                    Img = img
-                });
-            }
-            lvPosts.ItemsSource = Posts;
+                    var img = webClient.DownloadData("http://www.google.com/images/logos/ps_logo2.png");
+                    Post post = new Post
+                    {
+                        Username = "Prueba",
+                        Likes = 10,
+                        Dislikes = 3
+                    };
+                    post.Img = img;
+                    Posts.Add(post);
+                    Posts.Add(new Post
+                    {
+                        Username = "Prueba2",
+                        Likes = 10,
+                        Dislikes = 3,
+                        Img = img
+                    });
+                    Posts.Add(new Post
+                    {
+                        Username = "Prueba3",
+                        Likes = 10,
+                        Dislikes = 3,
+                        Img = img
+                    });
+                }
+                lvPosts.ItemsSource = Posts;
+            });
         }
 
         private void Actualizar()
@@ -59,7 +63,7 @@ namespace PawPalsApp.Views
 
         private void RefreshView_Refreshing(object sender, EventArgs e)
         {
-            Actualizar();
+            //Actualizar();
             PickPost();
             ((RefreshView)sender).IsRefreshing = false;
         }
@@ -67,16 +71,24 @@ namespace PawPalsApp.Views
         private async void PickPost()
         {
             await CrossMedia.Current.Initialize();
+            if (!CrossMedia.IsSupported)
+            {
+                await DisplayAlert("No está soportado", "Error", "Back");
+                return;
+            }
             var opt = new PickMediaOptions()
             {
-                PhotoSize = PhotoSize.Medium
+                PhotoSize = PhotoSize.Small,
+                CompressionQuality = 25
             };
-            var img = await CrossMedia.Current.PickPhotoAsync();
-            byte[] buf = new byte[10  * 1024 * 1024];
+            var img = await CrossMedia.Current.PickPhotoAsync(opt);
+            
+            byte[] buf = new byte[img.GetStream().Length];
             img.GetStream().Read(buf, 0, buf.Length);
-            while (buf.Length > ConnectionHelper.MAX_IMAGE_SIZE)
+            if (buf.Length > ConnectionHelper.MAX_IMAGE_SIZE)
             {
-                buf = ImageCompressor.Compress(buf);
+                DisplayAlert(AppResources.ErrorTitle, AppResources.ImageSizeError, AppResources.Back);
+                return;
             }
             Post p = new Post
             {

@@ -150,6 +150,9 @@
   <data name="HaveAnAccount" xml:space="preserve">
     <value>Already registered?</value>
   </data>
+  <data name="ImageSizeError" xml:space="preserve">
+    <value>Error selecting image. The photo selected is too big.</value>
+  </data>
   <data name="IncorrectLoginData" xml:space="preserve">
     <value>The format of at least one of the fields is incorrect.</value>
   </data>

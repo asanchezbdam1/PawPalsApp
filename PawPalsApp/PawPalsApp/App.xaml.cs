@@ -17,7 +17,7 @@ namespace PawPalsApp
         public App()
         {
             InitializeComponent();
-
+            User = new User();
             Thread.CurrentThread.CurrentUICulture = CultureInfo.InstalledUICulture;
             AppResources.Culture = CultureInfo.InstalledUICulture;
             //MainPage = new NavigationPage(new PaginaMenu());
