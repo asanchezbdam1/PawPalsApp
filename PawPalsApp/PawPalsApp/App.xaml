@@ -4,7 +4,7 @@
              x:Class="PawPalsApp.App">
     <Application.Resources>
         <ResourceDictionary>
-            <!-- <api:ByteArrayToImageConverter x:Key="ImageConverter"/> -->
+            <api:ByteArrayToImageConverter x:Key="ImageConverter"/>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="Coral"></Setter>
             </Style>

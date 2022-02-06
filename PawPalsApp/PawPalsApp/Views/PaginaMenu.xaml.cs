@@ -16,7 +16,6 @@ namespace PawPalsApp.Views
         public PaginaMenu()
         {
             InitializeComponent();
-            ConnectionHelper.StartConnection();
         }
     }
 }

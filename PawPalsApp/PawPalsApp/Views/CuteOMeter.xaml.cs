@@ -16,13 +16,12 @@ namespace PawPalsApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CuteOMeter : ContentPage
     {
-        private ObservableCollection<Post> posts;
+        public ObservableCollection<Post> Posts { get; set; } = new ObservableCollection<Post>();
         public CuteOMeter()
         {
             InitializeComponent();
-            posts = new ObservableCollection<Post>();
-            lvPosts.ItemsSource = posts;
-            List<Post> list = new List<Post>();
+            //lvPosts.SetBinding(ListView.ItemsSourceProperty, "Posts");
+            //lvPosts.ItemsSource = Posts;
             using (var webClient = new WebClient())
             {
                 var img = webClient.DownloadData("http://www.google.com/images/logos/ps_logo2.png");
@@ -33,23 +32,23 @@ namespace PawPalsApp.Views
                     Dislikes = 3
                 };
                 post.Img = img;
-                list.Add(post);
-                list.Add(new Post
+                Posts.Add(post);
+                Posts.Add(new Post
                 {
                     Username = "Prueba2",
                     Likes = 10,
                     Dislikes = 3,
                     Img = img
                 });
-                list.Add(new Post
+                Posts.Add(new Post
                 {
                     Username = "Prueba3",
                     Likes = 10,
                     Dislikes = 3,
                     Img = img
                 });
+                lvPosts.ItemsSource = Posts;
             }
-            DisplayAlert("La concha de la lora", "FUNCIONA", "VOLVER");
         }
     }
 }

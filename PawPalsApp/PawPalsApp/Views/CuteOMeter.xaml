@@ -4,40 +4,44 @@
              x:Class="PawPalsApp.Views.CuteOMeter">
     <ContentPage.Content>
         <RefreshView>
-            <ListView RowHeight="500" x:Name="lvPosts">
+            <ListView RowHeight="600" x:Name="lvPosts" ItemsSource="{Binding Posts}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="100"></RowDefinition>
-                                <RowDefinition Height="300"></RowDefinition>
-                                <RowDefinition Height="100"></RowDefinition>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="100"></ColumnDefinition>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                                <ColumnDefinition Width="100"></ColumnDefinition>
-                            </Grid.ColumnDefinitions>
-                            
-                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
-                                   Text="{Binding Login}"></Label>
-                            <Image Grid.Row="0" Grid.Column="2" Source="report.png"></Image>
-                            
-                            <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
-                                   Source="{Binding Img}"></Image>
-                            <!-- , Converter={StaticResource ImageConverter}, Mode=Default -->
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100"></RowDefinition>
+                                    <RowDefinition Height="400"></RowDefinition>
+                                    <RowDefinition Height="100"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="100"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
 
-                            <ImageButton Grid.Row="2" Grid.Column="0" Source=""></ImageButton>
-                            <Slider Grid.Row="2" Grid.Column="1" IsEnabled="False" Value="{Binding Ratio}">
-                                <Slider.Background>
-                                    <LinearGradientBrush>
-										<GradientStop Color="#FF0000"/>
-										<GradientStop Color="#00FF64"/>
-                                    </LinearGradientBrush>
-                                </Slider.Background>
-                            </Slider>
-                            <ImageButton Grid.Row="2" Grid.Column="2" Source=""></ImageButton>
-                        </Grid>
+                                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding Username}"
+                                   HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" FontSize="30"></Label>
+                                <ImageButton Grid.Row="0" Grid.Column="2" BackgroundColor="#00000000" Source="report.png"></ImageButton>
+
+                                <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Aspect="AspectFill"
+                                   Source="{Binding Img, Converter={StaticResource ImageConverter}, Mode=Default}"></Image>
+
+                                <ImageButton Grid.Row="2" Grid.Column="0" BackgroundColor="#00000000" Source="smallheartunselected"></ImageButton>
+                                <Frame Grid.Row="2" Grid.Column="1" HeightRequest="20" Padding="0" VerticalOptions="Center" CornerRadius="5">
+                                    <Frame.Background>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                            <GradientStop Color="#FF0000" Offset="0"/>
+                                            <GradientStop Color="#00FF64" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Frame.Background>
+                                    <Slider IsEnabled="False" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                                    </Slider>
+                                </Frame>
+                                <ImageButton Grid.Row="2" Grid.Column="2" BackgroundColor="#00000000" Source="heartunselected.png">
+                                </ImageButton>
+                            </Grid>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
