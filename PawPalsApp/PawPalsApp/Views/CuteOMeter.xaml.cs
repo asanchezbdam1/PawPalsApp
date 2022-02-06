@@ -63,8 +63,7 @@ namespace PawPalsApp.Views
 
         private void RefreshView_Refreshing(object sender, EventArgs e)
         {
-            //Actualizar();
-            PickPost();
+            Actualizar();
             ((RefreshView)sender).IsRefreshing = false;
         }
 
@@ -82,7 +81,7 @@ namespace PawPalsApp.Views
                 CompressionQuality = 25
             };
             var img = await CrossMedia.Current.PickPhotoAsync(opt);
-            
+            if (img == null) return;
             byte[] buf = new byte[img.GetStream().Length];
             img.GetStream().Read(buf, 0, buf.Length);
             if (buf.Length > ConnectionHelper.MAX_IMAGE_SIZE)
@@ -96,6 +95,16 @@ namespace PawPalsApp.Views
                 Img = buf
             };
             Posts.Add(p);
+        }
+
+        private void btnAdd_Pressed(object sender, EventArgs e)
+        {
+            PickPost();
+        }
+
+        private void btnHistorial_Pressed(object sender, EventArgs e)
+        {
+
         }
     }
 }
