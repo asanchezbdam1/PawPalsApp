@@ -1,12 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resource="clr-namespace:PawPalsApp.Resx"
              x:Class="PawPalsApp.Views.Settings">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame  Margin="20,10,20,10">
+                <StackLayout Orientation="Horizontal" Spacing="20"
+                             HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="{x:Static resource:AppResources.Settings}" FontSize="20"></Label>
+                    <Image Source="drawable/ajustes.png" WidthRequest="30" HeightRequest="30"></Image>
+                </StackLayout>
+            </Frame>
+            <Frame x:Name="frCuenta" Margin="40,10,40,10">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="drawable/cuenta.png" WidthRequest="50" HeightRequest="50"></Image>
+                    <StackLayout Margin="20,0,10,10">
+                        <Label Text="{x:Static resource:AppResources.Account}" FontSize="24" FontAttributes="Bold"></Label>
+                        <Label Text="{x:Static resource:AppResources.SettingAccount}"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame x:Name="frAyuda" Margin="40,10,40,10">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="drawable/ask.png" WidthRequest="50" HeightRequest="50"></Image>
+                    <StackLayout Margin="20,0,10,10">
+                        <Label Text="{x:Static resource:AppResources.Help}" FontSize="24" FontAttributes="Bold"></Label>
+                        <Label Text="{x:Static resource:AppResources.SettingHelp}"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -120,17 +120,62 @@
   <data name="Account" xml:space="preserve">
     <value>Account</value>
   </data>
+  <data name="AccSettings" xml:space="preserve">
+    <value>Account Settings</value>
+  </data>
   <data name="Care" xml:space="preserve">
     <value>Care</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
   </data>
   <data name="CuteOMeter" xml:space="preserve">
     <value>CuteOMeter</value>
   </data>
+  <data name="DelAcc" xml:space="preserve">
+    <value>Delete Account</value>
+  </data>
+  <data name="DeleteMessage" xml:space="preserve">
+    <value>Are you sure do you want to delete your account?</value>
+  </data>
+  <data name="DelQuestion" xml:space="preserve">
+    <value>Are you sure do you want to delete your account?</value>
+  </data>
   <data name="Guide" xml:space="preserve">
     <value>Guide</value>
   </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="NomCity" xml:space="preserve">
+    <value>Write your city</value>
+  </data>
+  <data name="NomCountry" xml:space="preserve">
+    <value>Write your country</value>
+  </data>
+  <data name="Personal name" xml:space="preserve">
+    <value>Personal name</value>
+  </data>
+  <data name="PrivaPol" xml:space="preserve">
+    <value>Privacy policy</value>
+  </data>
+  <data name="SettingAccount" xml:space="preserve">
+    <value>Privacy, information, management</value>
+  </data>
+  <data name="SettingHelp" xml:space="preserve">
+    <value>Support, privacy policy </value>
+  </data>
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
+  </data>
+  <data name="UserManual" xml:space="preserve">
+    <value>User Manual</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome</value>

@@ -70,11 +70,47 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Account Settings.
+        /// </summary>
+        internal static string AccSettings {
+            get {
+                return ResourceManager.GetString("AccSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Care.
         /// </summary>
         internal static string Care {
             get {
                 return ResourceManager.GetString("Care", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a City.
+        /// </summary>
+        internal static string City {
+            get {
+                return ResourceManager.GetString("City", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contact us.
+        /// </summary>
+        internal static string Contact {
+            get {
+                return ResourceManager.GetString("Contact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Country.
+        /// </summary>
+        internal static string Country {
+            get {
+                return ResourceManager.GetString("Country", resourceCulture);
             }
         }
         
@@ -88,6 +124,33 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Delete Account.
+        /// </summary>
+        internal static string DelAcc {
+            get {
+                return ResourceManager.GetString("DelAcc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Are you sure do you want to delete your account?.
+        /// </summary>
+        internal static string DeleteMessage {
+            get {
+                return ResourceManager.GetString("DeleteMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Are you sure do you want to delete your account?.
+        /// </summary>
+        internal static string DelQuestion {
+            get {
+                return ResourceManager.GetString("DelQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Guide.
         /// </summary>
         internal static string Guide {
@@ -97,11 +160,83 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Help.
+        /// </summary>
+        internal static string Help {
+            get {
+                return ResourceManager.GetString("Help", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Write your city.
+        /// </summary>
+        internal static string NomCity {
+            get {
+                return ResourceManager.GetString("NomCity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Write your country.
+        /// </summary>
+        internal static string NomCountry {
+            get {
+                return ResourceManager.GetString("NomCountry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Personal name.
+        /// </summary>
+        internal static string Personal_name {
+            get {
+                return ResourceManager.GetString("Personal name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Privacy policy.
+        /// </summary>
+        internal static string PrivaPol {
+            get {
+                return ResourceManager.GetString("PrivaPol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Privacy, information, management.
+        /// </summary>
+        internal static string SettingAccount {
+            get {
+                return ResourceManager.GetString("SettingAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Support, privacy policy .
+        /// </summary>
+        internal static string SettingHelp {
+            get {
+                return ResourceManager.GetString("SettingHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Settings.
         /// </summary>
         internal static string Settings {
             get {
                 return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a User Manual.
+        /// </summary>
+        internal static string UserManual {
+            get {
+                return ResourceManager.GetString("UserManual", resourceCulture);
             }
         }
         

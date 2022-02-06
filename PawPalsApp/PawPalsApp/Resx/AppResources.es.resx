@@ -120,17 +120,62 @@
   <data name="Account" xml:space="preserve">
     <value>Cuenta</value>
   </data>
+  <data name="AccSettings" xml:space="preserve">
+    <value>Ajustes de cuenta</value>
+  </data>
   <data name="Care" xml:space="preserve">
     <value>Cuidados</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contáctanos</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>País</value>
   </data>
   <data name="CuteOMeter" xml:space="preserve">
     <value>Monómetro</value>
   </data>
+  <data name="DelAcc" xml:space="preserve">
+    <value>Eliminar Cuenta</value>
+  </data>
+  <data name="DeleteMessage" xml:space="preserve">
+    <value>Estás seguro de que quieres eliminar tu cuenta?</value>
+  </data>
+  <data name="DelQuestion" xml:space="preserve">
+    <value>Estás seguro de que quieres eliminar tu cuenta?</value>
+  </data>
   <data name="Guide" xml:space="preserve">
     <value>Guía</value>
   </data>
+  <data name="Help" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+  <data name="NomCity" xml:space="preserve">
+    <value>Escribe tu ciudad</value>
+  </data>
+  <data name="NomCountry" xml:space="preserve">
+    <value>Escribe tu país</value>
+  </data>
+  <data name="Personal name" xml:space="preserve">
+    <value>Nombre completo</value>
+  </data>
+  <data name="PrivaPol" xml:space="preserve">
+    <value>Política de privacidad</value>
+  </data>
+  <data name="SettingAccount" xml:space="preserve">
+    <value>Privacidad, información, gestión</value>
+  </data>
+  <data name="SettingHelp" xml:space="preserve">
+    <value>Centro de ayuda, política de privacidad</value>
+  </data>
   <data name="Settings" xml:space="preserve">
     <value>Ajustes</value>
+  </data>
+  <data name="UserManual" xml:space="preserve">
+    <value>Manual de usuario</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenido</value>

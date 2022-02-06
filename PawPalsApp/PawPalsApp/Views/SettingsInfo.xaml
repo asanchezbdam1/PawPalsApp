@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resource="clr-namespace:PawPalsApp.Resx"
+             x:Class="PawPalsApp.Views.SettingsInfo" Title="{x:Static resource:AppResources.Help}">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Frame x:Name="frManual" Margin="50,25,50,25">
+                <StackLayout HorizontalOptions="Center">
+                    <Image Source="drawable/manual.png" WidthRequest="35" HeightRequest="35"></Image>
+                    <Label Text="{x:Static resource:AppResources.UserManual}" FontSize="21"></Label>
+                    <BoxView BackgroundColor="Black" HeightRequest="1"></BoxView>
+                </StackLayout>
+            </Frame>
+            
+            <Frame Margin="50,25,50,25">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text="{x:Static resource:AppResources.Contact}" FontSize="21"></Label>
+                        <Image Source="drawable/contact.png" WidthRequest="35" HeightRequest="35"></Image>
+                    </StackLayout>
+                    <BoxView BackgroundColor="Black" HeightRequest="1"></BoxView>
+                    <StackLayout Padding="5">
+                        <StackLayout Orientation="Horizontal" Spacing="20">
+                            <Image Source="drawable/email.png" WidthRequest="30" HeightRequest="30"></Image>
+                            <Label Text="pawpalssupport@gmail.com" FontSize="14"></Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Spacing="20">
+                            <Image Source="drawable/telephone.png" WidthRequest="30" HeightRequest="30"></Image>
+                            <Label Text="+34 643 803 353" FontSize="14"></Label>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            
+            <Frame x:Name="frPriva" Margin="50,25,50,25">
+                <StackLayout HorizontalOptions="Center">
+                    <Image Source="drawable/terms.png" WidthRequest="35" HeightRequest="35"></Image>
+                    <Label Text="{x:Static resource:AppResources.PrivaPol}" FontSize="21"></Label>
+                    <BoxView BackgroundColor="Black" HeightRequest="1"></BoxView>
+                </StackLayout>
+            </Frame>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
