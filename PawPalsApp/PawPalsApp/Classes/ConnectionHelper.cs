@@ -14,6 +14,7 @@ namespace PawPalsApp.Classes
     {
         private const int PORT = 12012;
         private const int BUFFER_SIZE = 1024 * 1024;
+        public const int MAX_IMAGE_SIZE = 50 * 1024;
         public static Socket StartConnection()
         {
             try
@@ -33,10 +34,10 @@ namespace PawPalsApp.Classes
             return null;
         }
 
-        public static object SendUser(User loginfo)
+        public static object Send(object data)
         {
             Socket client = StartConnection();
-            byte[] serialized = ObjectSerializer.SerializeObject(loginfo);
+            byte[] serialized = ObjectSerializer.SerializeObject(data);
             byte[] packet = ObjectSerializer.NormalizeArray(serialized, BUFFER_SIZE);
             client.Send(packet);
             client.Receive(packet);

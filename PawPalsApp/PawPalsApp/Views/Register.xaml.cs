@@ -36,7 +36,7 @@ namespace PawPalsApp.Views
                     Email = txtEmail.Text,
                     Pwd = txtPwd.Text
                 };
-                object obj = ConnectionHelper.SendUser(user);
+                object obj = ConnectionHelper.Send(user);
                 if (obj is User && ((User)obj).Id != 0)
                 {
                     DisplayAlert(AppResources.Success, AppResources.SuccessRegister, AppResources.Back);

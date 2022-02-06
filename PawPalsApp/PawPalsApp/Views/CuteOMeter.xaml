@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PawPalsApp.Views.CuteOMeter">
     <ContentPage.Content>
-        <RefreshView>
+        <RefreshView Refreshing="RefreshView_Refreshing">
             <ListView RowHeight="600" x:Name="lvPosts" ItemsSource="{Binding Posts}">
                 <ListView.ItemTemplate>
                     <DataTemplate>

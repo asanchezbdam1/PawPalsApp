@@ -35,7 +35,7 @@ namespace PawPalsApp.Views
                     Login = txtUser.Text,
                     Pwd = txtPwd.Text
                 };
-                object res = ConnectionHelper.SendUser(user);
+                object res = ConnectionHelper.Send(user);
                 if (res is User && ((User)res).Id != 0)
                 {
                     ((App)Application.Current).User = res as User;
