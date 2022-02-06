@@ -132,9 +132,23 @@ namespace ServerActions
             throw new NotImplementedException();
         }
 
-        public static object GetPublishPostResult(Post obj)
+        public static object GetPublishPostResult(Post post)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var cn = new SqlConnection(CNSTRING);
+                cn.Open();
+                var cmd = new SqlCommand($"INSERT INTO Posts (UserID, Img) " +
+                    $"VALUES ({post.UID}, CAST('{post.Img.ToString()}' AS VARBINARY(MAX)))");
+                cmd.Connection = cn;
+                var res = (int)cmd.ExecuteNonQuery();
+                if (res != 1)
+                {
+                    return new Post();
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); post = new Post(); }
+            return post;
         }
 
         public static object GetRemovePostResult(Post obj)
@@ -157,8 +171,12 @@ namespace ServerActions
                 while (dr.Read())
                 {
                     string name = String.Empty;
-                    cmd.CommandText = $"SELECT Login FROM Users WHERE UserID = {dr.GetInt32(1)}";
-                    var drn = cmd.ExecuteReader();
+                    var cmdn = new SqlCommand();
+                    cmdn.CommandText = $"SELECT Username FROM Users WHERE UserID = {dr.GetInt32(1)}";
+                    var cnn = new SqlConnection(CNSTRING);
+                    cnn.Open();
+                    cmdn.Connection = cnn;
+                    var drn = cmdn.ExecuteReader();
                     while (drn.Read())
                     {
                         name = drn.GetString(0);
@@ -167,8 +185,6 @@ namespace ServerActions
                     {
                         ID = dr.GetInt32(0),
                         Username = name,
-                        Likes = dr.GetInt32(2),
-                        Dislikes = dr.GetInt32(3),
                         Img = (byte[])dr["Img"]
                     });
                 }
@@ -188,17 +204,17 @@ namespace ServerActions
             throw new NotImplementedException();
         }
 
-        public static object GetLikePostResult(PostReaction obj)
+        public static object GetLikePostResult(Post obj)
         {
             throw new NotImplementedException();
         }
 
-        public static object GetDislikePostResult(PostReaction obj)
+        public static object GetDislikePostResult(Post obj)
         {
             throw new NotImplementedException();
         }
 
-        public static object GetRemoveOpinionResult(PostReaction obj)
+        public static object GetRemoveOpinionResult(Post obj)
         {
             throw new NotImplementedException();
         }

@@ -175,6 +175,9 @@ Has aceptado los términos y condiciones.</value>
   <data name="Password" xml:space="preserve">
     <value>Contraseña</value>
   </data>
+  <data name="RefreshError" xml:space="preserve">
+    <value>Error al recuperar publicaciones.</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Registrarse</value>
   </data>

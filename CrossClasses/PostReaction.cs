@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 namespace CrossClasses
 {
     [Serializable]
-    public class PostReaction
+    public enum PostReaction
     {
+        NONE, LIKE, DISLIKE
     }
-    [Serializable]
-    public class RemovePostReaction : PostReaction { }
 }

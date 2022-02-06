@@ -57,14 +57,25 @@ namespace PawPalsApp.Views
 
         private void Actualizar()
         {
-            Posts.Clear();
-            ConnectionHelper.Send(new PostList());
+            var pl = ConnectionHelper.Send(new PostList()) as PostList;
+            if (pl.Posts.Count == 0) DisplayAlert(AppResources.ErrorTitle, AppResources.RefreshError, AppResources.Back);
+            else
+            {
+                Posts.Clear();
+                foreach (var it in pl.Posts)
+                {
+                    Posts.Add(it);
+                }
+            }
         }
 
         private void RefreshView_Refreshing(object sender, EventArgs e)
         {
-            Actualizar();
-            ((RefreshView)sender).IsRefreshing = false;
+            Task.Run(async () =>
+            {
+                Actualizar();
+                ((RefreshView)sender).IsRefreshing = false;
+            });
         }
 
         private async void PickPost()
@@ -92,9 +103,11 @@ namespace PawPalsApp.Views
             Post p = new Post
             {
                 Username = ((App)App.Current).User.Login,
+                UID = ((App)App.Current).User.Id,
                 Img = buf
             };
-            Posts.Add(p);
+            Task.Run(() => { ConnectionHelper.Send(p); } );
+            
         }
 
         private void btnAdd_Pressed(object sender, EventArgs e)

@@ -175,6 +175,9 @@ You have accepted the terms and conditions.</value>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
   </data>
+  <data name="RefreshError" xml:space="preserve">
+    <value>An error occurred when trying to retrieve posts.</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Register</value>
   </data>

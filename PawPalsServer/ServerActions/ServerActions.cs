@@ -34,11 +34,11 @@ namespace ServerActions
                 case ActionOptions.REPORT_POST:
                     return DBTasks.GetReportPostResult((PostReport)obj);
                 case ActionOptions.LIKE_POST:
-                    return DBTasks.GetLikePostResult((PostReaction)obj);
+                    return DBTasks.GetLikePostResult((Post)obj);
                 case ActionOptions.DISLIKE_POST:
-                    return DBTasks.GetDislikePostResult((PostReaction)obj);
+                    return DBTasks.GetDislikePostResult((Post)obj);
                 case ActionOptions.REMOVE_OPINION_FROM_POST:
-                    return DBTasks.GetRemoveOpinionResult((RemovePostReaction)obj);
+                    return DBTasks.GetRemoveOpinionResult((Post)obj);
                 default:
                     return null;
             }

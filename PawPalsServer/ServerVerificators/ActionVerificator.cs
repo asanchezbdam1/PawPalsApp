@@ -17,7 +17,14 @@ namespace ServerVerificators
             }
             if (action is Post)
             {
-
+                Post p = action as Post;
+                if (p.ID == 0 && p.UID != 0)
+                {
+                    return ActionOptions.PUBLISH_POST;
+                }
+                if (p.Liked) return ActionOptions.LIKE_POST;
+                if (p.Disliked) return ActionOptions.DISLIKE_POST;
+                return ActionOptions.REMOVE_OPINION_FROM_POST;
             }
             if (action is PostList)
             {

@@ -227,6 +227,15 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a An error occurred when trying to retrieve posts..
+        /// </summary>
+        internal static string RefreshError {
+            get {
+                return ResourceManager.GetString("RefreshError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Register.
         /// </summary>
         internal static string Register {
