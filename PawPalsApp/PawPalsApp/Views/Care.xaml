@@ -1,12 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PawPalsApp.Views.Care">
+             x:Class="PawPalsApp.Views.Care"
+             xmlns:resource="clr-namespace:PawPalsApp.Resx">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical">
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label Text="{x:Static resource:AppResources.Care}" FontSize="60"/>
+                <Image Source="paw.png" HeightRequest="60" WidthRequest="60" Rotation="20"/>
+            </StackLayout>
+            <StackLayout BackgroundColor="Orange" HeightRequest="50" WidthRequest="100">
+                
+            </StackLayout>
+            <StackLayout VerticalOptions="Center" Orientation="Vertical">
+                <StackLayout HeightRequest="300"  HorizontalOptions="Center" VerticalOptions="Center" Orientation="Horizontal" Padding="20">
+                    <Image HorizontalOptions="Center" Source="perro_prueba.jpg" HeightRequest="300" WidthRequest="300"/>
+                    <ImageButton BackgroundColor="White" VerticalOptions="Start" Clicked="ImageButton_Clicked" Source="flechascirculares.png" HeightRequest="40" WidthRequest="40"></ImageButton>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="30">
+                    <Label Text="Nombre: " FontSize="25"/>
+                    <Entry IsReadOnly="True" Text="{Binding Nombre}" FontSize="25"/>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
