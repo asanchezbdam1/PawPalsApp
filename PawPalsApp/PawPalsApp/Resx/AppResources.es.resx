@@ -120,17 +120,109 @@
   <data name="Account" xml:space="preserve">
     <value>Cuenta</value>
   </data>
+  <data name="AccSettings" xml:space="preserve">
+    <value>Ajustes de cuenta</value>
+  </data>
+  <data name="AllAboutDiet" xml:space="preserve">
+    <value>Todo Sobre La Dieta</value>
+  </data>
   <data name="Care" xml:space="preserve">
     <value>Cuidados</value>
+  </data>
+  <data name="CatsDiet" xml:space="preserve">
+    <value>Los gatos esterilizados tienen más posibilidades de estar obesos, ya que al no aparearse, su metabolismo y actividad física disminuyen. Para los felinos esterilizados y los que padecen obesidad existen unas dietas especiales que les ayudarán en la batalla contra la báscula. Marcas comerciales como Criadores, Affinity Advance y Royal Canin, entre otras, que encontrarás al mejor precio en Tiendanimal, tienen una gama especial de piensos para gatos esterilizados y con sobrepeso que serán la alternativa ideal para que tu mascota se mantenga en un peso corporal adecuado.
+
+Las dietas para gatos obesos y esterilizados son bajas en calorías, pero contienen todos los nutrientes necesarios para que este tipo de felinos mantenga toda la vitalidad y energía cada día. ¡No olvides estimularlo para que haga ejercicio a diario y así queme más energía!
+
+¿Tu gato ha tenido o tiene problemas de sobrepeso ? ¿Qué tipo de alimentación le ofreces? ¿Juega a menudo o suele pasarse el día tumbado o durmiendo ?</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contáctanos</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>País</value>
   </data>
   <data name="CuteOMeter" xml:space="preserve">
     <value>Monómetro</value>
   </data>
+  <data name="DelAcc" xml:space="preserve">
+    <value>Eliminar Cuenta</value>
+  </data>
+  <data name="DeleteMessage" xml:space="preserve">
+    <value>Estás seguro de que quieres eliminar tu cuenta?</value>
+  </data>
+  <data name="DelQuestion" xml:space="preserve">
+    <value>Estás seguro de que quieres eliminar tu cuenta?</value>
+  </data>
+  <data name="DescAllAboutDiet" xml:space="preserve">
+    <value>Los animales necesitan una dieta adecuada y nos enorgullecemos de tener las mejores para aconsejar a los dueños.</value>
+  </data>
+  <data name="Diet" xml:space="preserve">
+    <value>Dieta</value>
+  </data>
+  <data name="DogsDiet" xml:space="preserve">
+    <value>El BARF es alimentar a los perros en forma apropiada. Su objetivo es maximizar la salud, longevidad, y capacidad reproductiva de los perros y, al hacerlo, minimizar la necesidad por intervención de veterinarios. ¿Cómo alimentas apropiadamente a un perro? Dándole la dieta para la que ellos evolucionaron y están diseñados para comer. Las dietas artificiales basadas en cereales causan problemas innumerables de salud. No son lo que tu perro fue programado para comer durante su largo proceso evolutivo. Una dieta biológicamente apropiada para un perro es una que consiste de comidas crudas enteras similares a las que los ancestros salvajes de los perros consumían. La comida alimentada debe contener el mismo balance y tipo de ingredientes que se consumían por aquellos ancestros salvajes. Esta comida debe incluir cosas tales como carne de los músculos, huesos, grasa, vísceras y materiales vegetales, y cualquier otro alimento que sea similar a lo que sus ancestros salvajes consumían.</value>
+  </data>
+  <data name="Exercise" xml:space="preserve">
+    <value>Ejercicio</value>
+  </data>
   <data name="Guide" xml:space="preserve">
     <value>Guía</value>
   </data>
+  <data name="Help" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+  <data name="Hygiene" xml:space="preserve">
+    <value>Higiene</value>
+  </data>
+  <data name="NomCity" xml:space="preserve">
+    <value>Escribe tu ciudad</value>
+  </data>
+  <data name="NomCountry" xml:space="preserve">
+    <value>Escribe tu país</value>
+  </data>
+  <data name="Personal name" xml:space="preserve">
+    <value>Nombre completo</value>
+  </data>
+  <data name="PrivaPol" xml:space="preserve">
+    <value>Política de privacidad</value>
+  </data>
+  <data name="RodentDiet" xml:space="preserve">
+    <value>Dieta basada en nueces. A la gran mayoría de los roedores les encanta la nuez.
+Las ardillas son los principales consumidores de frutos secos.Las ratas, los ratones y los puercoespines son también grandes adictos este tipo de comida.
+
+ Dietas para carnívoros 
+ Algunos roedores comen carne. Las ratas son especialmente propensas a comer carne y pescado. Las ratas son capaces de digerir la carne podrida y de consumir restos de basura humana. ¡No dejan ninguna oportunidad escapar! 
+
+Dietas con frutas y bayas 
+En entornos salvajes y naturales los roedores comen frutas y bayas que son los alimentos que suelen encontrar en sus hábitats.</value>
+  </data>
+  <data name="SelApar" xml:space="preserve">
+    <value>Selecciona un apartado</value>
+  </data>
+  <data name="SettingAccount" xml:space="preserve">
+    <value>Privacidad, información, gestión</value>
+  </data>
+  <data name="SettingHelp" xml:space="preserve">
+    <value>Centro de ayuda, política de privacidad</value>
+  </data>
   <data name="Settings" xml:space="preserve">
     <value>Ajustes</value>
+  </data>
+  <data name="TitleCatsDiet" xml:space="preserve">
+    <value>Dieta para gatos obesos y esterilizados</value>
+  </data>
+  <data name="TitleDogsDiet" xml:space="preserve">
+    <value>¿Qué es la dieta BARF para perros?</value>
+  </data>
+  <data name="TitleRodentDiet" xml:space="preserve">
+    <value>¿Cuáles son las dietas de los roedores?</value>
+  </data>
+  <data name="UserManual" xml:space="preserve">
+    <value>Manual de usuario</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenido</value>

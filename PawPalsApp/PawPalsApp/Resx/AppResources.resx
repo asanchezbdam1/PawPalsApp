@@ -120,17 +120,108 @@
   <data name="Account" xml:space="preserve">
     <value>Account</value>
   </data>
+  <data name="AccSettings" xml:space="preserve">
+    <value>Account Settings</value>
+  </data>
+  <data name="AllAboutDiet" xml:space="preserve">
+    <value>All About Diet</value>
+  </data>
   <data name="Care" xml:space="preserve">
     <value>Care</value>
+  </data>
+  <data name="CatsDiet" xml:space="preserve">
+    <value>Sterilized cats are more likely to be obese, since by not mating, their metabolism and physical activity decrease. Forsterilized felines and those that suffer from obesity, there are special diets that will help them in the battle against the scale. Commercial brands such as Criadores, Affinity Advance and Royal Canin, among others, which you will find at the best price in Tiendanimal, have a special range of feed for sterilized and overweight cats that will be the ideal alternative for your pet to maintain an adequate body weight .
+
+Diets for obese and sterilized cats are low in calories, but contain all the necessary nutrients for this type of feline to maintain all its vitality and energy every day. Don't forget to encourage him to exercise daily and thus burn more energy!
+
+Has your cat had or is he overweight? What kind of food do you offer? Do you often play or spend the day lying down or sleeping?</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
   </data>
   <data name="CuteOMeter" xml:space="preserve">
     <value>CuteOMeter</value>
   </data>
+  <data name="DelAcc" xml:space="preserve">
+    <value>Delete Account</value>
+  </data>
+  <data name="DeleteMessage" xml:space="preserve">
+    <value>Are you sure do you want to delete your account?</value>
+  </data>
+  <data name="DelQuestion" xml:space="preserve">
+    <value>Are you sure do you want to delete your account?</value>
+  </data>
+  <data name="DescAllAboutDiet" xml:space="preserve">
+    <value>Animals need a proper diet and we pride ourselves on having the best to advise owners.</value>
+  </data>
+  <data name="Diet" xml:space="preserve">
+    <value>Diet</value>
+  </data>
+  <data name="DogsDiet" xml:space="preserve">
+    <value>The BARF is to feed the dogs in an appropriate way. Their goal is to maximize the health, longevity and reproductive capacity of dogs and, by doing so, minimize the need for veterinary intervention. How to properly feed a dog? Giving them the diet they evolved and are designed to eat. Artificial grain-based diets cause countless health problems. They are not what your dog was programmed to eat during his long evolutionary process. A biologically appropriate diet for a dog is one that consists of whole raw foods similar to those eaten by the wild ancestors of dogs. The food fed must contain the same balance and type of ingredients that were consumed by those wild ancestors. This food should include such things as muscle meat, bones, fat, organ meats, and plant materials, and any other food that is similar to what their wild ancestors ate.</value>
+  </data>
+  <data name="Exercise" xml:space="preserve">
+    <value>Exercise</value>
+  </data>
   <data name="Guide" xml:space="preserve">
     <value>Guide</value>
   </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Hygiene" xml:space="preserve">
+    <value>Hygiene</value>
+  </data>
+  <data name="NomCity" xml:space="preserve">
+    <value>Write your city</value>
+  </data>
+  <data name="NomCountry" xml:space="preserve">
+    <value>Write your country</value>
+  </data>
+  <data name="Personal name" xml:space="preserve">
+    <value>Personal name</value>
+  </data>
+  <data name="PrivaPol" xml:space="preserve">
+    <value>Privacy policy</value>
+  </data>
+  <data name="RodentDiet" xml:space="preserve">
+    <value>Nut-based diet. The vast majority of rodents love nuts.
+Squirrels are the main consumers of nuts.Rats, mice and porcupines are also great addicts of this type of food.
+
+Diets for carnivores
+Some rodents eat meat. Rats are especially prone to eating meat and fish. Rats are capable of digesting rotting meat and consuming remnants of human waste. They don't let any opportunity escape!
+
+Diets with fruits and berries \n In wild and natural environments, rodents eat fruits and berries, which are the foods they usually find in their habitats.</value>
+  </data>
+  <data name="SelApar" xml:space="preserve">
+    <value>Select an option</value>
+  </data>
+  <data name="SettingAccount" xml:space="preserve">
+    <value>Privacy, information, management</value>
+  </data>
+  <data name="SettingHelp" xml:space="preserve">
+    <value>Support, privacy policy </value>
+  </data>
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
+  </data>
+  <data name="TitleCatsDiet" xml:space="preserve">
+    <value>Diet for obese and sterilized cats</value>
+  </data>
+  <data name="TitleDogsDiet" xml:space="preserve">
+    <value>What is the BARF diet for dogs?</value>
+  </data>
+  <data name="TitleRodentDiet" xml:space="preserve">
+    <value>What are the diets of rodents?</value>
+  </data>
+  <data name="UserManual" xml:space="preserve">
+    <value>User Manual</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome</value>
