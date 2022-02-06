@@ -13,7 +13,7 @@
             BackgroundColor="Transparent" HorizontalOptions="End" HeightRequest="40"></ImageButton>
             </StackLayout>
             <RefreshView Refreshing="RefreshView_Refreshing">
-                <ListView RowHeight="540" x:Name="lvPosts" ItemsSource="{Binding Posts}" SelectionMode="None">
+                <ListView RowHeight="540" x:Name="lvPosts" SelectionMode="None">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -44,8 +44,9 @@
                                                 <GradientStop Color="#00FF64" Offset="1"/>
                                             </LinearGradientBrush>
                                         </Frame.Background>
-                                        <Slider IsEnabled="False" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
-                                        </Slider>
+                                        <Slider IsEnabled="False" Minimum="0" Maximum="1" Value="{Binding Ratio}"
+                                                HorizontalOptions="FillAndExpand" VerticalOptions="Center" ThumbColor="#FF3F3F3F"
+                                                MinimumTrackColor="#FF3F3F3F" MaximumTrackColor="#FF3F3F3F"></Slider>
                                     </Frame>
                                     <ImageButton Grid.Row="2" Grid.Column="2" BackgroundColor="#00000000" Source="heartunselected.png">
                                     </ImageButton>

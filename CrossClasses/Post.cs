@@ -14,7 +14,7 @@ namespace CrossClasses
         public int Likes { get; set; }
         public int Dislikes { get; set; }
         public byte[] Img { get; set; }
-        public double Ratio { get { return Likes / (Likes + Dislikes); } }
+        public double Ratio { get { return Likes / (1.0 * (Likes + Dislikes)); } }
 
         public Post()
         {

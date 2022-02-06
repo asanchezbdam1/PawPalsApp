@@ -10,6 +10,7 @@ namespace CrossClasses
 {
     public static class ObjectSerializer
     {
+        public const int MAX_IMAGE_SIZE = 50 * 1024;
 
         public static byte[] SerializeObject(object obj)
         {

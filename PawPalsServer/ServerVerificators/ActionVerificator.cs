@@ -21,7 +21,8 @@ namespace ServerVerificators
             }
             if (action is PostList)
             {
-
+                if (((PostList)action).FromRequester) return ActionOptions.RETRIEVE_POSTS_FROM_USER;
+                return ActionOptions.RETRIEVE_POSTS;
             }
             return ActionOptions.ERROR;
         }

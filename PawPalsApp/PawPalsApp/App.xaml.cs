@@ -20,7 +20,6 @@ namespace PawPalsApp
             User = new User();
             Thread.CurrentThread.CurrentUICulture = CultureInfo.InstalledUICulture;
             AppResources.Culture = CultureInfo.InstalledUICulture;
-            //MainPage = new NavigationPage(new PaginaMenu());
             MainPage = new NavigationPage(new Welcome());
             Helper = new ConnectionHelper();
         }

@@ -142,9 +142,40 @@ namespace ServerActions
             throw new NotImplementedException();
         }
 
-        public static object GetPosts(PostList obj)
+        public static object GetPosts(PostList posts)
         {
-            throw new NotImplementedException();
+            try
+            {
+                posts.Posts.Clear();
+                var cn = new SqlConnection(CNSTRING);
+                cn.Open();
+                var cmd = new SqlCommand($"SELECT TOP 15 * FROM Posts WHERE NOT UserID = {posts.RequesterID} " +
+                    $"AND PostID NOT IN (SELECT PostID FROM Reactions WHERE UserID = {posts.RequesterID}) " +
+                    $"ORDER BY UploadDate");
+                cmd.Connection = cn;
+                var dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    string name = String.Empty;
+                    cmd.CommandText = $"SELECT Login FROM Users WHERE UserID = {dr.GetInt32(1)}";
+                    var drn = cmd.ExecuteReader();
+                    while (drn.Read())
+                    {
+                        name = drn.GetString(0);
+                    }
+                    posts.Posts.Add(new Post()
+                    {
+                        ID = dr.GetInt32(0),
+                        Username = name,
+                        Likes = dr.GetInt32(2),
+                        Dislikes = dr.GetInt32(3),
+                        Img = (byte[])dr["Img"]
+                    });
+                }
+                cn.Close();
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            return posts;
         }
 
         public static object GetPostsFromUser(PostList obj)
