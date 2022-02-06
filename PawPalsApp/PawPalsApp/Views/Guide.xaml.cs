@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using PawPalsApp.Resx;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,22 +15,44 @@ namespace PawPalsApp.Views
         public Guide()
         {
             InitializeComponent();
+            Piqueador.Items.Add(AppResources.Diet);
+            Piqueador.Items.Add(AppResources.Exercise);
+            Piqueador.Items.Add(AppResources.Hygiene);
+            
             Piqueador.SelectedIndex = 0;
+            dietaPerros();
         }
         private void Piqueador_SelectedIndexChanged(object sender, EventArgs e)
         {
+            slContenido.Children.Clear();
             if (Piqueador.SelectedIndex == 0)
             {
-                Titulo.Text = "Todo Sobre La Dieta";
-                Parrafo.Text = "Los animales necesitan una dieta adecuada y nos enorgullecemos de tener las mejores para aconsejar a los dueños.";
-                Titulo2.Text = "¿Qué es la dieta BARF para perros?";
-                Parrafo2.Text = " La dieta B.A.R.F consiste en alimentar a los perros con alimentos crudos biológicamente adecuados para ellos. BARF es el acrónimo de Biologically Appropriate Raw Food, que puede traducirse al castellano como Alimentación Cruda Biológicamente Adecuada, esto es, ACBA.";
-                Titulo3.Text = "Dieta para gatos obesos y esterilizados";
-                Parrafo3.Text = "Los gatos esterilizados tienen más posibilidades de estar obesos, ya que al no aparearse, su metabolismo y actividad física disminuyen. Para los felinos esterilizados y los que padecen obesidad existen unas dietas especiales que les ayudarán en la batalla contra la báscula. Marcas comerciales como Criadores, Affinity Advance y Royal Canin, entre otras, que encontrarás al mejor precio en Tiendanimal, tienen una gama especial de piensos para gatos esterilizados y con sobrepeso que serán la alternativa ideal para que tu mascota se mantenga en un peso corporal adecuado.\n\nLas dietas para gatos obesos y esterilizados son bajas en calorías, pero contienen todos los nutrientes necesarios para que este tipo de felinos mantenga toda la vitalidad y energía cada día. ¡No olvides estimularlo para que haga ejercicio a diario y así queme más energía!\n\n¿Tu gato ha tenido o tiene problemas de sobrepeso ? ¿Qué tipo de alimentación le ofreces? ¿Juega a menudo o suele pasarse el día tumbado o durmiendo ? ";
-                Titulo4.Text = "¿Cuales son las dietas de los roedores?";
-                Parrafo4.Text = "Dieta basada en nueces A la gran mayoría de los roedores les encanta la nuez.\nLas ardillas son los principales consumidores de frutos secos.Las ratas, los ratones y los puercoespines son también grandes adictos este tipo de comida.\n\n Dietas para carnívoros \n Algunos roedores comen carne.Las ratas son especialmente propensas a comer carne y pescado. Las ratas son capaces de digerir la carne podrida y de consumir restos de basura humana. ¡No dejan ninguna oportunidad escapar! \n\n Dietas con frutas y bayas \n En entornos salvajes y naturales los roedores comen frutas y bayas que son los alimentos que suelen encontrar en sus hábitats.";
+                if (!btnPerro.IsEnabled)
+                {
+                    dietaPerros();
+                }
+                else if (!btnGato.IsEnabled)
+                {
+                    dietaGatos();
+                }
+                else if (!btnRoedor.IsEnabled)
+                {
+                    dietaRoedores();
+                }
             }
-            else if(Piqueador.SelectedIndex == 1) {
+            else if(Piqueador.SelectedIndex == 1){
+                if (!btnPerro.IsEnabled)
+                {
+                    ejercicioPerros();
+                }
+                else if (!btnGato.IsEnabled)
+                {
+                    ejercicioGatos();
+                }
+                else if (!btnRoedor.IsEnabled)
+                {
+                    ejercicioRoedores();
+                }
                 Titulo.Text = "Todo Sobre Ejercicios";
                 Parrafo.Text = "Aqui os daremos unos cuantos consejos sobre los diferentes animales con los que trabajamos en esta app";
                 Titulo2.Text = "Ejercicios para perros";
@@ -42,6 +64,18 @@ namespace PawPalsApp.Views
             }
             else
             {
+                if (!btnPerro.IsEnabled)
+                {
+                    higienePerros();
+                }
+                else if (!btnGato.IsEnabled)
+                {
+                    higieneGatos();
+                }
+                else if (!btnRoedor.IsEnabled)
+                {
+                    higieneRoedores();
+                }
                 Titulo.Text = "Todo Sobre La Hijiene";
                 Parrafo.Text = "";
                 Titulo2.Text = "Hijiene para perros";
@@ -51,6 +85,193 @@ namespace PawPalsApp.Views
                 Titulo4.Text = "Hijiene para Roedores";
                 Parrafo4.Text = "¿Cómo bañar a un roedor?: \n\nPor lo general los roedores son bastante limpios ya que pasan gran parte del tiempo lamiéndose. Pero en ocasiones, hasta los roedores más limpios pueden necesitar una ayuda extra con su higiene personal. Los baños no tienen que ser muy frecuentes, bastará con un par de veces o tres al año, ya que si lo bañas con mucha frecuencia puedes dañar el pH de la piel, por lo que además es muy importante elegir un champú adecuado y formulado especialmente para ellos.\n\n¿Cómo cepillar a un roedor?:\n\nEl cepillado es muy importante porque, además de conseguir que su pelaje tenga un mejor aspecto, ayuda a que mejore su circulación. El cepillado se hace imprescindible sobre todo en la época de muda. En función del tipo de pelaje que tenga necesitarás un peine con púas o un cepillo, pero con cualquiera de los dos debemos tener mucho cuidado de no tirar de los nudos que pueda tener tu pequeñín. Se debe cepillar a lo largo de todo el cuerpo, teniendo especial cuidado con la barriga ya que es una parte muy sensible y podrías hacerle daño.";
             }
+        }
+        private void dietaPerros()
+        {
+            object[] items = {
+                new Frame()
+                {
+                    Content =
+                        new StackLayout()
+                        {
+                            HorizontalOptions=LayoutOptions.Center,
+                            Children =
+                            {
+                                new Label() { Text=AppResources.AllAboutDiet, FontSize=26},
+                                new BoxView(){ BackgroundColor= Color.Black,
+                                            HeightRequest= 1 },
+                                new Label() { Text=AppResources.DescAllAboutDiet }
+                            }   
+                        }
+                },
+                new Frame()
+                {
+                    Content =
+                        new StackLayout()
+                        {
+                            HorizontalOptions=LayoutOptions.Center,
+                            Children =
+                            {
+                                new Label() { Text=AppResources.TitleDogsDiet, FontSize=22},
+                                new BoxView(){ BackgroundColor= Color.Black,
+                                            HeightRequest= 1 },
+                                new Label() { Text=AppResources.DogsDiet }
+                            }
+                        }
+                }
+
+            };
+            foreach (var it in items)
+            {
+                slContenido.Children.Add((View) it);
+            }
+
+        }
+        private void dietaGatos()
+        {
+            object[] items = {
+                new Frame()
+                {
+                    Content =
+                        new StackLayout()
+                        {
+                            HorizontalOptions=LayoutOptions.Center,
+                            Children =
+                            {
+                                new Label() { Text=AppResources.AllAboutDiet, FontSize=26},
+                                new BoxView(){ BackgroundColor= Color.Black,
+                                            HeightRequest= 1 },
+                                new Label() { Text=AppResources.DescAllAboutDiet }
+                            }
+
+                        }
+                },
+                new Frame()
+                {
+                    Content =
+                        new StackLayout()
+                        {
+                            HorizontalOptions=LayoutOptions.Center,
+                            Children =
+                            {
+                                new Label() { Text=AppResources.TitleCatsDiet, FontSize=22},
+                                new BoxView(){ BackgroundColor= Color.Black,
+                                            HeightRequest= 1 },
+                                new Label() { Text=AppResources.CatsDiet }
+                            }
+
+                        }
+                }
+
+            };
+            foreach (var it in items)
+            {
+                slContenido.Children.Add((View)it);
+            }
+        }
+        private void dietaRoedores()
+        {
+            object[] items = {
+                new Frame()
+                {
+                    Content =
+                        new StackLayout()
+                        {
+                            HorizontalOptions=LayoutOptions.Center,
+                            Children =
+                            {
+                                new Label() { Text=AppResources.AllAboutDiet, FontSize=26},
+                                new BoxView(){ BackgroundColor= Color.Black,
+                                            HeightRequest= 1 },
+                                new Label() { Text=AppResources.DescAllAboutDiet }
+                            }
+
+                        }
+                },
+                new Frame()
+                {
+                    Content =
+                        new StackLayout()
+                        {
+                            HorizontalOptions=LayoutOptions.Center,
+                            Children =
+                            {
+                                new Label() { Text=AppResources.TitleRodentDiet, FontSize=22},
+                                new BoxView(){ BackgroundColor= Color.Black,
+                                            HeightRequest= 1 },
+                                new Label() { Text=AppResources.RodentDiet }
+                            }
+
+                        }
+                }
+
+            };
+            foreach (var it in items)
+            {
+                slContenido.Children.Add((View)it);
+            }
+        }
+        private void ejercicioPerros()
+        {
+
+        }
+        private void ejercicioGatos()
+        {
+
+        }
+        private void ejercicioRoedores()
+        {
+
+        }
+        private void higienePerros()
+        {
+
+        }
+        private void higieneGatos()
+        {
+
+        }
+        private void higieneRoedores()
+        {
+
+        }
+
+        private void btnPerro_Clicked(object sender, EventArgs e)
+        {
+            reiniciarIconos();
+            btnPerro.Source = "DogIcon.png";
+            btnPerro.IsEnabled = false;
+            dietaPerros();
+        }
+
+        private void btnGato_Clicked(object sender, EventArgs e)
+        {
+            reiniciarIconos();
+            btnGato.Source = "CatIcon.png";
+            btnGato.IsEnabled = false;
+            dietaGatos();
+        }
+
+        private void btnRoedor_Clicked(object sender, EventArgs e)
+        {
+            reiniciarIconos();
+            btnRoedor.Source = "RodentIcon.png";
+            btnRoedor.IsEnabled = false;
+            dietaRoedores();
+        }
+
+        private void reiniciarIconos()
+        {
+            slContenido.Children.Clear();
+
+            btnPerro.Source = "DogIcon2.png";
+            btnPerro.IsEnabled = true;
+
+            btnRoedor.Source = "RodentIcon2.png";
+            btnRoedor.IsEnabled = true;
+
+            btnGato.Source = "CatIcon2.png";
+            btnGato.IsEnabled = true;
         }
     }
 }

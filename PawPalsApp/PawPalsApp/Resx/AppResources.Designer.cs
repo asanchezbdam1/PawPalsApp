@@ -79,11 +79,29 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a All About Diet.
+        /// </summary>
+        internal static string AllAboutDiet {
+            get {
+                return ResourceManager.GetString("AllAboutDiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Care.
         /// </summary>
         internal static string Care {
             get {
                 return ResourceManager.GetString("Care", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Sterilized cats are more likely to be obese, since by not mating, their metabolism and physical activity decrease. Forsterilized felines and those that suffer from obesity, there are special diets that will help them in the battle against the scale. Commercial brands such as Criadores, Affinity Advance and Royal Canin, among others, which you will find at the best price in Tiendanimal, have a special range of feed for sterilized and overweight cats that will be the ideal alternative for your pet to maintain [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string CatsDiet {
+            get {
+                return ResourceManager.GetString("CatsDiet", resourceCulture);
             }
         }
         
@@ -151,6 +169,42 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Animals need a proper diet and we pride ourselves on having the best to advise owners..
+        /// </summary>
+        internal static string DescAllAboutDiet {
+            get {
+                return ResourceManager.GetString("DescAllAboutDiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Diet.
+        /// </summary>
+        internal static string Diet {
+            get {
+                return ResourceManager.GetString("Diet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a The BARF is to feed the dogs in an appropriate way. Their goal is to maximize the health, longevity and reproductive capacity of dogs and, by doing so, minimize the need for veterinary intervention. How to properly feed a dog? Giving them the diet they evolved and are designed to eat. Artificial grain-based diets cause countless health problems. They are not what your dog was programmed to eat during his long evolutionary process. A biologically appropriate diet for a dog is one that consists of whole raw f [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string DogsDiet {
+            get {
+                return ResourceManager.GetString("DogsDiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Exercise.
+        /// </summary>
+        internal static string Exercise {
+            get {
+                return ResourceManager.GetString("Exercise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Guide.
         /// </summary>
         internal static string Guide {
@@ -165,6 +219,15 @@ namespace PawPalsApp.Resx {
         internal static string Help {
             get {
                 return ResourceManager.GetString("Help", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Hygiene.
+        /// </summary>
+        internal static string Hygiene {
+            get {
+                return ResourceManager.GetString("Hygiene", resourceCulture);
             }
         }
         
@@ -205,6 +268,30 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Nut-based diet. The vast majority of rodents love nuts.
+        ///Squirrels are the main consumers of nuts.Rats, mice and porcupines are also great addicts of this type of food.
+        ///
+        ///Diets for carnivores
+        ///Some rodents eat meat. Rats are especially prone to eating meat and fish. Rats are capable of digesting rotting meat and consuming remnants of human waste. They don&apos;t let any opportunity escape!
+        ///
+        ///Diets with fruits and berries \n In wild and natural environments, rodents eat fruits and berries, which are the foods t [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string RodentDiet {
+            get {
+                return ResourceManager.GetString("RodentDiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Select an option.
+        /// </summary>
+        internal static string SelApar {
+            get {
+                return ResourceManager.GetString("SelApar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Privacy, information, management.
         /// </summary>
         internal static string SettingAccount {
@@ -228,6 +315,33 @@ namespace PawPalsApp.Resx {
         internal static string Settings {
             get {
                 return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Diet for obese and sterilized cats.
+        /// </summary>
+        internal static string TitleCatsDiet {
+            get {
+                return ResourceManager.GetString("TitleCatsDiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a What is the BARF diet for dogs?.
+        /// </summary>
+        internal static string TitleDogsDiet {
+            get {
+                return ResourceManager.GetString("TitleDogsDiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a What are the diets of rodents?.
+        /// </summary>
+        internal static string TitleRodentDiet {
+            get {
+                return ResourceManager.GetString("TitleRodentDiet", resourceCulture);
             }
         }
         

@@ -17,7 +17,6 @@ namespace PawPalsApp.Views
             InitializeComponent();
             frPrivaclic();
             frManualClic();
-            frEmailClic();
         }
 
         /** Método que lleva al usuario a el documento de 
