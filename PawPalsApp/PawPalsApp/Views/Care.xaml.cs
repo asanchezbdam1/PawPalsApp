@@ -15,7 +15,7 @@ namespace PawPalsApp.Views
         public Care()
         {
             InitializeComponent();
-            obtenerDatos();
+            //obtenerDatos();
         }
 
         private async void obtenerDatos()

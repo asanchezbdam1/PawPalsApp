@@ -15,18 +15,6 @@ namespace PawPalsApp
     public partial class App : Application
     {
         static SQLiteMascota db;
-        public static SQLiteMascota SQLiteDB
-        {
-            get
-            {
-                if (db == null)
-                {
-                    db = new
-                   SQLiteMascota(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Mascotas.db3"));
-                }
-                return db;
-            }
-        }
         public ConnectionHelper Helper;
         public User User;
         public App()
@@ -52,6 +40,18 @@ namespace PawPalsApp
 
         protected override void OnResume()
         {
+        }
+        public static SQLiteMascota SQLiteDB
+        {
+            get
+            {
+                if (db == null)
+                {
+                    db = new
+                   SQLiteMascota(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Mascotas.db3"));
+                }
+                return db;
+            }
         }
     }
 }

@@ -722,9 +722,13 @@ namespace PawPalsApp.Resx {
         /// <summary>
         ///   Busca una cadena traducida similar a User Manual.
         /// </summary>
-        internal static string UserManual {
-            get {
+        internal static string UserManual
+        {
+            get
+            {
                 return ResourceManager.GetString("UserManual", resourceCulture);
+            }
+        }
         ///   Busca una cadena traducida similar a Username.
         /// </summary>
         internal static string Username {
