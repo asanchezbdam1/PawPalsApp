@@ -28,7 +28,9 @@ namespace PawPalsApp.Views
 
         private void Actualizar()
         {
-            var pl = ConnectionHelper.Send(new PostList()) as PostList;
+            var pl = ConnectionHelper.Send(new PostList() {
+                RequesterID = ((App)App.Current).User.Id
+            }) as PostList;
             if (pl.Posts.Count == 0) DisplayAlert(AppResources.ErrorTitle, AppResources.RefreshError, AppResources.Back);
             else
             {
@@ -38,6 +40,7 @@ namespace PawPalsApp.Views
                     Posts.Add(it);
                 }
             }
+            rvPosts.IsRefreshing = false;
         }
 
         private void RefreshView_Refreshing(object sender, EventArgs e)
@@ -45,7 +48,6 @@ namespace PawPalsApp.Views
             Task.Run(async () =>
             {
                 Actualizar();
-                ((RefreshView)sender).IsRefreshing = false;
             });
         }
 

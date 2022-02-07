@@ -35,6 +35,7 @@ namespace PawPalsApp.Views
                     Login = txtUser.Text,
                     Pwd = txtPwd.Text
                 };
+                //ConnectionHelper.StartConnection();
                 object res = ConnectionHelper.Send(user);
                 if (res is User && ((User)res).Id != 0)
                 {
@@ -43,6 +44,7 @@ namespace PawPalsApp.Views
                 }
                 else
                 {
+                    //ConnectionHelper.Close();
                     DisplayAlert(AppResources.ErrorTitle, AppResources.LoginError, AppResources.Back);
                 }
             }

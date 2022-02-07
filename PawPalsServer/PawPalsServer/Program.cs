@@ -4,6 +4,7 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace PawPalsServer
 {
@@ -16,7 +17,7 @@ namespace PawPalsServer
             IPAddress ip = IPAddress.Parse("192.168.1.19");
             //IPAddress ip = IPAddress.Parse("192.168.43.33");
             socket = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-            IPEndPoint ipend = new IPEndPoint(ip, 12012);
+            IPEndPoint ipend = new IPEndPoint(ip, 12212);
             try
             {
                 socket.Bind(ipend);
@@ -46,18 +47,26 @@ namespace PawPalsServer
         private static void ReceiveCallback(IAsyncResult ar)
         {
             BufferObject state = (BufferObject)ar.AsyncState;
+
             try
             {
                 int bytes = state.clientSocket.EndReceive(ar);
-                object obj = ObjectSerializer.DeserializeObject(state.buffer);
-                obj = ServerActions.ServerActions.GetResponse(obj);
-                state.buffer = ObjectSerializer.NormalizeArray(ObjectSerializer.SerializeObject(obj), BufferObject.BUFFER_SIZE);
-                state.clientSocket.Send(state.buffer);
-            } catch { }
+                if (bytes > 0)
+                {
+                    object obj = ObjectSerializer.DeserializeObject(state.buffer);
+                    obj = ServerActions.ServerActions.GetResponse(obj);
+                    state.buffer = ObjectSerializer.SerializeObject(obj);
+                    state.clientSocket.Send(state.buffer);
+                    state.clientSocket.Shutdown(SocketShutdown.Both);
+                    state.clientSocket.Close();
+                }
+            } catch (Exception ex){
+                Console.WriteLine(ex.Message);
+            }
             try
             {
-                state.clientSocket.BeginReceive(state.buffer, 0, BufferObject.BUFFER_SIZE, SocketFlags.None,
-                    new AsyncCallback(ReceiveCallback), state);
+                /*state.clientSocket.BeginReceive(state.buffer, 0, BufferObject.BUFFER_SIZE, SocketFlags.None,
+                    new AsyncCallback(ReceiveCallback), state);*/
             } catch { }
         }
 
