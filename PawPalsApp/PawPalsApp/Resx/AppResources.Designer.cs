@@ -88,6 +88,24 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a All About Exercise.
+        /// </summary>
+        internal static string AllAboutExercise {
+            get {
+                return ResourceManager.GetString("AllAboutExercise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a All About Hygiene.
+        /// </summary>
+        internal static string AllAboutHygiene {
+            get {
+                return ResourceManager.GetString("AllAboutHygiene", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Care.
         /// </summary>
         internal static string Care {
@@ -102,6 +120,29 @@ namespace PawPalsApp.Resx {
         internal static string CatsDiet {
             get {
                 return ResourceManager.GetString("CatsDiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Exercise through intelligence games: There is a wide variety of very useful intelligence games that you can use to motivate your cat. Some dispense treats, others use toys or sounds, it will be up to you to find the one that can be more attractive to him.
+        ///
+        ///Active exercise:
+        ///You must act like a coach who tries to achieve the best performance of his student, always without overdoing it. Get hold of toys that motivate him and that he especially likes. We recommend those that make noise, sounds or lights beca [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string CatsExercise {
+            get {
+                return ResourceManager.GetString("CatsExercise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a The litter tray:
+        ///
+        ///It is important that we check and clean, at least once a day, the tray in which they relieve themselves, always depending on the type of sand that we use, of course. There are litters that need to be changed daily and others that allow debris to be removed without the need to change the tray, such as clumping litter. If we don&apos;t, the strong smell of the tray can make the cat not want to relieve itself there and do it elsewhere in the house. In cases where you have long-haired cats and to [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string CatsHygiene {
+            get {
+                return ResourceManager.GetString("CatsHygiene", resourceCulture);
             }
         }
         
@@ -178,6 +219,24 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Here we will give you a few tips on exercise for the different animals we work with in this app..
+        /// </summary>
+        internal static string DescAllAboutExercise {
+            get {
+                return ResourceManager.GetString("DescAllAboutExercise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Hygiene is one of the most important sections for the care of your pet. We will give you some advice to solve your doubts..
+        /// </summary>
+        internal static string DescAllAboutHygiene {
+            get {
+                return ResourceManager.GetString("DescAllAboutHygiene", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Diet.
         /// </summary>
         internal static string Diet {
@@ -192,6 +251,32 @@ namespace PawPalsApp.Resx {
         internal static string DogsDiet {
             get {
                 return ResourceManager.GetString("DogsDiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Toys: look for toys that your dog likes (many times it will surprise you, the simplest thing may be what he likes the most) and throw it at him until he falls asleep. Be very careful with stones, sticks and toys, many puppies end up in the hospital after eating their favorite toy!
+        ///
+        ///Find a friend: any other pups nearby? It may be a good idea to meet up to play together and burn off all that energy you have.
+        ///
+        ///Remember to run, play, chase... but don&apos;t overdo it! Your pup is growing and too much exercise ca [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string DogsExercise {
+            get {
+                return ResourceManager.GetString("DogsExercise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a 1. The dog bath:
+        ///Bath time is a lottery. It may be that your pet loves water and enjoys the moment, or on the contrary that he hates it and becomes an ordeal. In any case, bathing your dog is essential to provide correct hygiene.
+        ///
+        ///2. Healthy and clean ears:
+        ///Do not forget that ear hygiene is also essential. It is advisable to periodically check your ears. At least once a week, especially for dogs with large ears, since air does not enter the ear canals, dirt remains embedded. If, on the other hand, your  [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string DogsHygiene {
+            get {
+                return ResourceManager.GetString("DogsHygiene", resourceCulture);
             }
         }
         
@@ -283,6 +368,30 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a On this page you will find everything related to this accessory; How to use it, maintenance and safety tips, reviews and recommendations. With this complement, your hamster will have the freedom it deserves and at the same time exercise..
+        /// </summary>
+        internal static string RodentsExercise {
+            get {
+                return ResourceManager.GetString("RodentsExercise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a How to bathe a rodent?:
+        ///
+        ///Rodents are generally quite clean as they spend much of their time licking themselves. But sometimes even the cleanest of rodents may need a little extra help with their personal hygiene. The baths do not have to be very frequent, a couple or three times a year will suffice, since if you bathe him too often you can damage the pH of the skin, so it is also very important to choose a suitable and specially formulated shampoo. for them.
+        ///
+        ///How to brush a rodent?:
+        ///
+        ///Brushing is very  [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string RodentsHygiene {
+            get {
+                return ResourceManager.GetString("RodentsHygiene", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Select an option.
         /// </summary>
         internal static string SelApar {
@@ -328,6 +437,24 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Cat exercises.
+        /// </summary>
+        internal static string TitleCatsExercise {
+            get {
+                return ResourceManager.GetString("TitleCatsExercise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Hygiene for cats.
+        /// </summary>
+        internal static string TitleCatsHygiene {
+            get {
+                return ResourceManager.GetString("TitleCatsHygiene", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a What is the BARF diet for dogs?.
         /// </summary>
         internal static string TitleDogsDiet {
@@ -337,11 +464,47 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Dog exercises.
+        /// </summary>
+        internal static string TitleDogsExercise {
+            get {
+                return ResourceManager.GetString("TitleDogsExercise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Hygiene for dogs.
+        /// </summary>
+        internal static string TitleDogsHygiene {
+            get {
+                return ResourceManager.GetString("TitleDogsHygiene", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a What are the diets of rodents?.
         /// </summary>
         internal static string TitleRodentDiet {
             get {
                 return ResourceManager.GetString("TitleRodentDiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Rodent exercises.
+        /// </summary>
+        internal static string TitleRodentsExercise {
+            get {
+                return ResourceManager.GetString("TitleRodentsExercise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Hygiene for rodents.
+        /// </summary>
+        internal static string TitleRodentsHygiene {
+            get {
+                return ResourceManager.GetString("TitleRodentsHygiene", resourceCulture);
             }
         }
         

@@ -126,6 +126,12 @@
   <data name="AllAboutDiet" xml:space="preserve">
     <value>Todo Sobre La Dieta</value>
   </data>
+  <data name="AllAboutExercise" xml:space="preserve">
+    <value>Todo Sobre El Ejercicio</value>
+  </data>
+  <data name="AllAboutHygiene" xml:space="preserve">
+    <value>Todo Sobre La Higiene</value>
+  </data>
   <data name="Care" xml:space="preserve">
     <value>Cuidados</value>
   </data>
@@ -135,6 +141,21 @@
 Las dietas para gatos obesos y esterilizados son bajas en calorías, pero contienen todos los nutrientes necesarios para que este tipo de felinos mantenga toda la vitalidad y energía cada día. ¡No olvides estimularlo para que haga ejercicio a diario y así queme más energía!
 
 ¿Tu gato ha tenido o tiene problemas de sobrepeso ? ¿Qué tipo de alimentación le ofreces? ¿Juega a menudo o suele pasarse el día tumbado o durmiendo ?</value>
+  </data>
+  <data name="CatsExercise" xml:space="preserve">
+    <value>Ejercicio mediante juegos de inteligencia: Existe una gran variedad de juegos de inteligencia muy útiles que podrás utilizar para motivar a tu gato. Algunos expenden golosinas, otros utilizan juguetes o sonidos, dependerá de ti encontrar el que pueda ser más atractivo para él.
+
+Ejercicio activo:
+Debes actuar como un entrenador que intenta lograr el mejor rendimiento de su alumno, siempre sin excedernos. Hazte con juguetes que le motiven y le gusten especialmente, te recomendamos aquellos que hacen ruido, sonidos o luces pues logran captar mejor su atención. Como hemos comentado anteriormente deberás dedicar al menos 20 minutos a que persiga dichos juguetes y se ejercite de forma activa.</value>
+  </data>
+  <data name="CatsHygiene" xml:space="preserve">
+    <value>La bandeja de arena:
+
+Es importante que revisemos y limpiemos, al menos una vez al día, la bandeja en la que hacen sus necesidades, siempre dependiendo del tipo de arena que utilicemos, claro. Hay arenas que necesitan ser cambiadas a diario y otras que permiten retirar los desechos sin necesidad de cambiar la bandeja, como la arena aglomerante. Si no lo hacemos, el fuerte olor de la bandeja puede hacer que el gato no quiera hacer allí sus necesidades y las haga en cualquier otro sitio de la casa. En los casos en los que tengáis gatos de pelo largo y para evitar encontrar heces pegadas, os recomendamos que les cortéis de vez en cuando los pelos que rodean el ano.
+
+El cepillado:
+
+Independientemente de si el pelo de vuestro gato es largo o corto se aconseja que lo cepilléis, por lo menos, una vez a la semana, aunque lo ideal sería hacerlo a diario.Gracias al cepillado evitaréis problemas dermatológicos y además daréis unos momentos de placer a vuestro gato, ya que los felinos adoran ser cepillados. Si vuestro gato tiene acceso al exterior debéis prestar mucha atención a su cepillado, especialmente en épocas como la primavera, durante la muda y la temporada de lluvias. En el caso de los gatos de pelo largo, éste puede compactarse en una masa ideal para acoger parásitos, lo que podría derivar en serios problemas dermatológicos. De ahí radica la importancia de cepillarlo con regularidad.</value>
   </data>
   <data name="City" xml:space="preserve">
     <value>Ciudad</value>
@@ -160,11 +181,40 @@ Las dietas para gatos obesos y esterilizados son bajas en calorías, pero contie
   <data name="DescAllAboutDiet" xml:space="preserve">
     <value>Los animales necesitan una dieta adecuada y nos enorgullecemos de tener las mejores para aconsejar a los dueños.</value>
   </data>
+  <data name="DescAllAboutExercise" xml:space="preserve">
+    <value>Aqui os daremos unos cuantos consejos sobre el ejercicio para los diferentes animales con los que trabajamos en esta app.</value>
+  </data>
+  <data name="DescAllAboutHygiene" xml:space="preserve">
+    <value>La higiene es uno de los apartados más importantes para el cuidado de tu mascota. Le daremos unos consejos para resolver sus dudas.</value>
+  </data>
   <data name="Diet" xml:space="preserve">
     <value>Dieta</value>
   </data>
   <data name="DogsDiet" xml:space="preserve">
     <value>El BARF es alimentar a los perros en forma apropiada. Su objetivo es maximizar la salud, longevidad, y capacidad reproductiva de los perros y, al hacerlo, minimizar la necesidad por intervención de veterinarios. ¿Cómo alimentas apropiadamente a un perro? Dándole la dieta para la que ellos evolucionaron y están diseñados para comer. Las dietas artificiales basadas en cereales causan problemas innumerables de salud. No son lo que tu perro fue programado para comer durante su largo proceso evolutivo. Una dieta biológicamente apropiada para un perro es una que consiste de comidas crudas enteras similares a las que los ancestros salvajes de los perros consumían. La comida alimentada debe contener el mismo balance y tipo de ingredientes que se consumían por aquellos ancestros salvajes. Esta comida debe incluir cosas tales como carne de los músculos, huesos, grasa, vísceras y materiales vegetales, y cualquier otro alimento que sea similar a lo que sus ancestros salvajes consumían.</value>
+  </data>
+  <data name="DogsExercise" xml:space="preserve">
+    <value>Juguetes: busca juguetes que le gusten a tu perro (muchas veces te sorprenderá, lo más simple puede ser lo que más le guste) y lánzaselo hasta que caiga rendido. Ten mucho cuidado con piedras, palos y juguetes, ¡muchos cachorros acaban en el hospital tras haberse comido su juguete favorito!
+
+Busca un amigo: ¿algún otro cachorro cerca? Puede ser buena idea quedar para que jueguen juntos y quemen toda esa energía que tienen.
+
+Recuerda correr, jugar, perseguir… ¡pero sin pasarte! Tu cachorro está en crecimiento y un exceso de ejercicio puede ser perjudicial para sus articulaciones. Espera hasta que haya crecido completamente para practicar ejercicios para perros adultos.</value>
+  </data>
+  <data name="DogsHygiene" xml:space="preserve">
+    <value>1. El baño del perro:
+La hora del baño es una lotería. Puede que a tu mascota le encante el agua y disfrute del momento, o por el contrario que la aborrezca y se convierta en un suplicio.En cualquier caso, bañar a tu perro es fundamental para proporcionarle una higiene correcta.
+
+2. Oídos sanos y limpios:
+No hay que olvidar que la higiene de los oídos también es primordial. Es recomendable revisar periódicamente sus oídos. Al menos una vez a la semana especialmente en aquellos perros con orejas grandes, ya que, al no entrar aire a los conductos auditivos, la suciedad se queda incrustada. Si por el contrario tu peludo tiene orejas cortas, con dos veces al mes será suficiente.
+
+3. Operación pelazo:
+Mantener el pelaje cuidado es otro de los hábitos en la limpieza e higiene para perros. No sólo lavarlo, sino cortarlo, en especial en los perros de pelo largo y fino o rizado.Los peluqueros caninos son una opción para que tu mascota sea la más guapa, admirada y aseada del parque. Sin olvidar el cepillado diario.
+
+4. Dientes limpios: ¡adiós al mal aliento!
+Tampoco podemos olvidarnos de la higiene dental, que no sólo previene el mal aliento, sino que evita también futuras dolencias bucales que pueden derivar en infecciones muy dolorosas. En el mercado existen cepillos de dientes para perros que harán tu tarea más sencilla.Un par de cepillados a la semana evitará posibles problemas dentales.
+
+5. Limpia sus ojitos:
+Y, por último, dentro de la limpieza para perros también encontramos sus ojos.Para eliminar las molestas legañas basta con usar gasas humedecidas en suero fisiológico y arrastrarlas suavemente. La limpieza de los ojos previene posibles infecciones como la conjuntivitis.</value>
   </data>
   <data name="Exercise" xml:space="preserve">
     <value>Ejercicio</value>
@@ -200,6 +250,20 @@ Las ardillas son los principales consumidores de frutos secos.Las ratas, los rat
 Dietas con frutas y bayas 
 En entornos salvajes y naturales los roedores comen frutas y bayas que son los alimentos que suelen encontrar en sus hábitats.</value>
   </data>
+  <data name="RodentExercise" xml:space="preserve">
+    <value>¿Te gustaría sacar a tu mascota de su casita y darle un paseo de forma segura y sin riesgos? Gracias a una Bola para Hamster tu pequeño peludo podrá explorar el mundo y corretear a sus anchas por tu casa o el jardín.
+
+En esta pagina encontrarás todo lo relativo a este accesorio; Cómo usarla, consejos de mantenimiento y seguridad, reviews y recomendaciones. Con este complemento, tu hamster tendrá la libertad que se merece y a la vez hará ejercicio.</value>
+  </data>
+  <data name="RodentsHygiene" xml:space="preserve">
+    <value>¿Cómo bañar a un roedor?:
+
+Por lo general los roedores son bastante limpios ya que pasan gran parte del tiempo lamiéndose. Pero en ocasiones, hasta los roedores más limpios pueden necesitar una ayuda extra con su higiene personal. Los baños no tienen que ser muy frecuentes, bastará con un par de veces o tres al año, ya que si lo bañas con mucha frecuencia puedes dañar el pH de la piel, por lo que además es muy importante elegir un champú adecuado y formulado especialmente para ellos.
+
+¿Cómo cepillar a un roedor?:
+
+El cepillado es muy importante porque, además de conseguir que su pelaje tenga un mejor aspecto, ayuda a que mejore su circulación. El cepillado se hace imprescindible sobre todo en la época de muda. En función del tipo de pelaje que tenga necesitarás un peine con púas o un cepillo, pero con cualquiera de los dos debemos tener mucho cuidado de no tirar de los nudos que pueda tener tu pequeñín. Se debe cepillar a lo largo de todo el cuerpo, teniendo especial cuidado con la barriga ya que es una parte muy sensible y podrías hacerle daño.</value>
+  </data>
   <data name="SelApar" xml:space="preserve">
     <value>Selecciona un apartado</value>
   </data>
@@ -215,11 +279,29 @@ En entornos salvajes y naturales los roedores comen frutas y bayas que son los a
   <data name="TitleCatsDiet" xml:space="preserve">
     <value>Dieta para gatos obesos y esterilizados</value>
   </data>
+  <data name="TitleCatsExercise" xml:space="preserve">
+    <value>Ejercicios para gatos</value>
+  </data>
+  <data name="TitleCatsHygiene" xml:space="preserve">
+    <value>Higiene para gatos</value>
+  </data>
   <data name="TitleDogsDiet" xml:space="preserve">
     <value>¿Qué es la dieta BARF para perros?</value>
   </data>
+  <data name="TitleDogsExercise" xml:space="preserve">
+    <value>Ejercicios para perros</value>
+  </data>
+  <data name="TitleDogsHygiene" xml:space="preserve">
+    <value>Higiene para perros</value>
+  </data>
   <data name="TitleRodentDiet" xml:space="preserve">
     <value>¿Cuáles son las dietas de los roedores?</value>
+  </data>
+  <data name="TitleRodentsExercise" xml:space="preserve">
+    <value>Ejercicios para roedores</value>
+  </data>
+  <data name="TitleRodentsHygiene" xml:space="preserve">
+    <value>Higiene para roedores</value>
   </data>
   <data name="UserManual" xml:space="preserve">
     <value>Manual de usuario</value>

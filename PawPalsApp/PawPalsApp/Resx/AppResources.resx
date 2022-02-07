@@ -126,6 +126,12 @@
   <data name="AllAboutDiet" xml:space="preserve">
     <value>All About Diet</value>
   </data>
+  <data name="AllAboutExercise" xml:space="preserve">
+    <value>All About Exercise</value>
+  </data>
+  <data name="AllAboutHygiene" xml:space="preserve">
+    <value>All About Hygiene</value>
+  </data>
   <data name="Care" xml:space="preserve">
     <value>Care</value>
   </data>
@@ -135,6 +141,21 @@
 Diets for obese and sterilized cats are low in calories, but contain all the necessary nutrients for this type of feline to maintain all its vitality and energy every day. Don't forget to encourage him to exercise daily and thus burn more energy!
 
 Has your cat had or is he overweight? What kind of food do you offer? Do you often play or spend the day lying down or sleeping?</value>
+  </data>
+  <data name="CatsExercise" xml:space="preserve">
+    <value>Exercise through intelligence games: There is a wide variety of very useful intelligence games that you can use to motivate your cat. Some dispense treats, others use toys or sounds, it will be up to you to find the one that can be more attractive to him.
+
+Active exercise:
+You must act like a coach who tries to achieve the best performance of his student, always without overdoing it. Get hold of toys that motivate him and that he especially likes. We recommend those that make noise, sounds or lights because they better capture his attention. As we have mentioned before, you should spend at least 20 minutes chasing these toys and exercising actively.</value>
+  </data>
+  <data name="CatsHygiene" xml:space="preserve">
+    <value>The litter tray:
+
+It is important that we check and clean, at least once a day, the tray in which they relieve themselves, always depending on the type of sand that we use, of course. There are litters that need to be changed daily and others that allow debris to be removed without the need to change the tray, such as clumping litter. If we don't, the strong smell of the tray can make the cat not want to relieve itself there and do it elsewhere in the house. In cases where you have long-haired cats and to avoid finding stuck feces, we recommend that you cut the hair around the anus from time to time.
+
+The brushing:
+
+Regardless of whether your cat's hair is long or short, it is recommended that you brush it at least once a week, although the ideal would be to do it daily. Thanks to brushing you will avoid dermatological problems and you will also give a few moments of pleasure to your cat, since cats love to be brushed. If your cat has access to the outside, you should pay close attention to its brushing, especially in times like spring, during the molt and the rainy season. In the case of long-haired cats, it can be compacted into an ideal mass to harbor parasites, which could lead to serious dermatological problems. Hence the importance of brushing it regularly.</value>
   </data>
   <data name="City" xml:space="preserve">
     <value>City</value>
@@ -160,11 +181,40 @@ Has your cat had or is he overweight? What kind of food do you offer? Do you oft
   <data name="DescAllAboutDiet" xml:space="preserve">
     <value>Animals need a proper diet and we pride ourselves on having the best to advise owners.</value>
   </data>
+  <data name="DescAllAboutExercise" xml:space="preserve">
+    <value>Here we will give you a few tips on exercise for the different animals we work with in this app.</value>
+  </data>
+  <data name="DescAllAboutHygiene" xml:space="preserve">
+    <value>Hygiene is one of the most important sections for the care of your pet. We will give you some advice to solve your doubts.</value>
+  </data>
   <data name="Diet" xml:space="preserve">
     <value>Diet</value>
   </data>
   <data name="DogsDiet" xml:space="preserve">
     <value>The BARF is to feed the dogs in an appropriate way. Their goal is to maximize the health, longevity and reproductive capacity of dogs and, by doing so, minimize the need for veterinary intervention. How to properly feed a dog? Giving them the diet they evolved and are designed to eat. Artificial grain-based diets cause countless health problems. They are not what your dog was programmed to eat during his long evolutionary process. A biologically appropriate diet for a dog is one that consists of whole raw foods similar to those eaten by the wild ancestors of dogs. The food fed must contain the same balance and type of ingredients that were consumed by those wild ancestors. This food should include such things as muscle meat, bones, fat, organ meats, and plant materials, and any other food that is similar to what their wild ancestors ate.</value>
+  </data>
+  <data name="DogsExercise" xml:space="preserve">
+    <value>Toys: look for toys that your dog likes (many times it will surprise you, the simplest thing may be what he likes the most) and throw it at him until he falls asleep. Be very careful with stones, sticks and toys, many puppies end up in the hospital after eating their favorite toy!
+
+Find a friend: any other pups nearby? It may be a good idea to meet up to play together and burn off all that energy you have.
+
+Remember to run, play, chase... but don't overdo it! Your pup is growing and too much exercise can be bad for his joints. Wait until he is fully grown to practice exercises for adult dogs.</value>
+  </data>
+  <data name="DogsHygiene" xml:space="preserve">
+    <value>1. The dog bath:
+Bath time is a lottery. It may be that your pet loves water and enjoys the moment, or on the contrary that he hates it and becomes an ordeal. In any case, bathing your dog is essential to provide correct hygiene.
+
+2. Healthy and clean ears:
+Do not forget that ear hygiene is also essential. It is advisable to periodically check your ears. At least once a week, especially for dogs with large ears, since air does not enter the ear canals, dirt remains embedded. If, on the other hand, your furry has short ears, twice a month will be enough.
+
+3. Hairy operation:
+Keeping the coat cared for is another of the cleaning and hygiene habits for dogs. Not only wash it, but cut it, especially in dogs with long, fine or curly hair. Dog groomers are an option for your pet to be the most beautiful, admired and neat in the park. Not forgetting daily brushing.
+
+4. Clean teeth: goodbye to bad breath!
+Nor can we forget dental hygiene, which not only prevents bad breath, but also prevents future oral ailments that can lead to very painful infections. There are dog toothbrushes on the market that will make your task easier. A couple of brushes a week will prevent possible dental problems.
+
+5. Clean his eyes:
+And, finally, within the cleaning for dogs we also find their eyes. To eliminate the annoying legañas, it is enough to use gauze moistened in physiological saline and gently drag them. Cleaning the eyes prevents possible infections such as conjunctivitis.</value>
   </data>
   <data name="Exercise" xml:space="preserve">
     <value>Exercise</value>
@@ -199,6 +249,18 @@ Some rodents eat meat. Rats are especially prone to eating meat and fish. Rats a
 
 Diets with fruits and berries \n In wild and natural environments, rodents eat fruits and berries, which are the foods they usually find in their habitats.</value>
   </data>
+  <data name="RodentsExercise" xml:space="preserve">
+    <value>On this page you will find everything related to this accessory; How to use it, maintenance and safety tips, reviews and recommendations. With this complement, your hamster will have the freedom it deserves and at the same time exercise.</value>
+  </data>
+  <data name="RodentsHygiene" xml:space="preserve">
+    <value>How to bathe a rodent?:
+
+Rodents are generally quite clean as they spend much of their time licking themselves. But sometimes even the cleanest of rodents may need a little extra help with their personal hygiene. The baths do not have to be very frequent, a couple or three times a year will suffice, since if you bathe him too often you can damage the pH of the skin, so it is also very important to choose a suitable and specially formulated shampoo. for them.
+
+How to brush a rodent?:
+
+Brushing is very important because, in addition to making his coat look better, it helps improve circulation. Brushing is essential, especially during the moulting season. Depending on the type of fur you have, you will need a comb with spikes or a brush, but with either of the two we must be very careful not to pull the knots that your little one may have. It should be brushed throughout the entire body, taking special care with the belly as it is a very sensitive part and you could hurt it.</value>
+  </data>
   <data name="SelApar" xml:space="preserve">
     <value>Select an option</value>
   </data>
@@ -214,11 +276,29 @@ Diets with fruits and berries \n In wild and natural environments, rodents eat f
   <data name="TitleCatsDiet" xml:space="preserve">
     <value>Diet for obese and sterilized cats</value>
   </data>
+  <data name="TitleCatsExercise" xml:space="preserve">
+    <value>Cat exercises</value>
+  </data>
+  <data name="TitleCatsHygiene" xml:space="preserve">
+    <value>Hygiene for cats</value>
+  </data>
   <data name="TitleDogsDiet" xml:space="preserve">
     <value>What is the BARF diet for dogs?</value>
   </data>
+  <data name="TitleDogsExercise" xml:space="preserve">
+    <value>Dog exercises</value>
+  </data>
+  <data name="TitleDogsHygiene" xml:space="preserve">
+    <value>Hygiene for dogs</value>
+  </data>
   <data name="TitleRodentDiet" xml:space="preserve">
     <value>What are the diets of rodents?</value>
+  </data>
+  <data name="TitleRodentsExercise" xml:space="preserve">
+    <value>Rodent exercises</value>
+  </data>
+  <data name="TitleRodentsHygiene" xml:space="preserve">
+    <value>Hygiene for rodents</value>
   </data>
   <data name="UserManual" xml:space="preserve">
     <value>User Manual</value>

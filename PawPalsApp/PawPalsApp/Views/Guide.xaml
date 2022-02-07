@@ -5,36 +5,22 @@
              x:Class="PawPalsApp.Views.Guide">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <StackLayout Orientation="Horizontal" HeightRequest="120" BackgroundColor="Orange">
+            <StackLayout Orientation="Horizontal" HeightRequest="120" BackgroundColor="#FE9920">
                 
-                <ImageButton x:Name="btnPerro" HorizontalOptions="CenterAndExpand" HeightRequest="80" 
-                             WidthRequest="80" Source="DogIcon.png" BackgroundColor="Orange" Clicked="btnPerro_Clicked" ></ImageButton>
+                <ImageButton x:Name="btnPerro" HorizontalOptions="CenterAndExpand" HeightRequest="80" IsEnabled="False"
+                             WidthRequest="80" Source="DogIcon.png" BackgroundColor="#FE9920" Clicked="btnPerro_Clicked" ></ImageButton>
                 
                 <ImageButton x:Name="btnGato" HorizontalOptions="CenterAndExpand" HeightRequest="80" 
-                             WidthRequest="80" Source="CatIcon2.png" BackgroundColor="Orange" Clicked="btnGato_Clicked"></ImageButton>
+                             WidthRequest="80" Source="CatIcon2.png" BackgroundColor="#FE9920" Clicked="btnGato_Clicked"></ImageButton>
                 
                 <ImageButton x:Name="btnRoedor" HorizontalOptions="CenterAndExpand" HeightRequest="80" 
-                             WidthRequest="80" Source="RodentIcon2.png" BackgroundColor="Orange" Clicked="btnRoedor_Clicked"></ImageButton>
+                             WidthRequest="80" Source="RodentIcon2.png" BackgroundColor="#FE9920" Clicked="btnRoedor_Clicked"></ImageButton>
                 
             </StackLayout>
             <Picker x:Name="Piqueador" Title="{x:Static resource:AppResources.SelApar}" HorizontalTextAlignment="Center" SelectedIndexChanged="Piqueador_SelectedIndexChanged" ></Picker>
             <StackLayout Orientation="Vertical" Padding="40,0,40,0">
                 <ScrollView>
                     <StackLayout x:Name="slContenido">
-                        <Label x:Name="Titulo" Padding="10" HorizontalOptions="CenterAndExpand" FontSize="30" TextColor="Black"></Label>
-                        <Label x:Name="Parrafo">
-                        </Label>
-                        <Label x:Name="Titulo2" Padding="10" HorizontalOptions="Start" FontSize="25" TextColor="Black"></Label>
-                        <Label x:Name="Parrafo2">
-                        </Label>
-                        <Label x:Name="Titulo3" Padding="10" HorizontalOptions="Start" FontSize="25" TextColor="Black"></Label>
-                        <Label x:Name="Parrafo3">
-                        </Label>
-                        <Label x:Name="Titulo4" Padding="10" HorizontalOptions="Start" FontSize="25" TextColor="Black">¿Es mejor que una dieta comercial?</Label>
-                        <Label x:Name="Parrafo4">
-                        </Label>
-                        <Label x:Name="Parrafo5">
-                        </Label>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
