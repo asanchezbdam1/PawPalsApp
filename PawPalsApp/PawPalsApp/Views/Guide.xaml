@@ -17,7 +17,7 @@
                              WidthRequest="80" Source="RodentIcon2.png" BackgroundColor="#FE9920" Clicked="btnRoedor_Clicked"></ImageButton>
                 
             </StackLayout>
-            <Picker x:Name="Piqueador" Title="{x:Static resource:AppResources.SelApar}" HorizontalTextAlignment="Center" SelectedIndexChanged="Piqueador_SelectedIndexChanged" ></Picker>
+            <Picker x:Name="Piqueador" Title="{x:Static resource:AppResources.SelApar}" HorizontalTextAlignment="Center" SelectedIndexChanged="Piqueador_SelectedIndexChanged"></Picker>
             <StackLayout Orientation="Vertical" Padding="40,0,40,0">
                 <ScrollView>
                     <StackLayout x:Name="slContenido">

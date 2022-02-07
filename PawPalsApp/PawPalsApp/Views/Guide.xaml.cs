@@ -21,7 +21,6 @@ namespace PawPalsApp.Views
             Piqueador.Items.Add(AppResources.Hygiene);
             
             Piqueador.SelectedIndex = 0;
-            dietaPerros();
         }
         private void Piqueador_SelectedIndexChanged(object sender, EventArgs e)
         {
