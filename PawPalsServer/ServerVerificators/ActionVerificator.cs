@@ -22,14 +22,18 @@ namespace ServerVerificators
                 {
                     return ActionOptions.PUBLISH_POST;
                 }
-                if (p.Liked) return ActionOptions.LIKE_POST;
-                if (p.Disliked) return ActionOptions.DISLIKE_POST;
-                return ActionOptions.REMOVE_OPINION_FROM_POST;
             }
             if (action is PostList)
             {
                 if (((PostList)action).FromRequester) return ActionOptions.RETRIEVE_POSTS_FROM_USER;
                 return ActionOptions.RETRIEVE_POSTS;
+            }
+            if (action is PostReacted)
+            {
+                PostReacted p = action as PostReacted;
+                if (p.Reaction == PostReaction.LIKE) return ActionOptions.LIKE_POST;
+                if (p.Reaction == PostReaction.DISLIKE) return ActionOptions.DISLIKE_POST;
+                if (p.Reaction == PostReaction.NONE) return ActionOptions.REMOVE_OPINION_FROM_POST;
             }
             return ActionOptions.ERROR;
         }

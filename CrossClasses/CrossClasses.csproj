@@ -50,6 +50,7 @@
     <Compile Include="OperationError.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="PostList.cs" />
+    <Compile Include="PostReacted.cs" />
     <Compile Include="PostReaction.cs" />
     <Compile Include="PostReport.cs" />
     <Compile Include="User.cs" />
