@@ -19,7 +19,7 @@ namespace PawPalsApp.Resx {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class AppResources {
@@ -75,6 +75,33 @@ namespace PawPalsApp.Resx {
         internal static string AccSettings {
             get {
                 return ResourceManager.GetString("AccSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Add Diet.
+        /// </summary>
+        internal static string AddDiet {
+            get {
+                return ResourceManager.GetString("AddDiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Add Exercise.
+        /// </summary>
+        internal static string AddExercise {
+            get {
+                return ResourceManager.GetString("AddExercise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Add Hygiene.
+        /// </summary>
+        internal static string AddHygiene {
+            get {
+                return ResourceManager.GetString("AddHygiene", resourceCulture);
             }
         }
         

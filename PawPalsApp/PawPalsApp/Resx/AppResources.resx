@@ -123,6 +123,15 @@
   <data name="AccSettings" xml:space="preserve">
     <value>Account Settings</value>
   </data>
+  <data name="AddDiet" xml:space="preserve">
+    <value>Add Diet</value>
+  </data>
+  <data name="AddExercise" xml:space="preserve">
+    <value>Add Exercise</value>
+  </data>
+  <data name="AddHygiene" xml:space="preserve">
+    <value>Add Hygiene</value>
+  </data>
   <data name="AllAboutDiet" xml:space="preserve">
     <value>All About Diet</value>
   </data>

@@ -9,22 +9,73 @@
                 <Label Text="{x:Static resource:AppResources.Care}" FontSize="60"/>
                 <Image Source="paw.png" HeightRequest="60" WidthRequest="60" Rotation="20"/>
             </StackLayout>
-            <StackLayout BackgroundColor="Orange" HeightRequest="50" WidthRequest="100">
-
-            </StackLayout>
-            <ImageButton BackgroundColor="GhostWhite" HorizontalOptions="End" Clicked="ImageButton_Clicked" Source="mas.png" HeightRequest="40" WidthRequest="40"></ImageButton>
-            <Picker x:Name="pMasc" HorizontalTextAlignment="Center" VerticalOptions="Center"></Picker>
-            <StackLayout HeightRequest="200"  HorizontalOptions="Center" VerticalOptions="Center" Orientation="Horizontal" Padding="20">
-                <Image HorizontalOptions="Center" Source="perro_prueba.jpg" HeightRequest="200" WidthRequest="200"/>
-            </StackLayout>
-            <Frame CornerRadius="30">
-                <StackLayout VerticalOptions="Center" Orientation="Vertical">
-                    <StackLayout Orientation="Horizontal" Padding="30">
-                        <Label Text="Nombre: " FontSize="25"/>
-                        <Entry IsReadOnly="True" Text="{Binding Nombre}" FontSize="25"/>
-                    </StackLayout>
+            <StackLayout BackgroundColor="Orange" HeightRequest="20" WidthRequest="100"/>
+            <Frame Padding="20" CornerRadius="10" Margin="10">
+                <StackLayout>
+                    <ImageButton BackgroundColor="White" HorizontalOptions="End" Clicked="ImageButton_Clicked" Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                    <Picker x:Name="pMasc" HorizontalTextAlignment="Center" VerticalOptions="Center"></Picker>
                 </StackLayout>
             </Frame>
+            <ScrollView>
+                <StackLayout>
+                    <Frame CornerRadius="10" Margin="10" WidthRequest="200" HorizontalOptions="Center">
+                        <Image HorizontalOptions="Center" Source="hamster.jpg" HeightRequest="200" WidthRequest="200"/>
+                    </Frame>
+
+                    <Frame CornerRadius="30" Margin="10">
+                        <StackLayout VerticalOptions="Center" Orientation="Vertical">
+                            <StackLayout Orientation="Vertical" Padding="30">
+                                <Label Text="{x:Static resource:AppResources.Exercise}" FontSize="25" HorizontalOptions="Center"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <ImageButton BackgroundColor="White" HorizontalOptions="Start" Clicked="ImageButton_Clicked" Source="borrar.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                                    <ImageButton BackgroundColor="White" HorizontalOptions="EndAndExpand" Clicked="ImageButton_Clicked" Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                                </StackLayout>
+
+                                <Entry Placeholder="{x:Static resource:AppResources.AddExercise}"></Entry>
+                            </StackLayout>
+                            <ListView>
+
+                            </ListView>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame CornerRadius="30" Margin="10">
+                        <StackLayout VerticalOptions="Center" Orientation="Vertical">
+                            <StackLayout Orientation="Vertical" Padding="30">
+                                <Label Text="{x:Static resource:AppResources.Diet}" FontSize="25" HorizontalOptions="Center"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <ImageButton BackgroundColor="White" HorizontalOptions="Start" Clicked="ImageButton_Clicked" Source="borrar.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                                    <ImageButton BackgroundColor="White" HorizontalOptions="EndAndExpand" Clicked="ImageButton_Clicked" Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                                </StackLayout>
+
+                                <Entry Placeholder="{x:Static resource:AppResources.AddDiet}"></Entry>
+                            </StackLayout>
+                            <ListView>
+
+                            </ListView>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame CornerRadius="30" Margin="10">
+                        <StackLayout VerticalOptions="Center" Orientation="Vertical">
+                            <StackLayout Orientation="Vertical" Padding="30">
+                                <Label Text="{x:Static resource:AppResources.Hygiene}" FontSize="25" HorizontalOptions="Center"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <ImageButton BackgroundColor="White" HorizontalOptions="Start" Clicked="ImageButton_Clicked" Source="borrar.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                                    <ImageButton BackgroundColor="White" HorizontalOptions="EndAndExpand" Clicked="ImageButton_Clicked" Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                                </StackLayout>
+
+                                <Entry Placeholder="{x:Static resource:AppResources.AddHygiene}"></Entry>
+                            </StackLayout>
+                            <ListView>
+
+                            </ListView>
+                        </StackLayout>
+                    </Frame>
+
+
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

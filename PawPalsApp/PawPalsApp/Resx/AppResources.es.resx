@@ -123,6 +123,15 @@
   <data name="AccSettings" xml:space="preserve">
     <value>Ajustes de cuenta</value>
   </data>
+  <data name="AddDiet" xml:space="preserve">
+    <value>Añadir Dieta</value>
+  </data>
+  <data name="AddExercise" xml:space="preserve">
+    <value>Añadir Ejercicio</value>
+  </data>
+  <data name="AddHygiene" xml:space="preserve">
+    <value>Añadir Higine</value>
+  </data>
   <data name="AllAboutDiet" xml:space="preserve">
     <value>Todo Sobre La Dieta</value>
   </data>
