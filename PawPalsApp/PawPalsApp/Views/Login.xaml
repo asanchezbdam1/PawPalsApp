@@ -1,12 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PawPalsApp.Views.Login">
+             xmlns:resource="clr-namespace:PawPalsApp.Resx"
+             x:Class="PawPalsApp.Views.Login"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+        <StackLayout Padding="40">
+            <StackLayout VerticalOptions="FillAndExpand" Padding="10">
+                <Label Text="Paw Pals"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" FontSize="50" />
+                <Label Text="{x:Static resource:AppResources.Login}"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="30"></Label>
+                <Label Text="{x:Static resource:AppResources.Username}"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="StartAndExpand"
+                   FontSize="Subtitle"></Label>
+                <Entry x:Name="txtUser" VerticalOptions="Center"
+                   HorizontalOptions="FillAndExpand"></Entry>
+                <Label Text="{x:Static resource:AppResources.Password}"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="StartAndExpand"
+                   FontSize="Subtitle"></Label>
+                <Entry x:Name="txtPwd" VerticalOptions="Center"
+                   HorizontalOptions="FillAndExpand" IsPassword="True"></Entry>
+                <StackLayout Orientation="Horizontal"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand">
+                    <Button x:Name="btnRegister" Text="{x:Static resource:AppResources.Register}"
+                            Clicked="btnRegister_Clicked" ></Button>
+                    <Button x:Name="btnLogin" Text="{x:Static resource:AppResources.Login}"
+                            Clicked="btnLogin_Clicked" ></Button>
+                </StackLayout>
+
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

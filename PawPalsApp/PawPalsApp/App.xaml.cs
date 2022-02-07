@@ -1,4 +1,5 @@
-﻿using PawPalsApp.Resx;
+﻿using PawPalsApp.Classes;
+using PawPalsApp.Resx;
 using PawPalsApp.Views;
 using System;
 using System.Globalization;
@@ -7,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using PawPalsApp.Data;
 using System.IO;
+using CrossClasses;
 
 namespace PawPalsApp
 {
@@ -25,13 +27,19 @@ namespace PawPalsApp
                 return db;
             }
         }
+        public ConnectionHelper Helper;
+        public User User;
         public App()
         {
             InitializeComponent();
-
+            User = new User() { 
+                Id = 1,
+                Login = "debug"
+            };
             Thread.CurrentThread.CurrentUICulture = CultureInfo.InstalledUICulture;
             AppResources.Culture = CultureInfo.InstalledUICulture;
-            MainPage = new NavigationPage(new PaginaMenu());
+            MainPage = new NavigationPage(new Welcome());
+            Helper = new ConnectionHelper();
         }
 
         protected override void OnStart()

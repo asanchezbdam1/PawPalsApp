@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:api="clr-namespace:PawPalsApp.Classes"
              x:Class="PawPalsApp.App">
     <Application.Resources>
         <ResourceDictionary>
+            <api:ByteArrayToImageConverter x:Key="ImageConverter"/>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="Coral"></Setter>
             </Style>

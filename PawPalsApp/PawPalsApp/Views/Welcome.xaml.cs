@@ -16,5 +16,20 @@ namespace PawPalsApp.Views
         {
             InitializeComponent();
         }
+
+        private void btnRegister_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Register());
+        }
+
+        private void btnEnter_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new PaginaMenu());
+        }
+
+        private void btnLogin_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Login());
+        }
     }
 }

@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AcceptTerms" xml:space="preserve">
+    <value>Accepto los términos y condiciones</value>
+  </data>
   <data name="Account" xml:space="preserve">
     <value>Cuenta</value>
   </data>
@@ -140,6 +143,9 @@
   </data>
   <data name="AllAboutHygiene" xml:space="preserve">
     <value>Todo Sobre La Higiene</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Atrás</value>
   </data>
   <data name="Care" xml:space="preserve">
     <value>Cuidados</value>
@@ -228,6 +234,18 @@ Y, por último, dentro de la limpieza para perros también encontramos sus ojos.
   <data name="Exercise" xml:space="preserve">
     <value>Ejercicio</value>
   </data>
+  <data name="Email" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="Enter" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="EnteringWithoutPass" xml:space="preserve">
+    <value>* Entrar sin cuenta no te permitirá emplear las funciones en línea.</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Algo ha ido mal</value>
+  </data>
   <data name="Guide" xml:space="preserve">
     <value>Guía</value>
   </data>
@@ -282,6 +300,46 @@ El cepillado es muy importante porque, además de conseguir que su pelaje tenga 
   <data name="SettingHelp" xml:space="preserve">
     <value>Centro de ayuda, política de privacidad</value>
   </data>
+  <data name="HaveAnAccount" xml:space="preserve">
+    <value>¿Ya registrado? Inicia sesión aquí:</value>
+  </data>
+  <data name="ImageSizeError" xml:space="preserve">
+    <value>Error al seleccionar la imagen. La imagen es demasiado grande.</value>
+  </data>
+  <data name="IncorrectLoginData" xml:space="preserve">
+    <value>El formato de al menos uno de los campos es incorrecto.</value>
+  </data>
+  <data name="IncorrectRegisterData" xml:space="preserve">
+    <value>Uno o más campos es incorrecto, por favor compruebe:
+Las contraseñas coinciden y son de entre 8 y 20 caracteres sin espacios y contienen un número.
+El nombre de usuario tiene entre 3 y 20 caracteres sin espacios.
+El correo tiene el formato correcto.
+Has aceptado los términos y condiciones.</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Iniciar sesión</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Error iniciando sesión. Contraseña incorrecta o usuario no registrado</value>
+  </data>
+  <data name="NewToPawPals" xml:space="preserve">
+    <value>¿Nuevo en PawPals?</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="RefreshError" xml:space="preserve">
+    <value>Error al recuperar publicaciones.</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Registrarse</value>
+  </data>
+  <data name="RegisterError" xml:space="preserve">
+    <value>Error durante el registro. ¿Estás registrado? ¡Inicia sesión!</value>
+  </data>
+  <data name="RepeatPassword" xml:space="preserve">
+    <value>Confirmar contraseña</value>
+  </data>
   <data name="Settings" xml:space="preserve">
     <value>Ajustes</value>
   </data>
@@ -314,6 +372,15 @@ El cepillado es muy importante porque, además de conseguir que su pelaje tenga 
   </data>
   <data name="UserManual" xml:space="preserve">
     <value>Manual de usuario</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Operación correcta</value>
+  </data>
+  <data name="SuccessRegister" xml:space="preserve">
+    <value>Se ha registrado correctamente. Por favor proceda a iniciar sesión.</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Nombre de usuario</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenido</value>
