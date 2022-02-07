@@ -12,16 +12,18 @@
             <StackLayout BackgroundColor="Orange" HeightRequest="50" WidthRequest="100">
                 
             </StackLayout>
-            <StackLayout VerticalOptions="Center" Orientation="Vertical">
-                <StackLayout HeightRequest="300"  HorizontalOptions="Center" VerticalOptions="Center" Orientation="Horizontal" Padding="20">
-                    <Image HorizontalOptions="Center" Source="perro_prueba.jpg" HeightRequest="300" WidthRequest="300"/>
-                    <ImageButton BackgroundColor="White" VerticalOptions="Start" Clicked="ImageButton_Clicked" Source="flechascirculares.png" HeightRequest="40" WidthRequest="40"></ImageButton>
-                </StackLayout>
-                <StackLayout Orientation="Horizontal" Padding="30">
-                    <Label Text="Nombre: " FontSize="25"/>
-                    <Entry IsReadOnly="True" Text="{Binding Nombre}" FontSize="25"/>
-                </StackLayout>
+            <StackLayout HeightRequest="300"  HorizontalOptions="Center" VerticalOptions="Center" Orientation="Horizontal" Padding="20">
+                <Image HorizontalOptions="Center" Source="perro_prueba.jpg" HeightRequest="300" WidthRequest="300"/>
+                <ImageButton BackgroundColor="White" VerticalOptions="Start" Clicked="ImageButton_Clicked" Source="flechascirculares.png" HeightRequest="40" WidthRequest="40"></ImageButton>
             </StackLayout>
+            <Frame CornerRadius="30">
+                <StackLayout VerticalOptions="Center" Orientation="Vertical">
+                    <StackLayout Orientation="Horizontal" Padding="30">
+                        <Label Text="Nombre: " FontSize="25"/>
+                        <Entry IsReadOnly="True" Text="{Binding Nombre}" FontSize="25"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
