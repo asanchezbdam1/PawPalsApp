@@ -138,8 +138,16 @@ namespace ServerActions
             {
                 var cn = new SqlConnection(CNSTRING);
                 cn.Open();
+                var bytes = new SqlParameter("@image", SqlDbType.Binary)
+                {
+                    Direction = ParameterDirection.Input,
+                    Size = post.Img.Length,
+                    Value = post.Img
+                };
+
                 var cmd = new SqlCommand($"INSERT INTO Posts (UserID, Img) " +
-                    $"VALUES ({post.UID}, CAST('{post.Img.ToString()}' AS VARBINARY(MAX)))");
+                    $"VALUES ({post.UID}, @image)");
+                cmd.Parameters.Add(bytes);
                 cmd.Connection = cn;
                 var res = (int)cmd.ExecuteNonQuery();
                 if (res != 1)
