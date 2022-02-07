@@ -10,11 +10,12 @@
                 <Image Source="paw.png" HeightRequest="60" WidthRequest="60" Rotation="20"/>
             </StackLayout>
             <StackLayout BackgroundColor="Orange" HeightRequest="50" WidthRequest="100">
-                
+
             </StackLayout>
-            <StackLayout HeightRequest="300"  HorizontalOptions="Center" VerticalOptions="Center" Orientation="Horizontal" Padding="20">
-                <Image HorizontalOptions="Center" Source="perro_prueba.jpg" HeightRequest="300" WidthRequest="300"/>
-                <ImageButton BackgroundColor="White" VerticalOptions="Start" Clicked="ImageButton_Clicked" Source="flechascirculares.png" HeightRequest="40" WidthRequest="40"></ImageButton>
+            <ImageButton BackgroundColor="GhostWhite" HorizontalOptions="End" Clicked="ImageButton_Clicked" Source="mas.png" HeightRequest="40" WidthRequest="40"></ImageButton>
+            <Picker x:Name="pMasc" HorizontalTextAlignment="Center" VerticalOptions="Center"></Picker>
+            <StackLayout HeightRequest="200"  HorizontalOptions="Center" VerticalOptions="Center" Orientation="Horizontal" Padding="20">
+                <Image HorizontalOptions="Center" Source="perro_prueba.jpg" HeightRequest="200" WidthRequest="200"/>
             </StackLayout>
             <Frame CornerRadius="30">
                 <StackLayout VerticalOptions="Center" Orientation="Vertical">
