@@ -31,10 +31,10 @@ namespace PawPalsApp.Data
         {
             return db.Table<Mascotas>().ToListAsync();
         }
-        public Task<Mascotas> GetMascotasByIdAsync(int idMascota)
+        public Task<Mascotas> GetMascotasByNameAsync(string nombreMascota)
         {
             return
-           db.Table<Mascotas>().Where(p => p.Id == idMascota).FirstOrDefaultAsync();
+           db.Table<Mascotas>().Where(p => p.Nombre.Equals(nombreMascota)).FirstOrDefaultAsync();
         }
         public Task<int> DeleteExperienciaAsync(Mascotas mascota)
         {
