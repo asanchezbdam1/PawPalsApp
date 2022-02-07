@@ -5,11 +5,26 @@ using System.Globalization;
 using System.Threading;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using PawPalsApp.Data;
+using System.IO;
 
 namespace PawPalsApp
 {
     public partial class App : Application
     {
+        static SQLiteMascota db;
+        public static SQLiteMascota SQLiteDB
+        {
+            get
+            {
+                if (db == null)
+                {
+                    db = new
+                   SQLiteMascota(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Mascotas.db3"));
+                }
+                return db;
+            }
+        }
         public App()
         {
             InitializeComponent();
