@@ -36,7 +36,10 @@
                                     <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Aspect="AspectFill"
                                    Source="{Binding Img, Converter={StaticResource ImageConverter}, Mode=Default}"></Image>
 
-                                    <ImageButton Grid.Row="2" Grid.Column="0" BackgroundColor="#00000000" Source="smallheartunselected"></ImageButton>
+                                    <ImageButton x:Name="btnDislike" Grid.Row="2" Grid.Column="0" BackgroundColor="#00000000"
+                                                 IsVisible="{Binding NotDisliked}" Source="smallheartunselected" Pressed="btnDislike_Pressed"></ImageButton>
+                                    <ImageButton x:Name="btnDisliked" Grid.Row="2" Grid.Column="0" BackgroundColor="#00000000"
+                                                 IsVisible="{Binding Disliked}" Source="smallheartselected" Pressed="btnDisliked_Pressed"></ImageButton>
                                     <Frame Grid.Row="2" Grid.Column="1" HeightRequest="20" Padding="0" VerticalOptions="Center" CornerRadius="5">
                                         <Frame.Background>
                                             <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
@@ -48,8 +51,10 @@
                                                 HorizontalOptions="FillAndExpand" VerticalOptions="Center" ThumbColor="#FF3F3F3F"
                                                 MinimumTrackColor="#FF3F3F3F" MaximumTrackColor="#FF3F3F3F"></Slider>
                                     </Frame>
-                                    <ImageButton Grid.Row="2" Grid.Column="2" BackgroundColor="#00000000" Source="heartunselected.png">
-                                    </ImageButton>
+                                    <ImageButton x:Name="btnLike" Grid.Row="2" Grid.Column="2" BackgroundColor="#00000000"
+                                                 IsVisible="{Binding NotLiked}" Source="heartunselected" Pressed="btnLike_Pressed"></ImageButton>
+                                    <ImageButton x:Name="btnLiked" Grid.Row="2" Grid.Column="2" BackgroundColor="#00000000"
+                                                 IsVisible="{Binding Liked}" Source="heartselected" Pressed="btnLiked_Pressed"></ImageButton>
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>

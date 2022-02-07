@@ -23,36 +23,7 @@ namespace PawPalsApp.Views
         public CuteOMeter()
         {
             InitializeComponent();
-            Task.Run(async () =>
-            {
-                using (var webClient = new WebClient())
-                {
-                    var img = webClient.DownloadData("http://www.google.com/images/logos/ps_logo2.png");
-                    Post post = new Post
-                    {
-                        Username = "Prueba",
-                        Likes = 10,
-                        Dislikes = 3
-                    };
-                    post.Img = img;
-                    Posts.Add(post);
-                    Posts.Add(new Post
-                    {
-                        Username = "Prueba2",
-                        Likes = 10,
-                        Dislikes = 3,
-                        Img = img
-                    });
-                    Posts.Add(new Post
-                    {
-                        Username = "Prueba3",
-                        Likes = 10,
-                        Dislikes = 3,
-                        Img = img
-                    });
-                }
-                lvPosts.ItemsSource = Posts;
-            });
+            lvPosts.ItemsSource = Posts;
         }
 
         private void Actualizar()
@@ -118,6 +89,48 @@ namespace PawPalsApp.Views
         private void btnHistorial_Pressed(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDislike_Pressed(object sender, EventArgs e)
+        {
+            var imb = (ImageButton)sender;
+            Post p = imb.BindingContext as Post;
+            p.Reaction = PostReaction.DISLIKE;
+        }
+
+        private void btnDisliked_Pressed(object sender, EventArgs e)
+        {
+            var imb = (ImageButton)sender;
+            Post p = imb.BindingContext as Post;
+            p.Reaction = PostReaction.NONE;
+        }
+
+        private void btnLike_Pressed(object sender, EventArgs e)
+        {
+            var imb = (ImageButton)sender;
+            Post p = imb.BindingContext as Post;
+            p.Reaction = PostReaction.LIKE;
+        }
+
+        private void btnLiked_Pressed(object sender, EventArgs e)
+        {
+            var imb = (ImageButton)sender;
+            Post p = imb.BindingContext as Post;
+            p.Reaction = PostReaction.NONE;
+        }
+
+        private void Update()
+        {
+            /*List<Post> posts = new List<Post>();
+            foreach (Post p in Posts)
+            {
+                posts.Add(p);
+            }
+            Posts.Clear();
+            foreach (Post p in posts)
+            {
+                Posts.Add(p);
+            }*/
         }
     }
 }

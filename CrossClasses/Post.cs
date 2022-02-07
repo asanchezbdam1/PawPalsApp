@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,8 +28,10 @@ namespace CrossClasses
             Reaction = PostReaction.NONE;
             ID = 0;
             Username = String.Empty;
-            Likes = 0;
-            Dislikes = 0;
+            Likes = 1;
+            Dislikes = 1;
         }
+
+
     }
 }
