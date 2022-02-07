@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CrossClasses
 {
     [Serializable]
-    public class Post
+    public class Post : INotifyPropertyChanged
     {
         public int ID { get; set; }
         public int UID { get; set; }
@@ -17,7 +17,14 @@ namespace CrossClasses
         public int Dislikes { get; set; }
         public byte[] Img { get; set; }
         public double Ratio { get { return Likes / (1.0 * (Likes + Dislikes)); } }
-        public PostReaction Reaction { get; set; }
+        private PostReaction reaction;
+        public PostReaction Reaction { get => reaction; set {
+                if (reaction != value)
+                {
+                    reaction = value;
+                    OnPropertyChanged("Reaction");
+                }
+            } }
         public bool Liked { get { return Reaction == PostReaction.LIKE; } }
         public bool Disliked { get { return Reaction == PostReaction.DISLIKE; } }
         public bool NotLiked { get { return !Liked; } }
@@ -32,6 +39,11 @@ namespace CrossClasses
             Dislikes = 1;
         }
 
+        public event PropertyChangedEventHandler PropertyChanged;
 
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }

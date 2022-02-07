@@ -19,7 +19,7 @@ namespace PawPalsApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CuteOMeter : ContentPage
     {
-        public ObservableCollection<Post> Posts { get; set; } = new ObservableCollection<Post>();
+        public PostsViewCollection<Post> Posts { get; set; } = new PostsViewCollection<Post>();
         public CuteOMeter()
         {
             InitializeComponent();
@@ -54,7 +54,7 @@ namespace PawPalsApp.Views
             await CrossMedia.Current.Initialize();
             if (!CrossMedia.IsSupported)
             {
-                await DisplayAlert("No está soportado", "Error", "Back");
+                await DisplayAlert("Error", AppResources.ErrorTitle, AppResources.Back);
                 return;
             }
             var opt = new PickMediaOptions()
@@ -117,20 +117,6 @@ namespace PawPalsApp.Views
             var imb = (ImageButton)sender;
             Post p = imb.BindingContext as Post;
             p.Reaction = PostReaction.NONE;
-        }
-
-        private void Update()
-        {
-            /*List<Post> posts = new List<Post>();
-            foreach (Post p in Posts)
-            {
-                posts.Add(p);
-            }
-            Posts.Clear();
-            foreach (Post p in posts)
-            {
-                Posts.Add(p);
-            }*/
         }
     }
 }
