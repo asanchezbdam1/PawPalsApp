@@ -385,4 +385,13 @@ Has aceptado los términos y condiciones.</value>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenido</value>
   </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Nombre completo</value>
+  </data>
+  <data name="ErrorNull" xml:space="preserve">
+    <value>Falta algún campo por rellenar.</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Usuario actualizado.</value>
+  </data>
 </root>

@@ -19,7 +19,7 @@ namespace PawPalsApp.Resx {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class AppResources {
@@ -237,15 +237,6 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Email.
-        /// </summary>
-        internal static string Email {
-            get {
-                return ResourceManager.GetString("Email", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Are you sure do you want to delete your account?.
         /// </summary>
         internal static string DeleteMessage {
@@ -255,29 +246,11 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Enter.
-        /// </summary>
-        internal static string Enter {
-            get {
-                return ResourceManager.GetString("Enter", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Are you sure do you want to delete your account?.
         /// </summary>
         internal static string DelQuestion {
             get {
                 return ResourceManager.GetString("DelQuestion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a * Entering without an account won&apos;t enable you to use the online features..
-        /// </summary>
-        internal static string EnteringWithoutPass {
-            get {
-                return ResourceManager.GetString("EnteringWithoutPass", resourceCulture);
             }
         }
         
@@ -353,11 +326,38 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Exercise.
+        ///   Busca una cadena traducida similar a Email.
         /// </summary>
-        internal static string Exercise {
+        internal static string Email {
             get {
-                return ResourceManager.GetString("Exercise", resourceCulture);
+                return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Enter.
+        /// </summary>
+        internal static string Enter {
+            get {
+                return ResourceManager.GetString("Enter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a * Entering without an account won&apos;t enable you to use the online features..
+        /// </summary>
+        internal static string EnteringWithoutPass {
+            get {
+                return ResourceManager.GetString("EnteringWithoutPass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Some field is missing to fill in..
+        /// </summary>
+        internal static string ErrorNull {
+            get {
+                return ResourceManager.GetString("ErrorNull", resourceCulture);
             }
         }
         
@@ -371,6 +371,24 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Exercise.
+        /// </summary>
+        internal static string Exercise {
+            get {
+                return ResourceManager.GetString("Exercise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Full name.
+        /// </summary>
+        internal static string FullName {
+            get {
+                return ResourceManager.GetString("FullName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Guide.
         /// </summary>
         internal static string Guide {
@@ -380,20 +398,20 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Help.
-        /// </summary>
-        internal static string Help {
-            get {
-                return ResourceManager.GetString("Help", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Already registered?.
         /// </summary>
         internal static string HaveAnAccount {
             get {
                 return ResourceManager.GetString("HaveAnAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Help.
+        /// </summary>
+        internal static string Help {
+            get {
+                return ResourceManager.GetString("Help", resourceCulture);
             }
         }
         
@@ -416,29 +434,11 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Write your city.
-        /// </summary>
-        internal static string NomCity {
-            get {
-                return ResourceManager.GetString("NomCity", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a The format of at least one of the fields is incorrect..
         /// </summary>
         internal static string IncorrectLoginData {
             get {
                 return ResourceManager.GetString("IncorrectLoginData", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Write your country.
-        /// </summary>
-        internal static string NomCountry {
-            get {
-                return ResourceManager.GetString("NomCountry", resourceCulture);
             }
         }
         
@@ -456,20 +456,65 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Personal name.
-        /// </summary>
-        internal static string Personal_name {
-            get {
-                return ResourceManager.GetString("Personal name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Login.
         /// </summary>
         internal static string Login {
             get {
                 return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Error when logging in. Incorrect password or user not registered..
+        /// </summary>
+        internal static string LoginError {
+            get {
+                return ResourceManager.GetString("LoginError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a New to PawPals?.
+        /// </summary>
+        internal static string NewToPawPals {
+            get {
+                return ResourceManager.GetString("NewToPawPals", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Write your city.
+        /// </summary>
+        internal static string NomCity {
+            get {
+                return ResourceManager.GetString("NomCity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Write your country.
+        /// </summary>
+        internal static string NomCountry {
+            get {
+                return ResourceManager.GetString("NomCountry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Password.
+        /// </summary>
+        internal static string Password {
+            get {
+                return ResourceManager.GetString("Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Personal name.
+        /// </summary>
+        internal static string Personal_name {
+            get {
+                return ResourceManager.GetString("Personal name", resourceCulture);
             }
         }
         
@@ -483,11 +528,38 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Error when logging in. Incorrect password or user not registered..
+        ///   Busca una cadena traducida similar a An error occurred when trying to retrieve posts..
         /// </summary>
-        internal static string LoginError {
+        internal static string RefreshError {
             get {
-                return ResourceManager.GetString("LoginError", resourceCulture);
+                return ResourceManager.GetString("RefreshError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Register.
+        /// </summary>
+        internal static string Register {
+            get {
+                return ResourceManager.GetString("Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Error during registration. Already registered? Try logging in!.
+        /// </summary>
+        internal static string RegisterError {
+            get {
+                return ResourceManager.GetString("RegisterError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Confirm the password.
+        /// </summary>
+        internal static string RepeatPassword {
+            get {
+                return ResourceManager.GetString("RepeatPassword", resourceCulture);
             }
         }
         
@@ -507,29 +579,11 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a New to PawPals?.
-        /// </summary>
-        internal static string NewToPawPals {
-            get {
-                return ResourceManager.GetString("NewToPawPals", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a On this page you will find everything related to this accessory; How to use it, maintenance and safety tips, reviews and recommendations. With this complement, your hamster will have the freedom it deserves and at the same time exercise..
         /// </summary>
         internal static string RodentsExercise {
             get {
                 return ResourceManager.GetString("RodentsExercise", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Password.
-        /// </summary>
-        internal static string Password {
-            get {
-                return ResourceManager.GetString("Password", resourceCulture);
             }
         }
         
@@ -549,15 +603,6 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a An error occurred when trying to retrieve posts..
-        /// </summary>
-        internal static string RefreshError {
-            get {
-                return ResourceManager.GetString("RefreshError", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Select an option.
         /// </summary>
         internal static string SelApar {
@@ -567,29 +612,11 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Register.
-        /// </summary>
-        internal static string Register {
-            get {
-                return ResourceManager.GetString("Register", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Privacy, information, management.
         /// </summary>
         internal static string SettingAccount {
             get {
                 return ResourceManager.GetString("SettingAccount", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Busca una cadena traducida similar a Error during registration. Already registered? Try logging in!.
-        /// </summary>
-        internal static string RegisterError {
-            get {
-                return ResourceManager.GetString("RegisterError", resourceCulture);
             }
         }
         
@@ -603,29 +630,11 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Confirm the password.
-        /// </summary>
-        internal static string RepeatPassword {
-            get {
-                return ResourceManager.GetString("RepeatPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Settings.
         /// </summary>
         internal static string Settings {
             get {
                 return ResourceManager.GetString("Settings", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Diet for obese and sterilized cats.
-        /// </summary>
-        internal static string TitleCatsDiet {
-            get {
-                return ResourceManager.GetString("TitleCatsDiet", resourceCulture);
             }
         }
         
@@ -639,20 +648,29 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cat exercises.
-        /// </summary>
-        internal static string TitleCatsExercise {
-            get {
-                return ResourceManager.GetString("TitleCatsExercise", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Registration has been succesful. Please login to continue..
         /// </summary>
         internal static string SuccessRegister {
             get {
                 return ResourceManager.GetString("SuccessRegister", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Diet for obese and sterilized cats.
+        /// </summary>
+        internal static string TitleCatsDiet {
+            get {
+                return ResourceManager.GetString("TitleCatsDiet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cat exercises.
+        /// </summary>
+        internal static string TitleCatsExercise {
+            get {
+                return ResourceManager.GetString("TitleCatsExercise", resourceCulture);
             }
         }
         
@@ -720,15 +738,24 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a User updated..
+        /// </summary>
+        internal static string Updated {
+            get {
+                return ResourceManager.GetString("Updated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a User Manual.
         /// </summary>
-        internal static string UserManual
-        {
-            get
-            {
+        internal static string UserManual {
+            get {
                 return ResourceManager.GetString("UserManual", resourceCulture);
             }
         }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Username.
         /// </summary>
         internal static string Username {

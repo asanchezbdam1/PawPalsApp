@@ -382,4 +382,13 @@ You have accepted the terms and conditions.</value>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome</value>
   </data>
+  <data name="ErrorNull" xml:space="preserve">
+    <value>Some field is missing to fill in.</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>User updated.</value>
+  </data>
 </root>
