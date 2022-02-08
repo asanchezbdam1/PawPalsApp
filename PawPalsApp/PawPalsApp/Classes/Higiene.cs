@@ -1,18 +1,17 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using SQLite;
 
 namespace PawPalsApp.Classes
 {
-    public class Mascotas
+    class Higiene
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         [MaxLength(50)]
-        public string Nombre { get; set; }
-        [MaxLength(50)]
-        public string Imagen { get; set; }
-
+        public string IdMascota { get; set; }
+        [MaxLength(100)]
+        public string Higienes { get; set; }
     }
 }
