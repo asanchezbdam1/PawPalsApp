@@ -97,13 +97,14 @@ namespace ServerActions
             {
                 var cn = new SqlConnection(CNSTRING);
                 cn.Open();
-                var cmd = new SqlCommand($"INSERT INTO Users (Username, Email, Pwd, Country, City, FullName) " +
-                    $"VALUES ('{user.Login}', '{user.Email}', '{GetHash(user.Pwd)}', '', '', '')");
+                var cmd = new SqlCommand($"UPDATE Users " +
+                    $"SET FullName = '{user.Name}', Country = '{user.Country}', City = '{user.City}' " +
+                    $"WHERE UserID = {user.Id} AND Username LIKE '{user.Login}'");
                 cmd.Connection = cn;
                 var res = (int)cmd.ExecuteNonQuery();
                 if (res != 1)
                 {
-                    return null;
+                    return new User();
                 }
                 cmd.CommandText = $"SELECT * FROM Users WHERE " +
                     $"Username LIKE '{user.Login}' OR Email LIKE '{user.Email}'";
