@@ -21,7 +21,7 @@
             <StackLayout Orientation="Vertical" HorizontalOptions="Center">
             <ImageButton x:Name="ibtnPerfil" Source="defUser.png" Clicked="ibtnPerfil_Clicked"
                          CornerRadius="360" WidthRequest="200" HeightRequest="200"></ImageButton>
-            <Label TextColor="Black"
+            <Label x:Name="lblUser" TextColor="Black"
                     HorizontalTextAlignment="Center" FontSize="28" Margin="0,10,0,0"></Label>
         </StackLayout>
 
@@ -30,7 +30,7 @@
                     <StackLayout Padding="20,10,20,10" >
                         <Label Text="{x:Static resource:AppResources.Personal_name}" TextColor="Black" 
                     FontSize="12"></Label>
-                        <Entry x:Name="entUserName" IsReadOnly="True" Placeholder="{x:Static resource:AppResources.FullName}"
+                        <Entry x:Name="entUserName" IsReadOnly="False" Placeholder="{x:Static resource:AppResources.FullName}"
                                IsEnabled="False"
                     Margin="20,0,20,0" HorizontalTextAlignment="Center"></Entry>
                     </StackLayout>

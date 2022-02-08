@@ -46,7 +46,7 @@ namespace PawPalsApp.Views
             {
                 string nom = pMasc.SelectedItem.ToString();
                 Mascotas mascota = App.SQLiteDB.GetMascotasByNameAsync(nom).Result;
-                mascota.Dieta.Add(eDiet.Text);
+
             }
         }
 
@@ -61,7 +61,7 @@ namespace PawPalsApp.Views
             {
                 string nom = pMasc.SelectedItem.ToString();
                 Mascotas mascota = App.SQLiteDB.GetMascotasByNameAsync(nom).Result;
-                mascota.Ejercicios.Add(eExercise.Text);
+
             }
         }
 
@@ -76,7 +76,6 @@ namespace PawPalsApp.Views
             {
                 string nom = pMasc.SelectedItem.ToString();
                 Mascotas mascota = App.SQLiteDB.GetMascotasByNameAsync(nom).Result;
-                mascota.Higiene.Add(eHygiene.Text);
             }
         }
 
