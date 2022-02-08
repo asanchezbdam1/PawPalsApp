@@ -20,20 +20,21 @@ namespace PawPalsApp.Views
             cargarDatos();
         }
 
-        /** Método que modifica las propiedades 'IsVisible' y 'IsReadOnly' de diferentes componentes para hacer que aparezcan y desaparezcan.
+        /** Método que modifica las propiedades 'IsEabled' y 'IsReadOnly' de diferentes componentes para hacer que aparezcan y desaparezcan.
          * En este caso se podrá escribir en los campos de ciudad y pais y se cambiará el icono de editar por el de guardar **/
         private void ibtnEditar_Clicked(object sender, EventArgs e)
         {
             ibtnEditar.IsVisible = false;
             ibtnGuardar.IsVisible = true;
-            eCiudad.IsEnabled = false;
-            ePais.IsEnabled = false;
+            eCiudad.IsEnabled = true;
+            ePais.IsEnabled = true;
+            entUserName.IsEnabled = true;
         }
 
         private void cargarDatos()
         {
             User usuario = ((App)App.Current).User;
-            entUserName.Text = usuario.Login;
+            lblUser.Text = usuario.Login;
             entEmail.Text = usuario.Email;
             if (!string.IsNullOrEmpty(usuario.Name) ||
                 !string.IsNullOrEmpty(usuario.City) ||
@@ -49,9 +50,9 @@ namespace PawPalsApp.Views
         {
             ibtnGuardar.IsVisible = false;
             ibtnEditar.IsVisible = true;
-            eCiudad.IsEnabled = true;
-            ePais.IsEnabled = true;
-            entUserName.IsEnabled = true;
+            eCiudad.IsEnabled = false;
+            ePais.IsEnabled = false;
+            entUserName.IsEnabled = false;
             if (!string.IsNullOrWhiteSpace(eCiudad.Text)
                 || !string.IsNullOrWhiteSpace(ePais.Text)
                 || !string.IsNullOrWhiteSpace(entUserName.Text))
