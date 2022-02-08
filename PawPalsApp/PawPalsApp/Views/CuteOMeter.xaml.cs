@@ -98,6 +98,7 @@ namespace PawPalsApp.Views
             var imb = (ImageButton)sender;
             Post p = imb.BindingContext as Post;
             p.Reaction = PostReaction.DISLIKE;
+            React(p);
         }
 
         private void btnDisliked_Pressed(object sender, EventArgs e)
@@ -105,6 +106,7 @@ namespace PawPalsApp.Views
             var imb = (ImageButton)sender;
             Post p = imb.BindingContext as Post;
             p.Reaction = PostReaction.NONE;
+            React(p);
         }
 
         private void btnLike_Pressed(object sender, EventArgs e)
@@ -112,6 +114,7 @@ namespace PawPalsApp.Views
             var imb = (ImageButton)sender;
             Post p = imb.BindingContext as Post;
             p.Reaction = PostReaction.LIKE;
+            React(p);
         }
 
         private void btnLiked_Pressed(object sender, EventArgs e)
@@ -119,6 +122,29 @@ namespace PawPalsApp.Views
             var imb = (ImageButton)sender;
             Post p = imb.BindingContext as Post;
             p.Reaction = PostReaction.NONE;
+            React(p);
+        }
+
+        private PostReaction React(Post p)
+        {
+            PostReacted pr = new PostReacted
+            {
+                PostID = p.ID,
+                Reaction = p.Reaction,
+                UserID = ((App)App.Current).User.Id
+            };
+            Task.Run(() => {
+                try
+                {
+                    var res = (PostReaction)ConnectionHelper.Send(pr);
+                    if (res != p.Reaction)
+                    {
+                        p.Reaction = res;
+                        throw new Exception();
+                    }
+
+                } catch { DisplayAlert("Error", AppResources.ErrorTitle, AppResources.Back); }
+            });
         }
     }
 }

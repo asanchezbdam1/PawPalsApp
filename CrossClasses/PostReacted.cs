@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CrossClasses
 {
+    [Serializable]
     public class PostReacted
     {
         public int PostID { get; set; }

@@ -212,19 +212,56 @@ namespace ServerActions
             throw new NotImplementedException();
         }
 
-        public static object GetLikePostResult(Post obj)
+        public static object GetLikePostResult(PostReacted p)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var cn = new SqlConnection(CNSTRING);
+                cn.Open();
+                var cmd = new SqlCommand($"DELETE FROM Reactions WHERE PostID = {p.PostID} AND UserID = {p.UserID}");
+                cmd.Connection = cn;
+                cmd.ExecuteNonQuery();
+                cmd.CommandText = $"INSERT INTO Reactions (PostID, UserID, Liked) VALUES ({p.PostID}, {p.UserID}, {1})";
+                cmd.ExecuteNonQuery();
+                cn.Close();
+                return PostReaction.LIKE;
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            return PostReaction.NONE;
+}
+
+        public static object GetDislikePostResult(PostReacted p)
+        {
+            try
+            {
+                var cn = new SqlConnection(CNSTRING);
+                cn.Open();
+                var cmd = new SqlCommand($"DELETE FROM Reactions WHERE PostID = {p.PostID} AND UserID = {p.UserID}");
+                cmd.Connection = cn;
+                cmd.ExecuteNonQuery();
+                cmd.CommandText = $"INSERT INTO Reactions (PostID, UserID, Liked) VALUES ({p.PostID}, {p.UserID}, {0})";
+                cmd.ExecuteNonQuery();
+                cn.Close();
+                return PostReaction.LIKE;
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            return PostReaction.NONE;
         }
 
-        public static object GetDislikePostResult(Post obj)
+        public static object GetRemoveOpinionResult(PostReacted p)
         {
-            throw new NotImplementedException();
-        }
-
-        public static object GetRemoveOpinionResult(Post obj)
-        {
-            throw new NotImplementedException();
+            try
+            {
+                var cn = new SqlConnection(CNSTRING);
+                cn.Open();
+                var cmd = new SqlCommand($"DELETE FROM Reactions WHERE PostID = {p.PostID} AND UserID = {p.UserID}");
+                cmd.Connection = cn;
+                cmd.ExecuteNonQuery();
+                cn.Close();
+                return PostReaction.NONE;
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            return PostReaction.LIKE;
         }
 
         private static bool VerifyLogin(User user)
