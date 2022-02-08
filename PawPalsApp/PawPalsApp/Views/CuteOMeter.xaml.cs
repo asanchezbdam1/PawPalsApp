@@ -125,7 +125,7 @@ namespace PawPalsApp.Views
             React(p);
         }
 
-        private PostReaction React(Post p)
+        private void React(Post p)
         {
             PostReacted pr = new PostReacted
             {
