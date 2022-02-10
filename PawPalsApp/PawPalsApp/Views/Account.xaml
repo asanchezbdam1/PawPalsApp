@@ -11,11 +11,11 @@
     <StackLayout>
             <StackLayout Orientation="Horizontal">
                 <ImageButton x:Name="ibtnSalir" Margin="20" HorizontalOptions="Start" BackgroundColor="White"
-                        Source="drawable/cerrarSesion.png" CornerRadius="360" WidthRequest="40"  HeightRequest="40"></ImageButton>
+                        Source="cerrarSesion.png" CornerRadius="360" WidthRequest="40" Clicked="ibtnSalir_Clicked" HeightRequest="40"></ImageButton>
                 <ImageButton x:Name="ibtnEditar" IsVisible="true" Margin="20" HorizontalOptions="EndAndExpand" BackgroundColor="White"
-                        Source="drawable/editar.png" WidthRequest="40"  HeightRequest="40" Clicked="ibtnEditar_Clicked"></ImageButton>
+                        Source="editar.png" WidthRequest="40"  HeightRequest="40" Clicked="ibtnEditar_Clicked"></ImageButton>
                 <ImageButton x:Name="ibtnGuardar" IsVisible="false" Margin="20" HorizontalOptions="EndAndExpand" BackgroundColor="White"
-                        Source="drawable/floppyDisk.png" WidthRequest="40"  HeightRequest="40" Clicked="ibtnGuardar_Clicked"></ImageButton>
+                        Source="floppyDisk.png" WidthRequest="40"  HeightRequest="40" Clicked="ibtnGuardar_Clicked"></ImageButton>
             </StackLayout>
         
             <StackLayout Orientation="Vertical" HorizontalOptions="Center">

@@ -88,5 +88,11 @@ namespace PawPalsApp.Views
         {
 
         }
+
+        private void ibtnSalir_Clicked(object sender, EventArgs e)
+        {
+            ((App)App.Current).User = new User();
+            App.Current.MainPage = new NavigationPage(new Welcome());
+        }
     }
 }
