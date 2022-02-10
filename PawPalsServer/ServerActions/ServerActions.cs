@@ -31,6 +31,8 @@ namespace ServerActions
                     return DBTasks.GetPosts((PostList)obj);
                 case ActionOptions.RETRIEVE_POSTS_FROM_USER:
                     return DBTasks.GetPostsFromUser((PostList)obj);
+                case ActionOptions.RETRIEVE_POST_HISTORY:
+                    return DBTasks.GetPostHistoryFromUser((PostList)obj);
                 case ActionOptions.REPORT_POST:
                     return DBTasks.GetReportPostResult((PostReport)obj);
                 case ActionOptions.LIKE_POST:
