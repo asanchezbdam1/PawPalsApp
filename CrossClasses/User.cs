@@ -16,6 +16,7 @@ namespace CrossClasses
         public string Email { get; set; }
         public string Country { get; set; }
         public string City { get; set; }
+        public byte[] Img { get; set; }
 
         public User()
         {
@@ -26,6 +27,7 @@ namespace CrossClasses
             Pwd = String.Empty;
             Country = String.Empty;
             City = String.Empty;
+            Img = new byte[1];
         }
     }
     [Serializable]

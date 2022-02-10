@@ -26,6 +26,7 @@ namespace ServerVerificators
             if (action is PostList)
             {
                 if (((PostList)action).FromRequester) return ActionOptions.RETRIEVE_POSTS_FROM_USER;
+                if (((PostList)action).History) return ActionOptions.RETRIEVE_POST_HISTORY;
                 return ActionOptions.RETRIEVE_POSTS;
             }
             if (action is PostReacted)

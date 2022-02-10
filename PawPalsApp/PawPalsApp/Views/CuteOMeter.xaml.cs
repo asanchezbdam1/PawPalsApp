@@ -26,11 +26,11 @@ namespace PawPalsApp.Views
             lvPosts.ItemsSource = Posts;
         }
 
-        private void Actualizar(bool fromReq)
+        private void Actualizar(bool viewed)
         {
             var pl = ConnectionHelper.Send(new PostList() {
                 RequesterID = ((App)App.Current).User.Id,
-                FromRequester = fromReq
+                History = viewed
             }) as PostList;
             if (pl.Posts.Count == 0) DisplayAlert(AppResources.ErrorTitle, AppResources.RefreshError, AppResources.Back);
             else
