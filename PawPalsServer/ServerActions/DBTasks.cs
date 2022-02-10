@@ -65,7 +65,7 @@ namespace ServerActions
                     var res = (int)cmd.ExecuteNonQuery();
                     if (res != 1)
                     {
-                        return null;
+                        return new User();
                     }
                     cmd.CommandText = $"SELECT * FROM Users WHERE " +
                         $"Username LIKE '{user.Login}' OR Email LIKE '{user.Email}'";
