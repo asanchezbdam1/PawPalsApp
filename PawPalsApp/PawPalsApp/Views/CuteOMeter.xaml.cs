@@ -26,10 +26,11 @@ namespace PawPalsApp.Views
             lvPosts.ItemsSource = Posts;
         }
 
-        private void Actualizar()
+        private void Actualizar(bool fromReq)
         {
             var pl = ConnectionHelper.Send(new PostList() {
-                RequesterID = ((App)App.Current).User.Id
+                RequesterID = ((App)App.Current).User.Id,
+                FromRequester = fromReq
             }) as PostList;
             if (pl.Posts.Count == 0) DisplayAlert(AppResources.ErrorTitle, AppResources.RefreshError, AppResources.Back);
             else
@@ -47,7 +48,7 @@ namespace PawPalsApp.Views
         {
             Task.Run(async () =>
             {
-                Actualizar();
+                Actualizar(false);
             });
         }
 
@@ -90,7 +91,10 @@ namespace PawPalsApp.Views
 
         private void btnHistorial_Pressed(object sender, EventArgs e)
         {
-
+            Task.Run(async () =>
+            {
+                Actualizar(true);
+            });
         }
 
         private void btnDislike_Pressed(object sender, EventArgs e)

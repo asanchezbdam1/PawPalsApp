@@ -97,13 +97,14 @@ namespace ServerActions
             {
                 var cn = new SqlConnection(CNSTRING);
                 cn.Open();
-                var cmd = new SqlCommand($"INSERT INTO Users (Username, Email, Pwd, Country, City, FullName) " +
-                    $"VALUES ('{user.Login}', '{user.Email}', '{GetHash(user.Pwd)}', '', '', '')");
+                var cmd = new SqlCommand($"UPDATE Users " +
+                    $"SET FullName = '{user.Name}', Country = '{user.Country}', City = '{user.City}' " +
+                    $"WHERE UserID = {user.Id} AND Username LIKE '{user.Login}'");
                 cmd.Connection = cn;
                 var res = (int)cmd.ExecuteNonQuery();
                 if (res != 1)
                 {
-                    return null;
+                    return new User();
                 }
                 cmd.CommandText = $"SELECT * FROM Users WHERE " +
                     $"Username LIKE '{user.Login}' OR Email LIKE '{user.Email}'";
@@ -202,9 +203,47 @@ namespace ServerActions
             return posts;
         }
 
-        public static object GetPostsFromUser(PostList obj)
+        public static object GetPostsFromUser(PostList posts)
         {
-            throw new NotImplementedException();
+            try
+            {
+                posts.Posts.Clear();
+                var cn = new SqlConnection(CNSTRING);
+                cn.Open();
+                var cmd = new SqlCommand($"SELECT TOP 15 * FROM Posts WHERE NOT UserID = {posts.RequesterID} " +
+                    $"AND PostID IN (SELECT PostID FROM Reactions WHERE UserID = {posts.RequesterID}) " +
+                    $"ORDER BY UploadDate");
+                cmd.Connection = cn;
+                var dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    string name = String.Empty;
+                    var cmdn = new SqlCommand();
+                    cmdn.CommandText = $"SELECT Username FROM Users WHERE UserID = {dr.GetInt32(1)}";
+                    var cnn = new SqlConnection(CNSTRING);
+                    cnn.Open();
+                    cmdn.Connection = cnn;
+                    var drn = cmdn.ExecuteReader();
+                    while (drn.Read())
+                    {
+                        name = drn.GetString(0);
+                    }
+                    drn.Close();
+                    cmdn.CommandText = $"SELECT Liked FROM Reactions " +
+                        $"WHERE UserID = {posts.RequesterID} AND PostID = {dr.GetInt32(0)}";
+                    var liked = (bool)cmdn.ExecuteScalar();
+                    posts.Posts.Add(new Post()
+                    {
+                        ID = dr.GetInt32(0),
+                        Username = name,
+                        Img = (byte[])dr["Img"],
+                        Reaction = (liked) ? PostReaction.LIKE : PostReaction.DISLIKE
+                    });
+                }
+                cn.Close();
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            return posts;
         }
 
         public static object GetReportPostResult(PostReport obj)
