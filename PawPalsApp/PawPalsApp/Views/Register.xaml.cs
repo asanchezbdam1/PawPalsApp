@@ -65,7 +65,7 @@ namespace PawPalsApp.Views
 
             if (!FieldVerifier.VerifyPassword(txtPwd.Text)) return false;
             if (!txtRepPwd.Text.Equals(txtPwd.Text)) return false;
-            return true;
+            return chxTerms.IsChecked;
         }
     }
 }
