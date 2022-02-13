@@ -32,8 +32,7 @@ namespace PawPalsApp.Views
                 RequesterID = ((App)App.Current).User.Id,
                 History = viewed
             }) as PostList;
-            if (pl.Posts.Count == 0) DisplayAlert(AppResources.ErrorTitle, AppResources.RefreshError, AppResources.Back);
-            else
+            if (pl.Posts.Count != 0)
             {
                 Posts.Clear();
                 foreach (var it in pl.Posts)

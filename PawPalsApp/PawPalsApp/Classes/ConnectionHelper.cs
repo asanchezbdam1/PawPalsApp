@@ -29,7 +29,6 @@ namespace PawPalsApp.Classes
                 return true;
             }
             catch (Exception ex)
-
             {
 
             }

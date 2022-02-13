@@ -63,11 +63,6 @@ namespace PawPalsServer
             } catch (Exception ex){
                 Console.WriteLine(ex.Message);
             }
-            try
-            {
-                /*state.clientSocket.BeginReceive(state.buffer, 0, BufferObject.BUFFER_SIZE, SocketFlags.None,
-                    new AsyncCallback(ReceiveCallback), state);*/
-            } catch { }
         }
 
         private static IPAddress GetIPAddress()

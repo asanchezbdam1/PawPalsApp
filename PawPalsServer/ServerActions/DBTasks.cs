@@ -324,7 +324,7 @@ namespace ServerActions
                 cmd.CommandText = $"INSERT INTO Reactions (PostID, UserID, Liked) VALUES ({p.PostID}, {p.UserID}, {0})";
                 cmd.ExecuteNonQuery();
                 cn.Close();
-                return PostReaction.LIKE;
+                return PostReaction.DISLIKE;
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }
             return PostReaction.NONE;
