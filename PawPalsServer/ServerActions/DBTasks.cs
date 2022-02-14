@@ -95,42 +95,64 @@ namespace ServerActions
             User result = null;
             try 
             {
-                var cn = new SqlConnection(CNSTRING);
-                cn.Open();
-                var cmd = new SqlCommand($"UPDATE Users " +
-                    $"SET FullName = '{user.Name}', Country = '{user.Country}', City = '{user.City}' " +
-                    $"WHERE UserID = {user.Id} AND Username LIKE '{user.Login}'");
-                cmd.Connection = cn;
-                var res = (int)cmd.ExecuteNonQuery();
-                if (res != 1)
+                if (VerifyLogin(user))
                 {
-                    return new User();
-                }
-                cmd.CommandText = $"SELECT * FROM Users WHERE " +
-                    $"Username LIKE '{user.Login}' OR Email LIKE '{user.Email}'";
-                var dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    result = new User()
+                    var cn = new SqlConnection(CNSTRING);
+                    cn.Open();
+                    var cmd = new SqlCommand($"UPDATE Users " +
+                        $"SET FullName = '{user.Name}', Country = '{user.Country}', City = '{user.City}' " +
+                        $"WHERE UserID = {user.Id} AND Username LIKE '{user.Login}'");
+                    cmd.Connection = cn;
+                    var res = (int)cmd.ExecuteNonQuery();
+                    if (res != 1)
                     {
-                        Id = dr.GetInt32(0),
-                        Login = dr.GetString(1),
-                        Email = dr.GetString(2),
-                        Country = dr.GetString(4),
-                        City = dr.GetString(5),
-                        Name = dr.GetString(6)
+                        return new User();
+                    }
+                    cmd.CommandText = $"SELECT * FROM Users WHERE " +
+                        $"Username LIKE '{user.Login}' OR Email LIKE '{user.Email}'";
+                    var dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        result = new User()
+                        {
+                            Id = dr.GetInt32(0),
+                            Login = dr.GetString(1),
+                            Email = dr.GetString(2),
+                            Country = dr.GetString(4),
+                            City = dr.GetString(5),
+                            Name = dr.GetString(6)
+                        };
                     };
-                };
-                cn.Close();
-                return result;
+                    cn.Close();
+                    return result;
+                }
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }
             return new User();
         }
 
-        public static object GetDeleteUserResult(DeleteUser obj)
+        public static object GetDeleteUserResult(DeleteUser user)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (VerifyLogin(user))
+                {
+                    var cn = new SqlConnection(CNSTRING);
+                    cn.Open();
+                    var cmd = new SqlCommand($"DELETE FROM Users " +
+                        $"WHERE UserID = {user.Id} AND Username LIKE '{user.Login}'");
+                    cmd.Connection = cn;
+                    var res = (int)cmd.ExecuteNonQuery();
+                    if (res != 1)
+                    {
+                        return new User();
+                    }
+                    cn.Close();
+                    return user;
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            return user;
         }
 
         public static object GetPublishPostResult(Post post)
@@ -160,7 +182,7 @@ namespace ServerActions
             return post;
         }
 
-        public static object GetRemovePostResult(Post obj)
+        public static object GetRemovePostResult(Post post)
         {
             throw new NotImplementedException();
         }
@@ -190,11 +212,20 @@ namespace ServerActions
                     {
                         name = drn.GetString(0);
                     }
+                    drn.Close();
+                    cmd.CommandText = $"SELECT COUNT(PostID) FROM Reactions " +
+                        $"WHERE PostID = {dr.GetInt32(0)} AND Liked = 0";
+                    var dislikes = (int)cmd.ExecuteScalar();
+                    cmd.CommandText = $"SELECT COUNT(PostID) FROM Reactions " +
+                        $"WHERE PostID = {dr.GetInt32(0)} AND Liked = 1";
+                    var likes = (int)cmd.ExecuteScalar();
                     posts.Posts.Add(new Post()
                     {
                         ID = dr.GetInt32(0),
                         Username = name,
-                        Img = (byte[])dr["Img"]
+                        Img = (byte[])dr["Img"],
+                        Likes = likes,
+                        Dislikes = dislikes
                     });
                 }
                 cn.Close();

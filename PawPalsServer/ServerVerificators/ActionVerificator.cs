@@ -22,6 +22,10 @@ namespace ServerVerificators
                 {
                     return ActionOptions.PUBLISH_POST;
                 }
+                else
+                {
+                    return ActionOptions.REMOVE_POST;
+                }
             }
             if (action is PostList)
             {
