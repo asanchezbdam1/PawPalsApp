@@ -13,8 +13,30 @@ namespace CrossClasses
         public int ID { get; set; }
         public int UID { get; set; }
         public string Username { get; set; }
-        public int Likes { get; set; }
-        public int Dislikes { get; set; }
+        private int likes;
+        public int Likes
+        {
+            get { return likes; }
+            set {
+                if (likes != value)
+                {
+                    likes = value;
+                    OnPropertyChanged("Likes");
+                }
+                    } }
+        private int dislikes;
+        public int Dislikes
+        {
+            get { return dislikes; }
+            set
+            {
+                if (dislikes != value)
+                {
+                    dislikes = value;
+                    OnPropertyChanged("Dislikes");
+                }
+            }
+        }
         public byte[] Img { get; set; }
         public double Ratio { get { return Likes / (1.0 * (Likes + Dislikes)); } }
         private PostReaction reaction;

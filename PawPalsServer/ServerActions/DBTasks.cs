@@ -199,35 +199,7 @@ namespace ServerActions
                     $"ORDER BY UploadDate");
                 cmd.Connection = cn;
                 var dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    string name = String.Empty;
-                    var cmdn = new SqlCommand();
-                    cmdn.CommandText = $"SELECT Username FROM Users WHERE UserID = {dr.GetInt32(1)}";
-                    var cnn = new SqlConnection(CNSTRING);
-                    cnn.Open();
-                    cmdn.Connection = cnn;
-                    var drn = cmdn.ExecuteReader();
-                    while (drn.Read())
-                    {
-                        name = drn.GetString(0);
-                    }
-                    drn.Close();
-                    cmd.CommandText = $"SELECT COUNT(PostID) FROM Reactions " +
-                        $"WHERE PostID = {dr.GetInt32(0)} AND Liked = 0";
-                    var dislikes = (int)cmd.ExecuteScalar();
-                    cmd.CommandText = $"SELECT COUNT(PostID) FROM Reactions " +
-                        $"WHERE PostID = {dr.GetInt32(0)} AND Liked = 1";
-                    var likes = (int)cmd.ExecuteScalar();
-                    posts.Posts.Add(new Post()
-                    {
-                        ID = dr.GetInt32(0),
-                        Username = name,
-                        Img = (byte[])dr["Img"],
-                        Likes = likes,
-                        Dislikes = dislikes
-                    });
-                }
+                posts.Posts = GetPostsInfo(dr, posts.RequesterID);
                 cn.Close();
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }
@@ -246,7 +218,7 @@ namespace ServerActions
                     $"ORDER BY UploadDate");
                 cmd.Connection = cn;
                 var dr = cmd.ExecuteReader();
-                while (dr.Read())
+                /*while (dr.Read())
                 {
                     string name = String.Empty;
                     var cmdn = new SqlCommand();
@@ -270,7 +242,8 @@ namespace ServerActions
                         Img = (byte[])dr["Img"],
                         Reaction = (liked) ? PostReaction.LIKE : PostReaction.DISLIKE
                     });
-                }
+                }*/
+                posts.Posts = GetPostsInfo(dr, posts.RequesterID);
                 cn.Close();
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }
@@ -289,7 +262,7 @@ namespace ServerActions
                     $"ORDER BY UploadDate");
                 cmd.Connection = cn;
                 var dr = cmd.ExecuteReader();
-                while (dr.Read())
+                /*while (dr.Read())
                 {
                     string name = String.Empty;
                     var cmdn = new SqlCommand();
@@ -313,10 +286,63 @@ namespace ServerActions
                         Img = (byte[])dr["Img"],
                         Reaction = (liked) ? PostReaction.LIKE : PostReaction.DISLIKE
                     });
-                }
+                }*/
+                posts.Posts = GetPostsInfo(dr, posts.RequesterID);
                 cn.Close();
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }
+            return posts;
+        }
+
+        private static List<Post> GetPostsInfo(SqlDataReader dr, int userID)
+        {
+            var posts = new List<Post>();
+            while (dr.Read())
+            {
+                try
+                {
+                    string name = String.Empty;
+                    var cmdn = new SqlCommand();
+                    cmdn.CommandText = $"SELECT Username FROM Users WHERE UserID = {dr.GetInt32(1)}";
+                    var cnn = new SqlConnection(CNSTRING);
+                    cnn.Open();
+                    cmdn.Connection = cnn;
+                    var drn = cmdn.ExecuteReader();
+                    while (drn.Read())
+                    {
+                        name = drn.GetString(0);
+                    }
+                    drn.Close();
+                    cmdn.CommandText = $"SELECT COUNT(PostID) FROM Reactions " +
+                        $"WHERE PostID = {dr.GetInt32(0)} AND Liked = 0";
+                    var dislikes = (int)cmdn.ExecuteScalar() + 1;
+                    cmdn.CommandText = $"SELECT COUNT(PostID) FROM Reactions " +
+                        $"WHERE PostID = {dr.GetInt32(0)} AND Liked = 1";
+                    var likes = (int)cmdn.ExecuteScalar() + 1;
+                    likes = (likes == 0) ? 1 : likes;
+                    dislikes = (dislikes == 0) ? 1 : dislikes;
+                    Post p = new Post()
+                    {
+                        ID = dr.GetInt32(0),
+                        Username = name,
+                        Img = (byte[])dr["Img"],
+                        Likes = likes,
+                        Dislikes = dislikes,
+                    };
+                    try
+                    {
+                        cmdn.CommandText = $"SELECT Liked FROM Reactions " +
+                            $"WHERE UserID = {userID} AND PostID = {dr.GetInt32(0)}";
+                        var liked = (bool)cmdn.ExecuteScalar();
+                        p.Reaction = (liked) ? PostReaction.LIKE : PostReaction.DISLIKE;
+                    }
+                    catch (Exception ex) { }
+                    posts.Add(p);
+                } catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
             return posts;
         }
 

@@ -100,6 +100,7 @@ namespace PawPalsApp.Views
         {
             var imb = (ImageButton)sender;
             Post p = imb.BindingContext as Post;
+            if (p.Reaction == PostReaction.LIKE) p.Likes--;
             p.Reaction = PostReaction.DISLIKE;
             React(p);
         }
@@ -108,7 +109,7 @@ namespace PawPalsApp.Views
         {
             var imb = (ImageButton)sender;
             Post p = imb.BindingContext as Post;
-            if (p.Reaction == PostReaction.LIKE) p.Likes--;
+            p.Dislikes--;
             p.Reaction = PostReaction.NONE;
             React(p);
         }
@@ -126,8 +127,7 @@ namespace PawPalsApp.Views
         {
             var imb = (ImageButton)sender;
             Post p = imb.BindingContext as Post;
-            if (p.Reaction == PostReaction.DISLIKE) p.Dislikes--;
-            else if (p.Reaction == PostReaction.LIKE) p.Likes--;
+            p.Likes--;
             p.Reaction = PostReaction.NONE;
             React(p);
         }
@@ -144,15 +144,15 @@ namespace PawPalsApp.Views
                 try
                 {
                     var res = (PostReaction)ConnectionHelper.Send(pr);
-                    if (p.Reaction == PostReaction.LIKE) p.Likes++;
-                    else if (p.Reaction == PostReaction.DISLIKE) p.Dislikes++;
                     if (res != p.Reaction)
                     {
                         p.Reaction = res;
                         throw new Exception();
                     }
+                    if (p.Reaction == PostReaction.LIKE) p.Likes++;
+                    else if (p.Reaction == PostReaction.DISLIKE) p.Dislikes++;
 
-                } catch { DisplayAlert("Error", AppResources.ErrorTitle, AppResources.Back); }
+                } catch { /*DisplayAlert("Error", AppResources.ErrorTitle, AppResources.Back);*/ }
             });
         }
     }
