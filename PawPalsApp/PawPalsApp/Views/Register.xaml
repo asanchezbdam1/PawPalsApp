@@ -5,54 +5,60 @@
              x:Class="PawPalsApp.Views.Register"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout Padding="40">
-            <StackLayout VerticalOptions="FillAndExpand" Padding="10">
-                <Label Text="Paw Pals"
+        <ScrollView>
+            <StackLayout Style="{StaticResource BgStack}" Padding="40">
+                <Frame Style="{StaticResource MainContent}">
+                    <StackLayout VerticalOptions="FillAndExpand" Padding="10">
+                        <Frame Style="{StaticResource FocusFrame}">
+                            <Label Text="Paw Pals"
                    VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand" FontSize="50" />
-                <Label Text="{x:Static resource:AppResources.Register}"
+                   HorizontalOptions="CenterAndExpand" FontSize="40" />
+                        </Frame>
+                        <Label Text="{x:Static resource:AppResources.Register}"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand"
                    FontSize="30"></Label>
-                <Label Text="{x:Static resource:AppResources.Username}"
+                        <Label Text="{x:Static resource:AppResources.Username}"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="StartAndExpand"
                    FontSize="Subtitle"></Label>
-                <Entry x:Name="txtUser" VerticalOptions="Center"
+                        <Entry x:Name="txtUser" VerticalOptions="Center"
                    HorizontalOptions="FillAndExpand"></Entry>
-                <Label Text="{x:Static resource:AppResources.Email}"
+                        <Label Text="{x:Static resource:AppResources.Email}"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="StartAndExpand"
                    FontSize="Subtitle"></Label>
-                <Entry x:Name="txtEmail" VerticalOptions="Center"
+                        <Entry x:Name="txtEmail" VerticalOptions="Center"
                    HorizontalOptions="FillAndExpand"></Entry>
-                <Label Text="{x:Static resource:AppResources.Password}"
+                        <Label Text="{x:Static resource:AppResources.Password}"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="StartAndExpand"
                    FontSize="Subtitle"></Label>
-                <Entry x:Name="txtPwd" VerticalOptions="Center"
+                        <Entry x:Name="txtPwd" VerticalOptions="Center"
                    HorizontalOptions="FillAndExpand" IsPassword="True"></Entry>
-                <Label Text="{x:Static resource:AppResources.RepeatPassword}"
+                        <Label Text="{x:Static resource:AppResources.RepeatPassword}"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="StartAndExpand"
                    FontSize="Subtitle"></Label>
-                <Entry x:Name="txtRepPwd" VerticalOptions="Center"
+                        <Entry x:Name="txtRepPwd" VerticalOptions="Center"
                    HorizontalOptions="FillAndExpand" IsPassword="True"></Entry>
-                <StackLayout Orientation="Horizontal"
+                        <StackLayout Orientation="Horizontal"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand">
-                    <CheckBox x:Name="chxTerms" VerticalOptions="CenterAndExpand"></CheckBox>
-                    <Label VerticalOptions="CenterAndExpand" Text="{x:Static resource:AppResources.AcceptTerms}"></Label>
-                </StackLayout>
-                
-                <StackLayout Orientation="Horizontal"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand">
-                    <Button x:Name="btnLogin" Text="{x:Static resource:AppResources.Login}" Clicked="btnLogin_Clicked"></Button>
-                    <Button x:Name="btnRegister" Text="{x:Static resource:AppResources.Register}" Clicked="btnRegister_Clicked"></Button>
-                </StackLayout>
+                            <CheckBox x:Name="chxTerms" VerticalOptions="CenterAndExpand"></CheckBox>
+                            <Label VerticalOptions="CenterAndExpand" Text="{x:Static resource:AppResources.AcceptTerms}"></Label>
+                        </StackLayout>
 
+                        <StackLayout Orientation="Horizontal"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+                            <Button Style="{StaticResource SndBtn}" x:Name="btnLogin" Text="{x:Static resource:AppResources.Login}" Clicked="btnLogin_Clicked"></Button>
+                            <Button Style="{StaticResource MainBtn}" x:Name="btnRegister" Text="{x:Static resource:AppResources.Register}" Clicked="btnRegister_Clicked"></Button>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
             </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

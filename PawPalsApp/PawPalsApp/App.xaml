@@ -5,6 +5,9 @@
     <Application.Resources>
         <ResourceDictionary>
             <api:ByteArrayToImageConverter x:Key="ImageConverter"/>
+            <Color x:Key="MainBgColor">#8F8F8F</Color>
+            <Color x:Key="SndBgColor">#5F5F5F</Color>
+            <Color x:Key="FontColor">#2F2F2F</Color>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="Orange"></Setter>
             </Style>
@@ -12,7 +15,42 @@
                 <Setter Property="BackgroundColor" Value="DimGray"></Setter>
             </Style>
             <Style TargetType="Label">
-                <Setter Property="TextColor" Value="LightGray"></Setter>                
+                <Setter Property="TextColor" Value="{StaticResource FontColor}"></Setter>                
+            </Style>
+            <Style TargetType="Button" x:Key="BaseButton">
+                <Setter Property="CornerRadius" Value="5"></Setter>
+                <Setter Property="FontSize" Value="16"></Setter>
+                <Setter Property="FontAttributes" Value="Bold"></Setter>
+            </Style>
+            <Style TargetType="Button" x:Key="MainBtn" BasedOn="{StaticResource BaseButton}">
+                <Setter Property="BackgroundColor" Value="Coral"></Setter>
+                <Setter Property="TextColor" Value="White"></Setter>
+            </Style>
+            <Style TargetType="Button" x:Key="SndBtn" BasedOn="{StaticResource BaseButton}">
+                <Setter Property="BackgroundColor" Value="LightGray"></Setter>
+                <Setter Property="TextColor" Value="{StaticResource FontColor}"></Setter>
+            </Style>
+            <Style TargetType="Button" x:Key="TerBtn" BasedOn="{StaticResource BaseButton}">
+                <Setter Property="BackgroundColor" Value="Gray"></Setter>
+                <Setter Property="TextColor" Value="{StaticResource FontColor}"></Setter>
+            </Style>
+            <Style TargetType="Frame" x:Key="BaseFrame">
+                <Setter Property="CornerRadius" Value="5"></Setter>
+            </Style>
+            <Style TargetType="Frame" x:Key="MainContent" BasedOn="{StaticResource BaseFrame}">
+                <Setter Property="BackgroundColor" Value="{StaticResource MainBgColor}"></Setter>
+            </Style>
+            <Style TargetType="Frame" x:Key="SndContent" BasedOn="{StaticResource BaseFrame}">
+                <Setter Property="BackgroundColor" Value="{StaticResource SndBgColor}"></Setter>
+            </Style>
+            <Style TargetType="Frame" x:Key="FocusFrame" BasedOn="{StaticResource BaseFrame}">
+                <Setter Property="BackgroundColor" Value="Coral"></Setter>
+            </Style>
+            <Style TargetType="StackLayout" x:Key="BgStack">
+                <Setter Property="BackgroundColor" Value="{StaticResource SndBgColor}"></Setter>
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="Gray"></Setter>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

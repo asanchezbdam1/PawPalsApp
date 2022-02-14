@@ -5,34 +5,40 @@
              x:Class="PawPalsApp.Views.Welcome"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout Padding="40">
-            <StackLayout VerticalOptions="FillAndExpand" Padding="10">
-                <Label Text="Paw Pals" Margin="0, 50, 0, 100"
+        <ScrollView>
+            <StackLayout Padding="40" Style="{StaticResource BgStack}">
+                <Frame Style="{StaticResource MainContent}">
+                    <StackLayout VerticalOptions="FillAndExpand" Padding="10">
+                        <Frame Style="{StaticResource FocusFrame}" Margin="0, 20, 0, 50">
+                            <Label Text="Paw Pals"
                    VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand" FontSize="50" />
-                <Label Text="{x:Static resource:AppResources.NewToPawPals}"
+                   HorizontalOptions="CenterAndExpand" FontSize="40" />
+                        </Frame>
+                        <Label Text="{x:Static resource:AppResources.NewToPawPals}"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="StartAndExpand"
                    FontSize="Subtitle"></Label>
-                <Button x:Name="btnRegister" Text="{x:Static resource:AppResources.Register}"
+                        <Button Style="{StaticResource SndBtn}" x:Name="btnRegister" Text="{x:Static resource:AppResources.Register}"
                             Clicked="btnRegister_Clicked" ></Button>
-                <Label Text="{x:Static resource:AppResources.HaveAnAccount}"
+                        <Label Text="{x:Static resource:AppResources.HaveAnAccount}"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="StartAndExpand"
                    FontSize="Subtitle"></Label>
-                <Button x:Name="btnLogin" Text="{x:Static resource:AppResources.Login}"
+                        <Button Style="{StaticResource MainBtn}" x:Name="btnLogin" Text="{x:Static resource:AppResources.Login}"
                         Clicked="btnLogin_Clicked"></Button>
-                <Button Margin="0, 100, 0, 0" x:Name="btnEnter" Text="{x:Static resource:AppResources.Enter}"
+                        <Button Style="{StaticResource TerBtn}" Margin="0, 100, 0, 0" x:Name="btnEnter" Text="{x:Static resource:AppResources.Enter}"
                         Clicked="btnEnter_Clicked"></Button>
-                <Label Text="{x:Static resource:AppResources.EnteringWithoutPass}"
+                        <Label Text="{x:Static resource:AppResources.EnteringWithoutPass}"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="StartAndExpand"
                    FontSize="Body"></Label>
-                <StackLayout Orientation="Horizontal"
+                        <StackLayout Orientation="Horizontal"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand">
-                </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
             </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

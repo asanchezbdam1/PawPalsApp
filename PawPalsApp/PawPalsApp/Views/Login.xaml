@@ -5,37 +5,43 @@
              x:Class="PawPalsApp.Views.Login"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout Padding="40">
-            <StackLayout VerticalOptions="FillAndExpand" Padding="10">
-                <Label Text="Paw Pals"
+        <ScrollView>
+            <StackLayout Style="{StaticResource BgStack}" Padding="40">
+                <Frame Style="{StaticResource MainContent}">
+                    <StackLayout VerticalOptions="FillAndExpand" Padding="10">
+                        <Frame Style="{StaticResource FocusFrame}">
+                            <Label Text="Paw Pals"
                    VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand" FontSize="50" />
-                <Label Text="{x:Static resource:AppResources.Login}"
+                   HorizontalOptions="CenterAndExpand" FontSize="40" />
+                        </Frame>
+                        <Label Text="{x:Static resource:AppResources.Login}"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand"
                    FontSize="30"></Label>
-                <Label Text="{x:Static resource:AppResources.Username}"
+                        <Label Text="{x:Static resource:AppResources.Username}"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="StartAndExpand"
                    FontSize="Subtitle"></Label>
-                <Entry x:Name="txtUser" VerticalOptions="Center"
+                        <Entry x:Name="txtUser" VerticalOptions="Center"
                    HorizontalOptions="FillAndExpand"></Entry>
-                <Label Text="{x:Static resource:AppResources.Password}"
+                        <Label Text="{x:Static resource:AppResources.Password}"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="StartAndExpand"
                    FontSize="Subtitle"></Label>
-                <Entry x:Name="txtPwd" VerticalOptions="Center"
+                        <Entry x:Name="txtPwd" VerticalOptions="Center"
                    HorizontalOptions="FillAndExpand" IsPassword="True"></Entry>
-                <StackLayout Orientation="Horizontal"
+                        <StackLayout Orientation="Horizontal"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand">
-                    <Button x:Name="btnRegister" Text="{x:Static resource:AppResources.Register}"
+                            <Button Style="{StaticResource SndBtn}" x:Name="btnRegister" Text="{x:Static resource:AppResources.Register}"
                             Clicked="btnRegister_Clicked" ></Button>
-                    <Button x:Name="btnLogin" Text="{x:Static resource:AppResources.Login}"
+                            <Button Style="{StaticResource MainBtn}" x:Name="btnLogin" Text="{x:Static resource:AppResources.Login}"
                             Clicked="btnLogin_Clicked" ></Button>
-                </StackLayout>
+                        </StackLayout>
 
+                    </StackLayout>
+                </Frame>
             </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
