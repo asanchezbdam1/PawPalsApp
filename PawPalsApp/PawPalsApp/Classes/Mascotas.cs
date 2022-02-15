@@ -11,8 +11,7 @@ namespace PawPalsApp.Classes
         public int Id { get; set; }
         [MaxLength(50)]
         public string Nombre { get; set; }
-        [MaxLength(50)]
-        public string Imagen { get; set; }
+        public byte[] Imagen { get; set; }
 
     }
 }
