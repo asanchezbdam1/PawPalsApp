@@ -105,10 +105,11 @@ namespace PawPalsApp.Views
                 string action = await DisplayActionSheet("ActionSheet: SavePhoto?", AppResources.Back, null, "Photo");
                 if (action.Equals("Photo"))
                 {
-                    App.SQLiteDBMascota.SaveMascotaAsync(new Mascotas()
+                    byte[] img = await PickPost();
+                    await App.SQLiteDBMascota.SaveMascotaAsync(new Mascotas()
                     {
                         Nombre = result,
-                        Imagen = PickPost().Result
+                        Imagen = img
                     });
                 }
             }
