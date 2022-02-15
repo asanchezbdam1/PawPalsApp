@@ -18,10 +18,10 @@ namespace PawPalsApp.Views
         public Care()
         {
             InitializeComponent();
-            obtenerDatos();
+            obtenerNombreMascotas();
         }
 
-        private async void obtenerDatos()
+        private async void obtenerNombreMascotas()
         {
             //Obtención de datos
             var mascotas = await App.SQLiteDBMascota.GetMascotasAsync();
@@ -43,6 +43,34 @@ namespace PawPalsApp.Views
             }
             return nombres;
         }
+        private async void obtenerDietasMascota(string nombreMascota)
+        {
+            //Obtención de datos
+            var dietas = await App.SQLiteDBDieta.GetDietaByMascotaAsync(nombreMascota);
+            if (dietas != null)
+            {
+                lvDiets.ItemsSource = dietas;
+            }
+        }
+        private async void obtenerEjerciciosMascota(string nombreMascota)
+        {
+            //Obtención de datos
+            var ejercicios = await App.SQLiteDBEjercicio.GetEjercicioByMascotaAsync(nombreMascota);
+            if (ejercicios != null)
+            {
+                lvExercises.ItemsSource = ejercicios;
+            }
+        }
+        private async void obtenerHygieneMascota(string nombreMascota)
+        {
+            //Obtención de datos
+            var higienes = await App.SQLiteDBHigiene.GetHigieneByMascotaAsync(nombreMascota);
+            if (higienes != null)
+            {
+                lvHygiene.ItemsSource = higienes;
+            }
+        }
+
         private void btnAddDiet_Clicked(object sender, EventArgs e)
         {
             if (!String.IsNullOrWhiteSpace(eDiet.Text))
@@ -59,7 +87,10 @@ namespace PawPalsApp.Views
 
         private void btnDeleteDiet_Clicked(object sender, EventArgs e)
         {
-
+            if (lvDiets.SelectedItem != null)
+            {
+                App.SQLiteDBDieta.DeleteDietaAsync((Dieta)lvDiets.SelectedItem);
+            }
         }
 
         private void btnAddexercise_Clicked(object sender, EventArgs e)
@@ -68,13 +99,20 @@ namespace PawPalsApp.Views
             {
                 string nom = pMasc.SelectedItem.ToString();
                 Mascotas mascota = App.SQLiteDBMascota.GetMascotasByNameAsync(nom).Result;
-
+                App.SQLiteDBEjercicio.SaveEjercicioAsync(new Ejercicios()
+                {
+                    Ejercicio = eExercise.Text,
+                    IdMascota = mascota.Nombre
+                });
             }
         }
 
         private void btnDeleteexercise_Clicked(object sender, EventArgs e)
         {
-
+            if (lvExercises.SelectedItem != null)
+            {
+                App.SQLiteDBEjercicio.DeleteEjercicioAsync((Ejercicios)lvExercises.SelectedItem);
+            } 
         }
 
         private void btnAddHygiene_Clicked(object sender, EventArgs e)
@@ -83,12 +121,20 @@ namespace PawPalsApp.Views
             {
                 string nom = pMasc.SelectedItem.ToString();
                 Mascotas mascota = App.SQLiteDBMascota.GetMascotasByNameAsync(nom).Result;
+                App.SQLiteDBHigiene.SaveHigieneAsync(new Higiene()
+                {
+                    Higienes = eHygiene.Text,
+                    IdMascota = mascota.Nombre
+                });
             }
         }
 
         private void btnDeleteHygiene_Clicked(object sender, EventArgs e)
         {
-
+            if (lvHygiene.SelectedItem != null)
+            {
+                App.SQLiteDBHigiene.DeleteHigieneAsync((Higiene)lvHygiene.SelectedItem);
+            }
         }
 
 
@@ -111,6 +157,7 @@ namespace PawPalsApp.Views
                         Nombre = result,
                         Imagen = img
                     });
+                    obtenerNombreMascotas();
                 }
             }
         }
@@ -145,9 +192,16 @@ namespace PawPalsApp.Views
             return buf;
         }
 
+        private void clearLists()
+        {
+            
+        }
         private void pMasc_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            string nombreMascota = pMasc.SelectedItem.ToString();
+            obtenerDietasMascota(nombreMascota);
+            obtenerEjerciciosMascota(nombreMascota);
+            obtenerHygieneMascota(nombreMascota);
         }
     }
 }

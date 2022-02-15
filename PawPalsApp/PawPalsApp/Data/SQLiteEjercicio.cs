@@ -16,7 +16,7 @@ namespace PawPalsApp.Data
             db = new SQLiteAsyncConnection(dbPath);
             db.CreateTableAsync<Ejercicios>().Wait();
         }
-        public Task<int> SaveHigieneAsync(Ejercicios ejercicio)
+        public Task<int> SaveEjercicioAsync(Ejercicios ejercicio)
         {
             if (ejercicio.Id == 0)
             {
@@ -27,16 +27,16 @@ namespace PawPalsApp.Data
                 return db.UpdateAsync(ejercicio);
             }
         }
-        public Task<List<Ejercicios>> GetHigieneAsync()
+        public Task<List<Ejercicios>> GetEjercicioAsync()
         {
             return db.Table<Ejercicios>().ToListAsync();
         }
-        public Task<List<Ejercicios>> GetHigieneByMascotaAsync(string nombreMascota)
+        public Task<List<Ejercicios>> GetEjercicioByMascotaAsync(string nombreMascota)
         {
             return
            db.Table<Ejercicios>().Where(p => p.IdMascota.Equals(nombreMascota)).ToListAsync();
         }
-        public Task<int> DeleteHigieneAsync(Ejercicios ejercicio)
+        public Task<int> DeleteEjercicioAsync(Ejercicios ejercicio)
         {
             return db.DeleteAsync(ejercicio);
         }
