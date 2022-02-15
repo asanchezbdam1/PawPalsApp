@@ -75,6 +75,7 @@ namespace PawPalsApp.Views
             object[] items = {
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -90,6 +91,7 @@ namespace PawPalsApp.Views
                 },
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -116,6 +118,7 @@ namespace PawPalsApp.Views
             object[] items = {
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -132,6 +135,7 @@ namespace PawPalsApp.Views
                 },
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -158,6 +162,7 @@ namespace PawPalsApp.Views
             object[] items = {
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -174,6 +179,7 @@ namespace PawPalsApp.Views
                 },
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -200,6 +206,7 @@ namespace PawPalsApp.Views
             object[] items = {
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -215,6 +222,7 @@ namespace PawPalsApp.Views
                 },
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -240,6 +248,7 @@ namespace PawPalsApp.Views
             object[] items = {
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -255,6 +264,7 @@ namespace PawPalsApp.Views
                 },
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -280,6 +290,7 @@ namespace PawPalsApp.Views
             object[] items = {
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -295,6 +306,7 @@ namespace PawPalsApp.Views
                 },
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -320,6 +332,7 @@ namespace PawPalsApp.Views
             object[] items = {
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -335,6 +348,7 @@ namespace PawPalsApp.Views
                 },
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -360,6 +374,7 @@ namespace PawPalsApp.Views
             object[] items = {
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -375,6 +390,7 @@ namespace PawPalsApp.Views
                 },
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -400,6 +416,7 @@ namespace PawPalsApp.Views
             object[] items = {
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {
@@ -415,6 +432,7 @@ namespace PawPalsApp.Views
                 },
                 new Frame()
                 {
+                    BackgroundColor = (Color)App.Current.Resources["MainBgColor"],
                     Content =
                         new StackLayout()
                         {

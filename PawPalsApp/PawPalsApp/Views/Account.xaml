@@ -9,7 +9,7 @@
         
        
     <StackLayout>
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
                 <ImageButton x:Name="ibtnSalir" Margin="20" HorizontalOptions="Start" BackgroundColor="White"
                         Source="cerrarSesion.png" CornerRadius="360" WidthRequest="40" Clicked="ibtnSalir_Clicked" HeightRequest="40"></ImageButton>
                 <ImageButton x:Name="ibtnEditar" IsVisible="true" Margin="20" HorizontalOptions="EndAndExpand" BackgroundColor="White"

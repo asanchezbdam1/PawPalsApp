@@ -152,7 +152,7 @@ namespace PawPalsApp.Views
                     if (p.Reaction == PostReaction.LIKE) p.Likes++;
                     else if (p.Reaction == PostReaction.DISLIKE) p.Dislikes++;
 
-                } catch { /*DisplayAlert("Error", AppResources.ErrorTitle, AppResources.Back);*/ }
+                } catch { }
             });
         }
     }

@@ -6,7 +6,7 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="40" Style="{StaticResource BgStack}">
+            <StackLayout Padding="40, 40, 40, 0" Style="{StaticResource BgStack}">
                 <Frame Style="{StaticResource MainContent}">
                     <StackLayout VerticalOptions="FillAndExpand" Padding="10">
                         <Frame Style="{StaticResource FocusFrame}" Margin="0, 20, 0, 50">

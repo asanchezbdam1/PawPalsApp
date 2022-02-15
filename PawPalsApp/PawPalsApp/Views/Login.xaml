@@ -6,7 +6,7 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Style="{StaticResource BgStack}" Padding="40">
+            <StackLayout Padding="40, 40, 40, 0" Style="{StaticResource BgStack}">
                 <Frame Style="{StaticResource MainContent}">
                     <StackLayout VerticalOptions="FillAndExpand" Padding="10">
                         <Frame Style="{StaticResource FocusFrame}">
@@ -14,7 +14,7 @@
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand" FontSize="40" />
                         </Frame>
-                        <Label Text="{x:Static resource:AppResources.Login}"
+                        <Label Margin="0, 20, 0, 50" Text="{x:Static resource:AppResources.Login}"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand"
                    FontSize="30"></Label>
@@ -32,7 +32,7 @@
                    HorizontalOptions="FillAndExpand" IsPassword="True"></Entry>
                         <StackLayout Orientation="Horizontal"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand">
+                HorizontalOptions="CenterAndExpand" Margin="0, 80, 0, 0">
                             <Button Style="{StaticResource SndBtn}" x:Name="btnRegister" Text="{x:Static resource:AppResources.Register}"
                             Clicked="btnRegister_Clicked" ></Button>
                             <Button Style="{StaticResource MainBtn}" x:Name="btnLogin" Text="{x:Static resource:AppResources.Login}"

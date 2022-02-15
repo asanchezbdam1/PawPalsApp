@@ -8,6 +8,11 @@
             <Color x:Key="MainBgColor">#8F8F8F</Color>
             <Color x:Key="SndBgColor">#5F5F5F</Color>
             <Color x:Key="FontColor">#2F2F2F</Color>
+            <Color x:Key="SeparatorColor">#FE9920</Color>
+            <Color x:Key="PostBgColor">#ff8929</Color>
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{StaticResource SndBgColor}"></Setter>
+            </Style>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="Orange"></Setter>
             </Style>
@@ -16,6 +21,9 @@
             </Style>
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource FontColor}"></Setter>                
+            </Style>
+            <Style TargetType="ImageButton">
+                <Setter Property="BackgroundColor" Value="Transparent"></Setter>
             </Style>
             <Style TargetType="Button" x:Key="BaseButton">
                 <Setter Property="CornerRadius" Value="5"></Setter>
@@ -50,7 +58,11 @@
                 <Setter Property="BackgroundColor" Value="{StaticResource SndBgColor}"></Setter>
             </Style>
             <Style TargetType="Entry">
-                <Setter Property="BackgroundColor" Value="Gray"></Setter>
+                <Setter Property="BackgroundColor" Value="LightGray"></Setter>
+                <Setter Property="TextColor" Value="{StaticResource FontColor}"></Setter>
+            </Style>
+            <Style TargetType="CheckBox">
+                <Setter Property="Color" Value="Coral"></Setter>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

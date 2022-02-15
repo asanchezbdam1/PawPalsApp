@@ -5,20 +5,20 @@
              x:Class="PawPalsApp.Views.Guide">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <StackLayout Orientation="Horizontal" HeightRequest="120" BackgroundColor="#FE9920">
+            <StackLayout Orientation="Horizontal" HeightRequest="120" BackgroundColor="{StaticResource SeparatorColor}">
                 
                 <ImageButton x:Name="btnPerro" HorizontalOptions="CenterAndExpand" HeightRequest="80" IsEnabled="False"
-                             WidthRequest="80" Source="DogIcon.png" BackgroundColor="#FE9920" Clicked="btnPerro_Clicked" ></ImageButton>
+                             WidthRequest="80" Source="DogIcon.png" Clicked="btnPerro_Clicked" ></ImageButton>
                 
                 <ImageButton x:Name="btnGato" HorizontalOptions="CenterAndExpand" HeightRequest="80" 
-                             WidthRequest="80" Source="CatIcon2.png" BackgroundColor="#FE9920" Clicked="btnGato_Clicked"></ImageButton>
+                             WidthRequest="80" Source="CatIcon2.png" Clicked="btnGato_Clicked"></ImageButton>
                 
                 <ImageButton x:Name="btnRoedor" HorizontalOptions="CenterAndExpand" HeightRequest="80" 
-                             WidthRequest="80" Source="RodentIcon2.png" BackgroundColor="#FE9920" Clicked="btnRoedor_Clicked"></ImageButton>
+                             WidthRequest="80" Source="RodentIcon2.png" Clicked="btnRoedor_Clicked"></ImageButton>
                 
             </StackLayout>
             <Picker x:Name="Piqueador" Title="{x:Static resource:AppResources.SelApar}" HorizontalTextAlignment="Center" SelectedIndexChanged="Piqueador_SelectedIndexChanged"></Picker>
-            <StackLayout Orientation="Vertical" Padding="40,0,40,0">
+            <StackLayout Orientation="Vertical" Padding="30,0,30,0">
                 <ScrollView>
                     <StackLayout x:Name="slContenido">
                     </StackLayout>
