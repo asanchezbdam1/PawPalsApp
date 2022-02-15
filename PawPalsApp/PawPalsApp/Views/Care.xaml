@@ -12,14 +12,16 @@
             <StackLayout BackgroundColor="Orange" HeightRequest="20" WidthRequest="100"/>
             <Frame CornerRadius="10" Margin="20,10,20,0">
                 <StackLayout>
-                    <ImageButton BackgroundColor="White" HorizontalOptions="End" Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                    <ImageButton x:Name="btnAñadirMascota" BackgroundColor="White" HorizontalOptions="End" Clicked="btnAñadirMascota_Clicked"
+                                 Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
                     <Picker x:Name="pMasc" HorizontalTextAlignment="Center" VerticalOptions="Center"></Picker>
                 </StackLayout>
             </Frame>
             <ScrollView>
                 <StackLayout>
                     <Frame CornerRadius="10" Margin="10" WidthRequest="200" HorizontalOptions="Center">
-                        <Image HorizontalOptions="Center" Source="hamster.jpg" HeightRequest="200" WidthRequest="200"/>
+                        <Image HorizontalOptions="Center" 
+                               Source="{Binding Imagen, Converter={StaticResource ImageConverter}, Mode=Default}" HeightRequest="200" WidthRequest="200"/>
                     </Frame>
 
                     <Frame CornerRadius="30" Margin="30,0,30,10">
@@ -61,7 +63,7 @@
                                 <StackLayout Orientation="Horizontal">
                                     <ImageButton x:Name="btnAddHygiene" BackgroundColor="White" HorizontalOptions="Start" Clicked="btnAddHygiene_Clicked" Source="borrar.png" HeightRequest="30" WidthRequest="30"></ImageButton>
                                     <ImageButton x:Name="btnDeleteHygiene" BackgroundColor="White" HorizontalOptions="EndAndExpand" Clicked="btnDeleteHygiene_Clicked" Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
-                                </StackLayout >
+                                </StackLayout>
 
                                 <Entry x:Name="eHygiene" Placeholder="{x:Static resource:AppResources.AddHygiene}" HorizontalTextAlignment="Center"></Entry>
                                 <ListView x:Name="lvHygiene">

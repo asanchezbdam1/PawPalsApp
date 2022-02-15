@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PawPalsApp.Classes
 {
-    class Higiene
+    public class Higiene
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
