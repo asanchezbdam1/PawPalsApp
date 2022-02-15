@@ -6,8 +6,8 @@
             x:Class="PawPalsApp.Views.PaginaMenu"
             xmlns:local="clr-namespace:PawPalsApp.Views"
             xmlns:resource="clr-namespace:PawPalsApp.Resx"
-            BarBackgroundColor="LightGray" UnselectedTabColor="#3F3F3F"
-            SelectedTabColor="Coral" NavigationPage.HasNavigationBar="False">
+            BarBackgroundColor="{StaticResource SndBgColor}" UnselectedTabColor="{StaticResource LblFontColor}"
+            SelectedTabColor="{StaticResource BtnBgColor}" NavigationPage.HasNavigationBar="False">
 
     <!-- Para los recursos de idiomas, añadir: -->
     <!-- xmlns:resource="clr-namespace:PawPalsApp.Resx"-->

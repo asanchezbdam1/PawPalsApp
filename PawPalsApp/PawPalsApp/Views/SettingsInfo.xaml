@@ -5,16 +5,16 @@
              x:Class="PawPalsApp.Views.SettingsInfo" Title="{x:Static resource:AppResources.Help}">
     <ContentPage.Content>
         <StackLayout>
-            
-            <Frame x:Name="frManual" Margin="50,25,50,25">
+
+            <Frame x:Name="frManual" Margin="50,25,50,25" Style="{StaticResource FocusFrame}">
                 <StackLayout HorizontalOptions="Center">
                     <Image Source="drawable/manual.png" WidthRequest="35" HeightRequest="35"></Image>
                     <Label Text="{x:Static resource:AppResources.UserManual}" FontSize="21"></Label>
                     <BoxView BackgroundColor="Black" HeightRequest="1"></BoxView>
                 </StackLayout>
             </Frame>
-            
-            <Frame Margin="50,25,50,25">
+
+            <Frame Margin="50,25,50,25" Style="{StaticResource FocusFrame}">
                 <StackLayout>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                         <Label Text="{x:Static resource:AppResources.Contact}" FontSize="21"></Label>
@@ -33,8 +33,8 @@
                     </StackLayout>
                 </StackLayout>
             </Frame>
-            
-            <Frame x:Name="frPriva" Margin="50,25,50,25">
+
+            <Frame x:Name="frPriva" Margin="50,25,50,25" Style="{StaticResource FocusFrame}">
                 <StackLayout HorizontalOptions="Center">
                     <Image Source="drawable/terms.png" WidthRequest="35" HeightRequest="35"></Image>
                     <Label Text="{x:Static resource:AppResources.PrivaPol}" FontSize="21"></Label>

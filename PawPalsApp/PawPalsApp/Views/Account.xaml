@@ -9,45 +9,45 @@
         
        
     <StackLayout>
-            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
-                <ImageButton x:Name="ibtnSalir" Margin="20" HorizontalOptions="Start" BackgroundColor="White"
+            <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource SeparatorColor}">
+                <ImageButton x:Name="ibtnSalir" Margin="20" HorizontalOptions="Start"
                         Source="cerrarSesion.png" CornerRadius="360" WidthRequest="40" Clicked="ibtnSalir_Clicked" HeightRequest="40"></ImageButton>
-                <ImageButton x:Name="ibtnEditar" IsVisible="true" Margin="20" HorizontalOptions="EndAndExpand" BackgroundColor="White"
+                <ImageButton x:Name="ibtnEditar" IsVisible="true" Margin="20" HorizontalOptions="EndAndExpand"
                         Source="editar.png" WidthRequest="40"  HeightRequest="40" Clicked="ibtnEditar_Clicked"></ImageButton>
-                <ImageButton x:Name="ibtnGuardar" IsVisible="false" Margin="20" HorizontalOptions="EndAndExpand" BackgroundColor="White"
+                <ImageButton x:Name="ibtnGuardar" IsVisible="false" Margin="20" HorizontalOptions="EndAndExpand"
                         Source="floppyDisk.png" WidthRequest="40"  HeightRequest="40" Clicked="ibtnGuardar_Clicked"></ImageButton>
             </StackLayout>
         
             <StackLayout Orientation="Vertical" HorizontalOptions="Center">
             <ImageButton x:Name="ibtnPerfil" Source="defUser.png" Clicked="ibtnPerfil_Clicked"
                          CornerRadius="360" WidthRequest="200" HeightRequest="200"></ImageButton>
-            <Label x:Name="lblUser" TextColor="Black"
+            <Label x:Name="lblUser" TextColor="{StaticResource LblFontColor}"
                     HorizontalTextAlignment="Center" FontSize="28" Margin="0,10,0,0"></Label>
         </StackLayout>
 
-        <Frame Margin="20" CornerRadius="25">
+        <Frame Margin="20" CornerRadius="25" Style="{StaticResource MainContent}">
                 <StackLayout>
                     <StackLayout Padding="20,10,20,10" >
-                        <Label Text="{x:Static resource:AppResources.Personal_name}" TextColor="Black" 
+                        <Label Text="{x:Static resource:AppResources.Personal_name}" 
                     FontSize="12"></Label>
                         <Entry x:Name="entUserName" IsReadOnly="False" Placeholder="{x:Static resource:AppResources.FullName}"
                                IsEnabled="False"
                     Margin="20,0,20,0" HorizontalTextAlignment="Center"></Entry>
                     </StackLayout>
                     <StackLayout Padding="20,10,20,10">
-                        <Label Text="Email" TextColor="Black" 
+                        <Label Text="Email" 
                     FontSize="12"></Label>
                         <Entry x:Name="entEmail" IsEnabled="False"  
                     Margin="20,0,20,0" HorizontalTextAlignment="Center"></Entry>
                     </StackLayout>
                     <StackLayout Padding="20,10,20,10">
-                        <Label Text="{x:Static resource:AppResources.Country}" TextColor="Black" 
+                        <Label Text="{x:Static resource:AppResources.Country}" 
                         FontSize="12"></Label>
                         <Entry x:Name="ePais" IsEnabled="False" Placeholder="{x:Static resource:AppResources.NomCountry}" FontSize="14"
                         Margin="20,0,20,0" HorizontalTextAlignment="Center"></Entry>
                     </StackLayout>
                     <StackLayout Padding="20,10,20,10">
-                        <Label Text="{x:Static resource:AppResources.City}" TextColor="Black" 
+                        <Label Text="{x:Static resource:AppResources.City}" 
                             FontSize="12"></Label>
                         <Entry x:Name="eCiudad" IsEnabled="False" Placeholder="{x:Static resource:AppResources.NomCity}" FontSize="14"
                             Margin="20,0,20,0" HorizontalTextAlignment="Center"></Entry>

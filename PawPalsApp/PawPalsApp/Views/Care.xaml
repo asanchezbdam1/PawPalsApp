@@ -5,11 +5,10 @@
              xmlns:resource="clr-namespace:PawPalsApp.Resx">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
-                <Label Text="{x:Static resource:AppResources.Care}" FontSize="50"/>
-                <Image Source="paw.png" HeightRequest="50" WidthRequest="50" Rotation="20"/>
+            <StackLayout BackgroundColor="{StaticResource SeparatorColor}" HorizontalOptions="Fill" Orientation="Horizontal">
+                <Label Text="{x:Static resource:AppResources.Care}" HorizontalOptions="EndAndExpand" FontSize="50"/>
+                <Image Source="paw.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="StartAndExpand" Rotation="20"/>
             </StackLayout>
-            <StackLayout BackgroundColor="Orange" HeightRequest="20" WidthRequest="100"/>
             <Frame CornerRadius="10" Margin="20,10,20,0">
                 <StackLayout>
                     <ImageButton x:Name="btnAñadirMascota" BackgroundColor="White" HorizontalOptions="End" Clicked="btnAñadirMascota_Clicked"

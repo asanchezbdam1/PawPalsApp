@@ -4,7 +4,7 @@
              x:Class="PawPalsApp.Views.CuteOMeter">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Transparent">
-            <StackLayout Orientation="Horizontal" Padding="10" BackgroundColor="LightGray">
+            <StackLayout Orientation="Horizontal" Padding="10" BackgroundColor="{StaticResource SeparatorColor}">
                 <ImageButton x:Name="btnHistorial" CornerRadius="100" Source="history.png" Pressed="btnHistorial_Pressed"
             HorizontalOptions="Start" HeightRequest="40"></ImageButton>
                 <ImageButton x:Name="btnRefresh" CornerRadius="100" Source="refresh.png" Pressed="RefreshView_Refreshing"
@@ -13,7 +13,7 @@
             HorizontalOptions="End" HeightRequest="40"></ImageButton>
             </StackLayout>
             <RefreshView x:Name="rvPosts" Refreshing="RefreshView_Refreshing">
-                <ListView RowHeight="540" x:Name="lvPosts" SelectionMode="None" SeparatorColor="Coral">
+                <ListView RowHeight="540" x:Name="lvPosts" SelectionMode="None" SeparatorVisibility="None">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

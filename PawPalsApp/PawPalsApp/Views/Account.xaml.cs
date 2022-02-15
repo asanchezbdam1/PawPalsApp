@@ -17,7 +17,6 @@ namespace PawPalsApp.Views
         public Account()
         {
             InitializeComponent();
-            cargarDatos();
         }
 
         /** Método que modifica las propiedades 'IsEabled' y 'IsReadOnly' de diferentes componentes para hacer que aparezcan y desaparezcan.
@@ -93,6 +92,27 @@ namespace PawPalsApp.Views
         {
             ((App)App.Current).User = new User();
             App.Current.MainPage = new NavigationPage(new Welcome());
+        }
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
+            if (((App)App.Current).User == null)
+            {
+                var res = await DisplayAlert(AppResources.ErrorTitle, AppResources.NeedLogin, AppResources.Login, AppResources.Back);
+                if (res)
+                {
+                    App.Current.MainPage = new NavigationPage(new Welcome());
+                }
+                else
+                {
+                    var page = ((TabbedPage)((NavigationPage)App.Current.MainPage).CurrentPage);
+                    page.CurrentPage = page.Children[0];
+                }
+            }
+            else
+            {
+                cargarDatos();
+            }
         }
     }
 }

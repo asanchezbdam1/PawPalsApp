@@ -394,4 +394,7 @@ Has aceptado los términos y condiciones.</value>
   <data name="Updated" xml:space="preserve">
     <value>Usuario actualizado.</value>
   </data>
+  <data name="NeedLogin" xml:space="preserve">
+    <value>Inicio de sesión necesario para continuar.</value>
+  </data>
 </root>

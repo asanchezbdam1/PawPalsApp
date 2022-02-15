@@ -105,7 +105,7 @@ namespace PawPalsApp.Views
                 string action = await DisplayActionSheet("ActionSheet: SavePhoto?", AppResources.Back, null, "Photo");
                 if (action.Equals("Photo"))
                 {
-                    byte[] img = await PickPost();
+                    byte[] img = await ImagePicker.PickPost();
                     await App.SQLiteDBMascota.SaveMascotaAsync(new Mascotas()
                     {
                         Nombre = result,
@@ -113,36 +113,6 @@ namespace PawPalsApp.Views
                     });
                 }
             }
-        }
-
-        private async Task<byte[]> PickPost()
-        {
-            await CrossMedia.Current.Initialize();
-            if (!CrossMedia.IsSupported)
-            {
-                await DisplayAlert("Error", AppResources.ErrorTitle, AppResources.Back);
-                return null;
-            }
-            var opt = new PickMediaOptions()
-            {
-                PhotoSize = PhotoSize.Small,
-                CompressionQuality = 25
-            };
-
-            var img = await CrossMedia.Current.PickPhotoAsync(opt);
-
-            if (img == null) return null;
-            byte[] buf = new byte[img.GetStream().Length];
-
-            img.GetStream().Read(buf, 0, buf.Length);
-
-            if (buf.Length > ConnectionHelper.MAX_IMAGE_SIZE)
-            {
-                DisplayAlert(AppResources.ErrorTitle, AppResources.ImageSizeError, AppResources.Back);
-                return null;
-            }
-
-            return buf;
         }
 
         private void pMasc_SelectedIndexChanged(object sender, EventArgs e)

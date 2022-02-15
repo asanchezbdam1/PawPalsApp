@@ -53,34 +53,22 @@ namespace PawPalsApp.Views
 
         private async void PickPost()
         {
-            await CrossMedia.Current.Initialize();
-            if (!CrossMedia.IsSupported)
+            byte[] buf = await ImagePicker.PickPost();
+            if (buf == null)
             {
-                await DisplayAlert("Error", AppResources.ErrorTitle, AppResources.Back);
-                return;
+                DisplayAlert("Error", AppResources.ErrorTitle, AppResources.Back);
             }
-            var opt = new PickMediaOptions()
+            else
             {
-                PhotoSize = PhotoSize.Small,
-                CompressionQuality = 25
-            };
-            var img = await CrossMedia.Current.PickPhotoAsync(opt);
-            if (img == null) return;
-            byte[] buf = new byte[img.GetStream().Length];
-            img.GetStream().Read(buf, 0, buf.Length);
-            if (buf.Length > ConnectionHelper.MAX_IMAGE_SIZE)
-            {
-                DisplayAlert(AppResources.ErrorTitle, AppResources.ImageSizeError, AppResources.Back);
-                return;
+                Post p = new Post
+                {
+                    Username = ((App)App.Current).User.Login,
+                    UID = ((App)App.Current).User.Id,
+                    Img = buf
+                };
+                Task.Run(() => { ConnectionHelper.Send(p); } );
             }
-            Post p = new Post
-            {
-                Username = ((App)App.Current).User.Login,
-                UID = ((App)App.Current).User.Id,
-                Img = buf
-            };
-            Task.Run(() => { ConnectionHelper.Send(p); } );
-            
+
         }
 
         private void btnAdd_Pressed(object sender, EventArgs e)
@@ -154,6 +142,23 @@ namespace PawPalsApp.Views
 
                 } catch { }
             });
+        }
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
+            if (((App)App.Current).User == null)
+            {
+                var res = await DisplayAlert(AppResources.ErrorTitle, AppResources.NeedLogin, AppResources.Login, AppResources.Back);
+                if (res)
+                {
+                    App.Current.MainPage = new NavigationPage(new Welcome());
+                }
+                else
+                {
+                    var page = ((TabbedPage)((NavigationPage)App.Current.MainPage).CurrentPage);
+                    page.CurrentPage = page.Children[0];
+                }
+            }
         }
     }
 }

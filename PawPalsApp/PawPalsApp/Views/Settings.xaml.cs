@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PawPalsApp.Resx;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -43,6 +44,23 @@ namespace PawPalsApp.Views
                     Navigation.PushAsync(new SettingsInfo());
                 })
             });
+        }
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
+            if (((App)App.Current).User == null)
+            {
+                var res = await DisplayAlert(AppResources.ErrorTitle, AppResources.NeedLogin, AppResources.Login, AppResources.Back);
+                if (res)
+                {
+                    App.Current.MainPage = new NavigationPage(new Welcome());
+                }
+                else
+                {
+                    var page = ((TabbedPage)((NavigationPage)App.Current.MainPage).CurrentPage);
+                    page.CurrentPage = page.Children[0];
+                }
+            }
         }
     }
 }

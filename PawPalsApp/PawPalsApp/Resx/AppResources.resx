@@ -391,4 +391,7 @@ You have accepted the terms and conditions.</value>
   <data name="Updated" xml:space="preserve">
     <value>User updated.</value>
   </data>
+  <data name="NeedLogin" xml:space="preserve">
+    <value>Login nedded to continue.</value>
+  </data>
 </root>

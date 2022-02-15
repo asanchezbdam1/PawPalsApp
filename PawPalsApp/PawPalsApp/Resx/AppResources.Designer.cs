@@ -474,6 +474,15 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Login nedded to continue..
+        /// </summary>
+        internal static string NeedLogin {
+            get {
+                return ResourceManager.GetString("NeedLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a New to PawPals?.
         /// </summary>
         internal static string NewToPawPals {

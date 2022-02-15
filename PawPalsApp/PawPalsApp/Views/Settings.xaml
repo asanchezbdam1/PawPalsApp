@@ -5,28 +5,29 @@
              x:Class="PawPalsApp.Views.Settings">
     <ContentPage.Content>
         <StackLayout>
-            <Frame  Margin="20,10,20,10">
+            <Frame BackgroundColor="{StaticResource SeparatorColor}">
                 <StackLayout Orientation="Horizontal" Spacing="20"
                              HorizontalOptions="Center" VerticalOptions="Center">
-                    <Label Text="{x:Static resource:AppResources.Settings}" FontSize="20"></Label>
+                    <Label Text="{x:Static resource:AppResources.Settings}" FontSize="25"
+                           FontAttributes="Bold" TextColor="{StaticResource FontColor}"></Label>
                     <Image Source="drawable/ajustes.png" WidthRequest="30" HeightRequest="30"></Image>
                 </StackLayout>
             </Frame>
-            <Frame x:Name="frCuenta" Margin="40,10,40,10">
+            <Frame x:Name="frCuenta" Margin="40,10,40,10" Style="{StaticResource FocusFrame}">
                 <StackLayout Orientation="Horizontal">
                     <Image Source="drawable/cuenta.png" WidthRequest="50" HeightRequest="50"></Image>
                     <StackLayout Margin="20,0,10,10">
-                        <Label Text="{x:Static resource:AppResources.Account}" FontSize="24" FontAttributes="Bold"></Label>
-                        <Label Text="{x:Static resource:AppResources.SettingAccount}"></Label>
+                        <Label Text="{x:Static resource:AppResources.Account}" TextColor="{StaticResource LblFontColor}" FontSize="24" FontAttributes="Bold"></Label>
+                        <Label Text="{x:Static resource:AppResources.SettingAccount}" TextColor="{StaticResource LblFontColor}"></Label>
                     </StackLayout>
                 </StackLayout>
             </Frame>
-            <Frame x:Name="frAyuda" Margin="40,10,40,10">
+            <Frame x:Name="frAyuda" Margin="40,10,40,10" Style="{StaticResource FocusFrame}">
                 <StackLayout Orientation="Horizontal">
                     <Image Source="drawable/ask.png" WidthRequest="50" HeightRequest="50"></Image>
                     <StackLayout Margin="20,0,10,10">
-                        <Label Text="{x:Static resource:AppResources.Help}" FontSize="24" FontAttributes="Bold"></Label>
-                        <Label Text="{x:Static resource:AppResources.SettingHelp}"></Label>
+                        <Label Text="{x:Static resource:AppResources.Help}" TextColor="{StaticResource LblFontColor}" FontSize="24" FontAttributes="Bold"></Label>
+                        <Label Text="{x:Static resource:AppResources.SettingHelp}" TextColor="{StaticResource LblFontColor}"></Label>
                     </StackLayout>
                 </StackLayout>
             </Frame>
