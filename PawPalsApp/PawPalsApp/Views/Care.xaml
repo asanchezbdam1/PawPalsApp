@@ -61,10 +61,10 @@
                                 <StackLayout Orientation="Horizontal">
                                     <ImageButton x:Name="btnAddHygiene" BackgroundColor="White" HorizontalOptions="Start" Clicked="btnAddHygiene_Clicked" Source="borrar.png" HeightRequest="30" WidthRequest="30"></ImageButton>
                                     <ImageButton x:Name="btnDeleteHygiene" BackgroundColor="White" HorizontalOptions="EndAndExpand" Clicked="btnDeleteHygiene_Clicked" Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
-                                </StackLayout x:Name="lvHygiene">
+                                </StackLayout >
 
                                 <Entry x:Name="eHygiene" Placeholder="{x:Static resource:AppResources.AddHygiene}" HorizontalTextAlignment="Center"></Entry>
-                                <ListView >
+                                <ListView x:Name="lvHygiene">
 
                                 </ListView>
                             </StackLayout>
