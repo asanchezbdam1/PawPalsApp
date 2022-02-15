@@ -143,5 +143,10 @@ namespace PawPalsApp.Views
 
             return buf;
         }
+
+        private void pMasc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

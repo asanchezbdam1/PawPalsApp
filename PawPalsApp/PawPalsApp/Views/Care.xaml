@@ -14,7 +14,7 @@
                 <StackLayout>
                     <ImageButton x:Name="btnAñadirMascota" BackgroundColor="White" HorizontalOptions="End" Clicked="btnAñadirMascota_Clicked"
                                  Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
-                    <Picker x:Name="pMasc" HorizontalTextAlignment="Center" VerticalOptions="Center"></Picker>
+                    <Picker x:Name="pMasc" HorizontalTextAlignment="Center" VerticalOptions="Center" SelectedIndexChanged="pMasc_SelectedIndexChanged"></Picker>
                 </StackLayout>
             </Frame>
             <ScrollView>
