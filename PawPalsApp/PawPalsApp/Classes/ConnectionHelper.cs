@@ -21,7 +21,7 @@ namespace PawPalsApp.Classes
             try
             {
                 //IPAddress ipAddress = IPAddress.Parse("192.168.1.19");
-                IPAddress ipAddress = IPAddress.Parse("192.168.43.33");
+                IPAddress ipAddress = IPAddress.Parse("172.20.6.101");
                 IPEndPoint remoteEP = new IPEndPoint(ipAddress, PORT);
                 client = new Socket(ipAddress.AddressFamily,
                         SocketType.Stream, ProtocolType.Tcp);
