@@ -18,6 +18,7 @@
                 <Setter Property="BackgroundColor" Value="{StaticResource SndBgColor}"></Setter>
             </Style>
             <Style TargetType="NavigationPage">
+                <Setter Property="BackgroundColor" Value="{StaticResource SndBgColor}"></Setter>
                 <Setter Property="BarBackgroundColor" Value="{StaticResource SeparatorColor}"></Setter>
             </Style>
             <Style TargetType="Frame">
