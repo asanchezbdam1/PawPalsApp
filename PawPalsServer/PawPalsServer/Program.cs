@@ -14,8 +14,8 @@ namespace PawPalsServer
         public static ManualResetEvent control = new ManualResetEvent(false);
         static void Main(string[] args)
         {
-            //IPAddress ip = IPAddress.Parse("192.168.1.19");
-            IPAddress ip = IPAddress.Parse("172.20.6.101");
+            IPAddress ip = IPAddress.Parse("192.168.1.19");
+            //IPAddress ip = IPAddress.Parse("172.20.6.101");
             socket = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             IPEndPoint ipend = new IPEndPoint(ip, 12212);
             try
