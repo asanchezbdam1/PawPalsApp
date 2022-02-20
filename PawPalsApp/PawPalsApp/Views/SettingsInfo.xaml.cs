@@ -9,6 +9,11 @@ using Xamarin.Forms.Xaml;
 
 namespace PawPalsApp.Views
 {
+    /// <summary>
+    /// Esta página te permite ver el manual de usuario
+    /// , las políticas de privacidad de la app y, 
+    /// el email y teléfono para contactarnos
+    /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SettingsInfo : ContentPage
     {
@@ -19,8 +24,10 @@ namespace PawPalsApp.Views
             frManualClic();
         }
 
-        /** Método que lleva al usuario a el documento de 
-         * políticas de privacidad de la aplicación **/
+        /// <summary>
+        /// Método que lleva al usuario a el documento de 
+        /// políticas de privacidad de la aplicación
+        /// </summary>
         private void frPrivaclic()
         {
             frPriva.GestureRecognizers.Add(new TapGestureRecognizer()
@@ -32,7 +39,10 @@ namespace PawPalsApp.Views
             });
         }
 
-        /** Método que lleva al usuario al manual de uso de la aplicación **/
+        /// <summary>
+        /// Método que lleva al usuario al manual 
+        /// de uso de la aplicación
+        /// </summary>
         private void frManualClic()
         {
             frManual.GestureRecognizers.Add(new TapGestureRecognizer()

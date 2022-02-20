@@ -88,6 +88,15 @@ namespace PawPalsApp.Resx {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Added.
+        /// </summary>
+        internal static string Add {
+            get {
+                return ResourceManager.GetString("Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Add Diet.
         /// </summary>
         internal static string AddDiet {
@@ -608,6 +617,15 @@ namespace PawPalsApp.Resx {
         internal static string RodentsHygiene {
             get {
                 return ResourceManager.GetString("RodentsHygiene", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Save photo?.
+        /// </summary>
+        internal static string SavePho {
+            get {
+                return ResourceManager.GetString("SavePho", resourceCulture);
             }
         }
         

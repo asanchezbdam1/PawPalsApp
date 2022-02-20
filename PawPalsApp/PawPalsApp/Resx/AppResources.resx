@@ -394,4 +394,10 @@ You have accepted the terms and conditions.</value>
   <data name="NeedLogin" xml:space="preserve">
     <value>Login nedded to continue.</value>
   </data>
+  <data name="Add" xml:space="preserve">
+    <value>Added</value>
+  </data>
+  <data name="SavePho" xml:space="preserve">
+    <value>Save photo?</value>
+  </data>
 </root>

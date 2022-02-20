@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PawPalsApp.Views.Care"
-             xmlns:resource="clr-namespace:PawPalsApp.Resx">
+             xmlns:resource="clr-namespace:PawPalsApp.Resx"
+             x:Name="cpContenido">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
             <StackLayout BackgroundColor="{StaticResource SeparatorColor}" HorizontalOptions="Fill" Orientation="Horizontal">
@@ -28,12 +29,16 @@
                             <StackLayout Orientation="Vertical" Padding="30">
                                 <Label Text="{x:Static resource:AppResources.Exercise}" FontSize="25" HorizontalOptions="Center"/>
                                 <StackLayout Orientation="Horizontal">
-                                    <ImageButton x:Name="btnAddexercise" BackgroundColor="White" HorizontalOptions="Start" Clicked="btnAddexercise_Clicked" Source="borrar.png" HeightRequest="30" WidthRequest="30"></ImageButton>
-                                    <ImageButton x:Name="btnDeleteexercise" BackgroundColor="White" HorizontalOptions="EndAndExpand" Clicked="btnDeleteexercise_Clicked" Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                                    <ImageButton x:Name="btnAddexercise" BackgroundColor="White" HorizontalOptions="Start" Clicked="btnAddexercise_Clicked" Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                                    <ImageButton x:Name="btnDeleteexercise" BackgroundColor="White" HorizontalOptions="EndAndExpand" Clicked="btnDeleteexercise_Clicked" Source="borrar.png" HeightRequest="30" WidthRequest="30"></ImageButton>
                                 </StackLayout>
                                 <Entry x:Name="eExercise" Placeholder="{x:Static resource:AppResources.AddExercise}" HorizontalTextAlignment="Center"></Entry>
                                 <ListView x:Name="lvExercises">
-                                    
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Label Text="{Binding Id}"></Label>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
                                 </ListView>
                             </StackLayout>
                         </StackLayout>
@@ -44,12 +49,16 @@
                             <StackLayout Orientation="Vertical" Padding="30">
                                 <Label Text="{x:Static resource:AppResources.Diet}" FontSize="25" HorizontalOptions="Center"/>
                                 <StackLayout Orientation="Horizontal">
-                                    <ImageButton x:Name="btnAddDiet" BackgroundColor="White" Clicked="btnAddDiet_Clicked" HorizontalOptions="Start" Source="borrar.png" HeightRequest="30" WidthRequest="30"></ImageButton>
-                                    <ImageButton x:Name="btnDeleteDiet" BackgroundColor="White" HorizontalOptions="EndAndExpand" Clicked="btnDeleteDiet_Clicked" Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                                    <ImageButton x:Name="btnAddDiet" BackgroundColor="White" Clicked="btnAddDiet_Clicked" HorizontalOptions="Start" Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                                    <ImageButton x:Name="btnDeleteDiet" BackgroundColor="White" HorizontalOptions="EndAndExpand" Clicked="btnDeleteDiet_Clicked" Source="borrar.png" HeightRequest="30" WidthRequest="30"></ImageButton>
                                 </StackLayout>
                                 <Entry x:Name="eDiet" Placeholder="{x:Static resource:AppResources.AddDiet}" HorizontalTextAlignment="Center"></Entry>
                                 <ListView x:Name="lvDiets">
-
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Label Text="{Binding Dietas}"></Label>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
                                 </ListView>
                             </StackLayout>
                         </StackLayout>
@@ -60,19 +69,21 @@
                             <StackLayout Orientation="Vertical" Padding="30">
                                 <Label Text="{x:Static resource:AppResources.Hygiene}" FontSize="25" HorizontalOptions="Center"/>
                                 <StackLayout Orientation="Horizontal">
-                                    <ImageButton x:Name="btnAddHygiene" BackgroundColor="White" HorizontalOptions="Start" Clicked="btnAddHygiene_Clicked" Source="borrar.png" HeightRequest="30" WidthRequest="30"></ImageButton>
-                                    <ImageButton x:Name="btnDeleteHygiene" BackgroundColor="White" HorizontalOptions="EndAndExpand" Clicked="btnDeleteHygiene_Clicked" Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                                    <ImageButton x:Name="btnAddHygiene" BackgroundColor="White" HorizontalOptions="Start" Clicked="btnAddHygiene_Clicked" Source="mas.png" HeightRequest="30" WidthRequest="30"></ImageButton>
+                                    <ImageButton x:Name="btnDeleteHygiene" BackgroundColor="White" HorizontalOptions="EndAndExpand" Clicked="btnDeleteHygiene_Clicked" Source="borrar.png" HeightRequest="30" WidthRequest="30"></ImageButton>
                                 </StackLayout>
 
                                 <Entry x:Name="eHygiene" Placeholder="{x:Static resource:AppResources.AddHygiene}" HorizontalTextAlignment="Center"></Entry>
                                 <ListView x:Name="lvHygiene">
-
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Label Text="{Binding Higienes}"></Label>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
                                 </ListView>
                             </StackLayout>
                         </StackLayout>
                     </Frame>
-
-
                 </StackLayout>
             </ScrollView>
         </StackLayout>
