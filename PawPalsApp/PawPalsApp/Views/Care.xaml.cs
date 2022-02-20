@@ -45,8 +45,7 @@ namespace PawPalsApp.Views
         }
         private async void obtenerDietasMascota(string nombreMascota)
         {
-            //Obtención de datos
-            var dietas = await App.SQLiteDBDieta.GetDietaByMascotaAsync(nombreMascota);
+            var dietas = App.SQLiteDBDieta.GetDietaByMascotaAsync(nombreMascota).Result;
             if (dietas != null)
             {
                 lvDiets.ItemsSource = dietas;
@@ -54,8 +53,7 @@ namespace PawPalsApp.Views
         }
         private async void obtenerEjerciciosMascota(string nombreMascota)
         {
-            //Obtención de datos
-            var ejercicios = await App.SQLiteDBEjercicio.GetEjercicioByMascotaAsync(nombreMascota);
+            var ejercicios = App.SQLiteDBEjercicio.GetEjercicioByMascotaAsync(nombreMascota).Result;
             if (ejercicios != null)
             {
                 lvExercises.ItemsSource = ejercicios;
@@ -63,8 +61,7 @@ namespace PawPalsApp.Views
         }
         private async void obtenerHygieneMascota(string nombreMascota)
         {
-            //Obtención de datos
-            var higienes = await App.SQLiteDBHigiene.GetHigieneByMascotaAsync(nombreMascota);
+            var higienes = App.SQLiteDBHigiene.GetHigieneByMascotaAsync(nombreMascota).Result;
             if (higienes != null)
             {
                 lvHygiene.ItemsSource = higienes;
@@ -76,12 +73,17 @@ namespace PawPalsApp.Views
             if (!String.IsNullOrWhiteSpace(eDiet.Text))
             {
                 string nom = pMasc.SelectedItem.ToString();
-                Mascotas mascota = App.SQLiteDBMascota.GetMascotasByNameAsync(nom).Result;
-                App.SQLiteDBDieta.SaveDietaAsync(new Dieta()
-                { 
-                    Dietas = eDiet.Text,
-                    IdMascota = mascota.Nombre
-                });
+                if (nom != null)
+                {
+                    Mascotas mascota = App.SQLiteDBMascota.GetMascotasByNameAsync(nom).Result;
+                    App.SQLiteDBDieta.SaveDietaAsync(new Dieta()
+                    { 
+                        Dietas = eDiet.Text,
+                        IdMascota = mascota.Nombre
+                    });
+                    DisplayAlert("Confirm", AppResources.Add, AppResources.Back);
+                }
+                
             }
         }
 
@@ -98,12 +100,16 @@ namespace PawPalsApp.Views
             if (!String.IsNullOrWhiteSpace(eExercise.Text))
             {
                 string nom = pMasc.SelectedItem.ToString();
-                Mascotas mascota = App.SQLiteDBMascota.GetMascotasByNameAsync(nom).Result;
-                App.SQLiteDBEjercicio.SaveEjercicioAsync(new Ejercicios()
+                if (nom != null)
                 {
-                    Ejercicio = eExercise.Text,
-                    IdMascota = mascota.Nombre
-                });
+                    Mascotas mascota = App.SQLiteDBMascota.GetMascotasByNameAsync(nom).Result;
+                    App.SQLiteDBEjercicio.SaveEjercicioAsync(new Ejercicios()
+                    {
+                        Ejercicio = eExercise.Text,
+                        IdMascota = mascota.Nombre
+                    });
+                    DisplayAlert("Confirm", AppResources.Add, AppResources.Back);
+                }  
             }
         }
 
@@ -120,12 +126,17 @@ namespace PawPalsApp.Views
             if (!String.IsNullOrWhiteSpace(eHygiene.Text))
             {
                 string nom = pMasc.SelectedItem.ToString();
-                Mascotas mascota = App.SQLiteDBMascota.GetMascotasByNameAsync(nom).Result;
-                App.SQLiteDBHigiene.SaveHigieneAsync(new Higiene()
+                if (nom != null)
                 {
-                    Higienes = eHygiene.Text,
-                    IdMascota = mascota.Nombre
-                });
+                    Mascotas mascota = App.SQLiteDBMascota.GetMascotasByNameAsync(nom).Result;
+                    App.SQLiteDBHigiene.SaveHigieneAsync(new Higiene()
+                    {
+                        Higienes = eHygiene.Text,
+                        IdMascota = mascota.Nombre
+                    });
+                    DisplayAlert("Confirm", AppResources.Add, AppResources.Back);
+                }
+                
             }
         }
 
@@ -148,7 +159,7 @@ namespace PawPalsApp.Views
             string result = await DisplayPromptAsync("Mascota", "Escribe el nombre de tu mascota", "OK", AppResources.Back);
             if (!String.IsNullOrWhiteSpace(result))
             {
-                string action = await DisplayActionSheet("ActionSheet: SavePhoto?", AppResources.Back, null, "Photo");
+                string action = await DisplayActionSheet(AppResources.SavePho, AppResources.Back, null, "Photo");
                 if (action.Equals("Photo"))
                 {
                     byte[] img = await ImagePicker.PickPost();
@@ -168,10 +179,20 @@ namespace PawPalsApp.Views
         }
         private void pMasc_SelectedIndexChanged(object sender, EventArgs e)
         {
+            var mascotas = App.SQLiteDBMascota.GetMascotasAsync().Result;
             string nombreMascota = pMasc.SelectedItem.ToString();
+            foreach (Mascotas masc in mascotas)
+            {
+                if (masc.Nombre.Equals(nombreMascota))
+                {
+                    cpContenido.BindingContext = masc;
+                    break;
+                }
+            }
+            
             obtenerDietasMascota(nombreMascota);
             obtenerEjerciciosMascota(nombreMascota);
-            obtenerHygieneMascota(nombreMascota);
+            //obtenerHygieneMascota(nombreMascota);
         }
     }
 }

@@ -10,6 +10,13 @@ using Xamarin.Forms.Xaml;
 
 namespace PawPalsApp.Views
 {
+    /// <summary>
+    /// Página qe representa los ajustes de la app.
+    /// Tiene dos opciones: 
+    /// - Ajustes de cuenta
+    /// - Ayuda
+    /// ; Las cuelas te llevarán a otra página
+    /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Settings : ContentPage
     {
@@ -20,8 +27,10 @@ namespace PawPalsApp.Views
             frAyudaClic();
         }
 
-        /** Método que al pulsar sobre el frame en cuestión te 
-         * llevará a una página nueva **/
+        /// <summary>
+        /// Método que al pulsar sobre el frame en cuestión te 
+        /// llevará a una página nueva
+        /// </summary>
         private void frCuentaClic()
         {
             frCuenta.GestureRecognizers.Add(new TapGestureRecognizer()
@@ -33,8 +42,10 @@ namespace PawPalsApp.Views
             });
         }
 
-        /** Método que al pulsar sobre el frame en cuestión te 
-         * llevará a una página nueva **/
+        /// <summary>
+        /// Método que al pulsar sobre el frame en cuestión te 
+        /// llevará a una página nueva
+        /// </summary>
         private void frAyudaClic()
         {
             frAyuda.GestureRecognizers.Add(new TapGestureRecognizer()
@@ -45,6 +56,12 @@ namespace PawPalsApp.Views
                 })
             });
         }
+
+        /// <summary>
+        /// Comprueba que se ha
+        /// iniciado sesión
+        /// para acceder.
+        /// </summary>
         protected async override void OnAppearing()
         {
             base.OnAppearing();

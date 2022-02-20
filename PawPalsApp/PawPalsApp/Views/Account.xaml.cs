@@ -11,6 +11,11 @@ using PawPalsApp.Classes;
 
 namespace PawPalsApp.Views
 {
+    /// <summary>
+    /// Página de cuenta, la cual muestra los datos del usuario conectado
+    /// y permite modificar datos opcionales y también desconectarse de 
+    /// la aplicación
+    /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Account : ContentPage
     {
@@ -19,8 +24,13 @@ namespace PawPalsApp.Views
             InitializeComponent();
         }
 
-        /** Método que modifica las propiedades 'IsEabled' y 'IsReadOnly' de diferentes componentes para hacer que aparezcan y desaparezcan.
-         * En este caso se podrá escribir en los campos de ciudad y pais y se cambiará el icono de editar por el de guardar **/
+        /// <summary>
+        /// Método que se llama cuando se hace click sobre un icono,
+        /// y que cambia propiedades de diferentes elementos para poder 
+        /// modificar los datos del perfil del usuario.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ibtnEditar_Clicked(object sender, EventArgs e)
         {
             ibtnEditar.IsVisible = false;
@@ -30,6 +40,9 @@ namespace PawPalsApp.Views
             entUserName.IsEnabled = true;
         }
 
+        /// <summary>
+        /// Carga los datos de usuario a la página.
+        /// </summary>
         private void cargarDatos()
         {
             User usuario = ((App)App.Current).User;
@@ -44,7 +57,14 @@ namespace PawPalsApp.Views
                 ePais.Text = usuario.Country;
             }
         }
-        /**  **/
+
+        /// <summary>
+        /// Método que se llama cuando se hace click sobre un icono,
+        /// y que cambia propiedades de diferentes elementos para poder
+        /// actualizar los datos del perfil del usuario.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void ibtnGuardar_Clicked(object sender, EventArgs e)
         {
             ibtnGuardar.IsVisible = false;
@@ -88,11 +108,22 @@ namespace PawPalsApp.Views
 
         }
 
+        /// <summary>
+        /// Método que al pulsar sobre el icono cierra la sesión
+        /// del usuario y lo redirige a la ventana de Welcome
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ibtnSalir_Clicked(object sender, EventArgs e)
         {
             ((App)App.Current).User = null;
             App.Current.MainPage = new NavigationPage(new Welcome());
         }
+        /// <summary>
+        /// Comprueba que se ha
+        /// iniciado sesión
+        /// para acceder.
+        /// </summary>
         protected async override void OnAppearing()
         {
             base.OnAppearing();

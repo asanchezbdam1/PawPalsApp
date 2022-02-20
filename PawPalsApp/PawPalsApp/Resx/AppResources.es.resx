@@ -397,4 +397,10 @@ Has aceptado los términos y condiciones.</value>
   <data name="NeedLogin" xml:space="preserve">
     <value>Inicio de sesión necesario para continuar.</value>
   </data>
+  <data name="Add" xml:space="preserve">
+    <value>Añadido</value>
+  </data>
+  <data name="SavePho" xml:space="preserve">
+    <value>¿Guardar foto?</value>
+  </data>
 </root>

@@ -10,6 +10,10 @@ using PawPalsApp.Resx;
 
 namespace PawPalsApp.Views
 {
+    /// <summary>
+    /// Esta página te da la opción de eliminar
+    /// tu cuenta
+    /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SettingsAccount : ContentPage
     {
@@ -18,6 +22,10 @@ namespace PawPalsApp.Views
             InitializeComponent();
             frDeleteclic();
         }
+        /// <summary>
+        /// Método que borrará la cuenta con la que
+        /// se ha iniciado sesión en la aplicación
+        /// </summary>
         private void frDeleteclic()
         {
             frDelete.GestureRecognizers.Add(new TapGestureRecognizer()
