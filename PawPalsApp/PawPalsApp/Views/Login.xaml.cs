@@ -11,6 +11,9 @@ using Xamarin.Forms.Xaml;
 
 namespace PawPalsApp.Views
 {
+    /// <summary>
+    /// Clase de la página de inicio de sesión.
+    /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage
     {
@@ -19,12 +22,23 @@ namespace PawPalsApp.Views
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Cambia la página actual
+        /// a la página de registro.
+        /// </summary>
         private void btnRegister_Clicked(object sender, EventArgs e)
         {
             Navigation.PopAsync();
             Navigation.PushAsync(new Register());
         }
 
+        /// <summary>
+        /// Comprueba que los campos
+        /// son correctos e intenta
+        /// iniciar sesión. Si se
+        /// produce un error se
+        /// muestra por pantalla.
+        /// </summary>
         private void btnLogin_Clicked(object sender, EventArgs e)
         {
             if (FieldVerifier.VerifyTextField(txtUser.Text) &&
@@ -35,7 +49,6 @@ namespace PawPalsApp.Views
                     Login = txtUser.Text,
                     Pwd = txtPwd.Text
                 };
-                //ConnectionHelper.StartConnection();
                 object res = ConnectionHelper.Send(user);
                 if (res is User && ((User)res).Id != 0)
                 {
@@ -44,7 +57,6 @@ namespace PawPalsApp.Views
                 }
                 else
                 {
-                    //ConnectionHelper.Close();
                     DisplayAlert(AppResources.ErrorTitle, AppResources.LoginError, AppResources.Back);
                 }
             }

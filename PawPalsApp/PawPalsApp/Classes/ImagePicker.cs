@@ -7,8 +7,18 @@ using System.Threading.Tasks;
 
 namespace PawPalsApp.Classes
 {
+    /// <summary>
+    /// Clase que permite elegir una imagen
+    /// del alacenamiento del teléfono.
+    /// </summary>
     public class ImagePicker
     {
+        /// <summary>
+        /// Método que permite seleccionar
+        /// una imagen de la galería. 
+        /// </summary>
+        /// <returns>La imagen seleccionada
+        /// en formato array de bytes.</returns>
         public static async Task<byte[]> PickPost()
         {
             await CrossMedia.Current.Initialize();

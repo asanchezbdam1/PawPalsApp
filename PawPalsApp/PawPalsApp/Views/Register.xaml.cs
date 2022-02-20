@@ -12,6 +12,9 @@ using System.Text.RegularExpressions;
 
 namespace PawPalsApp.Views
 {
+    /// <summary>
+    /// Clase de la página de registro.
+    /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Register : ContentPage
     {
@@ -20,12 +23,23 @@ namespace PawPalsApp.Views
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Cambia la pantalla actual
+        /// a la de incio de sesión.
+        /// </summary>
         private void btnLogin_Clicked(object sender, EventArgs e)
         {
             Navigation.PopAsync();
             Navigation.PushAsync(new Login());
         }
 
+        /// <summary>
+        /// Si los campos son correctos,
+        /// intenta registrar al usuario
+        /// con la información introducida.
+        /// Muestra por pantalla si
+        /// ha habido algún error.
+        /// </summary>
         private void btnRegister_Clicked(object sender, EventArgs e)
         {
             if (FieldsCorrect())
@@ -36,7 +50,6 @@ namespace PawPalsApp.Views
                     Email = txtEmail.Text,
                     Pwd = txtPwd.Text
                 };
-                //ConnectionHelper.StartConnection();
                 object obj = ConnectionHelper.Send(user);
                 if (obj is User && ((User)obj).Id != 0)
                 {
@@ -45,7 +58,6 @@ namespace PawPalsApp.Views
                 }
                 else
                 {
-                    //ConnectionHelper.Close();
                     DisplayAlert(AppResources.ErrorTitle, AppResources.RegisterError, AppResources.Back);
                 }
             }
@@ -55,6 +67,11 @@ namespace PawPalsApp.Views
             }
         }
 
+        /// <summary>
+        /// Comprueba si todos los
+        /// campos son correctos.
+        /// </summary>
+        /// <returns>Si los campos son correctos o no.</returns>
         private bool FieldsCorrect()
         {
             if (!FieldVerifier.VerifyTextField(txtUser.Text)) return false;

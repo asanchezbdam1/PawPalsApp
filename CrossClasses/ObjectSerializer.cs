@@ -8,10 +8,22 @@ using System.Threading.Tasks;
 
 namespace CrossClasses
 {
+    /// <summary>
+    /// Clase para la serialización o deserialización de
+    /// objetos para su envío a través de un socket TCP.
+    /// </summary>
     public static class ObjectSerializer
     {
+        /// <summary>
+        /// Constante con el tamaño máximo de imagen permitido.
+        /// </summary>
         public const int MAX_IMAGE_SIZE = 50 * 1024;
 
+        /// <summary>
+        /// Método que serializa el objeto pasado como parámetro.
+        /// </summary>
+        /// <param name="obj">Objeto a serializar.</param>
+        /// <returns>Array de bytes resultante de la serialización.</returns>
         public static byte[] SerializeObject(object obj)
         {
             if (obj == null)
@@ -23,6 +35,12 @@ namespace CrossClasses
                 return ms.ToArray();
             }
         }
+
+        /// <summary>
+        /// Método que deserializa el objeto pasado como parámetro.
+        /// </summary>
+        /// <param name="arr">Array de bytes del objeto serializado.</param>
+        /// <returns>Objeto resultante de deserializar.</returns>
         public static object DeserializeObject(byte[] arr)
         {
             if (arr == null)
@@ -34,14 +52,5 @@ namespace CrossClasses
             }
         }
 
-        public static byte[] NormalizeArray(byte[] arr, int len)
-        {
-            byte[] res = new byte[len];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                res[i] = arr[i];
-            }
-            return res;
-        }
     }
 }

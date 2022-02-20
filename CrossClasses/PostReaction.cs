@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace CrossClasses
 {
+    /// <summary>
+    /// Enum que contiene los tres
+    /// tipos posibles de reacción.
+    /// </summary>
     [Serializable]
     public enum PostReaction
     {

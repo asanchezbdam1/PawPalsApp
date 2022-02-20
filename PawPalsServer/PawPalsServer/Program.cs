@@ -10,12 +10,25 @@ namespace PawPalsServer
 {
     class Program
     {
+        /// <summary>
+        /// Socket usado para permitir la conexión.
+        /// </summary>
         private static Socket socket;
+
+        /// <summary>
+        /// Evento de control para permitir una conexión
+        /// nueva una vez se ha conectado alguien.
+        /// </summary>
         public static ManualResetEvent control = new ManualResetEvent(false);
-        static void Main(string[] args)
+
+        /// <summary>
+        /// Punto de entrada del servidor. Establece la escucha
+        /// del servidor en la IP (por defecto) 192.168.1.19.
+        /// </summary>
+        /// <param name="args">Argumentos pasados por consola.</param>
+        public static void Main(string[] args)
         {
             IPAddress ip = IPAddress.Parse("192.168.1.19");
-            //IPAddress ip = IPAddress.Parse("172.20.6.101");
             socket = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             IPEndPoint ipend = new IPEndPoint(ip, 12212);
             try
@@ -35,6 +48,10 @@ namespace PawPalsServer
             }
         }
 
+        /// <summary>
+        /// Método que se ejecuta al recibir una conexión de forma asíncrona.
+        /// </summary>
+        /// <param name="ar">Resultado del intento de conexión.</param>
         private static void AcceptConnection(IAsyncResult ar)
         {
             control.Set();
@@ -44,6 +61,10 @@ namespace PawPalsServer
                 new AsyncCallback(ReceiveCallback), state);
         }
 
+        /// <summary>
+        /// Método que se ejecuta al recibir información de un cliente.
+        /// </summary>
+        /// <param name="ar">Resultado de la recepción.</param>
         private static void ReceiveCallback(IAsyncResult ar)
         {
             BufferObject state = (BufferObject)ar.AsyncState;
@@ -65,6 +86,11 @@ namespace PawPalsServer
             }
         }
 
+        /// <summary>
+        /// Método para obtener la dirección IP del equipo.
+        /// Da problemas si se tienen máquinas virtuales.
+        /// </summary>
+        /// <returns>Dirección IP del equipo a usar.</returns>
         private static IPAddress GetIPAddress()
         {
             IPAddress ipAddress = null;
@@ -95,12 +121,22 @@ namespace PawPalsServer
         }
     }
 
+    /**
+     * <summary>Clase que modela el objeto que contiene el estado y buffer del socket.</summary>
+     */
     public class BufferObject
     {
+        /// <summary>
+        /// Tamaño del buffer.
+        /// </summary>
         public const int BUFFER_SIZE = 1024 * 1024;
-
+        /// <summary>
+        /// Variable que contiene el buffer.
+        /// </summary>
         public byte[] buffer = new byte[BUFFER_SIZE];
-
+        /// <summary>
+        /// Socket del cliente.
+        /// </summary>
         public Socket clientSocket = null;
     }
 }

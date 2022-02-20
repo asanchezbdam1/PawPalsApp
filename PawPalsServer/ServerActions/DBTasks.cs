@@ -10,9 +10,31 @@ using System.Security.Cryptography;
 
 namespace ServerActions
 {
+    /// <summary>
+    /// Clase para el acceso
+    /// a la base de datos.
+    /// </summary>
     public class DBTasks
     {
+        /// <summary>
+        /// Cadena de conexión
+        /// a la base de datos.
+        /// Es una base de datos
+        /// SQL en el equipo local
+        /// con seguridad integrada.
+        /// </summary>
         private const string CNSTRING = @"Server=(LocalDB)\MSSQLLocalDB;Database=PawPalsDB;Integrated Security=SSPI;";
+
+        /// <summary>
+        /// Inicia sesión del usuario
+        /// pasado como parámetro.
+        /// </summary>
+        /// <param name="user">Usuario con información
+        /// para iniciar sesión.</param>
+        /// <returns>Su información
+        /// si es correcto o un
+        /// usuario sin información
+        /// si algo está mal.</returns>
         public static object GetLoginResult(LoginUser user)
         {
             User result = null;
@@ -50,6 +72,16 @@ namespace ServerActions
             return result;
         }
 
+        /// <summary>
+        /// Registra el usuario
+        /// pasado como parámetro.
+        /// </summary>
+        /// <param name="user">Usuario con
+        /// información para el registro.</param>
+        /// <returns>Su información
+        /// si es correcto o un
+        /// usuario sin información
+        /// si algo está mal.</returns>
         public static object GetRegisterResult(RegisterUser user)
         {
             User result = null;
@@ -90,6 +122,17 @@ namespace ServerActions
             return new User();
         }
 
+        /// <summary>
+        /// Actualiza la información
+        /// del usuario pasado
+        /// como parámetro.
+        /// </summary>
+        /// <param name="user">Usuario con
+        /// información para actualizar.</param>
+        /// <returns>Su información
+        /// si es correcto o un
+        /// usuario sin información
+        /// si algo está mal.</returns>
         public static object GetUpdateUserResult(UpdateUser user)
         {
             User result = null;
@@ -131,6 +174,16 @@ namespace ServerActions
             return new User();
         }
 
+        /// <summary>
+        /// Borra el usuario
+        /// pasado como parámetro.
+        /// </summary>
+        /// <param name="user">Usuario con
+        /// información para eliminar.</param>
+        /// <returns>Su información
+        /// si es correcto o un
+        /// usuario sin información
+        /// si algo está mal.</returns>
         public static object GetDeleteUserResult(DeleteUser user)
         {
             try
@@ -155,6 +208,13 @@ namespace ServerActions
             return user;
         }
 
+        /// <summary>
+        /// Guarda la publicación
+        /// pasada como parámetro.
+        /// </summary>
+        /// <param name="post">Publicación a guardar</param>
+        /// <returns>La misma publicación si es
+        /// correcto o una nueva si no lo es.</returns>
         public static object GetPublishPostResult(Post post)
         {
             try
@@ -182,11 +242,26 @@ namespace ServerActions
             return post;
         }
 
+        /// <summary>
+        /// Borra la publicación
+        /// pasada como parámetro.
+        /// PENDIENTE IMPLEMENTAR.
+        /// </summary>
+        /// <param name="post">Publicación a eliminar.</param>
+        /// <returns>Resultado de borrar la publicación.</returns>
         public static object GetRemovePostResult(Post post)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Rellena la lista de
+        /// publicaciones pasada
+        /// como parámetro.
+        /// </summary>
+        /// <param name="posts">Lista de publicaciones a rellenar.</param>
+        /// <returns>La lista de publicaciones
+        /// tras intentar rellenarla.</returns>
         public static object GetPosts(PostList posts)
         {
             try
@@ -206,6 +281,16 @@ namespace ServerActions
             return posts;
         }
 
+        /// <summary>
+        /// Rellena la lista de
+        /// publicaciones pasada
+        /// como parámetro con
+        /// publicaciones del
+        /// usuario que las solicita.
+        /// </summary>
+        /// <param name="posts">Lista de publicaciones a rellenar.</param>
+        /// <returns>La lista de publicaciones
+        /// tras intentar rellenarla.</returns>
         public static object GetPostsFromUser(PostList posts)
         {
             try
@@ -213,36 +298,10 @@ namespace ServerActions
                 posts.Posts.Clear();
                 var cn = new SqlConnection(CNSTRING);
                 cn.Open();
-                var cmd = new SqlCommand($"SELECT TOP 15 * FROM Posts WHERE NOT UserID = {posts.RequesterID} " +
-                    $"AND PostID IN (SELECT PostID FROM Reactions WHERE UserID = {posts.RequesterID}) " +
+                var cmd = new SqlCommand($"SELECT TOP 15 * FROM Posts WHERE UserID = {posts.RequesterID} " +
                     $"ORDER BY UploadDate");
                 cmd.Connection = cn;
                 var dr = cmd.ExecuteReader();
-                /*while (dr.Read())
-                {
-                    string name = String.Empty;
-                    var cmdn = new SqlCommand();
-                    cmdn.CommandText = $"SELECT Username FROM Users WHERE UserID = {dr.GetInt32(1)}";
-                    var cnn = new SqlConnection(CNSTRING);
-                    cnn.Open();
-                    cmdn.Connection = cnn;
-                    var drn = cmdn.ExecuteReader();
-                    while (drn.Read())
-                    {
-                        name = drn.GetString(0);
-                    }
-                    drn.Close();
-                    cmdn.CommandText = $"SELECT Liked FROM Reactions " +
-                        $"WHERE UserID = {posts.RequesterID} AND PostID = {dr.GetInt32(0)}";
-                    var liked = (bool)cmdn.ExecuteScalar();
-                    posts.Posts.Add(new Post()
-                    {
-                        ID = dr.GetInt32(0),
-                        Username = name,
-                        Img = (byte[])dr["Img"],
-                        Reaction = (liked) ? PostReaction.LIKE : PostReaction.DISLIKE
-                    });
-                }*/
                 posts.Posts = GetPostsInfo(dr, posts.RequesterID);
                 cn.Close();
             }
@@ -250,6 +309,16 @@ namespace ServerActions
             return posts;
         }
 
+        /// <summary>
+        /// Rellena la lista de
+        /// publicaciones pasada
+        /// como parámetro con
+        /// publicaciones vistas por el
+        /// usuario que las solicita.
+        /// </summary>
+        /// <param name="posts">Lista de publicaciones a rellenar.</param>
+        /// <returns>La lista de publicaciones
+        /// tras intentar rellenarla.</returns>
         public static object GetPostHistoryFromUser(PostList posts)
         {
             try
@@ -262,31 +331,6 @@ namespace ServerActions
                     $"ORDER BY UploadDate");
                 cmd.Connection = cn;
                 var dr = cmd.ExecuteReader();
-                /*while (dr.Read())
-                {
-                    string name = String.Empty;
-                    var cmdn = new SqlCommand();
-                    cmdn.CommandText = $"SELECT Username FROM Users WHERE UserID = {dr.GetInt32(1)}";
-                    var cnn = new SqlConnection(CNSTRING);
-                    cnn.Open();
-                    cmdn.Connection = cnn;
-                    var drn = cmdn.ExecuteReader();
-                    while (drn.Read())
-                    {
-                        name = drn.GetString(0);
-                    }
-                    drn.Close();
-                    cmdn.CommandText = $"SELECT Liked FROM Reactions " +
-                        $"WHERE UserID = {posts.RequesterID} AND PostID = {dr.GetInt32(0)}";
-                    var liked = (bool)cmdn.ExecuteScalar();
-                    posts.Posts.Add(new Post()
-                    {
-                        ID = dr.GetInt32(0),
-                        Username = name,
-                        Img = (byte[])dr["Img"],
-                        Reaction = (liked) ? PostReaction.LIKE : PostReaction.DISLIKE
-                    });
-                }*/
                 posts.Posts = GetPostsInfo(dr, posts.RequesterID);
                 cn.Close();
             }
@@ -294,6 +338,14 @@ namespace ServerActions
             return posts;
         }
 
+        /// <summary>
+        /// Obtiene la información de
+        /// las publicaciones pasadas como
+        /// parámetro como resultado de consulta.
+        /// </summary>
+        /// <param name="dr">Resultado de la consulta de publicaciones.</param>
+        /// <param name="userID">ID del usuario que solicita las publicaciones.</param>
+        /// <returns>Lista de publicaciones a partir de la consulta con información.</returns>
         private static List<Post> GetPostsInfo(SqlDataReader dr, int userID)
         {
             var posts = new List<Post>();
@@ -346,11 +398,22 @@ namespace ServerActions
             return posts;
         }
 
-        public static object GetReportPostResult(PostReport obj)
+        /// <summary>
+        /// Guarda el reporte
+        /// de una publicación.
+        /// </summary>
+        /// <param name="postRep">Publicación reportada.</param>
+        /// <returns>Resultado de reportar la publicación.</returns>
+        public static object GetReportPostResult(PostReport postRep)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Resultado de dar "me gusta" a una publicación.
+        /// </summary>
+        /// <param name="p">Información de la reacción.</param>
+        /// <returns>Reacción que tiene el post finalmente.</returns>
         public static object GetLikePostResult(PostReacted p)
         {
             try
@@ -369,6 +432,11 @@ namespace ServerActions
             return PostReaction.NONE;
 }
 
+        /// <summary>
+        /// Resultado de dar "no me gusta" a una publicación.
+        /// </summary>
+        /// <param name="p">Información de la reacción.</param>
+        /// <returns>Reacción que tiene el post finalmente.</returns>
         public static object GetDislikePostResult(PostReacted p)
         {
             try
@@ -387,6 +455,11 @@ namespace ServerActions
             return PostReaction.NONE;
         }
 
+        /// <summary>
+        /// Resultado de dar quitar la reacción a una publicación.
+        /// </summary>
+        /// <param name="p">Información de la reacción.</param>
+        /// <returns>Reacción que tiene el post finalmente.</returns>
         public static object GetRemoveOpinionResult(PostReacted p)
         {
             try
@@ -403,6 +476,14 @@ namespace ServerActions
             return PostReaction.LIKE;
         }
 
+        /// <summary>
+        /// Comprueba si la información
+        /// del usuario pasado como
+        /// parámetro es correcta
+        /// para iniciar su sesión.
+        /// </summary>
+        /// <param name="user">Usuario a comprobar</param>
+        /// <returns>Verdadero si es correcto el inicio de sesión.</returns>
         private static bool VerifyLogin(User user)
         {
             try
@@ -422,6 +503,12 @@ namespace ServerActions
             return false;
         }
 
+        /// <summary>
+        /// Comprueba si el usuario pasado
+        /// como parámetro está registrado.
+        /// </summary>
+        /// <param name="user">Usuario a comprobar.</param>
+        /// <returns>Verdadero si está registrado el usuario.</returns>
         private static bool CheckIfRegistered(RegisterUser user)
         {
             try
@@ -441,6 +528,12 @@ namespace ServerActions
             return true;
         }
 
+        /// <summary>
+        /// Obtiene el Hash para almacenar
+        /// o comprobar una contraseña.
+        /// </summary>
+        /// <param name="str">Cadena a convertir a hash.</param>
+        /// <returns>Hash de la cadena de texto.</returns>
         private static string GetHash(string str)
         {
             try

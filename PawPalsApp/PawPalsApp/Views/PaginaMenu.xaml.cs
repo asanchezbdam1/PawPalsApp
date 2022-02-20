@@ -10,6 +10,9 @@ using Xamarin.Forms.Xaml;
 
 namespace PawPalsApp.Views
 {
+    /// <summary>
+    /// Clase del menú inferior.
+    /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PaginaMenu : TabbedPage
     {

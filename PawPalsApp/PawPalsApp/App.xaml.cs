@@ -18,15 +18,18 @@ namespace PawPalsApp
         static SQLiteDieta dbDieta;
         static SQLiteEjercicio dbEjercicio;
         static SQLiteHigiene dbHigiene;
-        public ConnectionHelper Helper;
+        //public ConnectionHelper Helper;
         public User User;
+        /**
+         * <summary>Constuctor de la clase principal de la aplicación.</summary>
+         */
         public App()
         {
             InitializeComponent();
             Thread.CurrentThread.CurrentUICulture = CultureInfo.InstalledUICulture;
             AppResources.Culture = CultureInfo.InstalledUICulture;
             MainPage = new NavigationPage(new Welcome());
-            Helper = new ConnectionHelper();
+            //Helper = new ConnectionHelper();
         }
 
         protected override void OnStart()
@@ -40,6 +43,11 @@ namespace PawPalsApp
         protected override void OnResume()
         {
         }
+
+        /**
+         * <summary>Propiedad de solo lectura para modificar
+         * u obtener datos de mascotas.</summary>
+         */
         public static SQLiteMascota SQLiteDBMascota
         {
             get
@@ -52,6 +60,10 @@ namespace PawPalsApp
                 return dbMascota;
             }
         }
+        /**
+         * <summary>Propiedad de solo lectura para modificar
+         * u obtener datos de dietas.</summary>
+         */
         public static SQLiteDieta SQLiteDBDieta
         {
             get
@@ -64,6 +76,11 @@ namespace PawPalsApp
                 return dbDieta;
             }
         }
+
+        /**
+         * <summary>Propiedad de solo lectura para modificar
+         * u obtener datos de ejercicios.</summary>
+         */
         public static SQLiteEjercicio SQLiteDBEjercicio
         {
             get
@@ -76,6 +93,11 @@ namespace PawPalsApp
                 return dbEjercicio;
             }
         }
+
+        /**
+         * <summary>Propiedad de solo lectura para modificar
+         * u obtener datos de higiene.</summary>
+         */
         public static SQLiteHigiene SQLiteDBHigiene
         {
             get
