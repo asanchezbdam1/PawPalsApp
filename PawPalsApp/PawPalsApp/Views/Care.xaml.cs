@@ -21,6 +21,11 @@ namespace PawPalsApp.Views
             obtenerNombreMascotas();
         }
 
+        /// <summary>
+        /// Carga las mascotas de la tabla en un picker para
+        /// poder ser elegidas, en caso de que no haya ninguna se
+        /// pedira una
+        /// </summary>
         private async void obtenerNombreMascotas()
         {
             //Obtención de datos
@@ -34,6 +39,12 @@ namespace PawPalsApp.Views
                 pMasc.Title = "Añade una mascota";
             }
         }
+
+        /// <summary>
+        /// Obtiene los nombres que seran posteriormente cargados al picker
+        /// </summary>
+        /// <param name="mascotas"></param>
+        /// <returns></returns>
         private List<string> obtenerNombres(List<Mascotas> mascotas)
         {
             List<string> nombres = new List<string>();
@@ -43,6 +54,12 @@ namespace PawPalsApp.Views
             }
             return nombres;
         }
+
+        /// <summary>
+        /// Obtiene las dietas correspondientes a la mascota elegida y 
+        /// las carga en un listview
+        /// </summary>
+        /// <param name="nombreMascota"></param>
         private async void obtenerDietasMascota(string nombreMascota)
         {
             var dietas = App.SQLiteDBDieta.GetDietaByMascotaAsync(nombreMascota).Result;
@@ -51,6 +68,12 @@ namespace PawPalsApp.Views
                 lvDiets.ItemsSource = dietas;
             }
         }
+
+        /// <summary>
+        /// Obtiene los ejercicios correspondientes a la mascota elegida y 
+        /// las carga en un listview
+        /// </summary>
+        /// <param name="nombreMascota"></param>
         private async void obtenerEjerciciosMascota(string nombreMascota)
         {
             var ejercicios = App.SQLiteDBEjercicio.GetEjercicioByMascotaAsync(nombreMascota).Result;
@@ -59,6 +82,12 @@ namespace PawPalsApp.Views
                 lvExercises.ItemsSource = ejercicios;
             }
         }
+
+        /// <summary>
+        /// Obtiene las higienes correspondientes a la mascota elegida y 
+        /// las carga en un listview
+        /// </summary>
+        /// <param name="nombreMascota"></param>
         private async void obtenerHygieneMascota(string nombreMascota)
         {
             var higienes = App.SQLiteDBHigiene.GetHigieneByMascotaAsync(nombreMascota).Result;
@@ -68,6 +97,12 @@ namespace PawPalsApp.Views
             }
         }
 
+        /// <summary>
+        /// Añade una nueva dieta a la mascota escrita por el 
+        /// usuario y se le pide una confirmacion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAddDiet_Clicked(object sender, EventArgs e)
         {
             if (!String.IsNullOrWhiteSpace(eDiet.Text))
@@ -86,7 +121,11 @@ namespace PawPalsApp.Views
                 
             }
         }
-
+        /// <summary>
+        /// Elimina la dieta seleccionada
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDeleteDiet_Clicked(object sender, EventArgs e)
         {
             if (lvDiets.SelectedItem != null)
@@ -95,6 +134,12 @@ namespace PawPalsApp.Views
             }
         }
 
+        /// <summary>
+        /// Añade un nuevo ejercicio a la mascota escrita por el 
+        /// usuario y se le pide una confirmacion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAddexercise_Clicked(object sender, EventArgs e)
         {
             if (!String.IsNullOrWhiteSpace(eExercise.Text))
@@ -113,6 +158,11 @@ namespace PawPalsApp.Views
             }
         }
 
+        /// <summary>
+        /// Elimina el ejercicio seleccionado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDeleteexercise_Clicked(object sender, EventArgs e)
         {
             if (lvExercises.SelectedItem != null)
@@ -121,6 +171,12 @@ namespace PawPalsApp.Views
             } 
         }
 
+        /// <summary>
+        /// Añade una nueva higiene a la mascota escrita por el 
+        /// usuario y se le pide una confirmacion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAddHygiene_Clicked(object sender, EventArgs e)
         {
             if (!String.IsNullOrWhiteSpace(eHygiene.Text))
@@ -140,6 +196,11 @@ namespace PawPalsApp.Views
             }
         }
 
+        /// <summary>
+        /// Elimina la higiene sleccionada
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDeleteHygiene_Clicked(object sender, EventArgs e)
         {
             if (lvHygiene.SelectedItem != null)
@@ -149,11 +210,20 @@ namespace PawPalsApp.Views
         }
 
 
+        /// <summary>
+        /// Llama al metodo añadirMascotaAsync()
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAñadirMascota_Clicked(object sender, EventArgs e)
         {
             añadirMascotaAsync();
         }
 
+        /// <summary>
+        /// Metodo que abre ventanas al usuario para que añada una mascota a la tabla y actualiza el picker
+        /// </summary>
+        /// <returns></returns>
         private async Task añadirMascotaAsync()
         {
             string result = await DisplayPromptAsync("Mascota", "Escribe el nombre de tu mascota", "OK", AppResources.Back);
@@ -177,6 +247,13 @@ namespace PawPalsApp.Views
         {
             
         }
+
+        /// <summary>
+        /// Cada vez que el picker de mascotas cambie se cargara al pagina 
+        /// en base a la mascota seleccionada
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pMasc_SelectedIndexChanged(object sender, EventArgs e)
         {
             var mascotas = App.SQLiteDBMascota.GetMascotasAsync().Result;
