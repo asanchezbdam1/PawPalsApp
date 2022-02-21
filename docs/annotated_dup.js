@@ -591,10 +591,10 @@ var annotated_dup =
         [ "PostsViewCollection", "class_paw_pals_app_1_1_classes_1_1_posts_view_collection.html", null ]
       ] ],
       [ "Data", "namespace_paw_pals_app_1_1_data.html", [
-        [ "SQLiteDieta", "class_paw_pals_app_1_1_data_1_1_s_q_lite_dieta.html", null ],
-        [ "SQLiteEjercicio", "class_paw_pals_app_1_1_data_1_1_s_q_lite_ejercicio.html", null ],
-        [ "SQLiteHigiene", "class_paw_pals_app_1_1_data_1_1_s_q_lite_higiene.html", null ],
-        [ "SQLiteMascota", "class_paw_pals_app_1_1_data_1_1_s_q_lite_mascota.html", null ]
+        [ "SQLiteDieta", "class_paw_pals_app_1_1_data_1_1_s_q_lite_dieta.html", "class_paw_pals_app_1_1_data_1_1_s_q_lite_dieta" ],
+        [ "SQLiteEjercicio", "class_paw_pals_app_1_1_data_1_1_s_q_lite_ejercicio.html", "class_paw_pals_app_1_1_data_1_1_s_q_lite_ejercicio" ],
+        [ "SQLiteHigiene", "class_paw_pals_app_1_1_data_1_1_s_q_lite_higiene.html", "class_paw_pals_app_1_1_data_1_1_s_q_lite_higiene" ],
+        [ "SQLiteMascota", "class_paw_pals_app_1_1_data_1_1_s_q_lite_mascota.html", "class_paw_pals_app_1_1_data_1_1_s_q_lite_mascota" ]
       ] ],
       [ "Droid", "namespace_paw_pals_app_1_1_droid.html", [
         [ "MainActivity", "class_paw_pals_app_1_1_droid_1_1_main_activity.html", null ],

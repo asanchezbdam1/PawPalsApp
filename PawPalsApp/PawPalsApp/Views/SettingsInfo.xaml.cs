@@ -10,8 +10,8 @@ using Xamarin.Forms.Xaml;
 namespace PawPalsApp.Views
 {
     /// <summary>
-    /// Esta página te permite ver el manual de usuario
-    /// , las políticas de privacidad de la app y, 
+    /// Esta página te permite ver el manual de usuario, 
+    /// las políticas de privacidad de la app y, 
     /// el email y teléfono para contactarnos
     /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -49,7 +49,7 @@ namespace PawPalsApp.Views
             {
                 Command = new Command(() =>
                 {
-                    Launcher.OpenAsync(new System.Uri("https://youtu.be/GbtRCevx4fA"));
+                    Launcher.OpenAsync(new System.Uri("https://asanchezbdam1.github.io/PawPalsApp/"));
                 })
             });
         }

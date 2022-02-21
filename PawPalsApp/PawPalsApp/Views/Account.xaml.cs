@@ -29,9 +29,7 @@ namespace PawPalsApp.Views
         /// y que cambia propiedades de diferentes elementos para poder 
         /// modificar los datos del perfil del usuario.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ibtnEditar_Clicked(object sender, EventArgs e)
+        private void IbtnEditar_Clicked(object sender, EventArgs e)
         {
             ibtnEditar.IsVisible = false;
             ibtnGuardar.IsVisible = true;
@@ -63,9 +61,7 @@ namespace PawPalsApp.Views
         /// y que cambia propiedades de diferentes elementos para poder
         /// actualizar los datos del perfil del usuario.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private async void ibtnGuardar_Clicked(object sender, EventArgs e)
+        private async void IbtnGuardar_Clicked(object sender, EventArgs e)
         {
             ibtnGuardar.IsVisible = false;
             ibtnEditar.IsVisible = true;
@@ -103,7 +99,7 @@ namespace PawPalsApp.Views
 
         }
 
-        private void ibtnPerfil_Clicked(object sender, EventArgs e)
+        private void IbtnPerfil_Clicked(object sender, EventArgs e)
         {
 
         }
@@ -112,9 +108,7 @@ namespace PawPalsApp.Views
         /// Método que al pulsar sobre el icono cierra la sesión
         /// del usuario y lo redirige a la ventana de Welcome
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ibtnSalir_Clicked(object sender, EventArgs e)
+        private void IbtnSalir_Clicked(object sender, EventArgs e)
         {
             ((App)App.Current).User = null;
             App.Current.MainPage = new NavigationPage(new Welcome());
