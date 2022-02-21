@@ -11,15 +11,15 @@
     <StackLayout>
             <StackLayout Orientation="Horizontal" BackgroundColor="{StaticResource SeparatorColor}">
                 <ImageButton x:Name="ibtnSalir" Margin="20" HorizontalOptions="Start"
-                        Source="cerrarSesion.png" CornerRadius="360" WidthRequest="40" Clicked="ibtnSalir_Clicked" HeightRequest="40"></ImageButton>
+                        Source="cerrarSesion.png" CornerRadius="360" WidthRequest="40" Clicked="IbtnSalir_Clicked" HeightRequest="40"></ImageButton>
                 <ImageButton x:Name="ibtnEditar" IsVisible="true" Margin="20" HorizontalOptions="EndAndExpand"
-                        Source="editar.png" WidthRequest="40"  HeightRequest="40" Clicked="ibtnEditar_Clicked"></ImageButton>
+                        Source="editar.png" WidthRequest="40"  HeightRequest="40" Clicked="IbtnEditar_Clicked"></ImageButton>
                 <ImageButton x:Name="ibtnGuardar" IsVisible="false" Margin="20" HorizontalOptions="EndAndExpand"
-                        Source="floppyDisk.png" WidthRequest="40"  HeightRequest="40" Clicked="ibtnGuardar_Clicked"></ImageButton>
+                        Source="floppyDisk.png" WidthRequest="40"  HeightRequest="40" Clicked="IbtnGuardar_Clicked"></ImageButton>
             </StackLayout>
         
             <StackLayout Orientation="Vertical" HorizontalOptions="Center">
-            <ImageButton x:Name="ibtnPerfil" Source="defUser.png" Clicked="ibtnPerfil_Clicked"
+            <ImageButton x:Name="ibtnPerfil" Source="defUser.png" Clicked="IbtnPerfil_Clicked"
                          CornerRadius="360" WidthRequest="200" HeightRequest="200"></ImageButton>
             <Label x:Name="lblUser" TextColor="{StaticResource LblFontColor}"
                     HorizontalTextAlignment="Center" FontSize="28" Margin="0,10,0,0"></Label>
