@@ -571,7 +571,7 @@ namespace PawPalsApp.Views
         }
 
         /// <summary>
-        /// Cambia la apariencia de los botones dependiendo de cual este selccionado
+        /// Cambia la apariencia de los botones dependiendo de cual este seleccionado
         /// </summary>
         private void reiniciarIconos()
         {
