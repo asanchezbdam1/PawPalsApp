@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Paw Pals", "index.html", [
-    [ "PawPalsApp", "md__r_e_a_d_m_e.html", [
+    [ "PawPals", "md__r_e_a_d_m_e.html", [
       [ "PawPalsApp", "md__r_e_a_d_m_e.html#autotoc_md1", [
         [ "PawPalsApp Views", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
         [ "PawPalsApp Resx", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
