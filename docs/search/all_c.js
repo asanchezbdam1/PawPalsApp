@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['jumptoend_0',['jumpToEnd',['../classandroidx_1_1constraintlayout_1_1widget_1_1_r_1_1id.html#afe2a240a5a2bdf4d6cf8f4a5ca2063fd',1,'androidx.constraintlayout.widget.R.id.jumpToEnd()'],['../classcom_1_1companyname_1_1pawpalsapp_1_1_r_1_1id.html#ab86a225964704811d4ca268101058394',1,'com.companyname.pawpalsapp.R.id.jumpToEnd()'],['../classcom_1_1google_1_1android_1_1material_1_1_r_1_1id.html#a20a879b5146ac341c9fde63058b8bffc',1,'com.google.android.material.R.id.jumpToEnd()'],['../class_paw_pals_app_1_1_droid_1_1_resource_1_1_id.html#ab9d8214041454d14c16bab7f4fc2bf96',1,'PawPalsApp.Droid.Resource.Id.jumpToEnd()']]],
-  ['jumptostart_1',['jumpToStart',['../classandroidx_1_1constraintlayout_1_1widget_1_1_r_1_1id.html#ab97616bdba44e5860ca1a87dff33ad8c',1,'androidx.constraintlayout.widget.R.id.jumpToStart()'],['../classcom_1_1companyname_1_1pawpalsapp_1_1_r_1_1id.html#ae0f8f2457b46fa8ae24c8f5d96862880',1,'com.companyname.pawpalsapp.R.id.jumpToStart()'],['../classcom_1_1google_1_1android_1_1material_1_1_r_1_1id.html#abe850cc41f66f57df24ea6b99e9cb100',1,'com.google.android.material.R.id.jumpToStart()'],['../class_paw_pals_app_1_1_droid_1_1_resource_1_1_id.html#adc01cd10a952928c37f71e0826dcc027',1,'PawPalsApp.Droid.Resource.Id.jumpToStart()']]]
+  ['name_0',['Name',['../class_cross_classes_1_1_user.html#a6d2cdb7cc2509482bd6c1c64ee882cec',1,'CrossClasses::User']]],
+  ['needlogin_1',['NeedLogin',['../class_paw_pals_app_1_1_resx_1_1_app_resources.html#a38e8e9c6ffd0855ffd5e5603a5fea1e7',1,'PawPalsApp::Resx::AppResources']]],
+  ['newtopawpals_2',['NewToPawPals',['../class_paw_pals_app_1_1_resx_1_1_app_resources.html#a6e60d5aed5ce2a187102f02d5f6ab786',1,'PawPalsApp::Resx::AppResources']]],
+  ['nombre_3',['Nombre',['../class_paw_pals_app_1_1_classes_1_1_mascotas.html#a8e94ab905f2acd9307c28b400252e28b',1,'PawPalsApp::Classes::Mascotas']]],
+  ['nomcity_4',['NomCity',['../class_paw_pals_app_1_1_resx_1_1_app_resources.html#a4022f17b2adefe4c730bb8f5440a0941',1,'PawPalsApp::Resx::AppResources']]],
+  ['nomcountry_5',['NomCountry',['../class_paw_pals_app_1_1_resx_1_1_app_resources.html#a6b62d0dd797f77a0fc7bcff3aac445d5',1,'PawPalsApp::Resx::AppResources']]],
+  ['none_6',['NONE',['../namespace_cross_classes.html#a8850b4ede1174d8af6550e319e51d040ab50339a10e1de285ac99d4c3990b8693',1,'CrossClasses']]],
+  ['notdisliked_7',['NotDisliked',['../class_cross_classes_1_1_post.html#a9d10562ce9cab9ce55d93efe888bd0e0',1,'CrossClasses::Post']]],
+  ['notliked_8',['NotLiked',['../class_cross_classes_1_1_post.html#a1cd3e776ed77df031010e426c236802b',1,'CrossClasses::Post']]]
 ];

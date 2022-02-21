@@ -2,7 +2,6 @@ var dir_8a8c711fe4570ec82692411d32dccbe3 =
 [
     [ "Classes", "dir_684d3d17a310d849da53f8b5a1af399e.html", "dir_684d3d17a310d849da53f8b5a1af399e" ],
     [ "Data", "dir_c140f7db9a2409221b27165db4997e9e.html", "dir_c140f7db9a2409221b27165db4997e9e" ],
-    [ "obj", "dir_91f71c3a52521dd47b67e1c2f72a64f0.html", "dir_91f71c3a52521dd47b67e1c2f72a64f0" ],
     [ "Resx", "dir_0036933f822647db79f142868773b6fc.html", "dir_0036933f822647db79f142868773b6fc" ],
     [ "Views", "dir_89f8e6a160614bf315227d6c507cb7bc.html", "dir_89f8e6a160614bf315227d6c507cb7bc" ],
     [ "App.xaml.cs", "_app_8xaml_8cs.html", [

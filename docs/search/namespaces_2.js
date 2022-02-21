@@ -1,29 +1,5 @@
 var searchData=
 [
-  ['accessibility_0',['accessibility',['../namespacemono_1_1androidx_1_1core_1_1view_1_1accessibility.html',1,'mono::androidx::core::view']]],
-  ['animation_1',['animation',['../namespacemono_1_1androidx_1_1dynamicanimation_1_1animation.html',1,'mono::androidx::dynamicanimation']]],
-  ['app_2',['app',['../namespacemono_1_1android_1_1app.html',1,'mono.android.app'],['../namespacemono_1_1androidx_1_1appcompat_1_1app.html',1,'mono.androidx.appcompat.app'],['../namespacemono_1_1androidx_1_1core_1_1app.html',1,'mono.androidx.core.app'],['../namespacemono_1_1androidx_1_1fragment_1_1app.html',1,'mono.androidx.fragment.app']]],
-  ['appbar_3',['appbar',['../namespacemono_1_1com_1_1google_1_1android_1_1material_1_1appbar.html',1,'mono::com::google::android::material']]],
-  ['behavior_4',['behavior',['../namespacemono_1_1com_1_1google_1_1android_1_1material_1_1behavior.html',1,'mono::com::google::android::material']]],
-  ['button_5',['button',['../namespacemono_1_1com_1_1google_1_1android_1_1material_1_1button.html',1,'mono::com::google::android::material']]],
-  ['card_6',['card',['../namespacemono_1_1com_1_1google_1_1android_1_1material_1_1card.html',1,'mono::com::google::android::material']]],
-  ['chip_7',['chip',['../namespacemono_1_1com_1_1google_1_1android_1_1material_1_1chip.html',1,'mono::com::google::android::material']]],
-  ['content_8',['content',['../namespacemono_1_1androidx_1_1loader_1_1content.html',1,'mono::androidx::loader']]],
-  ['contextaware_9',['contextaware',['../namespacemono_1_1androidx_1_1activity_1_1contextaware.html',1,'mono::androidx::activity']]],
-  ['datepicker_10',['datepicker',['../namespacemono_1_1com_1_1google_1_1android_1_1material_1_1datepicker.html',1,'mono::com::google::android::material']]],
-  ['inputmethod_11',['inputmethod',['../namespacemono_1_1androidx_1_1core_1_1view_1_1inputmethod.html',1,'mono::androidx::core::view']]],
-  ['internal_12',['internal',['../namespacemono_1_1com_1_1google_1_1android_1_1material_1_1internal.html',1,'mono::com::google::android::material']]],
-  ['mono_13',['mono',['../namespacemono.html',1,'']]],
-  ['navigation_14',['navigation',['../namespacemono_1_1androidx_1_1navigation.html',1,'mono.androidx.navigation'],['../namespacemono_1_1com_1_1google_1_1android_1_1material_1_1navigation.html',1,'mono.com.google.android.material.navigation']]],
-  ['os_15',['os',['../namespacemono_1_1androidx_1_1core_1_1os.html',1,'mono::androidx::core']]],
-  ['preference_16',['preference',['../namespacemono_1_1androidx_1_1preference.html',1,'mono::androidx']]],
-  ['session_17',['session',['../namespacemono_1_1android_1_1support_1_1v4_1_1media_1_1session.html',1,'mono::android::support::v4::media']]],
-  ['shape_18',['shape',['../namespacemono_1_1com_1_1google_1_1android_1_1material_1_1shape.html',1,'mono::com::google::android::material']]],
-  ['slider_19',['slider',['../namespacemono_1_1com_1_1google_1_1android_1_1material_1_1slider.html',1,'mono::com::google::android::material']]],
-  ['tabs_20',['tabs',['../namespacemono_1_1com_1_1google_1_1android_1_1material_1_1tabs.html',1,'mono::com::google::android::material']]],
-  ['textfield_21',['textfield',['../namespacemono_1_1com_1_1google_1_1android_1_1material_1_1textfield.html',1,'mono::com::google::android::material']]],
-  ['transition_22',['transition',['../namespacemono_1_1androidx_1_1transition.html',1,'mono::androidx']]],
-  ['ui_23',['ui',['../namespacemono_1_1androidx_1_1navigation_1_1ui.html',1,'mono::androidx::navigation']]],
-  ['view_24',['view',['../namespacemono_1_1androidx_1_1asynclayoutinflater_1_1view.html',1,'mono.androidx.asynclayoutinflater.view'],['../namespacemono_1_1androidx_1_1core_1_1view.html',1,'mono.androidx.core.view']]],
-  ['widget_25',['widget',['../namespacemono_1_1androidx_1_1appcompat_1_1widget.html',1,'mono.androidx.appcompat.widget'],['../namespacemono_1_1androidx_1_1constraintlayout_1_1motion_1_1widget.html',1,'mono.androidx.constraintlayout.motion.widget'],['../namespacemono_1_1androidx_1_1constraintlayout_1_1widget.html',1,'mono.androidx.constraintlayout.widget'],['../namespacemono_1_1androidx_1_1core_1_1widget.html',1,'mono.androidx.core.widget'],['../namespacemono_1_1androidx_1_1drawerlayout_1_1widget.html',1,'mono.androidx.drawerlayout.widget'],['../namespacemono_1_1androidx_1_1recyclerview_1_1widget.html',1,'mono.androidx.recyclerview.widget'],['../namespacemono_1_1androidx_1_1slidingpanelayout_1_1widget.html',1,'mono.androidx.slidingpanelayout.widget'],['../namespacemono_1_1androidx_1_1swiperefreshlayout_1_1widget.html',1,'mono.androidx.swiperefreshlayout.widget'],['../namespacemono_1_1androidx_1_1viewpager_1_1widget.html',1,'mono.androidx.viewpager.widget']]]
+  ['serveractions_0',['ServerActions',['../namespace_server_actions.html',1,'']]],
+  ['serververificators_1',['ServerVerificators',['../namespace_server_verificators.html',1,'']]]
 ];

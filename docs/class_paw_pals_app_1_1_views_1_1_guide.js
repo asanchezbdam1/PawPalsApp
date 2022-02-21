@@ -13,13 +13,6 @@ var class_paw_pals_app_1_1_views_1_1_guide =
     [ "higieneGatos", "class_paw_pals_app_1_1_views_1_1_guide.html#aaa56e7460195cd87dc19c949b044e0cf", null ],
     [ "higienePerros", "class_paw_pals_app_1_1_views_1_1_guide.html#ab63ef77ef02c49dddf632b8610fcf8d5", null ],
     [ "higieneRoedores", "class_paw_pals_app_1_1_views_1_1_guide.html#a68b87d737acc8b6f25ba7b02475488b8", null ],
-    [ "InitializeComponent", "class_paw_pals_app_1_1_views_1_1_guide.html#a10fc37c8ece7d937c89f5f624a906a96", null ],
-    [ "InitializeComponent", "class_paw_pals_app_1_1_views_1_1_guide.html#a10fc37c8ece7d937c89f5f624a906a96", null ],
     [ "Piqueador_SelectedIndexChanged", "class_paw_pals_app_1_1_views_1_1_guide.html#a98d1d72cc596a283cfee9f7b50a4f714", null ],
-    [ "reiniciarIconos", "class_paw_pals_app_1_1_views_1_1_guide.html#a49ff37dc291d55bbf84b5c0a54ffb700", null ],
-    [ "btnGato", "class_paw_pals_app_1_1_views_1_1_guide.html#aa56bf1dd034535aa492d6393f5561219", null ],
-    [ "btnPerro", "class_paw_pals_app_1_1_views_1_1_guide.html#a4890c3cea3dabf640fa5e3676ca82d90", null ],
-    [ "btnRoedor", "class_paw_pals_app_1_1_views_1_1_guide.html#a4bcbd618f0edb8d2185a66a9da8869c8", null ],
-    [ "Piqueador", "class_paw_pals_app_1_1_views_1_1_guide.html#aead223e654af3e9bd68f6bca73def7be", null ],
-    [ "slContenido", "class_paw_pals_app_1_1_views_1_1_guide.html#ac245bb627ab3535be476fc155d668868", null ]
+    [ "reiniciarIconos", "class_paw_pals_app_1_1_views_1_1_guide.html#a49ff37dc291d55bbf84b5c0a54ffb700", null ]
 ];

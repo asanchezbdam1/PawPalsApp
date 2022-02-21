@@ -1,4 +1,0 @@
-var dir_3f42553e29642848753fdb3b02b48f54 =
-[
-    [ "google", "dir_8650561cfe4ea5e3d697d9141922646e.html", "dir_8650561cfe4ea5e3d697d9141922646e" ]
-];

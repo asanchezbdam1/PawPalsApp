@@ -1,8 +1,6 @@
 var class_paw_pals_app_1_1_app =
 [
     [ "App", "class_paw_pals_app_1_1_app.html#a9cd0c74698f0384bf16f82d7c4e0bfb4", null ],
-    [ "InitializeComponent", "class_paw_pals_app_1_1_app.html#a0cc96753a2e6c61a014acab3f42b30d1", null ],
-    [ "InitializeComponent", "class_paw_pals_app_1_1_app.html#a0cc96753a2e6c61a014acab3f42b30d1", null ],
     [ "OnResume", "class_paw_pals_app_1_1_app.html#ae78063fd07b16c54d9e422eb2fab03c1", null ],
     [ "OnSleep", "class_paw_pals_app_1_1_app.html#a9998ddd7f2028c5d2a4855e7513b0da2", null ],
     [ "OnStart", "class_paw_pals_app_1_1_app.html#ac66b94b0b290ad61300f0160f944aed0", null ],

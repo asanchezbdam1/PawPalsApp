@@ -1,7 +1,5 @@
 var dir_0eb07f97a8dd33bef0995c57ce8185d9 =
 [
-    [ "obj", "dir_be3b330f1b20e5b04466838ae7bbebbe.html", "dir_be3b330f1b20e5b04466838ae7bbebbe" ],
-    [ "Properties", "dir_df0d360da27bddd7dbbac21a254e5346.html", "dir_df0d360da27bddd7dbbac21a254e5346" ],
     [ "ObjectSerializer.cs", "_object_serializer_8cs.html", [
       [ "CrossClasses.ObjectSerializer", "class_cross_classes_1_1_object_serializer.html", "class_cross_classes_1_1_object_serializer" ]
     ] ],

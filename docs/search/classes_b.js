@@ -1,23 +1,4 @@
 var searchData=
 [
-  ['magnetometerlistener_0',['MagnetometerListener',['../classcrc64a0e0a82d0db9a07d_1_1_magnetometer_listener.html',1,'crc64a0e0a82d0db9a07d']]],
-  ['mainactivity_1',['MainActivity',['../classcrc6432072b1d5e7c27eb_1_1_main_activity.html',1,'crc6432072b1d5e7c27eb.MainActivity'],['../class_paw_pals_app_1_1_droid_1_1_main_activity.html',1,'PawPalsApp.Droid.MainActivity']]],
-  ['mainpage_2',['MainPage',['../class_paw_pals_app_1_1_main_page.html',1,'PawPalsApp']]],
-  ['mascotas_3',['Mascotas',['../class_paw_pals_app_1_1_classes_1_1_mascotas.html',1,'PawPalsApp::Classes']]],
-  ['masterdetailcontainer_4',['MasterDetailContainer',['../classcrc643f46942d9dd1fff9_1_1_master_detail_container.html',1,'crc643f46942d9dd1fff9']]],
-  ['masterdetailpagerenderer_5',['MasterDetailPageRenderer',['../classcrc64720bb2db43a66fe9_1_1_master_detail_page_renderer.html',1,'crc64720bb2db43a66fe9']]],
-  ['masterdetailrenderer_6',['MasterDetailRenderer',['../classcrc643f46942d9dd1fff9_1_1_master_detail_renderer.html',1,'crc643f46942d9dd1fff9']]],
-  ['materialbutton_5foncheckedchangelistenerimplementor_7',['MaterialButton_OnCheckedChangeListenerImplementor',['../classmono_1_1com_1_1google_1_1android_1_1material_1_1button_1_1_material_button___on_checked_change_listener_implementor.html',1,'mono::com::google::android::material::button']]],
-  ['materialbuttontogglegroup_5fonbuttoncheckedlistenerimplementor_8',['MaterialButtonToggleGroup_OnButtonCheckedListenerImplementor',['../classmono_1_1com_1_1google_1_1android_1_1material_1_1button_1_1_material_button_toggle_group___o5cca2c16f254e0799f64446d39ad665b.html',1,'mono::com::google::android::material::button']]],
-  ['materialcardview_5foncheckedchangelistenerimplementor_9',['MaterialCardView_OnCheckedChangeListenerImplementor',['../classmono_1_1com_1_1google_1_1android_1_1material_1_1card_1_1_material_card_view___on_checked_change_listener_implementor.html',1,'mono::com::google::android::material::card']]],
-  ['materialpickeronpositivebuttonclicklistenerimplementor_10',['MaterialPickerOnPositiveButtonClickListenerImplementor',['../classmono_1_1com_1_1google_1_1android_1_1material_1_1datepicker_1_1_material_picker_on_positive_0ef10b45230833b2e3ed4af2a6d7f23e.html',1,'mono::com::google::android::material::datepicker']]],
-  ['mediapickeractivity_11',['MediaPickerActivity',['../classcrc646957603ea1820544_1_1_media_picker_activity.html',1,'crc646957603ea1820544']]],
-  ['mediasessioncompat_5fonactivechangelistenerimplementor_12',['MediaSessionCompat_OnActiveChangeListenerImplementor',['../classmono_1_1android_1_1support_1_1v4_1_1media_1_1session_1_1_media_session_compat___on_active_change_listener_implementor.html',1,'mono::android::support::v4::media::session']]],
-  ['menuitemcompat_5fonactionexpandlistenerimplementor_13',['MenuItemCompat_OnActionExpandListenerImplementor',['../classmono_1_1androidx_1_1core_1_1view_1_1_menu_item_compat___on_action_expand_listener_implementor.html',1,'mono::androidx::core::view']]],
-  ['menuitemhoverlistenerimplementor_14',['MenuItemHoverListenerImplementor',['../classmono_1_1androidx_1_1appcompat_1_1widget_1_1_menu_item_hover_listener_implementor.html',1,'mono::androidx::appcompat::widget']]],
-  ['mipmap_15',['mipmap',['../classcom_1_1companyname_1_1pawpalsapp_1_1_r_1_1mipmap.html',1,'com::companyname::pawpalsapp::R']]],
-  ['mipmap_16',['Mipmap',['../class_paw_pals_app_1_1_droid_1_1_resource_1_1_mipmap.html',1,'PawPalsApp::Droid::Resource']]],
-  ['monopackagemanager_5fresources_17',['MonoPackageManager_Resources',['../classmono_1_1_mono_package_manager___resources.html',1,'mono']]],
-  ['monoruntimeprovider_18',['MonoRuntimeProvider',['../classmono_1_1_mono_runtime_provider.html',1,'mono']]],
-  ['motionlayout_5ftransitionlistenerimplementor_19',['MotionLayout_TransitionListenerImplementor',['../classmono_1_1androidx_1_1constraintlayout_1_1motion_1_1widget_1_1_motion_layout___transition_listener_implementor.html',1,'mono::androidx::constraintlayout::motion::widget']]]
+  ['objectserializer_0',['ObjectSerializer',['../class_cross_classes_1_1_object_serializer.html',1,'CrossClasses']]]
 ];
