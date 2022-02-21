@@ -12,7 +12,9 @@ namespace PawPalsApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Guide : ContentPage
     {
-        
+        /// <summary>
+        /// Añade elementos al picker al iniciar la pagina
+        /// </summary>
         public Guide()
         {
             InitializeComponent();
@@ -22,6 +24,13 @@ namespace PawPalsApp.Views
             
             Piqueador.SelectedIndex = 0;
         }
+
+        /// <summary>
+        /// Dependiendo del boton mascota seleccionado al cambiar la seleccion del picker
+        /// el texto inferior se cambiara acorde a esta seleccion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Piqueador_SelectedIndexChanged(object sender, EventArgs e)
         {
             slContenido.Children.Clear();
@@ -70,6 +79,10 @@ namespace PawPalsApp.Views
                 }
             }
         }
+
+        /// <summary>
+        /// Crea los frames con el contenido de la dieta correspondiente a los perros
+        /// </summary>
         private void dietaPerros()
         {
             object[] items = {
@@ -113,6 +126,10 @@ namespace PawPalsApp.Views
             };
 
         }
+
+        /// <summary>
+        /// Crea los frames con el contenido de la dieta correspondiente a los gatos
+        /// </summary>
         private void dietaGatos()
         {
             object[] items = {
@@ -157,6 +174,10 @@ namespace PawPalsApp.Views
                 slContenido.Children.Add((View)it);
             }
         }
+
+        /// <summary>
+        /// Crea los frames con el contenido de la dieta correspondiente a los roedores
+        /// </summary>
         private void dietaRoedores()
         {
             object[] items = {
@@ -201,6 +222,10 @@ namespace PawPalsApp.Views
                 slContenido.Children.Add((View)it);
             }
         }
+
+        /// <summary>
+        /// Crea los frames con el contenido del ejercicio correspondiente a los perros
+        /// </summary>
         private void ejercicioPerros()
         {
             object[] items = {
@@ -243,6 +268,10 @@ namespace PawPalsApp.Views
                 slContenido.Children.Add((View)it);
             }
         }
+
+        /// <summary>
+        /// Crea los frames con el contenido del ejercicio correspondiente a los gatos
+        /// </summary>
         private void ejercicioGatos()
         {
             object[] items = {
@@ -285,6 +314,10 @@ namespace PawPalsApp.Views
                 slContenido.Children.Add((View)it);
             }
         }
+
+        /// <summary>
+        /// Crea los frames con el contenido del ejercicio correspondiente a los roedores
+        /// </summary>
         private void ejercicioRoedores()
         {
             object[] items = {
@@ -327,6 +360,10 @@ namespace PawPalsApp.Views
                 slContenido.Children.Add((View)it);
             }
         }
+
+        /// <summary>
+        /// Crea los frames con el contenido de la higiene correspondiente a los perros
+        /// </summary>
         private void higienePerros()
         {
             object[] items = {
@@ -369,6 +406,10 @@ namespace PawPalsApp.Views
                 slContenido.Children.Add((View)it);
             };
         }
+
+        /// <summary>
+        /// Crea los frames con el contenido de la higiene correspondiente a los gatos
+        /// </summary>
         private void higieneGatos()
         {
             object[] items = {
@@ -411,6 +452,10 @@ namespace PawPalsApp.Views
                 slContenido.Children.Add((View)it);
             };
         }
+
+        /// <summary>
+        /// Crea los frames con el contenido de la higiene correspondiente a los roedores
+        /// </summary>
         private void higieneRoedores()
         {
             object[] items = {
@@ -454,6 +499,11 @@ namespace PawPalsApp.Views
             };
         }
 
+        /// <summary>
+        /// Si este boton se selecciona se crearan frames correspondientes a los perros
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnPerro_Clicked(object sender, EventArgs e)
         {
             reiniciarIconos();
@@ -473,6 +523,11 @@ namespace PawPalsApp.Views
             }
         }
 
+        /// <summary>
+        /// Si este boton se selecciona se crearan frames correspondientes a los gatos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGato_Clicked(object sender, EventArgs e)
         {
             reiniciarIconos();
@@ -491,6 +546,11 @@ namespace PawPalsApp.Views
             }
         }
 
+        /// <summary>
+        /// Si este boton se selecciona se crearan frames correspondientes a los roedores
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnRoedor_Clicked(object sender, EventArgs e)
         {
             reiniciarIconos();
@@ -510,6 +570,9 @@ namespace PawPalsApp.Views
             }
         }
 
+        /// <summary>
+        /// Cambia la apariencia de los botones dependiendo de cual este selccionado
+        /// </summary>
         private void reiniciarIconos()
         {
             slContenido.Children.Clear();
