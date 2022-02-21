@@ -1,6 +1,10 @@
-# PawPalsApp
+# PawPals
+
+PawPals es una aplicación para Android alrededor del cuidado de mascotas, además de tener una sencilla red social en la aplicación. Ha sido creada con Xamarin como proyecto para la asignatura de Programación Multimedia y Dispositivos Móviles del Ciclo de Grado Superior de Desarrollo de Aplicaciones Multiplataforma. Desarrollado por Andrés Guallar Chamorro, David Suescun Fernández y Asier Sánchez Barberena.
 
 [Puedes acceder a la documentación más detallada aquí](https://asanchezbdam1.github.io/PawPalsApp/)
+
+[Ver las dependencias](https://github.com/asanchezbdam1/PawPalsApp/network/dependencies)
 
 ## PawPalsApp
 
