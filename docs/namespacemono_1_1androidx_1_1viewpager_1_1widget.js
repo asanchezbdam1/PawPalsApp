@@ -1,0 +1,5 @@
+var namespacemono_1_1androidx_1_1viewpager_1_1widget =
+[
+    [ "ViewPager_OnAdapterChangeListenerImplementor", "classmono_1_1androidx_1_1viewpager_1_1widget_1_1_view_pager___on_adapter_change_listener_implementor.html", "classmono_1_1androidx_1_1viewpager_1_1widget_1_1_view_pager___on_adapter_change_listener_implementor" ],
+    [ "ViewPager_OnPageChangeListenerImplementor", "classmono_1_1androidx_1_1viewpager_1_1widget_1_1_view_pager___on_page_change_listener_implementor.html", "classmono_1_1androidx_1_1viewpager_1_1widget_1_1_view_pager___on_page_change_listener_implementor" ]
+];

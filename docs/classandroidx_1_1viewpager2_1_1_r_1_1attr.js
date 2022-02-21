@@ -1,0 +1,25 @@
+var classandroidx_1_1viewpager2_1_1_r_1_1attr =
+[
+    [ "alpha", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#a4d7f29d1452b30b507b33339511ab601", null ],
+    [ "fastScrollEnabled", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#ae4e9f6e88752d52eaa61bf4ed0ef6ebe", null ],
+    [ "fastScrollHorizontalThumbDrawable", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#ab1f4b12376bbe4bc24778f14a4e8d838", null ],
+    [ "fastScrollHorizontalTrackDrawable", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#a28320d1f07b067128080f2fa7502e12e", null ],
+    [ "fastScrollVerticalThumbDrawable", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#a752f69e078594d140633ad11882b346b", null ],
+    [ "fastScrollVerticalTrackDrawable", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#a5a90b7f0dc650f8e31a744dbc6676a21", null ],
+    [ "font", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#ad5af9278c877470759193e044f112a6b", null ],
+    [ "fontProviderAuthority", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#ac0e90bde1aeab4e3f24d4a5dd0df71a2", null ],
+    [ "fontProviderCerts", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#a190b16f67b8358035ee93977918a8f29", null ],
+    [ "fontProviderFetchStrategy", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#a38c4eb9e084ac9a2a9f216b390bba650", null ],
+    [ "fontProviderFetchTimeout", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#a9302e6b24fff1821343f5056c29d9db5", null ],
+    [ "fontProviderPackage", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#a7857afb008b15a09b7352e0665de39ff", null ],
+    [ "fontProviderQuery", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#acece4ad251f8198770fc1d99684a439d", null ],
+    [ "fontStyle", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#ae7776eb9602bc577ba8d4225e4864785", null ],
+    [ "fontVariationSettings", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#a4a9e5193881c5993aa2a3a6025ada34d", null ],
+    [ "fontWeight", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#a33eae0b17d6c92a5614c848a587cafe8", null ],
+    [ "layoutManager", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#a8f18879a3e5eb1d943c2b78cf981cdfa", null ],
+    [ "recyclerViewStyle", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#ae6f511ab5e1eb61a14d2bb81cd785797", null ],
+    [ "reverseLayout", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#ae3bb171c4f2eaefc99ab28d10f16819d", null ],
+    [ "spanCount", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#a449765dafe27e18c2779298da459f7c8", null ],
+    [ "stackFromEnd", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#aa4749a4c9ea3f833ee8030fee4f01485", null ],
+    [ "ttcIndex", "classandroidx_1_1viewpager2_1_1_r_1_1attr.html#ae891597234cecd592a3e950bf169ea7b", null ]
+];

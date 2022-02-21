@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['postreaction_0',['PostReaction',['../namespace_cross_classes.html#a8850b4ede1174d8af6550e319e51d040',1,'CrossClasses']]]
+  ['actionoptions_0',['ActionOptions',['../namespace_server_verificators.html#a690f55ef41600966bb937a547964982a',1,'ServerVerificators']]]
 ];

@@ -1,0 +1,25 @@
+var classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen =
+[
+    [ "compat_button_inset_horizontal_material", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#ab2605bbd8ba3ef9dbe58eed320929b1a", null ],
+    [ "compat_button_inset_vertical_material", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a46f2e74c314dba9ff2ec2568fcd89fe6", null ],
+    [ "compat_button_padding_horizontal_material", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#aa76a86ae0ffa3286af3f866d44c25b85", null ],
+    [ "compat_button_padding_vertical_material", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#af870bdd1bbc3cfb209b3f344cbc8620b", null ],
+    [ "compat_control_corner_material", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a883f805c1e497fbf189765dd9e5ed6ba", null ],
+    [ "compat_notification_large_icon_max_height", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a0f55f7497cecf22e1684da7cf3a28001", null ],
+    [ "compat_notification_large_icon_max_width", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a4f4d35070aa4a82d093e0bde1bcf62ad", null ],
+    [ "notification_action_icon_size", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a44342237b649678817385b0a5d74674b", null ],
+    [ "notification_action_text_size", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a2a7d5aef6b6f0a5811e063f5e8639d45", null ],
+    [ "notification_big_circle_margin", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#ae6f842b7c89daac81ddd16d04ea3855e", null ],
+    [ "notification_content_margin_start", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a5f6b240eddb0c738c47267fa1883880b", null ],
+    [ "notification_large_icon_height", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#ae65151b6de897855ed86427c2d03562f", null ],
+    [ "notification_large_icon_width", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a0f74fe1bcbf1431c3896acf8d313fba1", null ],
+    [ "notification_main_column_padding_top", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a9e06183dc360db2f692a60f988fa9c60", null ],
+    [ "notification_media_narrow_margin", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a7238c904c724b23eaa2b2f808e7d77da", null ],
+    [ "notification_right_icon_size", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a62deeb63981c56513b62fa69a8f27100", null ],
+    [ "notification_right_side_padding_top", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a19a5d2cec7d6f0348aa252f61eb00610", null ],
+    [ "notification_small_icon_background_padding", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a20e6c4fa2f4d89d866fd63b0662849f1", null ],
+    [ "notification_small_icon_size_as_large", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a37f918563509f32f21bf193a5b51752c", null ],
+    [ "notification_subtext_size", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a383ec6df67225347376f60fe0d1de643", null ],
+    [ "notification_top_pad", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#aa168bdfdd426f8e8a2480879e1af24b8", null ],
+    [ "notification_top_pad_large_text", "classandroidx_1_1coordinatorlayout_1_1_r_1_1dimen.html#a71c50dd9614897450755e5df35144f3c", null ]
+];

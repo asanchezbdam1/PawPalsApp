@@ -1,0 +1,28 @@
+var classandroidx_1_1preference_1_1_r_1_1anim =
+[
+    [ "abc_fade_in", "classandroidx_1_1preference_1_1_r_1_1anim.html#af2c34546a0211714f070dd8e2397a2d0", null ],
+    [ "abc_fade_out", "classandroidx_1_1preference_1_1_r_1_1anim.html#a379d44dccc8287cc59edca5ba79e2f98", null ],
+    [ "abc_grow_fade_in_from_bottom", "classandroidx_1_1preference_1_1_r_1_1anim.html#a55b0ea0ffeff9f00e97fd508e3ccbd18", null ],
+    [ "abc_popup_enter", "classandroidx_1_1preference_1_1_r_1_1anim.html#a0330b1d1d5cadece2d288537808a3955", null ],
+    [ "abc_popup_exit", "classandroidx_1_1preference_1_1_r_1_1anim.html#aae6b1c60801d0e3c15c05d3e3397529f", null ],
+    [ "abc_shrink_fade_out_from_bottom", "classandroidx_1_1preference_1_1_r_1_1anim.html#a2f41661abf74c43e7006c072bcf2e4c0", null ],
+    [ "abc_slide_in_bottom", "classandroidx_1_1preference_1_1_r_1_1anim.html#acd3278731aa20c04580c35bc7fc0eab4", null ],
+    [ "abc_slide_in_top", "classandroidx_1_1preference_1_1_r_1_1anim.html#a36c637a29632b993171a10fcf8b6f0f8", null ],
+    [ "abc_slide_out_bottom", "classandroidx_1_1preference_1_1_r_1_1anim.html#a7c8eac23e3b49b6cdf4ac3545c4c0f1f", null ],
+    [ "abc_slide_out_top", "classandroidx_1_1preference_1_1_r_1_1anim.html#a60ba050d368279e1ead887ee064b0bd9", null ],
+    [ "abc_tooltip_enter", "classandroidx_1_1preference_1_1_r_1_1anim.html#acd817e9499b98fef23289bd1a83019b7", null ],
+    [ "abc_tooltip_exit", "classandroidx_1_1preference_1_1_r_1_1anim.html#a4f35a963f099bde58169e4e1f12e38df", null ],
+    [ "btn_checkbox_to_checked_box_inner_merged_animation", "classandroidx_1_1preference_1_1_r_1_1anim.html#a9d17c6a809f2832d5701fc5ee2a536cb", null ],
+    [ "btn_checkbox_to_checked_box_outer_merged_animation", "classandroidx_1_1preference_1_1_r_1_1anim.html#a62e90ea7127bcaa994faea2c4f274374", null ],
+    [ "btn_checkbox_to_checked_icon_null_animation", "classandroidx_1_1preference_1_1_r_1_1anim.html#a05174a6907ecfdc9ae7f65774ea0b033", null ],
+    [ "btn_checkbox_to_unchecked_box_inner_merged_animation", "classandroidx_1_1preference_1_1_r_1_1anim.html#af19e29dfa2e069149f64cea4b86fd82a", null ],
+    [ "btn_checkbox_to_unchecked_check_path_merged_animation", "classandroidx_1_1preference_1_1_r_1_1anim.html#afc16ab75449bf6922d7499f7e7e827f6", null ],
+    [ "btn_checkbox_to_unchecked_icon_null_animation", "classandroidx_1_1preference_1_1_r_1_1anim.html#ad36b7842d446aa0b470e0a2568621d61", null ],
+    [ "btn_radio_to_off_mtrl_dot_group_animation", "classandroidx_1_1preference_1_1_r_1_1anim.html#aeb5f375906e920e50aa6ce2b666e3be1", null ],
+    [ "btn_radio_to_off_mtrl_ring_outer_animation", "classandroidx_1_1preference_1_1_r_1_1anim.html#a9965a383732a46a986b5799212ddf940", null ],
+    [ "btn_radio_to_off_mtrl_ring_outer_path_animation", "classandroidx_1_1preference_1_1_r_1_1anim.html#a04c39dcbf3fa62cbd7ccf70a6e8cbcd2", null ],
+    [ "btn_radio_to_on_mtrl_dot_group_animation", "classandroidx_1_1preference_1_1_r_1_1anim.html#ac43fad1d01f21b1f1308ee4119a20f3e", null ],
+    [ "btn_radio_to_on_mtrl_ring_outer_animation", "classandroidx_1_1preference_1_1_r_1_1anim.html#a4272498d8331254daaee9bcfd90f87c3", null ],
+    [ "btn_radio_to_on_mtrl_ring_outer_path_animation", "classandroidx_1_1preference_1_1_r_1_1anim.html#a68bcf0af3c2af841662742d7b3f05bd7", null ],
+    [ "fragment_fast_out_extra_slow_in", "classandroidx_1_1preference_1_1_r_1_1anim.html#a72a508d3186c26d84726296cbf2f9b6f", null ]
+];

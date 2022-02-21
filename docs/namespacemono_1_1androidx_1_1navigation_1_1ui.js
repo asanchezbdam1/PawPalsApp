@@ -1,0 +1,4 @@
+var namespacemono_1_1androidx_1_1navigation_1_1ui =
+[
+    [ "AppBarConfiguration_OnNavigateUpListenerImplementor", "classmono_1_1androidx_1_1navigation_1_1ui_1_1_app_bar_configuration___on_navigate_up_listener_implementor.html", "classmono_1_1androidx_1_1navigation_1_1ui_1_1_app_bar_configuration___on_navigate_up_listener_implementor" ]
+];

@@ -85,6 +85,8 @@ $(document).ready(function(){initNavTree('class_server_actions_1_1_d_b_tasks.htm
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_server_actions_1_1_d_b_tasks-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ServerActions.DBTasks Class Reference</div></div>
 </div><!--header-->
@@ -134,10 +136,66 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abccb514000c9190511dfe72a2b682f26"><td class="memItemLeft" align="right" valign="top">static object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_server_actions_1_1_d_b_tasks.html#abccb514000c9190511dfe72a2b682f26">GetRemoveOpinionResult</a> (<a class="el" href="class_cross_classes_1_1_post_reacted.html">PostReacted</a> p)</td></tr>
 <tr class="memdesc:abccb514000c9190511dfe72a2b682f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resultado de dar quitar la reacción a una publicación.  <a href="class_server_actions_1_1_d_b_tasks.html#abccb514000c9190511dfe72a2b682f26">More...</a><br /></td></tr>
 <tr class="separator:abccb514000c9190511dfe72a2b682f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a291d31c673d148731b259d35efacb837"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="class_cross_classes_1_1_post.html">Post</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_server_actions_1_1_d_b_tasks.html#a291d31c673d148731b259d35efacb837">GetPostsInfo</a> (SqlDataReader dr, int userID)</td></tr>
+<tr class="memdesc:a291d31c673d148731b259d35efacb837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene la información de las publicaciones pasadas como parámetro como resultado de consulta.  <a href="class_server_actions_1_1_d_b_tasks.html#a291d31c673d148731b259d35efacb837">More...</a><br /></td></tr>
+<tr class="separator:a291d31c673d148731b259d35efacb837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c7e57feb5d94713c04e526d99d916a7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_server_actions_1_1_d_b_tasks.html#a0c7e57feb5d94713c04e526d99d916a7">VerifyLogin</a> (<a class="el" href="class_cross_classes_1_1_user.html">User</a> user)</td></tr>
+<tr class="memdesc:a0c7e57feb5d94713c04e526d99d916a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprueba si la información del usuario pasado como parámetro es correcta para iniciar su sesión.  <a href="class_server_actions_1_1_d_b_tasks.html#a0c7e57feb5d94713c04e526d99d916a7">More...</a><br /></td></tr>
+<tr class="separator:a0c7e57feb5d94713c04e526d99d916a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356d0a8d3fbec7e27509d1b81554b07c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_server_actions_1_1_d_b_tasks.html#a356d0a8d3fbec7e27509d1b81554b07c">CheckIfRegistered</a> (<a class="el" href="class_cross_classes_1_1_register_user.html">RegisterUser</a> user)</td></tr>
+<tr class="memdesc:a356d0a8d3fbec7e27509d1b81554b07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprueba si el usuario pasado como parámetro está registrado.  <a href="class_server_actions_1_1_d_b_tasks.html#a356d0a8d3fbec7e27509d1b81554b07c">More...</a><br /></td></tr>
+<tr class="separator:a356d0a8d3fbec7e27509d1b81554b07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc19cdf12b0bb7811f722a77f6065cc"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_server_actions_1_1_d_b_tasks.html#aefc19cdf12b0bb7811f722a77f6065cc">GetHash</a> (string str)</td></tr>
+<tr class="memdesc:aefc19cdf12b0bb7811f722a77f6065cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el Hash para almacenar o comprobar una contraseña.  <a href="class_server_actions_1_1_d_b_tasks.html#aefc19cdf12b0bb7811f722a77f6065cc">More...</a><br /></td></tr>
+<tr class="separator:aefc19cdf12b0bb7811f722a77f6065cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a20af00d334a213a858758da286008442"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_server_actions_1_1_d_b_tasks.html#a20af00d334a213a858758da286008442">CNSTRING</a> = @&quot;Server=(LocalDB)\MSSQLLocalDB;Database=PawPalsDB;Integrated Security=SSPI;&quot;</td></tr>
+<tr class="memdesc:a20af00d334a213a858758da286008442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cadena de conexión a la base de datos. Es una base de datos SQL en el equipo local con seguridad integrada.  <a href="class_server_actions_1_1_d_b_tasks.html#a20af00d334a213a858758da286008442">More...</a><br /></td></tr>
+<tr class="separator:a20af00d334a213a858758da286008442"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Clase para el acceso a la base de datos. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a356d0a8d3fbec7e27509d1b81554b07c" name="a356d0a8d3fbec7e27509d1b81554b07c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356d0a8d3fbec7e27509d1b81554b07c">&#9670;&nbsp;</a></span>CheckIfRegistered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ServerActions.DBTasks.CheckIfRegistered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cross_classes_1_1_register_user.html">RegisterUser</a>&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Comprueba si el usuario pasado como parámetro está registrado. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>Usuario a comprobar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Verdadero si está registrado el usuario.</dd></dl>
+
+</div>
+</div>
 <a id="acf0eea7dc226663199f61027ed28b3ea" name="acf0eea7dc226663199f61027ed28b3ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf0eea7dc226663199f61027ed28b3ea">&#9670;&nbsp;</a></span>GetDeleteUserResult()</h2>
 
@@ -205,6 +263,41 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reacción que tiene el post finalmente.</dd></dl>
+
+</div>
+</div>
+<a id="aefc19cdf12b0bb7811f722a77f6065cc" name="aefc19cdf12b0bb7811f722a77f6065cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc19cdf12b0bb7811f722a77f6065cc">&#9670;&nbsp;</a></span>GetHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string ServerActions.DBTasks.GetHash </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtiene el Hash para almacenar o comprobar una contraseña. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Cadena a convertir a hash.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Hash de la cadena de texto.</dd></dl>
 
 </div>
 </div>
@@ -380,6 +473,52 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>La lista de publicaciones tras intentar rellenarla.</dd></dl>
+
+</div>
+</div>
+<a id="a291d31c673d148731b259d35efacb837" name="a291d31c673d148731b259d35efacb837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a291d31c673d148731b259d35efacb837">&#9670;&nbsp;</a></span>GetPostsInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static List&lt; <a class="el" href="class_cross_classes_1_1_post.html">Post</a> &gt; ServerActions.DBTasks.GetPostsInfo </td>
+          <td>(</td>
+          <td class="paramtype">SqlDataReader&#160;</td>
+          <td class="paramname"><em>dr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>userID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtiene la información de las publicaciones pasadas como parámetro como resultado de consulta. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dr</td><td>Resultado de la consulta de publicaciones.</td></tr>
+    <tr><td class="paramname">userID</td><td>ID del usuario que solicita las publicaciones.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Lista de publicaciones a partir de la consulta con información.</dd></dl>
 
 </div>
 </div>
@@ -593,8 +732,68 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0c7e57feb5d94713c04e526d99d916a7" name="a0c7e57feb5d94713c04e526d99d916a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c7e57feb5d94713c04e526d99d916a7">&#9670;&nbsp;</a></span>VerifyLogin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ServerActions.DBTasks.VerifyLogin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cross_classes_1_1_user.html">User</a>&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Comprueba si la información del usuario pasado como parámetro es correcta para iniciar su sesión. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>Usuario a comprobar</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Verdadero si es correcto el inicio de sesión.</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a20af00d334a213a858758da286008442" name="a20af00d334a213a858758da286008442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20af00d334a213a858758da286008442">&#9670;&nbsp;</a></span>CNSTRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string ServerActions.DBTasks.CNSTRING = @&quot;Server=(LocalDB)\MSSQLLocalDB;Database=PawPalsDB;Integrated Security=SSPI;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cadena de conexión a la base de datos. Es una base de datos SQL en el equipo local con seguridad integrada. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>PawPalsServer/ServerActions/DBTasks.cs</li>
+<li>PawPalsServer/ServerActions/<a class="el" href="_d_b_tasks_8cs.html">DBTasks.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,0 +1,4 @@
+var namespaceandroidx_1_1appcompat_1_1widget =
+[
+    [ "Toolbar_NavigationOnClickEventDispatcher", "classandroidx_1_1appcompat_1_1widget_1_1_toolbar___navigation_on_click_event_dispatcher.html", "classandroidx_1_1appcompat_1_1widget_1_1_toolbar___navigation_on_click_event_dispatcher" ]
+];

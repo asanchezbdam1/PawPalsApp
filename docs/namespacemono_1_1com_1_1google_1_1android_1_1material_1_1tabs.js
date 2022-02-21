@@ -1,0 +1,4 @@
+var namespacemono_1_1com_1_1google_1_1android_1_1material_1_1tabs =
+[
+    [ "TabLayout_BaseOnTabSelectedListenerImplementor", "classmono_1_1com_1_1google_1_1android_1_1material_1_1tabs_1_1_tab_layout___base_on_tab_selected_listener_implementor.html", "classmono_1_1com_1_1google_1_1android_1_1material_1_1tabs_1_1_tab_layout___base_on_tab_selected_listener_implementor" ]
+];
