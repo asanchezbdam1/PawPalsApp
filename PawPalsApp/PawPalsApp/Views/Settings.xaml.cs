@@ -11,11 +11,10 @@ using Xamarin.Forms.Xaml;
 namespace PawPalsApp.Views
 {
     /// <summary>
-    /// Página qe representa los ajustes de la app.
+    /// Página que representa los ajustes de la app.
     /// Tiene dos opciones: 
     /// - Ajustes de cuenta
     /// - Ayuda
-    /// ; Las cuelas te llevarán a otra página
     /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Settings : ContentPage
