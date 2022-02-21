@@ -5,7 +5,7 @@ var searchData=
   ['paginamenu_2',['PaginaMenu',['../class_paw_pals_app_1_1_views_1_1_pagina_menu.html#a5983abe09a49e0fece91b7b4634e343b',1,'PawPalsApp.Views.PaginaMenu.PaginaMenu()'],['../class_paw_pals_app_1_1_views_1_1_pagina_menu.html',1,'PawPalsApp.Views.PaginaMenu']]],
   ['paginamenu_2examl_2ecs_3',['PaginaMenu.xaml.cs',['../_pagina_menu_8xaml_8cs.html',1,'']]],
   ['password_4',['Password',['../class_paw_pals_app_1_1_resx_1_1_app_resources.html#a32c1eb71199bb48dafb374e83a6e30d9',1,'PawPalsApp::Resx::AppResources']]],
-  ['pawpalsapp_5',['PawPalsApp',['../namespace_paw_pals_app.html',1,'']]],
+  ['pawpalsapp_5',['PawPalsApp',['../md__r_e_a_d_m_e.html',1,'(Global Namespace)'],['../namespace_paw_pals_app.html',1,'PawPalsApp']]],
   ['pawpalsserver_6',['PawPalsServer',['../namespace_paw_pals_server.html',1,'']]],
   ['personal_5fname_7',['Personal_name',['../class_paw_pals_app_1_1_resx_1_1_app_resources.html#a4cc86637c10299e3a824e62bd53fa7c5',1,'PawPalsApp::Resx::AppResources']]],
   ['pickpost_8',['PickPost',['../class_paw_pals_app_1_1_views_1_1_cute_o_meter.html#a4b5c6250403bfe0c583c6d26d839f70a',1,'PawPalsApp.Views.CuteOMeter.PickPost()'],['../class_paw_pals_app_1_1_classes_1_1_image_picker.html#a26bc8eb563e12534b842bc96dc4e60bd',1,'PawPalsApp.Classes.ImagePicker.PickPost()']]],

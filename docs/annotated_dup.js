@@ -46,8 +46,7 @@ var annotated_dup =
         [ "SettingsInfo", "class_paw_pals_app_1_1_views_1_1_settings_info.html", "class_paw_pals_app_1_1_views_1_1_settings_info" ],
         [ "Welcome", "class_paw_pals_app_1_1_views_1_1_welcome.html", "class_paw_pals_app_1_1_views_1_1_welcome" ]
       ] ],
-      [ "App", "class_paw_pals_app_1_1_app.html", "class_paw_pals_app_1_1_app" ],
-      [ "MainPage", "class_paw_pals_app_1_1_main_page.html", "class_paw_pals_app_1_1_main_page" ]
+      [ "App", "class_paw_pals_app_1_1_app.html", "class_paw_pals_app_1_1_app" ]
     ] ],
     [ "PawPalsServer", "namespace_paw_pals_server.html", [
       [ "BufferObject", "class_paw_pals_server_1_1_buffer_object.html", "class_paw_pals_server_1_1_buffer_object" ],

@@ -25,6 +25,19 @@
 var NAVTREE =
 [
   [ "Paw Pals", "index.html", [
+    [ "PawPalsApp", "md__r_e_a_d_m_e.html", [
+      [ "PawPalsApp", "md__r_e_a_d_m_e.html#autotoc_md1", [
+        [ "PawPalsApp Views", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
+        [ "PawPalsApp Resx", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
+        [ "PawPalsApp Data", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
+        [ "PawPalsApp Classes", "md__r_e_a_d_m_e.html#autotoc_md5", null ]
+      ] ],
+      [ "PawPalsServer", "md__r_e_a_d_m_e.html#autotoc_md6", [
+        [ "ServerVerificators", "md__r_e_a_d_m_e.html#autotoc_md7", null ],
+        [ "ServerActions", "md__r_e_a_d_m_e.html#autotoc_md8", null ]
+      ] ],
+      [ "CrossClasses", "md__r_e_a_d_m_e.html#autotoc_md9", null ]
+    ] ],
     [ "Packages", "namespaces.html", [
       [ "Packages", "namespaces.html", "namespaces_dup" ],
       [ "Package Functions", "namespacemembers.html", [
@@ -58,8 +71,8 @@ var NAVTREEINDEX =
 [
 "_account_8xaml_8cs.html",
 "class_paw_pals_app_1_1_classes_1_1_mascotas.html#a8e94ab905f2acd9307c28b400252e28b",
-"class_paw_pals_app_1_1_views_1_1_account.html#acb4df04b70f3a3beb6eade0da4098045",
-"functions_e.html"
+"class_paw_pals_app_1_1_views_1_1_account.html#ad82987026996100f96d4080e3e4902c0",
+"functions_h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -8,7 +8,6 @@ var hierarchy =
     [ "PawPalsServer.BufferObject", "class_paw_pals_server_1_1_buffer_object.html", null ],
     [ "PawPalsApp.Classes.ConnectionHelper", "class_paw_pals_app_1_1_classes_1_1_connection_helper.html", null ],
     [ "ContentPage", null, [
-      [ "PawPalsApp.MainPage", "class_paw_pals_app_1_1_main_page.html", null ],
       [ "PawPalsApp.Views.Account", "class_paw_pals_app_1_1_views_1_1_account.html", null ],
       [ "PawPalsApp.Views.Care", "class_paw_pals_app_1_1_views_1_1_care.html", null ],
       [ "PawPalsApp.Views.CuteOMeter", "class_paw_pals_app_1_1_views_1_1_cute_o_meter.html", null ],

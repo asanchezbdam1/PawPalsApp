@@ -49,7 +49,7 @@ namespace PawPalsApp.Views
             {
                 Command = new Command(() =>
                 {
-                    Launcher.OpenAsync(new System.Uri("https://asanchezbdam1.github.io/PawPalsApp/"));
+                    Launcher.OpenAsync(new System.Uri("https://docs.google.com/document/d/1bkRfBw0cc2JL6FBQnwZTtH-Oqm5DdoDi24IYal8kRdU/edit?usp=sharing"));
                 })
             });
         }

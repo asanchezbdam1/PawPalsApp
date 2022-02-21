@@ -4,6 +4,5 @@ var namespace_paw_pals_app =
     [ "Data", "namespace_paw_pals_app_1_1_data.html", "namespace_paw_pals_app_1_1_data" ],
     [ "Resx", "namespace_paw_pals_app_1_1_resx.html", "namespace_paw_pals_app_1_1_resx" ],
     [ "Views", "namespace_paw_pals_app_1_1_views.html", "namespace_paw_pals_app_1_1_views" ],
-    [ "App", "class_paw_pals_app_1_1_app.html", "class_paw_pals_app_1_1_app" ],
-    [ "MainPage", "class_paw_pals_app_1_1_main_page.html", "class_paw_pals_app_1_1_main_page" ]
+    [ "App", "class_paw_pals_app_1_1_app.html", "class_paw_pals_app_1_1_app" ]
 ];

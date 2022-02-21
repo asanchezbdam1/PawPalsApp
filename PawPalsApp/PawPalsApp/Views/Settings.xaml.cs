@@ -55,28 +55,5 @@ namespace PawPalsApp.Views
                 })
             });
         }
-
-        /// <summary>
-        /// Comprueba que se ha
-        /// iniciado sesión
-        /// para acceder.
-        /// </summary>
-        protected async override void OnAppearing()
-        {
-            base.OnAppearing();
-            if (((App)App.Current).User == null)
-            {
-                var res = await DisplayAlert(AppResources.ErrorTitle, AppResources.NeedLogin, AppResources.Login, AppResources.Back);
-                if (res)
-                {
-                    App.Current.MainPage = new NavigationPage(new Welcome());
-                }
-                else
-                {
-                    var page = ((TabbedPage)((NavigationPage)App.Current.MainPage).CurrentPage);
-                    page.CurrentPage = page.Children[0];
-                }
-            }
-        }
     }
 }

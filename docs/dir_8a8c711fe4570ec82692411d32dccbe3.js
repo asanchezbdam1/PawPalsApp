@@ -7,8 +7,5 @@ var dir_8a8c711fe4570ec82692411d32dccbe3 =
     [ "App.xaml.cs", "_app_8xaml_8cs.html", [
       [ "PawPalsApp.App", "class_paw_pals_app_1_1_app.html", "class_paw_pals_app_1_1_app" ]
     ] ],
-    [ "AssemblyInfo.cs", "_paw_pals_app_2_paw_pals_app_2_assembly_info_8cs.html", null ],
-    [ "MainPage.xaml.cs", "_main_page_8xaml_8cs.html", [
-      [ "PawPalsApp.MainPage", "class_paw_pals_app_1_1_main_page.html", "class_paw_pals_app_1_1_main_page" ]
-    ] ]
+    [ "AssemblyInfo.cs", "_paw_pals_app_2_paw_pals_app_2_assembly_info_8cs.html", null ]
 ];
