@@ -1,24 +1,12 @@
 var searchData=
 [
-  ['magnetometerlistener_0',['MagnetometerListener',['../classcrc64a0e0a82d0db9a07d_1_1_magnetometer_listener.html',1,'crc64a0e0a82d0db9a07d']]],
-  ['main_1',['Main',['../class_paw_pals_server_1_1_program.html#aadf5d1516446b1f5e6815d70855819da',1,'PawPalsServer::Program']]],
-  ['mainactivity_2',['MainActivity',['../classcrc6432072b1d5e7c27eb_1_1_main_activity.html',1,'crc6432072b1d5e7c27eb.MainActivity'],['../class_paw_pals_app_1_1_droid_1_1_main_activity.html',1,'PawPalsApp.Droid.MainActivity']]],
-  ['mainpage_3',['MainPage',['../class_paw_pals_app_1_1_main_page.html',1,'PawPalsApp']]],
-  ['mascotas_4',['Mascotas',['../class_paw_pals_app_1_1_classes_1_1_mascotas.html',1,'PawPalsApp::Classes']]],
-  ['masterdetailcontainer_5',['MasterDetailContainer',['../classcrc643f46942d9dd1fff9_1_1_master_detail_container.html',1,'crc643f46942d9dd1fff9']]],
-  ['masterdetailpagerenderer_6',['MasterDetailPageRenderer',['../classcrc64720bb2db43a66fe9_1_1_master_detail_page_renderer.html',1,'crc64720bb2db43a66fe9']]],
-  ['masterdetailrenderer_7',['MasterDetailRenderer',['../classcrc643f46942d9dd1fff9_1_1_master_detail_renderer.html',1,'crc643f46942d9dd1fff9']]],
-  ['materialbutton_5foncheckedchangelistenerimplementor_8',['MaterialButton_OnCheckedChangeListenerImplementor',['../classmono_1_1com_1_1google_1_1android_1_1material_1_1button_1_1_material_button___on_checked_change_listener_implementor.html',1,'mono::com::google::android::material::button']]],
-  ['materialbuttontogglegroup_5fonbuttoncheckedlistenerimplementor_9',['MaterialButtonToggleGroup_OnButtonCheckedListenerImplementor',['../classmono_1_1com_1_1google_1_1android_1_1material_1_1button_1_1_material_button_toggle_group___o5cca2c16f254e0799f64446d39ad665b.html',1,'mono::com::google::android::material::button']]],
-  ['materialcardview_5foncheckedchangelistenerimplementor_10',['MaterialCardView_OnCheckedChangeListenerImplementor',['../classmono_1_1com_1_1google_1_1android_1_1material_1_1card_1_1_material_card_view___on_checked_change_listener_implementor.html',1,'mono::com::google::android::material::card']]],
-  ['materialpickeronpositivebuttonclicklistenerimplementor_11',['MaterialPickerOnPositiveButtonClickListenerImplementor',['../classmono_1_1com_1_1google_1_1android_1_1material_1_1datepicker_1_1_material_picker_on_positive_0ef10b45230833b2e3ed4af2a6d7f23e.html',1,'mono::com::google::android::material::datepicker']]],
-  ['max_5fimage_5fsize_12',['MAX_IMAGE_SIZE',['../class_paw_pals_app_1_1_classes_1_1_connection_helper.html#a3c16ce7016b8627af5075b4b5dd3b81f',1,'PawPalsApp::Classes::ConnectionHelper']]],
-  ['mediapickeractivity_13',['MediaPickerActivity',['../classcrc646957603ea1820544_1_1_media_picker_activity.html',1,'crc646957603ea1820544']]],
-  ['mediasessioncompat_5fonactivechangelistenerimplementor_14',['MediaSessionCompat_OnActiveChangeListenerImplementor',['../classmono_1_1android_1_1support_1_1v4_1_1media_1_1session_1_1_media_session_compat___on_active_change_listener_implementor.html',1,'mono::android::support::v4::media::session']]],
-  ['menuitemcompat_5fonactionexpandlistenerimplementor_15',['MenuItemCompat_OnActionExpandListenerImplementor',['../classmono_1_1androidx_1_1core_1_1view_1_1_menu_item_compat___on_action_expand_listener_implementor.html',1,'mono::androidx::core::view']]],
-  ['menuitemhoverlistenerimplementor_16',['MenuItemHoverListenerImplementor',['../classmono_1_1androidx_1_1appcompat_1_1widget_1_1_menu_item_hover_listener_implementor.html',1,'mono::androidx::appcompat::widget']]],
-  ['mipmap_17',['Mipmap',['../class_paw_pals_app_1_1_droid_1_1_resource_1_1_mipmap.html',1,'PawPalsApp::Droid::Resource']]],
-  ['monopackagemanager_5fresources_18',['MonoPackageManager_Resources',['../classmono_1_1_mono_package_manager___resources.html',1,'mono']]],
-  ['monoruntimeprovider_19',['MonoRuntimeProvider',['../classmono_1_1_mono_runtime_provider.html',1,'mono']]],
-  ['motionlayout_5ftransitionlistenerimplementor_20',['MotionLayout_TransitionListenerImplementor',['../classmono_1_1androidx_1_1constraintlayout_1_1motion_1_1widget_1_1_motion_layout___transition_listener_implementor.html',1,'mono::androidx::constraintlayout::motion::widget']]]
+  ['name_0',['Name',['../class_cross_classes_1_1_user.html#a6d2cdb7cc2509482bd6c1c64ee882cec',1,'CrossClasses::User']]],
+  ['needlogin_1',['NeedLogin',['../class_paw_pals_app_1_1_resx_1_1_app_resources.html#a38e8e9c6ffd0855ffd5e5603a5fea1e7',1,'PawPalsApp::Resx::AppResources']]],
+  ['newtopawpals_2',['NewToPawPals',['../class_paw_pals_app_1_1_resx_1_1_app_resources.html#a6e60d5aed5ce2a187102f02d5f6ab786',1,'PawPalsApp::Resx::AppResources']]],
+  ['nombre_3',['Nombre',['../class_paw_pals_app_1_1_classes_1_1_mascotas.html#a8e94ab905f2acd9307c28b400252e28b',1,'PawPalsApp::Classes::Mascotas']]],
+  ['nomcity_4',['NomCity',['../class_paw_pals_app_1_1_resx_1_1_app_resources.html#a4022f17b2adefe4c730bb8f5440a0941',1,'PawPalsApp::Resx::AppResources']]],
+  ['nomcountry_5',['NomCountry',['../class_paw_pals_app_1_1_resx_1_1_app_resources.html#a6b62d0dd797f77a0fc7bcff3aac445d5',1,'PawPalsApp::Resx::AppResources']]],
+  ['none_6',['NONE',['../namespace_cross_classes.html#a8850b4ede1174d8af6550e319e51d040ab50339a10e1de285ac99d4c3990b8693',1,'CrossClasses']]],
+  ['notdisliked_7',['NotDisliked',['../class_cross_classes_1_1_post.html#a9d10562ce9cab9ce55d93efe888bd0e0',1,'CrossClasses::Post']]],
+  ['notliked_8',['NotLiked',['../class_cross_classes_1_1_post.html#a1cd3e776ed77df031010e426c236802b',1,'CrossClasses::Post']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['keepaliveservice_0',['KeepAliveService',['../classcrc64396a3fe5f8138e3f_1_1_keep_alive_service.html',1,'crc64396a3fe5f8138e3f']]]
+  ['login_0',['Login',['../class_paw_pals_app_1_1_views_1_1_login.html',1,'PawPalsApp::Views']]],
+  ['loginuser_1',['LoginUser',['../class_cross_classes_1_1_login_user.html',1,'CrossClasses']]]
 ];

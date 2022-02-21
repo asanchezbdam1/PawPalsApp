@@ -2,6 +2,7 @@ var namespace_cross_classes =
 [
     [ "DeleteUser", "class_cross_classes_1_1_delete_user.html", null ],
     [ "LoginUser", "class_cross_classes_1_1_login_user.html", null ],
+    [ "ObjectSerializer", "class_cross_classes_1_1_object_serializer.html", "class_cross_classes_1_1_object_serializer" ],
     [ "Post", "class_cross_classes_1_1_post.html", "class_cross_classes_1_1_post" ],
     [ "PostList", "class_cross_classes_1_1_post_list.html", "class_cross_classes_1_1_post_list" ],
     [ "PostReacted", "class_cross_classes_1_1_post_reacted.html", "class_cross_classes_1_1_post_reacted" ],

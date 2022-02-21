@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['posts_0',['Posts',['../class_cross_classes_1_1_post_list.html#a7e8f1ca264b7a2e51ad30e91d9b95b69',1,'CrossClasses::PostList']]]
+  ['max_5fimage_5fsize_0',['MAX_IMAGE_SIZE',['../class_cross_classes_1_1_object_serializer.html#a3ceea0788b71464c7ae419d38b24737f',1,'CrossClasses.ObjectSerializer.MAX_IMAGE_SIZE()'],['../class_paw_pals_app_1_1_classes_1_1_connection_helper.html#a3c16ce7016b8627af5075b4b5dd3b81f',1,'PawPalsApp.Classes.ConnectionHelper.MAX_IMAGE_SIZE()']]]
 ];

@@ -39,9 +39,16 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Variables", "functions_vars.html", null ],
         [ "Properties", "functions_prop.html", null ],
         [ "Events", "functions_evnt.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Variables", "globals_vars.html", null ]
       ] ]
     ] ]
   ] ]
@@ -49,11 +56,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"classandroidx_1_1browser_1_1customtabs_1_1_custom_tabs_client___custom_tabs_callback_impl.html",
-"classcrc643f46942d9dd1fff9_1_1_master_detail_renderer.html",
-"classcrc64a0e0a82d0db9a07d_1_1_sensor_listener.html",
-""
+"_account_8xaml_8cs.html",
+"class_paw_pals_app_1_1_classes_1_1_mascotas.html#a8e94ab905f2acd9307c28b400252e28b",
+"class_paw_pals_app_1_1_views_1_1_account.html#acb4df04b70f3a3beb6eade0da4098045",
+"functions_e.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,22 @@
 var searchData=
 [
-  ['convert_0',['Convert',['../class_paw_pals_app_1_1_classes_1_1_byte_array_to_image_converter.html#a72bc2545efbba1913aa8b57a60b27048',1,'PawPalsApp::Classes::ByteArrayToImageConverter']]],
-  ['cuteometer_1',['CuteOMeter',['../class_paw_pals_app_1_1_views_1_1_cute_o_meter.html#a59b9e1cc882ef5712aaaf39b3762388f',1,'PawPalsApp::Views::CuteOMeter']]]
+  ['btnadd_5fpressed_0',['btnAdd_Pressed',['../class_paw_pals_app_1_1_views_1_1_cute_o_meter.html#a94994e89619cb773aa7f4f211aaf5a8e',1,'PawPalsApp::Views::CuteOMeter']]],
+  ['btnadddiet_5fclicked_1',['btnAddDiet_Clicked',['../class_paw_pals_app_1_1_views_1_1_care.html#aece190e323b54ba85ab4a8913ea7ddca',1,'PawPalsApp::Views::Care']]],
+  ['btnaddexercise_5fclicked_2',['btnAddexercise_Clicked',['../class_paw_pals_app_1_1_views_1_1_care.html#acc8a4cac3566aa0398b3b790c49d801a',1,'PawPalsApp::Views::Care']]],
+  ['btnaddhygiene_5fclicked_3',['btnAddHygiene_Clicked',['../class_paw_pals_app_1_1_views_1_1_care.html#a81a5811e51174afd7aa3752db3974ff0',1,'PawPalsApp::Views::Care']]],
+  ['btnañadirmascota_5fclicked_4',['btnAñadirMascota_Clicked',['../class_paw_pals_app_1_1_views_1_1_care.html#ab766d3e02515b4a5d68cef2513dd7c2e',1,'PawPalsApp::Views::Care']]],
+  ['btndeletediet_5fclicked_5',['btnDeleteDiet_Clicked',['../class_paw_pals_app_1_1_views_1_1_care.html#ad0c5f108586826d6a1f8519d4d23903c',1,'PawPalsApp::Views::Care']]],
+  ['btndeleteexercise_5fclicked_6',['btnDeleteexercise_Clicked',['../class_paw_pals_app_1_1_views_1_1_care.html#aed0cb951ddd934aa47c2fc31d273cd64',1,'PawPalsApp::Views::Care']]],
+  ['btndeletehygiene_5fclicked_7',['btnDeleteHygiene_Clicked',['../class_paw_pals_app_1_1_views_1_1_care.html#a4a8a49da0694b916a29b0c6a0b7baf8b',1,'PawPalsApp::Views::Care']]],
+  ['btndislike_5fpressed_8',['btnDislike_Pressed',['../class_paw_pals_app_1_1_views_1_1_cute_o_meter.html#abf0cba758c7e0cea65365d3ff004032d',1,'PawPalsApp::Views::CuteOMeter']]],
+  ['btndisliked_5fpressed_9',['btnDisliked_Pressed',['../class_paw_pals_app_1_1_views_1_1_cute_o_meter.html#a214329e5d583882e1ffacd88b250a0db',1,'PawPalsApp::Views::CuteOMeter']]],
+  ['btnenter_5fclicked_10',['btnEnter_Clicked',['../class_paw_pals_app_1_1_views_1_1_welcome.html#a332b1ea0b474a91740ff9cc89c2b09a3',1,'PawPalsApp::Views::Welcome']]],
+  ['btngato_5fclicked_11',['btnGato_Clicked',['../class_paw_pals_app_1_1_views_1_1_guide.html#a0977af285377c3edee7a0d5f7cc912fa',1,'PawPalsApp::Views::Guide']]],
+  ['btnhistorial_5fpressed_12',['btnHistorial_Pressed',['../class_paw_pals_app_1_1_views_1_1_cute_o_meter.html#a037ae96bf81716ed01cbac64254f1b4a',1,'PawPalsApp::Views::CuteOMeter']]],
+  ['btnlike_5fpressed_13',['btnLike_Pressed',['../class_paw_pals_app_1_1_views_1_1_cute_o_meter.html#a9b6b11d30bca199a22f8252c50b5d193',1,'PawPalsApp::Views::CuteOMeter']]],
+  ['btnliked_5fpressed_14',['btnLiked_Pressed',['../class_paw_pals_app_1_1_views_1_1_cute_o_meter.html#ab9d251c02c4f1efb0b1242b819248e2e',1,'PawPalsApp::Views::CuteOMeter']]],
+  ['btnlogin_5fclicked_15',['btnLogin_Clicked',['../class_paw_pals_app_1_1_views_1_1_login.html#aa770026cbba330eb571fb0f27944121a',1,'PawPalsApp.Views.Login.btnLogin_Clicked()'],['../class_paw_pals_app_1_1_views_1_1_register.html#a123abb87ac3177896e823d33ed6db0d2',1,'PawPalsApp.Views.Register.btnLogin_Clicked()'],['../class_paw_pals_app_1_1_views_1_1_welcome.html#a0d85b7cde0beaf3772e68024097a4501',1,'PawPalsApp.Views.Welcome.btnLogin_Clicked()']]],
+  ['btnperro_5fclicked_16',['btnPerro_Clicked',['../class_paw_pals_app_1_1_views_1_1_guide.html#a93848a3bb3a8d012058c8827b7477f73',1,'PawPalsApp::Views::Guide']]],
+  ['btnregister_5fclicked_17',['btnRegister_Clicked',['../class_paw_pals_app_1_1_views_1_1_login.html#a156f36768b28ac243b9c56b805521da0',1,'PawPalsApp.Views.Login.btnRegister_Clicked()'],['../class_paw_pals_app_1_1_views_1_1_register.html#a7a21cdfe82cdfc7f452c941c4fee3b7b',1,'PawPalsApp.Views.Register.btnRegister_Clicked()'],['../class_paw_pals_app_1_1_views_1_1_welcome.html#ac217b3119a8a3ddb26ddcd971df81c1b',1,'PawPalsApp.Views.Welcome.btnRegister_Clicked()']]],
+  ['btnroedor_5fclicked_18',['btnRoedor_Clicked',['../class_paw_pals_app_1_1_views_1_1_guide.html#a429f8f7a44bde7b2c147486d77ef88ec',1,'PawPalsApp::Views::Guide']]]
 ];

@@ -1,21 +1,12 @@
 var searchData=
 [
-  ['tabbedpagerenderer_0',['TabbedPageRenderer',['../classcrc64720bb2db43a66fe9_1_1_tabbed_page_renderer.html',1,'crc64720bb2db43a66fe9']]],
-  ['tabbedrenderer_1',['TabbedRenderer',['../classcrc643f46942d9dd1fff9_1_1_tabbed_renderer.html',1,'crc643f46942d9dd1fff9']]],
-  ['tablayout_5fbaseontabselectedlistenerimplementor_2',['TabLayout_BaseOnTabSelectedListenerImplementor',['../classmono_1_1com_1_1google_1_1android_1_1material_1_1tabs_1_1_tab_layout___base_on_tab_selected_listener_implementor.html',1,'mono::com::google::android::material::tabs']]],
-  ['tableviewmodelrenderer_3',['TableViewModelRenderer',['../classcrc643f46942d9dd1fff9_1_1_table_view_model_renderer.html',1,'crc643f46942d9dd1fff9']]],
-  ['tableviewrenderer_4',['TableViewRenderer',['../classcrc643f46942d9dd1fff9_1_1_table_view_renderer.html',1,'crc643f46942d9dd1fff9']]],
-  ['templateditemviewholder_5',['TemplatedItemViewHolder',['../classcrc643f46942d9dd1fff9_1_1_templated_item_view_holder.html',1,'crc643f46942d9dd1fff9']]],
-  ['textcellrenderer_5ftextcellview_6',['TextCellRenderer_TextCellView',['../classcrc643f46942d9dd1fff9_1_1_text_cell_renderer___text_cell_view.html',1,'crc643f46942d9dd1fff9']]],
-  ['textinputlayout_5fonedittextattachedlistenerimplementor_7',['TextInputLayout_OnEditTextAttachedListenerImplementor',['../classmono_1_1com_1_1google_1_1android_1_1material_1_1textfield_1_1_text_input_layout___on_edit_t634d77dea66d6cb03ed63dd04ba196ea.html',1,'mono::com::google::android::material::textfield']]],
-  ['textinputlayout_5fonendiconchangedlistenerimplementor_8',['TextInputLayout_OnEndIconChangedListenerImplementor',['../classmono_1_1com_1_1google_1_1android_1_1material_1_1textfield_1_1_text_input_layout___on_end_icon_changed_listener_implementor.html',1,'mono::com::google::android::material::textfield']]],
-  ['texttospeechimplementation_9',['TextToSpeechImplementation',['../classcrc64a0e0a82d0db9a07d_1_1_text_to_speech_implementation.html',1,'crc64a0e0a82d0db9a07d']]],
-  ['textviewholder_10',['TextViewHolder',['../classcrc643f46942d9dd1fff9_1_1_text_view_holder.html',1,'crc643f46942d9dd1fff9']]],
-  ['timepickerrenderer_11',['TimePickerRenderer',['../classcrc643f46942d9dd1fff9_1_1_time_picker_renderer.html',1,'crc643f46942d9dd1fff9']]],
-  ['timepickerrendererbase_5f1_12',['TimePickerRendererBase_1',['../classcrc643f46942d9dd1fff9_1_1_time_picker_renderer_base__1.html',1,'crc643f46942d9dd1fff9']]],
-  ['toolbar_5fnavigationonclickeventdispatcher_13',['Toolbar_NavigationOnClickEventDispatcher',['../classandroidx_1_1appcompat_1_1widget_1_1_toolbar___navigation_on_click_event_dispatcher.html',1,'androidx::appcompat::widget']]],
-  ['toolbar_5fonmenuitemclicklistenerimplementor_14',['Toolbar_OnMenuItemClickListenerImplementor',['../classmono_1_1androidx_1_1appcompat_1_1widget_1_1_toolbar___on_menu_item_click_listener_implementor.html',1,'mono::androidx::appcompat::widget']]],
-  ['transition_5ftransitionlistenerimplementor_15',['Transition_TransitionListenerImplementor',['../classmono_1_1androidx_1_1transition_1_1_transition___transition_listener_implementor.html',1,'mono::androidx::transition']]],
-  ['transitionutils_16',['TransitionUtils',['../classcrc64a25b61d9f8ee364f_1_1_transition_utils.html',1,'crc64a25b61d9f8ee364f']]],
-  ['transitionutils_5fmatrixevaluator_17',['TransitionUtils_MatrixEvaluator',['../classcrc64a25b61d9f8ee364f_1_1_transition_utils___matrix_evaluator.html',1,'crc64a25b61d9f8ee364f']]]
+  ['uid_0',['UID',['../class_cross_classes_1_1_post.html#a5ce6fca01f883aa5dee9d1e8f48a6d4a',1,'CrossClasses::Post']]],
+  ['update_5fuser_1',['UPDATE_USER',['../namespace_server_verificators.html#a690f55ef41600966bb937a547964982aa80e0f8ff209ddccff0f84c61716c9315',1,'ServerVerificators']]],
+  ['updated_2',['Updated',['../class_paw_pals_app_1_1_resx_1_1_app_resources.html#a31b51aa1b72f4fe54698b37bc6a99c6f',1,'PawPalsApp::Resx::AppResources']]],
+  ['updateuser_3',['UpdateUser',['../class_cross_classes_1_1_update_user.html',1,'CrossClasses']]],
+  ['user_4',['User',['../class_cross_classes_1_1_user.html',1,'CrossClasses.User'],['../class_paw_pals_app_1_1_app.html#aabc6f0e4b77ddb19358d99668c27ec73',1,'PawPalsApp.App.User()'],['../class_cross_classes_1_1_user.html#aff3d408e98f33e1d53f6a047d47820b3',1,'CrossClasses.User.User()']]],
+  ['user_2ecs_5',['User.cs',['../_user_8cs.html',1,'']]],
+  ['userid_6',['UserID',['../class_cross_classes_1_1_post_reacted.html#a30c231786c95ccd3604a304009627935',1,'CrossClasses::PostReacted']]],
+  ['usermanual_7',['UserManual',['../class_paw_pals_app_1_1_resx_1_1_app_resources.html#a89bbd059b3f10a5ce2dfa26553c3d2a5',1,'PawPalsApp::Resx::AppResources']]],
+  ['username_8',['Username',['../class_cross_classes_1_1_post.html#a3f7a5ffcf4f99b0cf6f8191207be13e4',1,'CrossClasses.Post.Username()'],['../class_paw_pals_app_1_1_resx_1_1_app_resources.html#a553707701402a3038896a53045b5068d',1,'PawPalsApp.Resx.AppResources.Username()']]]
 ];
